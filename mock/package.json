@@ -1,0 +1,27 @@
+{
+  "name": "wallet-mock-server",
+  "version": "1.0.0",
+  "description": "Mock server for wallet deposits and order status APIs",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "cleanup": "node cleanup.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@react-pdf/renderer": "^4.3.1",
+    "fastify": "^5.2.0",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.0.4"
+  },
+  "keywords": [
+    "mock",
+    "api",
+    "wallet",
+    "deposits"
+  ],
+  "author": "",
+  "license": "MIT"
+}

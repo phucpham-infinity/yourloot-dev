@@ -1,0 +1,1528 @@
+{
+  "app": {
+    "name": "YourLoot"
+  },
+  "terms": {
+    "title": "Shartlar va qoidalar",
+    "content": "Shartlar va qoidalar"
+  },
+  "myItems": {
+    "title": "Mening narsalarim",
+    "search": "Qidirish",
+    "shop": "Do'kon"
+  },
+  "depositWithdrawV2": {
+    "selectMethod": "Usulni tanlash",
+    "selectCrypto": "Kriptovalyutani tanlang",
+    "walletCurrencyWarning": "Asosiy hamyon valyutangiz qaysi depozit usullari ko'rsatilishini belgilaydi.",
+    "cryptoBonusMessage": "Kripto depozitlar bo'yicha + 7% bonus oling!",
+    "methods": {
+      "uzcard": "Uzcard",
+      "humo": "Humo",
+      "crypto": "Kripto",
+      "cryptoBonus": "+7% Bonus",
+      "bankCards": "Bank kartalari",
+      "fps": "TTT",
+      "fpsQr": "TTT QR",
+      "fpsSber": "Sber TTT",
+      "sberPay": "Sber Pay",
+      "tPay": "T-Pay",
+      "yukassa": "ЮKassa",
+      "alfa": "Alfa Bank",
+      "fpsAlfa": "FPS Alfa",
+      "fastPayments": "Tezkor to'lovlar"
+    }
+  },
+  "noGame": {
+    "search": {
+      "title": "Natija topilmadi",
+      "description": "Boshqa kalit so'zlar bilan qidirishga harakat qiling."
+    },
+    "empty": {
+      "title": "Hali hech narsa yo'q",
+      "description": "Bu kategoriya yangilanmoqda. Tez orada yangi o'yinlar paydo bo'ladi."
+    }
+  },
+  "withdraw": {
+    "title": "Pul yechish",
+    "description": "Aktivlaringizni yechib olish",
+    "instructions": "Ko'rsatmalar",
+    "cryptoPayment": "Kripto to'lov",
+    "bankPayment": "Bank to'lovi",
+    "amountTooLow": "Juda kam. Minimum {{minAmount}} {{currency}}.",
+    "amountTooHigh": "Juda ko'p. Maksimum {{maxAmount}} {{currency}}.",
+    "insufficientFunds": "Sizda yetarli mablag' yo'q.",
+    "requestedTitle": "Yechib olish so'rovi",
+    "unavailable": {
+      "title": "Pul yechib olish mumkin emas",
+      "cannotNow": "Hozir yechib bo'lmaydi",
+      "description": "Sizda depozit jarayonda. Yechib olish uchun uning yakunlanishini kuting.",
+      "wageringNotMet": "Mərc talabi bajarilmadi",
+      "wageringDescription": "Yechib olish uchun avval talab qilinadigan summani mərc qilishingiz kerak. Batafsil ma'lumot uchun bonus yoki balans shartlarini tekshiring."
+    },
+    "processAlert": {
+      "inProgress": "Yechib olish hali davom etmoqda.",
+      "timeLeft": "Qolgan vaqt:",
+      "continueWithdraw": "Yechib olishni davom ettirish",
+      "continue": "Davom ettirish",
+      "failedToast": "Yechib olish muvaffaqiyatsiz, qayta urinib ko'ring yoki qo'llab-quvvatlash xizmatiga murojaat qiling.",
+      "successToast": "Yechib olish yakunlandi. Mablag' tez orada ko'rinadi."
+    },
+    "cancelQuestion": "Yechib olishni bekor qilish?",
+    "cancelDescription": "Yechib olish so'rovingizni bekor qilishni xohlaysizmi? Mablag' balansingizga qaytariladi.",
+    "cancelAction": "Yechib olishni bekor qilish",
+    "keepRequest": "So'rovni qoldirish",
+    "canceled": "Yechib olish so'rovi bekor qilindi.",
+    "requested": {
+      "submitted": "Yechib olish so'rovingiz yuborildi",
+      "processingInfo": "Qayta ishlash vaqti usulga qarab farq qiladi. Yakunlanganda xabar beramiz."
+    },
+    "failed": {
+      "title": "Yechib olish muvaffaqiyatsiz",
+      "somethingWrong": "Nimadir noto'g'ri ketdi",
+      "description": "Iltimos, qayta urinib ko'ring yoki qo'llab-quvvatlashga murojaat qiling.",
+      "tryAgain": "Qayta urinish",
+      "contactSupport": "Qo'llab-quvvatlashga murojaat qilish"
+    },
+    "emptyMethod": {
+      "title": "Bu hamyonda mablag' mavjud emas",
+      "description": "Yechib olish uchun balansli boshqa hamyonga o'ting"
+    },
+    "bankCard": {
+      "makeTransfer": "Quyidagi ma'lumotlardan foydalanib pul o'tkazish",
+      "chooseBank": "Bankingizni tanlang",
+      "amount": "Miqdor",
+      "amountPlaceholder": "Miqdorni kiriting {{currency}}",
+      "amountDescription": "Mavjud: {{amount}} {{currency}}",
+      "next": "Keyingi",
+      "bankNumber": "Bank raqami",
+      "bankNumberPlaceholder": "Karta raqamini kiriting",
+      "yourPhoneNumber": "Sizning telefon raqamingiz",
+      "phoneNumberPlaceholder": "Telefon raqamini kiriting",
+      "owner": "Owner",
+      "done": {
+        "title": "Yechib olish jarayonda",
+        "description": "Yechib olish tafsilotlari 'Tafsilotlar' panelida ko'rinadi",
+        "details": "Tafsilotlar",
+        "backHome": "Bosh sahifaga qaytish",
+        "bankCardAlt": "Bank kartasi"
+      },
+      "selectBankDescription": "Bankni to'g'ri tanlaganingizga ishonch hosil qiling",
+      "enterInfo": "Ma'lumotlaringizni kiriting",
+      "phoneNumber": "Telefon raqami",
+      "yourBank": "Sizning bankingiz",
+      "withdraw": "Pul yechish",
+      "processDescription": "Tizim to'lovingiz bilan ishlayapti, bu bir necha daqiqadan ortiq olmaydi",
+      "pleaseWait": "Iltimos, kuting"
+    },
+    "cryptocurrency": {
+      "selectTitle": "Kriptovalyuta tanlang",
+      "selectDescription": "Quyidagi ma'lumotlardan foydalanib pul o'tkazish",
+      "title": "Ma'lumotlaringizni kiriting",
+      "description": "To'g'ri ma'lumot kiritilganiga ishonch hosil qiling",
+      "amount": "Miqdor",
+      "amountPlaceholder": "$ 1,923,234,99",
+      "amountDescription": "Bir marta yechib olish miqdori $10 - $100000",
+      "plus10": "+$10",
+      "plus100": "+$100",
+      "plus1000": "+$1000",
+      "walletAddress": "Kriptovalyuta manzili",
+      "walletAddressPlaceholder": "Kriptovalyuta manzilini kiriting",
+      "withdraw": "Pul yechish",
+      "doneTitle": "Yechib olish jarayonda",
+      "doneDescription": "Yechib olish tafsilotlari 'Tafsilotlar' panelida ko'rinadi",
+      "doneDetails": "Statusni tafsilotlar panelida kuzatishingiz mumkin. Savollaringiz bo'lsa, qo'llab-quvvatlash xizmatiga murojaat qiling.",
+      "backHome": "Bosh sahifaga qaytish",
+      "details": "Tafsilotlar"
+    }
+  },
+  "support": {
+    "title": "Qo'llab-quvvatlash bilan bog'lanish",
+    "description": "Yordam berishdan xursandmiz.",
+    "button": "Qo'llab-quvvatlash bilan bog'lanish"
+  },
+  "promo": {
+    "title": "Promo nomi",
+    "deposit": "Hozir deposit qiling!",
+    "welcome": "YourLoot Xush kelibsiz bonusi",
+    "depositFree": "Hozir deposit qiling va 100FS bepul oling!",
+    "code": {
+      "title": "Promo kodingiz bormi?",
+      "description": "Promokodni hisobingizga qo'llash uchun kiriting",
+      "placeholder": "Bu yerga kiriting...",
+      "apply": "Qo'llash",
+      "ok": "Yaxshi",
+      "cancel": "Bekor qilish",
+      "confirm": "Tasdiqlash",
+      "warningMessage": "Agar siz bu promokodni qo'llasangiz, barcha faol bonuslar bekor qilinadi.",
+      "applyingMessage": "Promokod qo'llanilmoqda. Iltimos, biroz kuting..."
+    },
+    "refer": {
+      "title": "Promokodlar",
+      "description": "Oxirgi takliflarni ko'ring",
+      "button": "Promo kodlari"
+    },
+    "active": {
+      "title": "Faol promokod"
+    },
+    "available": {
+      "title": "Mavjud promokodlar"
+    }
+  },
+  "promotionV2": {
+    "title": "Aksiyalar",
+    "bonuses": "Bonuslar",
+    "subtitle": "Barcha tadbirlar, bonuslar va takliflar bir joyda.",
+    "header": {
+      "description": "Takliflar va eksklyuziv mukofotlarni kashf qiling. O‘yin tajribangizni oshirish uchun aksiyalarni faollashtiring."
+    },
+    "active": "Faollar",
+    "available": "Mavjud",
+    "loading": "Faol aksiyalar yuklanmoqda...",
+    "loadingAvailablePromotions": "Mavjud aksiyalar yuklanmoqda...",
+    "noAvailablePromotions": "Sizda hali mavjud aksiyalar yo'q.",
+    "noActivePromotion": "Sizda hali faol aksiya yo'q.",
+    "activeWarning": "Sizda faol aksiya bor. Yangi aksiyani faollashtirish joriy aksiyangizda erishgan yutuqlaringizni yo'qotadi.",
+    "promoCodes": "Promo-kodlar",
+    "promoCodePlaceholder": "Promokodingiz bormi? Bu yerga kiriting...",
+    "applying": "Qo'llanilmoqda...",
+    "apply": "Qo'llash",
+    "loadingPromoCodes": "Promokodlar yuklanmoqda...",
+    "noActivePromoCodes": "Faol promokodlar mavjud emas",
+    "loadingPromotionDetails": "Aksiya tafsilotlari yuklanmoqda...",
+    "promotionNotFound": "Aksiya topilmadi",
+    "expired": "Yakunlanganlar",
+    "canceled": "Bekor qilinganlar",
+    "deactivate": "Faolsizlantirish",
+    "activate": "Faollashtirish",
+    "termsAndConditions1": "Qoidalar va shartlar",
+    "areYouSure": "Ishonchingiz komilmi?",
+    "activatePromotion": "Aksiyani faollashtirishni istaysizmi?",
+    "loseProgress": "Siz ushbu bonus bilan erishgan yutuqlaringizni yo'qotasiz.",
+    "wantToActivate": "Ushbu aksiyani faollashtirishni xohlaysizmi?",
+    "cancel": "Bekor qilish",
+    "confirm": "Tasdiqlash",
+    "warningMessage": "Agar siz bu promokodni qo'llasangiz, barcha faol bonuslar bekor qilinadi.",
+    "applyingMessage": "Promokod qo'llanilmoqda. Iltimos, biroz kuting...",
+    "promotionDeactivated": "{{name}} o'chirildi.",
+    "failedToDeactivate": "{{name}} o'chirib bo'lmadi.",
+    "promotionActivated": "{{name}} faollashtirildi.",
+    "failedToActivate": "{{name}} faollashtirish muvaffaqiyatsiz tugadi.",
+    "promoCodeApplied": "{{code}} kodi muvaffaqiyatli qo'llanildi",
+    "promotions": {
+      "welcomeBonus": {
+        "name": "100% Welcome Bonus"
+      },
+      "cryptoBonus": {
+        "name": "Crypto Bonus +7% to Deposit",
+        "short": "Crypto Bonus",
+        "description": "Криптовалютамен депозит салғанда қосымша 7% бонус алыңыз"
+      },
+      "freeSpins": {
+        "name": "Depozit uchun freespinlar",
+        "description": "Get free spins when you make a deposit"
+      }
+    },
+    "timer": {
+      "expires": "Muddati tugaydi",
+      "expiresIn": "Muddati tugashiga",
+      "available": "Mavjud",
+      "canceledOn": "{{date}} kuni bekor qilingan",
+      "expiredOn": "{{date}} kuni muddati tugagan",
+      "canceledDescription": "Ushbu aksiya bekor qilingan va endi mavjud emas.",
+      "expiredDescription": "Ushbu aksiyaning muddati tugagan va endi mavjud emas.",
+      "activeDescription": "Ushbu aksiya muddati tugaganda avtomatik ravishda o'chiriladi",
+      "availableDescription": "Ushbu aksiya taymer tugaguncha mavjud."
+    },
+    "details": {
+      "howToParticipate": "Qanday qatnashish mumkin?",
+      "details": "Tafsilotlar",
+      "cryptoInstructions": "Promokodni kiriting<br/>Kamida 10 USDT (yoki ekvivalent) miqdorida birinchi kripto depozitingizni qiling<br/>Bonusingizni avtomatik ravishda oling",
+      "cryptoDetails": "1. The bonus is available daily on the first cryptocurrency deposit of the day.<br/>2. The bonus amount is 7%.<br/>3. The minimum deposit amount is 10 USDT (or equivalent).<br/>4. The maximum bonus amount is 50 USDT (or equivalent).<br/>5. Wager: x1.<br/>6. The bonus is available once within the period from 00:00 to 23:59 UTC.<br/>7. The wagering period is 24 hours from the moment of crediting.<br/>8. Withdrawals are unavailable while a bonus is active.",
+      "standardInstructions": "Register or log in<br/>Deposit at least $10<br/>Play with your boosted balance",
+      "bonusAmount": "Bonus miqdori: 100%",
+      "minDeposit": "Minimal depozit: 10 USD / 1,000 RUB dan",
+      "maxBonus": "Maksimal bonus miqdori: 1500 USD / 130,000 RUB",
+      "wager": "Wager: 35"
+    },
+    "promoCodeSection": {
+      "enterPromoCode": "Iltimos, promokodni kiriting",
+      "title": "Promo-kodlar",
+      "placeholder": "Promokodingiz bormi? Bu yerga kiriting...",
+      "applying": "Qo'llanilmoqda...",
+      "apply": "Qo'llash",
+      "activatedPromoCode": "Siz qo'shimcha promokodni faollashtirdingiz.",
+      "loading": "Promokodlar yuklanmoqda...",
+      "noActivePromoCodes": "Faol promokodlar mavjud emas"
+    },
+    "bonusGames": {
+      "title": "Bonus o'yinlari",
+      "seeAll": "Hammasini ko'rish"
+    },
+    "halloweenGames": {
+      "title": "Halloween games",
+      "seeAll": "See All"
+    },
+    "termsAndConditions": {
+      "introduction": "Kirish",
+      "introText1": "Ushbu shartlar va qoidalar hamda quyida ko'rsatilgan hujjatlar (\" Shartlar \") joriy veb-sayt yourloot.io (\" Veb-sayt \") va uning tegishli yoki bog'liq xizmatlaridan (birgalikda \" Xizmat \") foydalanishga taalluqli.",
+      "introText2": "Siz ushbu Shartlarni diqqat bilan ko'rib chiqishingiz kerak, chunki ular Veb-saytdan foydalanish bilan bog'liq huquq va majburiyatlaringiz haqida muhim ma'lumotni o'z ichiga oladi va siz - mijozimiz (\" Mijoz \") va biz o'rtamizda majburiy yuridik kelishuvni tashkil etadi. Ushbu veb-saytdan foydalanish va/yoki Xizmatga kirish orqali siz, mehmon yoki hisob qaydnomasi (\" Hisob \") bilan ro'yxatdan o'tgan foydalanuvchi bo'lishingizdan qat'iy nazar, vaqti-vaqti bilan e'lon qilinadigan o'zgartirishlar bilan birga ushbu Shartlar bilan bog'liq bo'lishga rozilik bildirasiz. Agar siz ushbu Shartlarga rozi bo'lmasangiz, Xizmatga kirishdan va Veb-saytdan foydalanishdan tiyilishingiz kerak.",
+      "introText3": "Xizmat Britaniya Virgin orollarida 2151527 kompaniya ro'yxatga olish raqami bilan ro'yxatdan o'tgan va ro'yxatga olingan manzili 1-qavatda joylashgan Cintra Soft Ltd. cheklangan mas'uliyatli jamiyatga tegishli, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Britaniya Virgin orollari (\" Kompaniya \"), Anjouan shtatida 2005 yilgi 007-sonli Kompyuter o'yinlari litsenziyalash to'g'risidagi qonun asosida litsenziyalangan.",
+      "generalTerms": "Umumiy shartlar",
+      "generalTermsText": "Biz istalgan vaqtda Shartlarni (shu jumladan quyida ko'rsatilgan va bog'langan har qanday hujjatlarni) qayta ko'rib chiqish va o'zgartirish huquqini o'zimizda saqlaymiz. Shartlar va qoidalarni ko'rib chiqish uchun ushbu sahifani vaqti-vaqti bilan tashrif buyurishingiz kerak. O'zgartirishlar ushbu Veb-saytda e'lon qilingandan so'ng darhol majburiy va kuchga kiradi. Agar siz bunday o'zgarishlarga e'tiroz bildirsangiz, Xizmatdan foydalanishni darhol to'xtatishingiz kerak. Bunday nashrdan so'ng Veb-saytdan foydalanishni davom ettirishingiz o'zgartirilgan Shartlar bilan bog'liq bo'lishga roziligingizni bildiradi. O'zgartirilgan Shartlar kuchga kirgunga qadar hisoblanmagan har qanday garovlar oldingi Shartlarga bo'ysunadi.",
+      "obligations": "Sizning majburiyatlaringiz",
+      "obligationsIntro": "Veb-saytga kirish va Xizmatdan foydalanish paytida har doim quyidagilarni tan olasiz:",
+      "obligation1": "Siz 18 yoshdan oshgansiz yoki sizga qo'llaniladigan qonun yoki yurisdiksiya ostida qimor o'yinlari yoki o'yin faoliyatiga ruxsat berilgan qonuniy yoshdasiz. Biz istalgan vaqtda sizdan yosh hujjatlarini so'rash huquqini o'zimizda saqlaymiz.",
+      "obligation2": "Siz huquqiy layoqatga egasiz va biz bilan yuridik jihatdan majburiy kelishuv tuzishingiz mumkin. Agar siz huquqiy layoqatga ega bo'lmasangiz, Veb-saytga kirmasligingiz yoki Xizmatdan foydalanmasligingiz kerak.",
+      "obligation3": "Siz qimor o'yinlariga ruxsat beradigan yurisdiksiyada yashaysiz. Siz aholisiga yoki bunday mamlakatdagi har qanday shaxsga onlayn qimor o'yinlariga kirish taqiqlangan har qanday mamlakatning aholisi emassiz. Xizmatdan foydalanishingiz qonuniy ekanligiga ishonch hosil qilish faqat sizning mas'uliyatingizdir.",
+      "obligation4": "Siz haqiqiy joylashuvingizni aniqlashni niqoblaydigan yoki manipulyatsiya qiladigan VPN, proksi yoki shunga o'xshash xizmatlar yoki qurilmalardan foydalana olmaysiz."
+    }
+  },
+  "header": {
+    "defaultWalletActive": "Standart hamyon balansi faol qilib o'rnatildi",
+    "bonusWalletActive": "Bonus hamyon balansi faol qilib o'rnatildi",
+    "addedToFavorites": "Sevimli o'yinlarga qo'shildi.",
+    "removedFromFavorites": "Sevimli o'yinlardan olib tashlandi.",
+    "bonus": "Bonusli",
+    "primary": "Asosiy",
+    "balance": "Balans",
+    "telegram": "Telegram"
+  },
+  "title": {
+    "title": "Sahifa nomi",
+    "lastUpdated": "So'nggi yangilanish:",
+    "introduction": "Kirish",
+    "introduction1": "Ushbu shartlar va qoidalar hamda quyida ko'rsatilgan hujjatlar (\"Shartlar\") joriy veb-sayt yourloot.io (\"Veb-sayt\") va uning tegishli yoki bog'liq xizmatlaridan (birgalikda \"Xizmat\") foydalanishga taalluqli.",
+    "introduction2": "Siz ushbu Shartlarni diqqat bilan ko'rib chiqishingiz kerak, chunki ular Veb-saytdan foydalanish bilan bog'liq huquq va majburiyatlaringiz haqida muhim ma'lumotni o'z ichiga oladi va siz - mijozimiz (\"Mijoz\") va biz o'rtamizda majburiy yuridik kelishuvni tashkil etadi. Ushbu veb-saytdan foydalanish va/yoki Xizmatga kirish orqali siz, mehmon yoki hisob qaydnomasi (\"Hisob\") bilan ro'yxatdan o'tgan foydalanuvchi bo'lishingizdan qat'iy nazar, vaqti-vaqti bilan e'lon qilinadigan o'zgartirishlar bilan birga ushbu Shartlar bilan bog'liq bo'lishga rozilik bildirasiz. Agar siz ushbu Shartlarga rozi bo'lmasangiz, Xizmatga kirishdan va Veb-saytdan foydalanishdan tiyilishingiz kerak.",
+    "introduction3": "Xizmat Britaniya Virgin orollarida 2151527 kompaniya ro'yxatga olish raqami bilan ro'yxatdan o'tgan va ro'yxatga olingan manzili 1-qavatda joylashgan Cintra Soft Ltd. cheklangan mas'uliyatli jamiyatga tegishli, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Britaniya Virgin orollari (\"Kompaniya\"), Anjouan shtatida 2005 yilgi 007-sonli Kompyuter o'yinlari litsenziyalash to'g'risidagi qonun asosida litsenziyalangan.",
+    "deposit": "Hozir deposit qiling!"
+  },
+  "game": {
+    "new": "Yangi kelganlar",
+    "newsGames": "Yangi o'yinlar",
+    "card": {
+      "select": "O'yinni tanlang",
+      "piggyTap": "Piggy Tap",
+      "pragmaticPlay": "Pragmatic Play"
+    },
+    "launcher": {
+      "loading": "O'yin yuklanmoqda..."
+    },
+    "popular": {
+      "title": "Mashhur o'yinlar",
+      "titleMobile": "O'yinlar",
+      "seeAll": "Hammasini ko'rish"
+    }
+  },
+  "search": {
+    "placeholder": "3 belgidan qidirish",
+    "result": "Qidiruv natijasi",
+    "bonusGames": "Bonus o'yinlar",
+    "noResults": "O'yinlar topilmadi"
+  },
+  "profile": {
+    "title": "Profil",
+    "back": "Orqaga",
+    "store": "Do'kon",
+    "setting": "Profil sozlamalari",
+    "logout": "Chiqish",
+    "myWallets": "Mening hamyonlarim",
+    "walletsDescription": "Hamyonlaringizni boshqarish",
+    "myBonuses": "Mening bonuslarim",
+    "myFavorites": "Mening favoritlarim",
+    "bonusesDescription": "Tavsif",
+    "myGames": "Mening o'yinlarim",
+    "gamesDescription": "Tavsif",
+    "exchange": "Ayirboshlash",
+    "exchangeDescription": "Tavsif",
+    "realBalance": "Haqiqiy balans",
+    "balance": "Balans",
+    "primary": "Asosiy",
+    "bonus": "Bonusli",
+    "yourLootCoin": "Your Loot tangalari",
+    "manage": "Boshqarish",
+    "achievements": "Yutuqlar",
+    "firstSteps": "Birinchi qadamlar",
+    "exp": "EXP",
+    "inBonus": "Bonus balansi",
+    "tabGames": "Tab o'yinlari",
+    "newGameButton": "Tab o'yinlarini ko'ring",
+    "outShopTitle": "Do'kon",
+    "outShopDescription": "Bizning do'konimizni ko'ring!",
+    "outShopButton": "Do'konga o'tish",
+    "casinoTitle": "Casino-Fate",
+    "casinoDescription": "Bizning tinder o'yinlarimizni ko'ring!",
+    "newGameDescription": "Tab o'yinlarimizni ko'ring va sovrinlarni qo'lga kiriting!",
+    "casinoButton": "Tab o'yinlarini ko'ring",
+    "lobby": "Lobbi",
+    "lobbyDescription": "Sanoqsiz o'yinlardan tanlang va rohatlaning!",
+    "tapGames": "Tap o'yinlari",
+    "tapGamesDescription": "Tap o'yinlarimizni ko'ring va sovrinlarni qo'lga kiriting!",
+    "newForYou": "Siz uchun yangi!",
+    "newForYouDescription": "Avval o'ynamagan tasodifiy o'yinni o'ynang.",
+    "findNewGamesTitle": "Yangi o'yinlarni toping",
+    "sectionHeaderTitle": "Boshqa foydali narsalar",
+    "contactSupport": "Qo'llab-quvvatlash bilan bog'lanish",
+    "contactSupportDescription": "Savollar bering yoki yordam oling",
+    "gotoProfile": "Profilga o'tish",
+    "checkUpdateProfile": "Profilimni tekshirish va yangilash",
+    "welcome": "Xush kelibsiz,",
+    "exploreUpdate": "Profilimni ko'rib chiqing va yangilang.",
+    "lookSettings": "Profil sozlamalarimni ko'ring.",
+    "cashback": "Keshbek",
+    "level": "Daraja",
+    "provideEmail": "Emailingizni kiriting!",
+    "updateEmailKyc": "KYC ni yakunlash uchun emailingizni yangilang",
+    "providePhone": "Telefon raqamingizni kiriting!",
+    "updatePhoneKyc": "KYC ni yakunlash uchun telefoningizni yangilang",
+    "yourEmail": "Sizning emailingiz:",
+    "add": "Qo'shish",
+    "yourCountry": "Sizning mamlakatingiz:",
+    "birthDate": "Tug'ilgan sana",
+    "missingBirthDate": "Tug'ilgan sana yo'q, iltimos, qo'shing.",
+    "emailApplied": "Email sozlamalari qo'llandi",
+    "emailAdded": "Email muvaffaqiyatli qo'shildi!",
+    "great": "Ajoyib",
+    "birthDateApplied": "Tug'ilgan sana sozlamalari qo'llandi",
+    "birthDateAdded": "Tug'ilgan sana muvaffaqiyatli qo'shildi!",
+    "settings": "Sozlamalar",
+    "changePassword": "Parolni o'zgartirish",
+    "logOut": "Chiqish",
+    "signOut": "Chiqish",
+    "levelWithNumber": "Daraja {{number}}",
+    "loyaltyPoints": "Sodiqlik ballari: {{current}} / {{total}}",
+    "bets": "Garovlar: {{current}} / {{total}}",
+    "earnLoyaltyPoints": "{{level}} darajasiga yetish uchun {{points}} Sodiqlik ballini (LP) {{percentage}} qo'lga kiriting.",
+    "maxLevelReached": "Maksimal darajaga yetildi",
+    "email": "Pochta",
+    "emailPlaceholder": "example@gmail.com",
+    "confirmationLinkSent": "Tasdiqlash havolasi yuborildi",
+    "confirmationLinkSentToEmail": "Emailingizga tasdiqlash havolasi yuborildi.",
+    "validForFiveMinutes": "U 5 daqiqa davomida amal qiladi."
+  },
+  "categories": {
+    "halloween": {
+      "title": "Halloween",
+      "description": "Halloween games"
+    },
+    "gameShow": {
+      "title": "Game Shows",
+      "description": "Game Shows"
+    },
+    "liveGames": {
+      "title": "Live Games",
+      "description": "Live Games"
+    },
+    "bonus": {
+      "title": "Bonusli",
+      "description": "Faqat ta'minotchilar tomonidan \"Slotlar\" sifatida tasniflangan, 96.1% dan kam RTP ga ega va progressiv Jackpoti bo'lmagan o'yinlar."
+    },
+    "new": {
+      "title": "Yangi kelganlar",
+      "description": "Barcha yangi chiqarilgan o'yin janrlari paydo bo'lishi va kategoriyada ma'lum miqdordagi o'yinlarga yetgandan so'ng bir oy ichida yo'qolishi kerak (masalan, 60)."
+    },
+    "slotGames": {
+      "title": "Slotlar",
+      "description": "Ta'minotchilar tomonidan \"Slotlar\" sifatida tasniflangan barcha o'yinlar."
+    },
+    "crash": {
+      "title": "Kresh o‘yinlar",
+      "description": "Ta'minotchilar tomonidan \"Crash O'yinlari\" sifatida tasniflangan o'yinlar.\nO'yinchilar tez o'sayotgan koeffitsient natijasiga garov o'ynaydigan barcha onlayn kazino o'yinlari.\nMaqsad - koeffitsient crash bo'lishidan oldin pulni chiqarib olish, bu istalgan paytda sodir bo'lishi mumkin.\nMisollar: Aviator, JetX, Crash, Coin Flip, Rocket."
+    },
+    "shows": {
+      "title": "O‘yin shoulari",
+      "description": "Ta'minotchilar tomonidan \"O'yin Shoulari\" sifatida tasniflangan barcha o'yinlar,\njonli boshlovchilari, jozibali vizuallar va o'yinchilar mukofotlarni yutib olish imkoniyatiga ega o'yinlar."
+    },
+    "blackjackAndRoulette": {
+      "title": "Blackjack va Ruletka",
+      "description": "Barcha Blackjack va Ruletka stollari"
+    },
+    "liveBlackjac": {
+      "title": "Jonli Blackjack",
+      "description": "Barcha Blackjack stollari"
+    },
+    "liveRoulette": {
+      "title": "Jonli Ruletka",
+      "description": "Barcha Ruletka stollari"
+    },
+    "livePoker": {
+      "title": "Jonli Poker",
+      "description": "Barcha Poker o'yinlari"
+    },
+    "sport": {
+      "title": "Sport",
+      "description": "Ta'minotchilar tomonidan \"Sport yoki Virtual sport\" sifatida tasniflangan sport o'yinlari, odatda haqiqiy sport tadbirlarini taqlid qiluvchi virtual sport garovlari va simulyatsiya o'yinlarini o'z ichiga oladi."
+    },
+    "lottery": {
+      "title": "Lotereya",
+      "description": "Ta'minotchilar tomonidan \"Lotereya\" sifatida tasniflangan o'yinlar. Bu omad o'yinlari bo'lib, o'yinchilar chiptalarni sotib oladilar va sovrinlarni yutib olish imkoniyatiga ega bo'ladilar."
+    },
+    "roulette": {
+      "title": "Ruletka",
+      "description": "Ta'minotchilar tomonidan \"Ruletka\" sifatida tasniflangan o'yinlar. Ruletka g'ildiragidagi raqamlar yoki ranglarga garov o'ynaladigan klassik kazino o'yini."
+    },
+    "casual": {
+      "title": "Oddiy o'yinlar",
+      "description": "Ta'minotchilar tomonidan \"Oddiy o'yinlar\" sifatida tasniflangan o'yinlar. Bu oson mexanikaga ega bo'lgan oddiy va ko'ngilochar o'yinlar bo'lib, ularni o'zlashtirish oson."
+    },
+    "craps": {
+      "title": "Kreps",
+      "description": "Ta'minotchilar tomonidan \"Kreps\" sifatida tasniflangan o'yinlar. Zar tashlashda turli kombinatsiyalarga garov o'ynaladigan klassik kazino o'yini."
+    },
+    "scratch": {
+      "title": "Skretch-kartalar",
+      "description": "Ta'minotchilar tomonidan \"Skretch-kartalar\" sifatida tasniflangan o'yinlar. Yutuqni bilish uchun himoya qatlamini o'chirish kerak bo'lgan tezkor lotereya o'yinlari."
+    },
+    "poker": {
+      "title": "Poker",
+      "description": "Ta'minotchilar tomonidan \"Poker\" sifatida tasniflangan o'yinlar. Karta kombinatsiyalari va strategiyaga asoslangan mashhur karta o'yini."
+    },
+    "fishing": {
+      "title": "Baliq ovlash",
+      "description": "Ta'minotchilar tomonidan \"Baliq ovlash\" sifatida tasniflangan o'yinlar. O'yinchilar baliq tutishlari va sovrinlar olishlari mumkin."
+    },
+    "mines": {
+      "title": "Mina maydoni",
+      "description": "Ta'minotchilar tomonidan \"Mina maydoni\" sifatida tasniflangan o'yinlar. O'yinchilar sovrinlarni olish uchun xavfsiz katakchalarni tanlashga harakat qiladilar."
+    },
+    "summerVibe": {
+      "title": "Harvest of Wins",
+      "description": "Summer Vibe oyunları"
+    }
+  },
+  "achievements": {
+    "title": "Yutuqlar",
+    "seeAll": "Hammasini ko'rish",
+    "getPrize": "Sovrinni olish",
+    "currentProgress": "Hozirgi jarayon:",
+    "status": {
+      "completed": "Tugatilgan",
+      "uncompleted": "Tugallanmagan"
+    },
+    "claimPrize": "Sovrinni olish",
+    "congratulations": "Tabriklaymiz!",
+    "receivedPrize": "Siz sovrin oldingiz.",
+    "horray": "Urra"
+  },
+  "deposit": {
+    "title": "To‘ldirish",
+    "betterInCrypto": "Kriptovalutada yaxshiroq",
+    "cryptoPayment": "Kripto to'lov",
+    "bankPayment": "Bank to'lovi",
+    "recipient": "Qabul qiluvchi",
+    "chooseAmount": "Miqdorni tanlang",
+    "makeTransfer": "Quyidagi ma'lumotlardan foydalanib pul o'tkazish",
+    "transferInstruction": "Quyidagi aniq summani berilgan bank tafsilotlariga belgilangan vaqt ichida yuboring.",
+    "timeIsUp": "Vaqt tugadi",
+    "timeoutDescription": "Tranzaksiyangiz o'z vaqtida kelmadi. Agar mablag' yuborilgan bo'lsa, qo'llab-quvvatlashga murojaat qiling.",
+    "makeDeposit": "Deposit qiling",
+    "amountDescription": "Siz kiritmoqchi bo'lgan summani tanlang",
+    "next": "Keyingi",
+    "paymentMade": "To'lov amalga oshirildi",
+    "back": "Orqaga",
+    "amount": "Miqdor",
+    "amountPlaceholder": "Miqdorni kiriting ({{currency}})",
+    "amountTooLow": "Juda kam. Minimum {{minAmount}} {{currency}}.",
+    "amountTooHigh": "Juda ko'p. Maksimum {{maxAmount}} {{currency}}.",
+    "yourBank": "Sizning bankingiz",
+    "bankName": "Bank nomi",
+    "cardNumber": "Karta raqami",
+    "phoneNumber": "Telefon raqami",
+    "cardHolder": "Karta egasi",
+    "information": "Ma'lumot",
+    "details": "Tafsilotlar",
+    "addDetails": "Tafsilotlarni qo'shish",
+    "chooseBank": "Miqdor va bankni tanlang",
+    "enterInfo": "Ma'lumotlaringizni kiriting",
+    "correctDetails": "To'g'ri ma'lumot kiritilganiga ishonch hosil qiling",
+    "personalAddress": "Shaxsiy manzilingiz ",
+    "cryptoAddress": "Sizning {{name}} ({{network}}) depozit manzilingiz",
+    "memo": "Memo",
+    "memoNote": "Iltimos, Memo maydoniga e'tibor bering. Agar to'ldirilgan bo'lsa, deposit qilish uchun memodan foydalaning.",
+    "network": "Tarmoq",
+    "paymentMethods": {
+      "bankCard": "Bank kartasi",
+      "cryptocurrency": "Kriptovalyuta",
+      "sbp": "SBP",
+      "sbpQr": "SBP QR"
+    },
+    "methods": {
+      "oneClickPay": "1 Click Pay",
+      "mobile": "Mobile"
+    },
+    "error": {
+      "attemptFailed": "Ups! Urinish muvaffaqiyatsiz! Iltimos, qayta urinib ko'ring 😊"
+    },
+    "description": "Bitta depozit miqdori ₽500 - ₽350,000",
+    "from": "From",
+    "to": "to",
+    "inProgress": "To'lovingiz jarayonda",
+    "inProgressDescription": "Agar tranzaksiya to'g'ri bo'lsa, tez orada uni balansingizda ko'rasiz. Qo'shimcha ma'lumot uchun Tafsilotlarni tekshiring.",
+    "paymentFail": "To'lov muvaffaqiyatsiz tugadi",
+    "timeLeft": "Qolgan vaqt:",
+    "someMemo": "Muhim eslatma",
+    "selectNetwork": "Tranzaksiya tarmog'ini tanlang",
+    "descriptionNetwork": "Siz faqat tanlagan tarmoqda depozit qilishingiz mumkin!",
+    "cancelled": "Depozit bekor qilindi.",
+    "cancelQuestion": "Depozitni bekor qilish?",
+    "cancelDescription": "Bu joriy to‘lovni to‘xtatadi. To‘lovni bekor qilmoqchiligingizga ishonchingiz komilmi?",
+    "cancelAction": "Depozitni bekor qilish",
+    "cancelPayment": "To‘lovni bekor qilish",
+    "minDeposit": "Min. depozit",
+    "depositAboveMinimum": "Mablag'larni xavfsiz saqlash uchun minimaldan yuqori depozit qiling.",
+    "scanQR": "QR skaner qiling yoki quyidagi manzilni ko'chiring",
+    "redirectingOn": "Ko'chirilmoqda",
+    "completePayment": "Iltimos, to'lovni shu yerda yakunlang",
+    "andReturn": "va shu yerga qayting.",
+    "processedAutomatically": "Depozitingiz avtomatik tarzda qayta ishlanadi",
+    "estimatedArrival": "Taxminiy kelish ≈ 1 daqiqa",
+    "transferInstruction1": "Ko'chirishda \"Boshqa davlatga\" va kerakli davlatni tanlang, telefon raqamini ko'chiring va ko'rsatilgan bankni tanlang.",
+    "transferInstruction2": "Ko'chirish karta/hisobga qilinishi kerak.",
+    "detailedInstruction": "Batafsil ko'rsatma",
+    "warningMessage": "Eslatma: agar depozit summasi minimal chegaradan past bo'lsa, mablag'lar qaytarilmasdan yo'qotiladi.",
+    "inputInfo": {
+      "redirectInfo": "Agar rekvizitlar mavjud bo'lsa — to'g'ridan-to'g'ri to'lash uchun ko'rsatiladi. Aks holda, siz xavfsiz to'lov sahifasiga yo'naltirilasiz."
+    },
+    "process": {
+      "waiting": "To‘lov kutilmoqda...",
+      "checking": "Tranzaksiyangiz tekshirilmoqda...",
+      "youCanLeave": "Bu sahifadan chiqishingiz mumkin — aniqlangandan so'ng balansingiz avtomatik yangilanadi."
+    },
+    "processAlert": {
+      "failedToast": "To'lov muvaffaqiyatsiz, qayta urinib ko'ring yoki qo'llab-quvvatlashga yozing.",
+      "successToast": "Depozit yakunlandi. Mablag'lar tez orada tushadi."
+    },
+    "continueDeposit": "Depozitni davom ettirish",
+    "successful": {
+      "title": "To'lov muvaffaqiyatli yakunlandi",
+      "description": "Mablag'lar tez orada balansingizda ko'rinadi.",
+      "paidButton": "To'landi",
+      "homeButton": "Bosh sahifa",
+      "currency": "Valyuta:",
+      "network": "Tarmoq:"
+    },
+    "failed": {
+      "title": "To'lov muvaffaqiyatsiz",
+      "cryptoNotDetected": "Kripto tranzaksiyangizni aniqlay olmadik.",
+      "somethingWrong": "Nimadir noto'g'ri ketdi.",
+      "contactSupport": "Agar allaqachon yuborgan bo'lsangiz, qo'llab-quvvatlashga murojaat qiling.",
+      "tryAgain": "Qayta urinish"
+    },
+    "v3": {
+      "cryptoPayment": "Kripto To'lov",
+      "bankPayment": "Bank To'lovi",
+      "cryptocurrencyPayment": "Kriptovalyuta To'lovi",
+      "depositSuccessful": "Depozit muvaffaqiyatli. Balans yangilandi.",
+      "networkWarning": "Siz {{crypto}} {{network}} tarmog'i orqali yubormoqdasiz. Boshqa tarmoqdan foydalanish mablag' yo'qolishiga olib keladi.",
+      "minimumAmountWarning": "Iltimos, depozit minimal miqdorga mos kelishini ta'minlang. Minimaldan kam depozitlar hisobga olinmaydi.",
+      "oneTransaction": "To'lovni bitta tranzaksiyada bajaring",
+      "noComments": "O'tkazma uchun izoh qoldirmang.",
+      "requisitesChange": "Rekvizitlar doimo o'zgaradi.",
+      "copyAmount": "Miqdorni nusxalang",
+      "adjustedAmount": "Sizning to'lovingizni tasdiqlash va avtomatik qayta ishlash uchun o'tkazma miqdorini sozladik.",
+      "understood": "Tushundim",
+      "awaitingTransfer": "O'tkazmangizni kutmoqdamiz...",
+      "paymentDone": "To'lov Bajarildi",
+      "chooseAnotherMethod": "Boshqa Usulni Tanlang",
+      "unableToVerify": "To'lovni tasdiqlay olmadik. Iltimos, qayta urinib ko'ring yoki boshqa usulni tanlang.",
+      "checkingPayment": "To'lovingizni tekshirmoqdamiz...",
+      "processingTime": "Bu 25 daqiqagacha vaqt olishi mumkin. Bosh sahifaga qaytishingiz mumkin - mablag' kelganda sizga xabar beramiz.",
+      "productInformation": "Mahsulot Ma'lumoti",
+      "transactionTimeout": "Tranzaksiyangizni vaqtida olmadik. Agar mablag' yuborilgan bo'lsa, qo'llab-quvvatlashga murojaat qiling.",
+      "contactSupport": "Qo'llab-quvvatlashga Murojaat",
+      "home": "Bosh Sahifa",
+      "proceedToPayment": "To'lovga o'tish",
+      "bonusOnDeposit": "Depozit bo'yicha bonus",
+      "bonusDescription": "100% qo'shimcha darhol hisobga olinadi",
+      "depositAmount": "Depozit miqdori",
+      "bonusBalance": "Bonus balansi"
+    },
+    "rateLimit": {
+      "title": "Depozit limitiga yetildi",
+      "description": "Siz oxirgi 30 daqiqa ichida 3 marta depozit qilish limitiga yetdingiz.",
+      "tryAgain": "Siz {{time}} dan keyin qayta urinib ko'rishingiz mumkin"
+    }
+  },
+  "contact": {
+    "title": "Biz bilan bog'lanish",
+    "back": "Orqaga",
+    "description": "Har qanday huquqiy talablar yoki boshqa savollar uchun biz bilan bog'laning ",
+    "sendFeedback": "Fikr-mulohaza yuborish",
+    "contactSupport": "Qo'llab-quvvatlash bilan bog'lanish",
+    "form": {
+      "name": "Ism",
+      "email": "Pochta",
+      "subject": "Mavzu",
+      "message": "Boshqa savollar uchun qo'llab-quvvatlash jamoamiz bilan bog'laning yoki fikr-mulohaza shaklimizdan foydalaning:",
+      "submit": "Xabar yuborish",
+      "success": "Fikr-mulohaza yuborildi!",
+      "error": "Xabar yuborishda xatolik yuz berdi",
+      "great": "Ajoyib!",
+      "thanks": "Fikr-mulohazangiz uchun rahmat. Imkon qadar tezroq siz bilan bog'lanamiz.",
+      "feedback": {
+        "title": "Fikr-mulohaza shakli",
+        "description": "Quyidagi fikr-mulohaza shaklidan foydalanib biz bilan to'g'ridan-to'g'ri bog'laning.",
+        "yourName": "Ismingiz",
+        "yourEmail": "Emailingiz",
+        "yourQuestion": "Savolingiz",
+        "cancel": "Bekor qilish",
+        "sendMessage": "Xabar yuborish"
+      }
+    },
+    "info": {
+      "email": "Pochta",
+      "phone": "Telefon",
+      "address": "Manzil",
+      "workingHours": "Ish soatlari"
+    },
+    "socialMedia": {
+      "description": "Bu yerda bizning ijtimoiy tarmoqlardagi barcha havolalarni topishingiz mumkin."
+    }
+  },
+  "pageInDev": {
+    "title": "Bet vaqtincha ochilmayapti",
+    "back": "Orqaga",
+    "message": "Keyinroq qaytib keling"
+  },
+  "login": {
+    "title": "Kirish",
+    "email": "Pochta",
+    "emailPlaceholder": "example@example.com",
+    "password": "Parol",
+    "passwordPlaceholder": "********",
+    "loginButton": "Kirish",
+    "noAccount": "Hisobingiz yo'qmi?",
+    "registerHere": "Ro‘yxatdan o‘tish",
+    "orLoginWith": "Yoki, bu parametrlardan foydalanib kiring:",
+    "wrongEmail": "Noto'g'ri email yoki foydalanuvchi nomi.",
+    "wrongPassword": "Noto'g'ri parol.",
+    "restorePassword": "Parolni tiklash",
+    "restoreHere": "bu yerda",
+    "emailRequired": "Email yoki foydalanuvchi nomi talab qilinadi",
+    "passwordRequired": "Parol talab qilinadi",
+    "passwordMinLength": "Parol kamida 8 ta belgidan iborat bo'lishi kerak"
+  },
+  "register": {
+    "title": "Ro'yxatdan o'tish",
+    "email": "Pochta",
+    "registerBonus": "Ro'yxatdan o'tish bonusi promo san'ati",
+    "emailPlaceholder": "example@example.com",
+    "password": "Parol",
+    "passwordPlaceholder": "********",
+    "registerButton": "Ro‘yxatdan o‘tish",
+    "haveAccount": "Allaqachon hisobingiz bormi?",
+    "loginHere": "Bu yerda kiring",
+    "orRegisterWith": "Yoki boshqa variantlarni tanlang",
+    "passwordRequirements": "Kamida 8 ta belgi, raqamlarni o'z ichiga olishi kerak.",
+    "emailRequired": "Email talab qilinadi",
+    "invalidEmail": "Iltimos, to'g'ri email manzilini kiriting",
+    "passwordRequired": "Parol talab qilinadi",
+    "passwordMinLength": "Parol kamida 8 ta belgidan iborat bo'lishi kerak",
+    "passwordNumberRequired": "Parol kamida bitta raqamni o'z ichiga olishi kerak",
+    "welcomeBonus": "Xush kelibsiz bonusi",
+    "depositBonus": "Birinchi depozitingizga $1 500 oling!",
+    "promoCode": {
+      "title": "Promokodni kiriting",
+      "placeholder": "Promokodni kiriting",
+      "apply": "Qo'llash",
+      "applied": "Promokod qo'llanildi!",
+      "error": "Siz bu promokod uchun mos emassiz.",
+      "appliedDescription": "Tabriklaymiz! Promokod qo'llanildi. Siz 100FS + 100% Xush kelibsiz bonusini faollashtirdingiz!",
+      "appliedDescriptionNew": "Tabriklaymiz! Promokod qo'llandi. Siz {{newCode}} ni faollashtirdingiz!",
+      "appliedDescriptionError": "Promo kod mavjud emas!",
+      "great": "Ajoyib!"
+    },
+    "oneLastStep": "Oxirgi qadam !",
+    "completeSignUp": "Quyidagi ma'lumotlarni tasdiqlash orqali ro'yxatdan o'tishni yakunlang.",
+    "selectCountry": "Iltimos, mamlakatingizni tanlang",
+    "selectDateOfBirth": "Iltimos, tug'ilgan sanangizni tanlang",
+    "mustBe18": "Siz kamida 18 yoshda bo'lishingiz kerak",
+    "selectCurrency": "Iltimos, afzal ko'rgan valyutangizni tanlang",
+    "termsAndConditions": "Shartlar va Qoidalar",
+    "signUpConfirm18Agree": "Ro'yxatdan o'tish orqali siz 18+ ekanligingizni tasdiqlaysiz va quyidagilarga rozilik bildirasiz",
+    "confirmAge": "Men 18 yoshda yoki undan katta ekanligimni tasdiqlayман",
+    "agree": "Men roziman ",
+    "continue": "Davom etish",
+    "country": "Mamlakat",
+    "dateOfBirth": "Tug'ilgan sana",
+    "birthday": "Tug'ilgan kun",
+    "day": "Kun",
+    "month": "Oy",
+    "year": "Yil",
+    "preferredCurrency": "Afzal qilinadigan valyuta",
+    "selectCur": "Valyuta tanlang",
+    "language": "Til",
+    "selectLanguage": "Iltimos, tilingizni tanlang"
+  },
+  "auth": {
+    "terms": "Shartlar va qoidalar",
+    "privacyPolicy": "Maxfiylik siyosati",
+    "contactSupport": "Iltimos, qo'llab-quvvatlash xizmatiga murojaat qiling yoki elektron pochtani tekshiring.",
+    "confirmationLink": "Tasdiqlash havolasini sizning pochtangizga jo'natamiz.",
+    "forgotPassword": "Parolni unutdim",
+    "specifyEmail": "Elektron pochta manzilingizni kiriting:",
+    "send": "Jo'natish",
+    "checkYourEmail": "Pochtangizni tekshiring",
+    "support": "Qo‘llab-quvvatlash",
+    "forgotPasswordQuestion": "Parolni unutdingizmi?",
+    "forgotPasswordQuestion2": "Sıfırla",
+    "passwordResetSuccessful": "Parol muvaffaqiyatli tiklandi!",
+    "passwordResetCongratulations": "Tabriklaymiz! Parolingiz muvaffaqiyatli tiklandi, iltimos yangi parolingiz bilan qayta kiring.",
+    "contactSupportOrCheckEmail": "Iltimos, qo'llab-quvvatlash xizmatiga murojaat qiling yoki elektron pochtani tekshiring.",
+    "tryAgain": "Qayta urinish",
+    "passwordChangedSuccessfully": "Parolingiz muvaffaqiyatli o'zgartirildi",
+    "pleaseChooseNewPassword": "Iltimos, yangi parol tanlang",
+    "newPassword": "Yangi parol",
+    "confirmNewPassword": "Yangi parolni tasdiqlang",
+    "title": "Parol quyidagilarni o‘z ichiga olishi kerak:",
+    "englishLettersOnly": "Faqat lotin harflari",
+    "minimumLength": "Kamida 8 ta belgi",
+    "upperLowerCase": "Katta va kichik harf",
+    "number": "Raqam (0–9)",
+    "passwordRestore": "Parolni tiklash",
+    "enterEmail": "Elektron pochta manzilingizni kiriting.",
+    "forgotEmail": "Elektron pochtani unutdingizmi? Qo'llab-quvvatlash xizmatiga murojaat qiling.",
+    "repeatPassword": "Yangi parolni takrorlang:",
+    "codeSentMessage": "Elektron pochtangizga kod yubordik. U 111 soniya amal qiladi",
+    "confirmationCode": "Tasdiqlash kodi:",
+    "codeRequired": "Kod talab qilinadi",
+    "didntReceiveCode": "Kod olmadingizmi?",
+    "resendInSeconds": "59 soniyadan keyin qayta yuborish",
+    "continue": "Davom etish",
+    "emailRequired": "Email talab qilinadi",
+    "emailMustContainAt": "Email '@' belgisini o'z ichiga olishi kerak",
+    "emailMaxLength": "Email 255 belgidan oshmasligi kerak",
+    "confirmationCodePlaceholder": "YYYY",
+    "linkSent": "Havola yuborildi.",
+    "changePassword": "Parolni o'zgartirish",
+    "newPasswordSet": "Yangi parol o‘rnatildi",
+    "passwordUpdated": "Parol muvaffaqiyatli yangilandi.",
+    "close": "Yopish",
+    "linkExpired": "Havola muddati tugagan",
+    "linkExpiredMessage": "Bu havolaning muddati tugagan. Iltimos, yangi havola so'rang.",
+    "sendNewLink": "Yangi havolani yuborish",
+    "forgotEmailQuestion": "Emailni unutdingizmi?",
+    "contactSupportLink": "Qo'llab-quvvatlash bilan bog'lanish"
+  },
+  "balance": {
+    "setAsDefault": "Asosiy qilib belgilash",
+    "setAsMain": "Asosiy qilib belgilash",
+    "walletChanged": {
+      "title": "Hamyon o'zgartirildi",
+      "description": "Tabriklaymiz!\nEndi asosiy hamyoningiz Kriptovalyuta USDT",
+      "great": "Ajoyib!"
+    },
+    "walletChangedSuccessfully": "Hamyon muvaffaqiyatli o'zgartirildi",
+    "primaryWalletChangedSuccessfully": "Asosiy hamyon muvaffaqiyatli o'zgartirildi",
+    "walletChangeError": "Asosiy hamyonni almashtirishda xatolik",
+    "errorSwitchWallet": "Bonus balansi hali mavjud emas.",
+    "switchWallet": {
+      "title": "Asosiy balansingizni o'zgartirishni xohlaysizmi?",
+      "description": "Barcha faol bonuslaringiz bekor qilinishi mumkin.",
+      "warningMessage": "Hamyonlarni almashtirish faol bonuslarning bekor qilinishiga olib kelishi mumkin. Almashtirishdan oldin barcha bonuslardan foydalaning.",
+      "switch": "O‘zgartirish",
+      "cancel": "Bekor qilish",
+      "confirm": "Tasdiqlash"
+    },
+    "switchingWalletDialog": {
+      "title": "Asosiy Hamyonni Almashtirish",
+      "warningTitle": "Ishonchingiz komilmi?",
+      "warningMessage": "Hamyonlarni almashtirish faol bonuslarning bekor qilinishiga olib kelishi mumkin. Almashtirishdan oldin barcha bonuslardan foydalaning.",
+      "switch": "O‘zgartirish",
+      "cancel": "Bekor qilish"
+    },
+    "myWallets": "Mening hamyonlarim",
+    "back": "Orqaga",
+    "createNewWallet": "Yangi hamyon yaratish",
+    "mainBalance": "Asosiy balans",
+    "history": "Tarix",
+    "inCurrency": "{{currency}} da",
+    "otherBalances": "Boshqa balanslar",
+    "bonus": "Bonusli",
+    "activeBalance": "Faollashtirish",
+    "yourLoot": "Your Loot tangalari",
+    "deposits": "To‘ldirish",
+    "withdrawals": "Yechib olishlar",
+    "accrual": "To'plash",
+    "deduction": "Ushlab qolish",
+    "payments": "To'lovlar",
+    "oldWallets": {
+      "title": "Mening hamyonlarim",
+      "noWallets": "Hamyonlar topilmadi"
+    },
+    "manageFunds": "Hamyonlar",
+    "primaryWallet": "Asosiy hamyon",
+    "primary": "Asosiy",
+    "additionalFunds": "Qo'shimcha mablag'lar",
+    "otherWallets": "Boshqa hamyonlar",
+    "makePrimary": "Asosiy qilib belgilash"
+  },
+  "bonus": {
+    "title": {
+      "all": "Aksiyalar",
+      "available": "Mavjud",
+      "loyalty": "Sadoqat",
+      "tournament": "Turnirlar",
+      "promotion": "Aksiyalar"
+    },
+    "myPromoCode": "Mening promo kodlarim",
+    "promocodeApplied": "Promokod qo'llanildi",
+    "promocodeAppliedSuccessfully": "Promokod muvaffaqiyatli qo'llanildi",
+    "enterPromoCode": "Promo-kodni kiriting",
+    "applyNewPromoCode": "Yangi promokod qo'llash",
+    "enterNewPromocode": "Yangi promokod kiriting",
+    "enterNewPromocodeToApply": "Hisobingizga qo'llash uchun yangi promokod kiriting.",
+    "allPromotions": "Barcha aksiyalar",
+    "back": "Orqaga",
+    "close": "Yopish",
+    "seeAll": "Hammasini ko'rish",
+    "otherPromotions": "Boshqa aksiyalar",
+    "apply": "Qo'llash",
+    "promoCodeDes": "Hisobingizga qo'llash uchun yangi promokodni kiriting",
+    "chooseOne": "O'zingiz uchun birini tanlang!",
+    "lobby": {
+      "title": "Lobbi",
+      "description": "Sanoqsiz o'yinlardan tanlang va rohatlaning!"
+    },
+    "promotion": {
+      "tabgame": "Tap o'yinlar",
+      "checkout": "Tap o'yinlarimizni ko'rib chiqing va sovrinlar oling!",
+      "checkoutBtn": "Tap o'yinlarni ko'rish",
+      "casino": "Tap o'yinlar",
+      "checkoutCasino": "Tinder kabi o'yinimizni ko'rib chiqing!",
+      "checkoutBtnCasino": "Tap o'yinlarni ko'rish",
+      "enterPromocode": "Promo-kodni kiriting",
+      "enterPromocodeDes": "Hisobingizga qo'llash uchun yangi promo kod kiriting.",
+      "apply": "Qo'llash",
+      "promoCodeDesInput": "Promo kodni kiriting",
+      "availableGames": "Mavjud o'yinlar",
+      "lobby": "Lobby",
+      "lobbyDes": "Son-sanoqsiz o'yinlardan tanlang va zavqlaning!",
+      "tabgameBox": "Tap o'yinlar",
+      "tabgameDes": "Tap o'yinlarimizni ko'rib chiqing va sovrinlar oling!",
+      "newForYou": "Siz uchun yangi",
+      "newForYouDes": "Ilgari o'ynamagan tasodifiy o'yinni o'ynang.",
+      "otherGame": "Boshqa"
+    },
+    "banner": {
+      "title": "Xush kelibsiz bonusi",
+      "description": "Алғашқы депозитке +100%",
+      "readMore": "Толығырақ"
+    },
+    "detail": {
+      "hotOffer": "Hot offer for new players!",
+      "getBonus": "Get a 100% bonus on your first deposit up to",
+      "howDoesItWork": "How does it work?",
+      "work1": "1. Make your 1st deposit of $10 / 1 000 ₽ or more.",
+      "work2": "2. Get 100% on your bonus account.",
+      "work3": "3. Enjoy playing with the bonus!",
+      "additionalTerms": "Additional Terms",
+      "term1": "1. TThe bonus is credited only on the 1st deposit.",
+      "term2": "2. The wager for the bonus is X35 of the bonus amount and the deposit.",
+      "detailsAndConditions": "Detailed details and conditions for each bonus -",
+      "promotions": "Promotions",
+      "get": "Get",
+      "getBonusAmount": "Get $1 500",
+      "firstDeposit": "On the 1st deposit",
+      "deactive": "Bonus is deactivated!",
+      "desDeactive": "Congratulations! Promo code is deactivated.",
+      "warning": "Warning!",
+      "activeBonus": "You have active bonus!",
+      "message": "Are you sure you want to deactive current promo code ",
+      "messagePrevious": "This will disbale your previous bonus.",
+      "btnDeactive": "Faolsizlantirish",
+      "btnActive": "Faollar",
+      "messageActive": "Are you sure you want to switch current promo code {{currentCode}} to {{newCode}}?",
+      "active": "Bonus is applied!",
+      "desActive": "Congratulations! Promo code is applied. You have activated the",
+      "desBonus": "Welcome Bonus of 100%!"
+    },
+    "term": {
+      "bonusTermsTitle": "Bonus terms & conditions",
+      "bonusIntro": "The bonus is available only on the first deposit",
+      "bonusTermsSection": "Bonus Terms",
+      "bonusAmount": "Bonus amount: 100%",
+      "minDeposit": "Minimum deposit: from 10 USD / 1 000 RUB",
+      "maxBonus": "Maximum bonus amount: 1500 USD / 130 000 RUB",
+      "wager": "Wager: 35",
+      "howToParticipate": "Qanday qatnashish mumkin?",
+      "step1": "1. Log in or register an account.",
+      "step2": "2. Click the \"Activate\" button.",
+      "step3": "3. Make a deposit starting from 10 USD.",
+      "step4": "4. Enjoy playing with the bonus!",
+      "rulesTitle": "Rules:",
+      "rule1": "1. The 100% bonus offer is available from 30.05.2025 until 31.12.2025.",
+      "rule2": "2. Activation is only possible on the first deposit.",
+      "rule3": "3. The maximum bonus amount is 1500 USD / 130,000 RUB.",
+      "rule4": "4. To activate the bonus offer, a single deposit of at least 10 USD / 1,000 RUB is required.",
+      "rule5": "5. Bonus funds will be credited to the Bonus Balance.",
+      "rule6": "6. Only bets placed on slots from the <0>\"Games for bonus\"</0> section count towards the wagering requirement.",
+      "rule7": "7. The bonus is wagered using the real balance first — specifically, the portion on which the bonus was credited — and then from the bonus balance.",
+      "rule8": "8. The bonus balance becomes available to all players who have wagered the deposit amount from their main balance. To continue playing using bonus funds, go to the \"Balance Panel\" (located in the website header), select \"Bonus Balance\" or visit \"My wallets\" section and activate \"Bonus Balance\" with a single click. If the activation is successful, a green indicator will appear next to \"Bonus Balance.\" In case of an error, the system will automatically display a corresponding notification.",
+      "rule9": "9. The bonus amount must be wagered 35 times.",
+      "rule10": "10. Winnings from bets that do not count towards the wagering requirement will be credited to the real balance, but these funds cannot be used to wager the bonus.",
+      "rule11": "11. If a deposit is made while a bonus is active, the deposited amount can be used to meet the wagering requirement.",
+      "rule12": "12. The wagering period for the qualified deposit and the bonus percentage is 7 days from the moment of crediting.",
+      "rule13": "13. After completing the bonus wagering, a wagering requirement of X1 must be met for withdrawal according to the site rules.",
+      "rule14": "14. Withdrawal is not available during an active bonus.",
+      "rule15": "15. Only one bonus can be active in the casino at any given time.",
+      "rule16": "16. After fulfilling the wagering requirement, the winnings will be transferred to the real balance.",
+      "rule17": "17. If you cancel the bonus, the remaining funds in the real balance will be subject to a X1 wagering requirement, and the bonus funds will be canceled.",
+      "rule18": "18. The promotion is valid for only one phone number, account, address, IP address, bank card number, or crypto account. Repeated participation in the promotion is not allowed. Participating in the promotion under a different identity will result in the cancellation of results and account blocking without refunding any funds.",
+      "footerText": "© 2025 Casino. All rights reserved."
+    }
+  },
+  "claimedGifts": {
+    "title": "Olingan sovg'alar",
+    "back": "Orqaga",
+    "allAchievements": "Barcha yutuqlar",
+    "claimed": "Olindi",
+    "rewardFor": "Tugallanganlik uchun mukofot"
+  },
+  "gameInside": {
+    "backToLobby": "Lobbiga qaytish",
+    "toggleCurtains": "Almashtirish",
+    "addToFavorites": "Sevimlilariga qo'shish",
+    "removeFromFavorites": "Sevimlilaridan olish",
+    "fullScreen": "To'liq ekran",
+    "deposit": "To'ldirish",
+    "otherGames": "Boshqa o'yinlar",
+    "seeMore": "Ko'proq ko'rish...",
+    "warning": "Ogohlantirish",
+    "close": "Yopish",
+    "switch": "Almashtirish",
+    "bonusGames": "Bonus o'yinlar",
+    "bonusWalletError": "Bonus balansi bilan o'ynay olmaysiz 😣\nIltimos, Bonus o'yinlarini tanlang yoki Asosiy balansga o'ting",
+    "bonusBalanceAlert": "Bonus Balansi Ogohlantirishi",
+    "activeBonusBalance": "Sizda faol bonus balansi bor",
+    "notBonusGame": "Bu o'yin bonus o'yini emas. Bonus o'yinlarini o'ynang yoki davom etish uchun asosiy balansga o'ting.",
+    "playBonusGames": "Bonus O'yinlarini O'ynash",
+    "switchBalance": "Balansni Almashtirish",
+    "areYouSure": "Ishonchingiz komilmi?",
+    "switchingWalletsWarning": "Hamyonlarni almashtirish faol bonuslarni bekor qilishi mumkin. Almashtirishdan oldin barcha bonuslardan foydalanganingizga ishonch hosil qiling.",
+    "cancelSwitch": "Almashtirishni bekor qilish"
+  },
+  "store": {
+    "title": "Do'kon",
+    "description": "Bepul aylanishlar va boshqalar kabi bonuslarni sotib oling va faollashtiring.",
+    "empty": "Hali mavjud bonus yo'q.",
+    "buyWithCoins": "Tangalar bilan sotib olish",
+    "buyWithCash": "Pul bilan sotib olish",
+    "bonusPurchased": "Bonus sotib olindi!",
+    "successfullyPurchased": "Siz {{title}} muvaffaqiyatli sotib oldingiz.",
+    "activateInstructions": "Uni faollashtirish uchun Bonuslar bo'limiga o'ting, bonusni tanlang va Faollashtirish tugmasini bosing.",
+    "goToPromotions": "Aksiyalarga o'tish",
+    "confirmPurchase": "Sotib olishni tasdiqlash",
+    "aboutToBuy": "Siz {{title}} sotib olish arafasidasiz.",
+    "cancel": "Bekor qilish",
+    "purchase": "Sotib olish",
+    "purchaseHistory": "Sotib olish tarixi",
+    "historyEmpty": "Siz hali hech qanday sotib olish qilmadingiz.",
+    "bonus": "Bonus",
+    "date": "Sana",
+    "price": "Narx",
+    "unlimited": "Cheksiz",
+    "unlocksAtLevel": "{{level}} darajasida ochiladi",
+    "limitedTime": "Cheklangan vaqt",
+    "premium": "Premium",
+    "megaDeal": "Mega kelishuv",
+    "vipOnly": "Faqat VIP uchun",
+    "availableForCertainGames": "Faqat ma'lum o'yinlar uchun mavjud"
+  },
+  "page404": {
+    "title": "404",
+    "message": "Kechirasiz, xatolik yuz berdi...",
+    "reload": "Bosh sahifa"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "back": "Orqaga",
+    "ourLinks": "Bizning havolalar",
+    "socialMediaDescription": "Bu yerda bizning ijtimoiy tarmoqlardagi barcha havolalarni topishingiz mumkin.",
+    "contactUs": "Biz bilan bog'laning",
+    "paragraph1": "Your Loot has set out to change the perception of what an online gaming platform is all about. We gathered the best references from Game Dev, iGaming, Crypto - and developed the first and only project with a unique loyalty program and a large volume of gamification.",
+    "paragraph2": "Diving into the project, every user will find something for his own experience.",
+    "paragraph3": "We believe that you should play responsibly and with fun!",
+    "followUs": "Follow Us"
+  },
+  "bonusTerms": {
+    "title": "Bonus shartlari va qoidalari",
+    "back": "Orqaga",
+    "lastUpdated": "So'nggi yangilanish:",
+    "introduction": "Kirish",
+    "introduction1": "Ushbu shartlar va qoidalar hamda quyida ko'rsatilgan hujjatlar (\"Shartlar\") joriy veb-sayt yourloot.io (\"Veb-sayt\") va uning tegishli yoki bog'liq xizmatlaridan (birgalikda \"Xizmat\") foydalanishga taalluqli.",
+    "introduction2": "Siz ushbu Shartlarni diqqat bilan ko'rib chiqishingiz kerak, chunki ular Veb-saytdan foydalanish bilan bog'liq huquq va majburiyatlaringiz haqida muhim ma'lumotni o'z ichiga oladi va siz - mijozimiz (\"Mijoz\") va biz o'rtamizda majburiy yuridik kelishuvni tashkil etadi. Ushbu veb-saytdan foydalanish va/yoki Xizmatga kirish orqali siz, mehmon yoki hisob qaydnomasi (\"Hisob\") bilan ro'yxatdan o'tgan foydalanuvchi bo'lishingizdan qat'iy nazar, vaqti-vaqti bilan e'lon qilinadigan o'zgartirishlar bilan birga ushbu Shartlar bilan bog'liq bo'lishga rozilik bildirasiz. Agar siz ushbu Shartlarga rozi bo'lmasangiz, Xizmatga kirishdan va Veb-saytdan foydalanishdan tiyilishingiz kerak.",
+    "introduction3": "Xizmat Britaniya Virgin orollarida 2151527 kompaniya ro'yxatga olish raqami bilan ro'yxatdan o'tgan va ro'yxatga olingan manzili 1-qavatda joylashgan Cintra Soft Ltd. cheklangan mas'uliyatli jamiyatga tegishli, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Britaniya Virgin orollari (\"Kompaniya\"), Anjouan shtatida 2005 yilgi 007-sonli Kompyuter o'yinlari litsenziyalash to'g'risidagi qonun asosida litsenziyalangan.",
+    "organizerReserves": "Yourloot.io (bundan keyin \"Tashkilotchi\" deb ataladi) yourloot.io \"Bonus shartlari va qoidalari\"ni istalgan vaqtda yangilash, o'zgartirish, tahrirlash va to'ldirish huquqini o'zida saqlaydi. Tashkilotchi hisob egasini (bundan keyin \"O'yinchi\" deb ataladi) bonus shartlari va qoidalariga kiritiladigan har qanday muhim o'zgarishlar haqida ular kuchga kirmasidan oldin xabardor qiladi. Agar O'yinchi \"Bonus shartlari va qoidalari\"ga kiritilgan o'zgarishlarga rozi bo'lmasa, u rasmiy qo'llab-quvvatlash jamoasiga xabar berishi kerak. Bunday xabarni olgandan so'ng, Tashkilotchi O'yinchining platformaga kirishini bekor qiladi.",
+    "discrepancies": "Tashkilotchining veb-saytidagi tarjima qilingan versiyalar o'rtasida har qanday nomuvofiqliklar bo'lgan taqdirda, ingliz versiyasi ustunlik qiladi.",
+    "generalRules": "1. Bonus va asosiy balanslardan foydalanish uchun umumiy qoidalar",
+    "typesOfBalances": "1.1 Balans turlari va ularning maqsadi",
+    "bonusBalance": "Bonus balansi:",
+    "notEligible": "Yechib olish uchun yaroqsiz",
+    "canOnlyBeUsed": "Faqat stavka qo'yish uchun ishlatilishi mumkin",
+    "fundsAreCredited": "Bonus faollashtirilganda mablag'lar unga o'tkaziladi",
+    "includes": "O'z ichiga oladi:",
+    "bonusCredits": "Bonus kreditlari",
+    "winningsFromFS": "(Shuningdek o'z ichiga olishi mumkin) FS (bepul aylanish) stavkalaridan yutuqlar",
+    "winningsFromWagered": "(Shuningdek o'z ichiga olishi mumkin) Stavka qilingan bonuslardan yutuqlar",
+    "mainBalance": "Asosiy balans:",
+    "availableForWithdrawal": "Stavka talablarini bajarganingizdan so'ng yechib olish uchun mavjud",
+    "depositedFunds": "O'yinchi tomonidan qo'yilgan stavkalar va yechib olishlarni ayirgan holda depozitga qo'yilgan mablag'lar",
+    "bonusFundsTransferred": "(Shuningdek o'z ichiga olishi mumkin) O'yinchi barcha aksiya shartlari va qoidalarini bajarganidan so'ng Tashkilotchi tomonidan asosiy balansga o'tkazilgan bonus mablag'lari"
+  },
+  "policy": {
+    "title": "Maxfiylik siyosati",
+    "back": "Orqaga",
+    "introduction": "1. Kirish",
+    "introText": "Yourloot.io-ga (\"biz,\" \"bizning,\" yoki \"bizni\") xush kelibsiz, Cintra Soft Ltd tomonidan boshqariladi, ro'yxatga olish raqami: 2151527. U Anjouan Avtonom Oroli Hukumati, Komor Ittifoqi tomonidan litsenziyalangan va tartibga solinadi va ALSI-202410046-F12 litsenziyasi ostida faoliyat yuritadi.",
+    "privacyImportance": "Sizning maxfiyligingiz biz uchun juda muhim. Ushbu Maxfiylik siyosati bizning veb-saytimiz, mobil ilovamiz va onlayn o'yin xizmatlarimizdan (birgalikda \"Xizmatlar\") foydalanganingizda shaxsiy ma'lumotlaringizni qanday to'plashimiz, foydalanishimiz, himoya qilishimiz va oshkor qilishimizni tavsiflaydi.",
+    "consentNotice": "Xizmatlarimizga kirish yoki foydalanish orqali siz ushbu Maxfiylik siyosati shartlariga rozilik bildirasiz. Agar siz ushbu Siyosatning biron bir qismi bilan rozi bo'lmasangiz, iltimos, Xizmatlarimizdan foydalanishdan tiyiling.",
+    "complianceTitle": "2. Ma'lumotlarni himoya qilish qonunlariga muvofiqlik",
+    "complianceText": "Biz shaxsiy ma'lumotlaringizni Ma'lumotlarni himoya qilish to'g'risidagi qonun va boshqa qo'llaniladigan qonunlarga muvofiq himoya qilishga intilamiz. Biz ma'lumotlaringizni himoya qilish uchun eng yaxshi biznes amaliyotlari va sanoat standartidagi xavfsizlik choralarini qo'llaymiz.",
+    "informationCollectTitle": "3. Biz to'playdigan ma'lumotlar",
+    "informationCollectIntro": "Biz turli xil ma'lumotlarni to'playmiz, jumladan, lekin ular bilan cheklanmagan holda:",
+    "personalInfo": "Shaxsiy ma'lumot: Ism, tug'ilgan sana, elektron pochta manzili, telefon raqami, yashash manzili, to'lov tafsilotlari va shaxsni tasdiqlash maqsadlari uchun shaxsni tasdiqlovchi hujjatlar (masalan, pasport, haydovchilik guvohnomasi).",
+    "accountInfo": "Hisob ma'lumotlari: Foydalanuvchi nomi, parol va o'yin imtiyozlari.",
+    "transactionData": "Tranzaksiya ma'lumotlari: Depozit va yechib olish tafsilotlari, garov tarixi va yutuqlar.",
+    "deviceInfo": "Qurilma va foydalanish ma'lumotlari: IP manzil, brauzer turi, operatsion tizim va o'yin faoliyati.",
+    "cookiesInfo": "Cookies va kuzatish texnologiyalari: Foydalanuvchi tajribasini va veb-sayt funksionalligini yaxshilash uchun cookies, veb-mayoqlar va shunga o'xshash texnologiyalar orqali to'plangan ma'lumotlar.",
+    "platformInfo": "Veb va Telegram platformasi: Yourloot.io-ga kirish va foydalanish orqali, bizning veb-saytimiz yoki Telegram bot (@yourloot) orqali, siz shaxsiy ma'lumotlaringizni, jumladan, lekin ular bilan cheklanmagan holda, Telegram ID-ingiz, foydalanuvchi nomingiz va ismingiz, shuningdek, tranzaksiyalar uchun taqdim etadigan har qanday kriptovalyuta hamyon manzillaringizni to'plashimiz va foydalanishimizga rozilik bildirasiz.",
+    "dataUsage": "Biz ushbu ma'lumotlarni o'yinlarimizda ishtirok etishingizni osonlashtirish, hisobingizni boshqarish va har ikkala platformada ham xizmatlarimizning silliq ishlashini ta'minlash uchun zarur operatsiyalarni o'tkazish uchun to'playmiz."
+  },
+  "cookiePolicy1": {
+    "title": "Cookie siyosati",
+    "back": "Orqaga",
+    "lastUpdated": "Oxirgi yangilanish:",
+    "introduction": {
+      "title": "1. Kirish",
+      "content": "Ushbu shartlar va quyida ko'rsatilgan hujjatlar (\"Shartlar\") yourloot.io joriy veb-saytidan (\"Veb-sayt\") va uning tegishli yoki bog'langan xizmatlaridan (birgalikda \"Xizmat\") foydalanishga tegishli."
+    },
+    "generalTerms": {
+      "title": "2. Umumiy shartlar",
+      "content": "Biz istalgan vaqtda Shartlarni (shu jumladan, quyida ko'rsatilgan va havola qilingan har qanday hujjatlarni) qayta ko'rib chiqish va o'zgartirish huquqini saqlab qolamiz. Siz vaqti-vaqti bilan ushbu sahifaga tashrif buyurib, Shartlar va Qoidalarni ko'rib chiqishingiz kerak. O'zgartirishlar ushbu Veb-saytda e'lon qilingandan so'ng darhol majburiy va kuchga kiradi. Agar siz bunday o'zgarishlarga e'tiroz bildirsangiz, Xizmatdan foydalanishni darhol to'xtatishingiz kerak. O'zgartirilgan Shartlar kuchga kirgandan so'ng Veb-saytdan foydalanishni davom ettirishingiz o'zgartirilgan Shartlarga roziligingizni bildiradi. O'zgartirilgan Shartlar kuchga kirishidan oldin hisob-kitob qilinmagan har qanday garovlar avvalgi Shartlarga bo'ysunadi."
+    },
+    "obligations": {
+      "title": "3. Sizning majburiyatlaringiz",
+      "content": "Siz Veb-saytga kirishda va Xizmatdan foydalanishda har doim:",
+      "items": [
+        "Siz 18 yoshdan katta yoki qimor o'yinlari qonun bo'yicha ruxsat etilgan yoshdasiz. Biz sizdan istalgan vaqtda yosh haqidagi hujjatlarni so'rash huquqini saqlab qolamiz.",
+        "Siz huquqiy layoqatga ega va biz bilan yuridik kelishuv tuzishingiz mumkin. Agar siz huquqiy layoqatga ega bo'lmasangiz, Veb-saytga kirishingiz yoki Xizmatdan foydalanishingiz mumkin emas.",
+        "Siz qimor o'yinlariga ruxsat berilgan yurisdiksiyada yashaysiz. Siz onlayn qimor o'yinlari o'z aholi yoki mamlakat ichidagi har qanday shaxsga taqiqlangan mamlakatda yashovchi emas. Xizmatdan foydalanishingiz qonuniy ekanligini ta'minlash faqat sizning majburiyatingizdir.",
+        "Siz VPN, proksi yoki haqiqiy joylashuvingizni yashiradigan yoki o'zgartiradigan o'xshash xizmatlar yoki qurilmalardan foydalanmasligingiz kerak.",
+        "Siz to'lov usulining vakolatli foydalanuvchisi bo'lishingiz kerak.",
+        "Siz bizga barcha to'lovlarni yaxshi niyat bilan amalga oshirishingiz va qilingan to'lovni qaytarish yoki uchinchi tomon tomonidan bunday to'lovni qaytarishga olib keladigan har qanday harakatlarni qilmasligingiz kerak.",
+        "Garov o'ynashda siz ushbu Shartlarga muvofiq Xizmatga kiritilgan pullaringizning bir qismini yoki hammasini yo'qotishingiz mumkin va bu yo'qotish uchun to'liq javobgar bo'lasiz.",
+        "Garov o'ynashda siz garov qo'yilgan mamlakatda kuchda bo'lgan har qanday qonunchilikni buzib olingan ma'lumotlardan foydalanmasligingiz kerak.",
+        "Siz boshqa tomon nomidan yoki har qanday tijorat maqsadlarida emas, balki shaxsiy salohiyatingizda individual sifatida o'z nomingizdan ish ko'rasiz.",
+        "Siz yomon niyatda yoki Xizmatning yaxlitligiga yoki bizga salbiy ta'sir ko'rsatadigan tarzda har qanday bozor yoki Xizmat elementini manipulyatsiya qilishga urinmasligingiz kerak.",
+        "Siz Xizmatdan foydalanishda va Xizmat orqali amalga oshirilgan barcha garovlarda doimo va biz bilan yaxshi munosabatda bo'lishingiz kerak.",
+        "Siz, yoki agar qo'llaniladigan bo'lsa, sizning xodimlaringiz, ish beruvchilaringiz, agentlaringiz yoki oila a'zolaringiz bizning Hamkorlik dasturimizda Hamkor sifatida ro'yxatdan o'tkazilmagan."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Cheklangan foydalanish",
+      "content": "Siz Xizmatdan foydalanmasligingiz kerak:",
+      "items": [
+        "Agar siz 18 yoshdan kichik bo'lsangiz (yoki sizga tegishli qonunlarda belgilangan voyaga yetish yoshidan kichik bo'lsangiz) yoki biz bilan yuridik majburiy kelishuv tuzish huquqiga ega bo'lmasangiz yoki 18 yoshdan kichik shaxs (yoki sizga tegishli qonunlarda belgilangan voyaga yetish yoshidan kichik) nomidan agent sifatida yoki boshqa tarzda ish ko'rsangiz;",
+        "Agar siz o'z aholisiga yoki mamlakat ichidagi har qanday shaxsga onlayn qimor o'yinlari taqiqlangan mamlakatda yashaysiz.",
+        "Agar siz quyidagi mamlakatlardan birining rezidenti bo'lsangiz yoki Veb-saytga quyidagi mamlakatlardan biriga kirsangiz:"
+      ],
+      "restrictedCountries": [
+        "Avstriya",
+        "Fransiya va uning hududlari",
+        "Germaniya",
+        "Niderlandiya va uning hududlari",
+        "Ispaniya",
+        "Komor Ittifoqi"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Ko'p so'raladigan savollar",
+    "back": "Orqaga",
+    "search": "Qidirish",
+    "categories": {
+      "mainBalance": {
+        "title": "Asosiy balans",
+        "questions": [
+          {
+            "title": "Asosiy balans nima?",
+            "content": "Asosiy balans sizning platformadagi barcha o'yin faoliyatlari uchun foydalanishingiz mumkin bo'lgan asosiy hisob balansingizdir."
+          },
+          {
+            "title": "Asosiy balansimga qanday mablag' qo'shaman?",
+            "content": "Siz depozit bo'limida mavjud bo'lgan turli to'lov usullari orqali asosiy balansingizga mablag' qo'shishingiz mumkin."
+          }
+        ]
+      },
+      "bonusBalance": {
+        "title": "Bonus balansi",
+        "questions": [
+          {
+            "title": "Bonus balansi nima?",
+            "content": "Bonus balansi bonus shartlari va qoidalariga muvofiq foydalanishingiz mumkin bo'lgan promo mablag'lar va bonuslardan iborat."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Tajriba",
+        "questions": [
+          {
+            "title": "Tajribani qanday olaman?",
+            "content": "Siz o'yinlarni o'ynash va platformadagi turli faoliyatlarni bajarish orqali tajriba olasiz."
+          }
+        ]
+      },
+      "externalCasino": {
+        "title": "Tashqi kazino puli",
+        "questions": [
+          {
+            "title": "Tashqi kazino puli nima?",
+            "content": "Tashqi kazino puli ma'lum tashqi kazino o'yinlarida ishlatilishi mumkin bo'lgan mablag'larni anglatadi."
+          }
+        ]
+      },
+      "bonuses": {
+        "title": "Bonuslar",
+        "questions": [
+          {
+            "title": "Qanday bonuslar mavjud?",
+            "content": "Biz xush kelibsiz bonuslari, depozit bonuslari va maxsus aksiyalar kabi turli xil bonuslarni taklif qilamiz."
+          }
+        ]
+      },
+      "levels": {
+        "title": "Darajalar",
+        "questions": [
+          {
+            "title": "Darajalar qanday ishlaydi?",
+            "content": "Darajalar sizning tajriba ballari bilan belgilanadi. Darajangiz oshgani sayin, yangi xususiyatlar va mukofotlarni ochib olasiz."
+          },
+          {
+            "title": "Yuqori darajalarning qanday afzalliklari bor?",
+            "content": "Yuqori darajalar eksklyuziv o'yinlarga kirish, yaxshiroq bonuslar va maxsus imtiyozlarni taqdim etadi."
+          }
+        ]
+      },
+      "support": {
+        "title": "Yordam",
+        "questions": [
+          {
+            "title": "Qo'llab-quvvatlash xizmati bilan qanday bog'lanishim mumkin?",
+            "content": "Siz veb-saytda mavjud bo'lgan aloqa shakli yoki jonli suhbat orqali bizning qo'llab-quvvatlash jamoamiz bilan bog'lanishingiz mumkin."
+          },
+          {
+            "title": "Qo'llab-quvvatlash soatlari qanday?",
+            "content": "Bizning qo'llab-quvvatlash jamoamiz sizga har qanday savol yoki muammolaringizda yordam berish uchun 24/7 mavjud."
+          }
+        ]
+      },
+      "casinoGames": {
+        "title": "Kazino o'yinlari",
+        "questions": [
+          {
+            "title": "Qanday o'yinlar mavjud?",
+            "content": "Biz slotlar, stol o'yinlari va jonli diler o'yinlari kabi o'yinlarning keng turlarini taklif qilamiz."
+          },
+          {
+            "title": "O'yinlar adolatlimi?",
+            "content": "Ha, barcha o'yinlarimiz mustaqil auditorlar tomonidan adolatlilikka tekshirilgan va sertifikatlangan."
+          }
+        ]
+      },
+      "settings": {
+        "title": "Sozlamalar",
+        "questions": [
+          {
+            "title": "Hisob sozlamalarimni qanday o'zgartiraman?",
+            "content": "Siz hisobingizning profil bo'limida hisob sozlamalaringizni o'zgartirishingiz mumkin."
+          },
+          {
+            "title": "Qanday sozlamalarni sozlashim mumkin?",
+            "content": "Siz bildirishnomalar, til va xavfsizlik imtiyozlari kabi turli sozlamalarni sozlashingiz mumkin."
+          }
+        ]
+      },
+      "kycAml": {
+        "title": "KYC & AML",
+        "questions": [
+          {
+            "title": "KYC nima?",
+            "content": "KYC (Mijozingizni biling) - bu shaxsingizni tasdiqlash va qoidalarga rioya qilishini ta'minlash jarayoni."
+          },
+          {
+            "title": "Tekshirish uchun qanday hujjatlar talab qilinadi?",
+            "content": "Siz hukumat tomonidan berilgan shaxsni tasdiqlovchi hujjat, manzil tasdiq va boshqa tegishli hujjatlarni taqdim etishingiz kerak bo'lishi mumkin."
+          }
+        ]
+      },
+      "communications": {
+        "title": "Kommunikatsiyalar",
+        "questions": [
+          {
+            "title": "Kommunikatsiya imtiyozlarimni qanday boshqaraman?",
+            "content": "Hisobingizning sozlamalar bo'limida kommunikatsiya imtiyozlaringizni boshqarishingiz mumkin."
+          },
+          {
+            "title": "Qanday turdagi xabarlarni olaman?",
+            "content": "Siz aksiyalar, hisob faoliyatlari va muhim e'lonlar haqida yangilanishlarni olishingiz mumkin."
+          }
+        ]
+      },
+      "bestPractices": {
+        "title": "Eng yaxshi amaliyotlar",
+        "questions": [
+          {
+            "title": "Mas'uliyatli o'yin o'ynash uchun eng yaxshi amaliyotlar qanday?",
+            "content": "Chegaralarni belgilang, tanaffuslar qiling va hech qachon yo'qotishlarni quvmang. Har doim imkoniyatlaringiz doirasida o'ynang."
+          },
+          {
+            "title": "Hisob xavfsizligini qanday ta'minlashim mumkin?",
+            "content": "Kuchli parollardan foydalaning, ikki bosqichli autentifikatsiyani yoqing va hech qachon hisob ma'lumotlaringizni boshqalar bilan ulashmang."
+          }
+        ]
+      }
+    }
+  },
+  "newWallet": {
+    "selectNetwork": "Tarmoqni tanlang",
+    "createWalletError": "Hamyon yaratish xatosi"
+  },
+  "menu": {
+    "home": "Home",
+    "bonuses": "Aksiyalar",
+    "notifications": "Bildirishnomalar",
+    "wallet": "Hamyon",
+    "games": "O'yinlar",
+    "liveCasino": "Live Casino",
+    "about_us": "About Us",
+    "affiliate_program": "Affiliate Program",
+    "contact_us": "Contact Us",
+    "faq": "FAQ",
+    "legal": "Legal",
+    "casino": "Casino",
+    "description": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (“Company”), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005."
+  },
+  "home": {
+    "poker": "Poker",
+    "blackjack": "Blackjack",
+    "roulette": "Roulette",
+    "readMore": "Batafsil",
+    "featuredProviders": "Mashhur provayderlar",
+    "getBonusDeposit": "To'ldirish",
+    "crypto": "Kriptoda yaxshiroq!",
+    "welcomeBanner": "Xush kelibsiz!",
+    "welcomeBannerDes": "Yangi sayt — yangi ufqlar!",
+    "harvest": "G'alabalar hosili",
+    "harvestDescription": "Kuz o'yinlarini kashf qiling",
+    "getBonus": "Bonus olish",
+    "ftdBonus": "$1 500",
+    "ftdBonusDes": "Birinchi depozitda",
+    "other": "Boshqa",
+    "choseCategory": "Kategoriyani tanlang",
+    "liveGames": "Live Games",
+    "yourlootStore": "Sizning Loot do'koningiz",
+    "checkout": "So'nggi takliflarni ko'ring",
+    "store": "Do'kon",
+    "titleProviders": "Provayderlar",
+    "desProviders": "So'nggi provayderlarni ko'ring",
+    "titleCategories": "Kategoriyalar",
+    "desCategories": "Hammasi g'alaba qozing",
+    "titleSearch": "Qidirish",
+    "desSearch": "Sevimli o'yiningizni qidiring",
+    "seeAll": "Hammasini ko'rish",
+    "seeAllGames": "Barcha o'yinlarni ko'rish",
+    "useLoop": "O'yin bo'yicha qidirish",
+    "desUseLoop": "10 000 dan ortiq o'yinlar",
+    "maybeYou": "Balki sizga yoqishi mumkin:",
+    "back": "Orqaga",
+    "categoryName": "Kategoriya nomi",
+    "new": "Yangi kelganlar",
+    "slots": "Slotlar",
+    "crash": "Crash",
+    "fast": "Fast",
+    "recommendedGames": "Tavsiya etilgan",
+    "bonus": "Bonusli",
+    "shows": "O‘yin shoulari",
+    "livePoker": "Jonli Poker",
+    "liveBlackjack": "Jonli Blackjack",
+    "liveRoulette": "Jonli Ruletka",
+    "favorites": "Sevimlilar",
+    "quickLinks": "Tez havolalar",
+    "manageFunds": "Hamyonlar",
+    "achievements": "Yutuqlar",
+    "popular": "Mashhur",
+    "bannerV2": {
+      "title": "2X Xush kelibsiz bonusi",
+      "description": "Birinchi depozitda $1,500 gacha<br/> oling",
+      "cryptoBonus": "Kripto bonus",
+      "cryptoBonusDescription": "Har kuni +7%<br/> depozitga"
+    }
+  },
+  "footer": {
+    "privacy_policy": "Privacy Policy",
+    "terms_conditions": "Terms & Conditions",
+    "cookie_policy": "KYC Policy",
+    "responsible_gaming": "Responsible Gaming",
+    "loyalty_program": "Loyalty Program",
+    "bonus_tc": "Bonus T&C",
+    "company_info": "Xizmat Britaniya Virgin orollarida 2151527 kompaniya ro'yxatga olish raqami bilan ro'yxatdan o'tgan va ro'yxatga olingan manzili 1-qavatda joylashgan Cintra Soft Ltd. cheklangan mas'uliyatli jamiyatga tegishli, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Britaniya Virgin orollari (\"Kompaniya\"), Anjouan shtatida 2005 yilgi 007-sonli Kompyuter o'yinlari litsenziyalash to'g'risidagi qonun asosida litsenziyalangan.",
+    "copyright": "© 2025 YourLoot",
+    "menu": {
+      "slots": "Slotlar",
+      "bonuses": "Bonuslar",
+      "promotions": "Aksiyalar",
+      "deposit": "To‘ldirish",
+      "support": "Qo‘llab-quvvatlash",
+      "profile": "Profil"
+    }
+  },
+  "loyaltyProgram": {
+    "title": "Sodiqlik dasturi",
+    "back": "Orqaga",
+    "lastUpdated": "Oxirgi yangilangan:",
+    "introduction": {
+      "title": "1. Kirish",
+      "content": "Ushbu shartlar va qoidalar va quyida ko'rsatilgan hujjatlar (\"Shartlar\") joriy veb-sayt yourloot.io (\"Veb-sayt\") va uning tegishli yoki bog'liq xizmatlaridan foydalanishga taalluqlidir (birgalikda, \"Xizmat\")."
+    },
+    "generalTerms": {
+      "title": "2. Umumiy shartlar",
+      "content": "Biz istalgan vaqtda Shartlarni (shu jumladan, quyida keltirilgan va havola qilingan har qanday hujjatlarni) qayta ko'rib chiqish va o'zgartirish huquqini saqlab qolamiz. Siz vaqti-vaqti bilan ushbu sahifaga tashrif buyurib, Shartlar va Qoidalarni ko'rib chiqishingiz kerak. O'zgartirishlar ushbu Veb-saytda e'lon qilinganidan so'ng darhol majburiy va kuchga kiradi. Agar siz bunday o'zgarishlarga e'tiroz bildirsangiz, Xizmatdan foydalanishni darhol to'xtatishingiz kerak. O'zgartirilgan Shartlar kuchga kirganidan keyin Veb-saytdan foydalanishni davom ettirishingiz o'zgartirilgan Shartlar bilan bog'liq bo'lishga roziligingizni bildiradi. O'zgargan Shartlar kuchga kirmasdan oldin yakunlanmagan har qanday garovlar avvalgi Shartlarga bo'ysunadi."
+    },
+    "obligations": {
+      "title": "3. Sizning majburiyatlaringiz",
+      "content": "Veb-saytga kirishda va Xizmatdan foydalanishda siz har doim quyidagi holatlarga amal qilishingizni e'tirof etasiz:",
+      "items": [
+        "Siz 18 yoshdan katta yoki sizga nisbatan qo'llaniladigan qonun yoki yurisdiktsiya bo'yicha qimor o'yinlari yoki o'yin faoliyatiga ruxsat berilgan qonuniy yoshdasiz. Biz istalgan vaqtda sizdan yosh haqidagi hujjatlarni talab qilish huquqini saqlab qolamiz.",
+        "Siz qonuniy huquqiy layoqatga egasiz va biz bilan majburiy huquqiy bitim tuzishingiz mumkin. Agar siz qonuniy huquqiy layoqatga ega bo'lmasangiz, Veb-saytga kirmasligingiz yoki Xizmatdan foydalanmasligingiz kerak.",
+        "Siz qimor o'yinlariga ruxsat berilgan yurisdiksiyada yashovchi shaxssiz. Siz onlayn qimor o'yinlariga kirishni o'z fuqarolariga yoki bunday mamlakat ichidagi istalgan shaxsga taqiqlangan har qanday mamlakatning fuqarosi emassiz. Xizmatdan foydalanishingiz qonuniy ekanligini ta'minlash sizning shaxsiy mas'uliyatingizdir.",
+        "Siz VPN, proksi yoki haqiqiy joylashuvingizni maskirovka qiladigan yoki manipulyatsiya qiladigan shunga o'xshash xizmatlar yoki qurilmalardan foydalanmasligingiz mumkin.",
+        "Siz o'zingiz foydalanadigan to'lov usulining vakolatli foydalanuvchisisiz.",
+        "Siz bizga barcha to'lovlarni yaxshi niyat bilan amalga oshirishingiz va amalga oshirilgan to'lovni qaytarishga urinmasligingiz yoki uchinchi shaxs tomonidan bunday to'lovning qaytarilishiga olib keladigan har qanday harakatlarni qilmasligingiz kerak.",
+        "Garov o'ynashda siz ushbu Shartlarga muvofiq Xizmatga qo'yilgan pulingizning bir qismini yoki hammasini yo'qotishingiz mumkin va siz bu yo'qotish uchun to'liq javobgar bo'lasiz.",
+        "Garov o'ynashda siz garov o'ynagan mamlakatda amal qiladigan har qanday qonunchilikni buzgan holda olingan ma'lumotlardan foydalanmasligingiz kerak.",
+        "Siz boshqa tomon nomidan yoki har qanday tijorat maqsadida emas, balki shaxsiy sifatida shaxsiy ravishda faqat o'z nomingizdan ish yuritasiz.",
+        "Siz Xizmat yoki biz yaxlitligiga salbiy ta'sir ko'rsatadigan tarzda har qanday bozorni yoki Xizmat ichidagi elementni yomon niyatda manipulyatsiya qilishga harakat qilmasligingiz kerak.",
+        "Siz har doim va Xizmatdan foydalangan holda amalga oshirilgan barcha garovlar uchun bizga nisbatan yaxshi niyatda harakat qilishingiz kerak.",
+        "Siz yoki, agar qo'llaniladigan bo'lsa, sizning xodimlaringiz, ish beruvchilaringiz, agentlaringiz yoki oila a'zolaringiz bizning Hamkorlik dasturimizda Hamkor sifatida ro'yxatga olinmagan."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Cheklangan foydalanish",
+      "content": "Siz Xizmatdan foydalanmasligingiz kerak:",
+      "items": [
+        "Agar siz 18 yoshdan kichik bo'lsangiz (yoki sizga qo'llaniladigan yurisdiksiya qonunlarida belgilangan voyaga yetish yoshidan kichik bo'lsangiz) yoki agar siz biz bilan majburiy huquqiy bitim tuzish huquqiga ega bo'lmasangiz yoki 18 yoshdan kichik (yoki sizga qo'llaniladigan yurisdiksiya qonunlarida belgilangan voyaga yetish yoshidan kichik) shaxs nomidan yoki boshqacha tarzda ish yuritadigan bo'lsangiz;",
+        "Agar siz o'z fuqarolariga yoki bunday mamlakat ichidagi har qanday shaxsga onlayn qimor o'yinlariga kirish taqiqlangan mamlakatda yashasangiz.",
+        "Agar siz quyidagi mamlakatlardan birining fuqarosi bo'lsangiz yoki quyidagi mamlakatlardan birida Veb-saytga kirsangiz:"
+      ],
+      "restrictedCountries": [
+        "Avstriya",
+        "Fransiya va uning hududlari",
+        "Germaniya",
+        "Niderlandiya va uning hududlari",
+        "Ispaniya",
+        "Komor Ittifoqi"
+      ]
+    }
+  },
+  "language": {
+    "title": "Tilni o'zgartirish",
+    "placeholder": "Til",
+    "select": "Iltimos, tilingizni tanlang"
+  },
+  "common": {
+    "english": "Inglizcha",
+    "azerbaijani": "Ozarbayjoncha",
+    "kazakh": "Qozoqcha",
+    "uzbek": "O'zbekcha",
+    "russian": "Ruscha",
+    "scrollToTop": "Yuqoriga",
+    "back": "Orqaga",
+    "required": "Majburiy",
+    "login": "Kirish",
+    "close": "Yopish",
+    "topUp": "To'ldirish",
+    "finish": "Tugatish",
+    "create": "Yaratish",
+    "goBack": "Ortga qaytish",
+    "cancel": "Bekor qilish"
+  },
+  "pagination": {
+    "showing": "Koʻrsatilmoqda:",
+    "of": "dan",
+    "showMore": "Ko'proq ko'rsatish"
+  },
+  "session": {
+    "endedTitle": "Sessiya yakunlandi",
+    "endedDesc": "Faol bo'lmaganingiz uchun sessiya yakunlandi. Davom etish uchun kiring."
+  },
+  "bannerProfile": {
+    "header": "Banner Sarlavhasi",
+    "description": "Banner tavsifi",
+    "cta": "Bosish o'yinlarini ko'ring"
+  },
+  "promoDefault": {
+    "title": "Promo Sahifa Standart",
+    "header": "Banner Sarlavhasi",
+    "lastUpdated": "Oxirgi yangilangan: 16.9.2024",
+    "description": "Promo tavsifi",
+    "name": "Promo nomi",
+    "play": "Hozir o'ynang",
+    "content": "Ushbu shartlar va qoidalar va quyida ko'rsatilgan hujjatlar (\"Shartlar\") joriy veb-sayt yourloot.io (\"Veb-sayt\") va uning tegishli yoki bog'liq xizmatlaridan foydalanishga taalluqlidir (birgalikda, \"Xizmat\"). Siz ushbu Shartlarni diqqat bilan ko'rib chiqishingiz kerak, chunki ular Veb-saytdan foydalanish bo'yicha sizning huquq va majburiyatlaringiz to'g'risida muhim ma'lumotlarni o'z ichiga oladi va siz - mijozimiz (\"Mijoz\") va biz o'rtasida majburiy huquqiy bitimni tashkil etadi. Ushbu Veb-saytdan foydalanish va/yoki Xizmatga kirish orqali, siz mehmon yoki hisobga ega ro'yxatdan o'tgan foydalanuvchi (\"Hisob\") bo'lishingizdan qati nazar, vaqti-vaqti bilan e'lon qilinishi mumkin bo'lgan har qanday o'zgartirishlar bilan birga ushbu Shartlarga rioya qilishga rozilik bildirasiz. Agar siz ushbu Shartlarni qabul qilmasangiz, Xizmatga kirishdan va Veb-saytdan foydalanishdan tiyilishingiz kerak. Xizmat Cintra Soft Ltd. tomonidan egalik qilinadi, Britaniya Virgin orollarida 2151527 kompaniya ro'yxat raqami bilan ro'yxatga olingan cheklangan javobgarlikka ega kompaniya, ro'yxatga olingan manzili: 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Kompaniya\"), Anjouan davlatida Kompyuter o'yinlari litsenziyasi qonuni 007, 2005 yil asosida litsenziyalangan.",
+    "introduction": "Kirish",
+    "back": "O'tkazish"
+  },
+  "responsibleGaming": {
+    "title": "Mas'uliyatli O'yin",
+    "introduction": "Ushbu shartlar va qoidalar va quyida ko'rsatilgan hujjatlar (\"Shartlar\") joriy veb-sayt yourloot.io (\"Veb-sayt\") va uning tegishli yoki bog'liq xizmatlaridan foydalanishga taalluqlidir (birgalikda, \"Xizmat\"). Siz ushbu Shartlarni diqqat bilan ko'rib chiqishingiz kerak, chunki ular Veb-saytdan foydalanish bo'yicha sizning huquq va majburiyatlaringiz to'g'risida muhim ma'lumotlarni o'z ichiga oladi va siz - mijozimiz (\"Mijoz\") va biz o'rtasida majburiy huquqiy bitimni tashkil etadi. Ushbu Veb-saytdan foydalanish va/yoki Xizmatga kirish orqali, siz mehmon yoki hisobga ega ro'yxatdan o'tgan foydalanuvchi (\"Hisob\") bo'lishingizdan qati nazar, vaqti-vaqti bilan e'lon qilinishi mumkin bo'lgan har qanday o'zgartirishlar bilan birga ushbu Shartlarga rioya qilishga rozilik bildirasiz. Agar siz ushbu Shartlarni qabul qilmasangiz, Xizmatga kirishdan va Veb-saytdan foydalanishdan tiyilishingiz kerak. Xizmat Cintra Soft Ltd. tomonidan egalik qilinadi, Britaniya Virgin orollarida 2151527 kompaniya ro'yxat raqami bilan ro'yxatga olingan cheklangan javobgarlikka ega kompaniya, ro'yxatga olingan manzili: 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Kompaniya\"), Anjouan davlatida Kompyuter o'yinlari litsenziyasi qonuni 007, 2005 yil asosida litsenziyalangan."
+  },
+  "wallet": {
+    "title": "Hamyon",
+    "createWallet": {
+      "title": "Hamyon yaratish"
+    },
+    "primaryChanged": "Asosiy hamyon o‘zgartirildi.",
+    "createTitle": "Hamyon yaratish",
+    "balancer": {
+      "primaryWallet": "Asosiy hamyon",
+      "createNew": "Yangi yaratish"
+    },
+    "item": {
+      "primary": "Asosiy",
+      "makePrimary": "Asosiy qilish"
+    },
+    "walletRequired": "{{cryptoCurrency}} Hamyoni Kerak",
+    "createDescription": "Bu valyutada hamyoningiz yo'q. Davom etish uchun hamyon yarating.",
+    "manageFunds": {
+      "title": "Hamyonlar"
+    },
+    "transactionHistory": {
+      "title": "Tranzaksiyalar tarixi",
+      "orderTypes": {
+        "deposit": "TO‘LDIRISH",
+        "withdraw": "YECHIB OLISH",
+        "transfer": "O'TKAZMA",
+        "bonus": "Bonusli",
+        "bet": "STAVKA",
+        "win": "YUTUK"
+      }
+    }
+  },
+  "payment": {
+    "history": "Tarix",
+    "depositMethodsInfo": "Depozit usullari asosiy hamyon valyutasiga bog'liq.",
+    "withdrawMethodsInfo": "Yechib olish usullari asosiy hamyon valyutasiga bog'liq."
+  },
+  "history": {
+    "contactUs": "Savollaringiz bo'lsa biz bilan bog'laning",
+    "messageUs": "Bizga yozing",
+    "loadingMore": "Ko'proq yuklanmoqda...",
+    "scrollToLoadMore": "Ko'proq yuklash uchun aylantiring",
+    "noMoreItems": "Yuklanadigan boshqa elementlar yo'q"
+  },
+  "depositPage": {
+    "wallet": "Hamyon",
+    "bank": "Bank to'lovi",
+    "crypto": "Kriptovalyuta"
+  }
+}

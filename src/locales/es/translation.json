@@ -1,0 +1,1748 @@
+{
+  "app": {
+    "name": "YourLoot"
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "content": "Términos y Condiciones"
+  },
+  "myItems": {
+    "title": "Mis elementos",
+    "search": "Buscar",
+    "shop": "Tienda"
+  },
+  "depositWithdrawV2": {
+    "selectMethod": "Seleccionar Método",
+    "selectCrypto": "Seleccionar Criptomoneda",
+    "walletCurrencyWarning": "La moneda principal de tu billetera determina qué métodos de depósito se muestran.",
+    "cryptoBonusMessage": "¡Obtén un + 7% de bono en depósitos de criptomonedas!",
+    "methods": {
+      "crypto": "Criptomoneda",
+      "cryptoBonus": "+7% de Bono",
+      "bankCards": "Tarjetas Bancarias",
+      "fps": "FPS",
+      "fpsQr": "FPS CIS",
+      "fpsSber": "FPS Sber",
+      "sberPay": "Sber Pay",
+      "tPay": "T-Pay",
+      "yukassa": "YooKassa",
+      "alfa": "Alfa Bank",
+      "fpsAlfa": "FPS Alfa",
+      "fastPayments": "Pagos Rápidos"
+    }
+  },
+  "noGame": {
+    "search": {
+      "title": "No se encontraron resultados",
+      "description": "Intenta buscar con una palabra clave diferente."
+    },
+    "empty": {
+      "title": "Aún no hay nada aquí",
+      "description": "Esta categoría está siendo actualizada. Pronto aparecerán nuevos juegos."
+    }
+  },
+  "bonusLanding": {
+    "buttons": {
+      "viewPromotion": "Ver Promoción",
+      "signUpToClaim": "Regístrate para reclamar",
+      "getBonusNow": "Obtén el bono ahora"
+    },
+    "descriptions": {
+      "viewPromotionDesc": "¡Ve tu promoción de Bono de Bienvenida disponible!",
+      "activateBonusDeposit": "¡Activa el bono en tu primer depósito!",
+      "activateBonusGetBonus": "¡Activa el bono en tu primer depósito y obtén hasta 1,500 USD en tu cuenta!",
+      "signUpForBonus": "¡Regístrate ahora para reclamar tu Bono de Bienvenida!"
+    },
+    "badges": {
+      "doubleDeposit": {
+        "title": "Duplica tu depósito",
+        "description": "Bono del 100% en tu primera recarga"
+      },
+      "upTo1500": {
+        "title": "Hasta 1,500 USD",
+        "description": "Obtén hasta 130,000 RUB en fondos de bono"
+      },
+      "easyActivation": {
+        "title": "Activación fácil",
+        "description": "El bono se activa automáticamente al realizar el depósito"
+      }
+    },
+    "terms": {
+      "title": "Términos del bono",
+      "minimumDeposit": {
+        "title": "Depósito mínimo",
+        "description": "10 USD / 1,000 RUB"
+      },
+      "availability": {
+        "title": "Disponibilidad",
+        "description": "Solo en el primer depósito"
+      },
+      "maximumBonus": {
+        "title": "Bono máximo",
+        "description": "1,500 USD / 130,000 RUB"
+      },
+      "wageringRequirement": {
+        "title": "Requisito de apuesta",
+        "description": "x35"
+      },
+      "activation": {
+        "title": "Activación",
+        "description": "En el primer depósito"
+      },
+      "wageringPeriod": {
+        "title": "Período de apuesta",
+        "description": "7 días"
+      }
+    }
+  },
+  "withdraw": {
+    "title": "Retirar",
+    "description": "Retira tus activos",
+    "instructions": "Instrucciones",
+    "cryptoPayment": "Pago en criptomoneda",
+    "bankPayment": "Pago bancario",
+    "amountTooLow": "Demasiado bajo. El mínimo es 500 {{currency}}.",
+    "insufficientFunds": "No tienes suficientes fondos.",
+    "requestedTitle": "Retiro Solicitado",
+    "unavailable": {
+      "title": "Retiro No Disponible",
+      "cannotNow": "No se puede retirar ahora",
+      "description": "Tienes un depósito en proceso. Por favor, espera hasta que se complete para retirar fondos.",
+      "wageringNotMet": "Requisito de apuesta no cumplido",
+      "wageringDescription": "Para retirar, primero debes cumplir con el requisito de apuesta. Consulta los términos de tu bono o saldo para más detalles."
+    },
+    "processAlert": {
+      "inProgress": "Retiro aún en proceso.",
+      "timeLeft": "Tiempo restante:",
+      "continueWithdraw": "Continuar Retiro",
+      "continue": "Continuar",
+      "failedToast": "El retiro falló, intenta de nuevo o contacta con soporte.",
+      "successToast": "Retiro completado. Los fondos aparecerán pronto."
+    },
+    "cancelQuestion": "¿Cancelar Retiro?",
+    "cancelDescription": "¿Estás seguro de que quieres cancelar tu solicitud de retiro? Los fondos regresarán a tu saldo.",
+    "cancelAction": "Cancelar Retiro",
+    "keepRequest": "Mantener Solicitud",
+    "canceled": "Solicitud de retiro cancelada.",
+    "requested": {
+      "submitted": "Tu retiro ha sido enviado",
+      "processingInfo": "El tiempo de procesamiento varía según el método. Te notificaremos cuando se complete."
+    },
+    "failed": {
+      "title": "Retiro Fallido",
+      "somethingWrong": "Algo salió mal",
+      "description": "Por favor, intenta de nuevo o contacta con soporte.",
+      "tryAgain": "Intentar de Nuevo",
+      "contactSupport": "Contactar con Soporte"
+    },
+    "emptyMethod": {
+      "title": "No hay fondos disponibles en esta billetera",
+      "description": "Cambia a otra billetera con saldo para realizar un retiro"
+    },
+    "bankCard": {
+      "makeTransfer": "Realiza la transferencia usando los detalles a continuación",
+      "chooseBank": "Elige tu banco",
+      "amount": "Cantidad",
+      "amountPlaceholder": "Ingresa la cantidad {{currency}}",
+      "amountDescription": "Disponible: {{amount}} {{currency}}",
+      "bankNumber": "Número de banco",
+      "yourPhoneNumber": "Número de teléfono",
+      "yourPhoneNumberPlaceholder": "+7 912 123 32 43",
+      "bankNumberPlaceholder": "Ingresa el número de tarjeta",
+      "next": "Siguiente",
+      "owner": "Propietario",
+      "ownerPlaceholder": "Juan Pérez",
+      "done": {
+        "title": "Retiro en proceso",
+        "description": "Los detalles de tu retiro estarán disponibles en el panel de 'Detalles'",
+        "details": "Detalles",
+        "backHome": "Volver al inicio",
+        "bankCardAlt": "Tarjeta Bancaria"
+      },
+      "selectBankDescription": "Selecciona tu banco",
+      "enterInfo": "Ingresa tu información",
+      "phoneNumber": "Número de teléfono",
+      "yourBank": "Tu banco",
+      "phoneNumberPlaceholder": "Ingresa el número de teléfono",
+      "withdraw": "Retirar",
+      "processDescription": "El sistema está procesando tu pago, no tomará más de un par de minutos",
+      "pleaseWait": "Por favor, espera"
+    },
+    "cryptocurrency": {
+      "selectTitle": "Seleccionar criptomoneda",
+      "selectDescription": "Realiza la transferencia usando los detalles a continuación",
+      "title": "Ingresa tu información",
+      "description": "Asegúrate de proporcionar los detalles correctos",
+      "amount": "Cantidad",
+      "amountPlaceholder": "{{currency}} 1,923,234,99",
+      "amountDescription": "Cantidad de un depósito {{currency}}500 - {{currency}}100,000",
+      "plus10": "+$10",
+      "plus100": "+$100",
+      "plus1000": "+$1000",
+      "walletAddress": "Dirección de billetera",
+      "walletAddressPlaceholder": "Ingresa la dirección de la billetera",
+      "withdraw": "Retirar",
+      "doneTitle": "Retiro en proceso",
+      "doneDescription": "Los detalles de tu retiro estarán disponibles en el panel de 'Detalles'",
+      "doneDetails": "Puedes seguir el estado en el panel de detalles. Si tienes alguna pregunta, contacta con soporte.",
+      "backHome": "Volver al inicio",
+      "details": "Detalles"
+    }
+  },
+  "support": {
+    "title": "Contactar con soporte",
+    "description": "Estamos felices de ayudarte.",
+    "button": "Contactar con soporte"
+  },
+  "promo": {
+    "title": "Nombre de la promoción",
+    "deposit": "¡Deposita ahora!",
+    "welcome": "Bono de Bienvenida de YourLoot",
+    "depositFree": "¡Deposita ahora y obtén 100FS gratis!",
+    "code": {
+      "title": "¿Tienes un código promocional?",
+      "description": "Ingresa el código promocional para aplicarlo a tu cuenta",
+      "placeholder": "Ingresa aquí...",
+      "apply": "Aplicar",
+      "ok": "Ok",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "warningMessage": "Todos los bonos activos serán cancelados si aplicas este código promocional.",
+      "applyingMessage": "Aplicando el código promocional. Por favor, espera un momento..."
+    },
+    "refer": {
+      "title": "Códigos promocionales",
+      "description": "Consulta las últimas ofertas",
+      "button": "Códigos promocionales"
+    },
+    "active": {
+      "title": "Código Promocional Activo"
+    },
+    "available": {
+      "title": "Códigos Promocionales Disponibles"
+    }
+  },
+  "promotionV2": {
+    "title": "Promociones",
+    "bonuses": "Bonos",
+    "subtitle": "Todos los eventos, bonos y ofertas en un solo lugar.",
+    "header": {
+      "description": "Descubre ofertas y recompensas exclusivas. Activa promociones para mejorar tu experiencia de juego."
+    },
+    "active": "Activo",
+    "available": "Disponible",
+    "loading": "Cargando promociones activas...",
+    "loadingAvailablePromotions": "Cargando promociones disponibles...",
+    "noAvailablePromotions": "Aún no tienes promociones disponibles.",
+    "noActivePromotion": "Aún no tienes ninguna promoción activa.",
+    "activeWarning": "Tienes una promoción activa. Activar una nueva promoción cancelará el progreso de la actual.",
+    "promoCodes": "Códigos Promocionales",
+    "promoCodePlaceholder": "¿Tienes un código promocional? Ingresa aquí...",
+    "applying": "Aplicando...",
+    "apply": "Aplicar",
+    "loadingPromoCodes": "Cargando códigos promocionales...",
+    "noActivePromoCodes": "No hay códigos promocionales activos disponibles",
+    "loadingPromotionDetails": "Cargando detalles de la promoción...",
+    "promotionNotFound": "Promoción no encontrada",
+    "expired": "Expirado",
+    "canceled": "Cancelado",
+    "deactivate": "Desactivar",
+    "activate": "Activar",
+    "termsAndConditions1": "Términos y Condiciones",
+    "areYouSure": "¿Estás seguro?",
+    "activatePromotion": "¿Activar promoción?",
+    "loseProgress": "Perderás cualquier progreso realizado con este bono.",
+    "wantToActivate": "¿Quieres activar esta promoción?",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "warningMessage": "Todos los bonos activos serán cancelados si aplicas este código promocional.",
+    "applyingMessage": "Aplicando código promocional. Por favor, espera un momento...",
+    "promotionDeactivated": "{{name}} desactivado.",
+    "failedToDeactivate": "No se pudo desactivar {{name}}.",
+    "promotionActivated": "{{name}} activado.",
+    "failedToActivate": "No se pudo activar {{name}}.",
+    "promoCodeApplied": "El código {{code}} se aplicó con éxito",
+    "promotions": {
+      "welcomeBonus": {
+        "name": "Bono de Bienvenida del 100%",
+        "description": "Obtén un bono del 100% en tu primer depósito hasta $100"
+      },
+      "cryptoBonus": {
+        "name": "Bono de Criptomoneda +7% al Depósito",
+        "short": "Bono de Criptomoneda",
+        "description": "Obtén un bono adicional del 7% cuando deposites con criptomoneda"
+      },
+      "freeSpins": {
+        "name": "Giros Gratis por Depósito",
+        "description": "Obtén giros gratis cuando realices un depósito"
+      }
+    },
+    "timer": {
+      "expires": "Expira",
+      "expiresIn": "Expira en",
+      "available": "Disponible",
+      "canceledOn": "Cancelado el {{date}}",
+      "expiredOn": "Expirado el {{date}}",
+      "canceledDescription": "Esta promoción ha sido cancelada y ya no está disponible.",
+      "expiredDescription": "Esta promoción ha expirado y ya no está disponible.",
+      "activeDescription": "Esta promoción se desactivará automáticamente cuando expire",
+      "availableDescription": "Esta promoción está disponible hasta que finalice el temporizador."
+    },
+    "details": {
+      "howToParticipate": "¿Cómo participar?",
+      "details": "Detalles",
+      "cryptoInstructions": "Ingresa el código promocional YLCrypto<br/>Realiza tu primer depósito en criptomoneda de al menos 10 USDT (o equivalente)<br/>Recibe tu bono automáticamente",
+      "cryptoDetails": "1. El bono está disponible diariamente en el primer depósito en criptomoneda del día.<br/>2. El monto del bono es del 7%.<br/>3. El monto mínimo de depósito es 10 USDT (o equivalente).<br/>4. El monto máximo del bono es 50 USDT (o equivalente).<br/>5. Apuesta: x1.<br/>6. El bono está disponible una vez dentro del período de 00:00 a 23:59 UTC.<br/>7. El período de apuesta es de 24 horas desde el momento del abono.<br/>8. Los retiros no están disponibles mientras un bono esté activo.",
+      "standardInstructions": "Regístrate o inicia sesión<br/>Deposita al menos $10<br/>Juega con tu saldo mejorado",
+      "bonusAmount": "Monto del bono: 100%",
+      "minDeposit": "Depósito mínimo: desde 10 USD / 1,000 RUB",
+      "maxBonus": "Monto máximo del bono: 1500 USD / 130,000 RUB",
+      "wager": "Apuesta: 35"
+    },
+    "promoCodeSection": {
+      "enterPromoCode": "Por favor, ingresa un código promocional",
+      "title": "Códigos Promocionales",
+      "placeholder": "¿Tienes un código promocional? Ingresa aquí...",
+      "applying": "Aplicando...",
+      "apply": "Aplicar",
+      "activatedPromoCode": "Has activado un código promocional adicional.",
+      "loading": "Cargando códigos promocionales...",
+      "noActivePromoCodes": "No hay códigos promocionales activos disponibles"
+    },
+    "bonusGames": {
+      "title": "Juegos de Bono",
+      "seeAll": "Ver Todo"
+    },
+    "termsAndConditions": {
+      "introduction": "Introducción",
+      "introText1": "Estos términos y condiciones y los documentos mencionados a continuación (\"Términos\") se aplican al uso del sitio web actual yourloot.io (\"Sitio web\") y sus servicios relacionados o conectados (colectivamente, el \"Servicio\").",
+      "introText2": "Debes revisar cuidadosamente estos Términos, ya que contienen información importante sobre tus derechos y obligaciones respecto al uso del Sitio web y forman un acuerdo legal vinculante entre tú, nuestro cliente (\"Cliente\"), y nosotros. Al usar este Sitio web y/o acceder al Servicio, tú, ya seas un invitado o un usuario registrado con una cuenta (\"Cuenta\"), aceptas estar sujeto a estos Términos, junto con cualquier enmienda que pueda publicarse de vez en cuando. Si no aceptas estos Términos, debes abstenerte de acceder al Servicio y usar el Sitio web.",
+      "introText3": "El Servicio es propiedad de Cintra Soft Ltd., una compañía de responsabilidad limitada registrada en las Islas Vírgenes Británicas con el número de registro de compañía 2151527, con dirección registrada en 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Islas Vírgenes Británicas (\"Compañía\"), licenciada en el Estado de Anjouan bajo la Ley de Licencias de Juegos de Computadora 007 de 2005.",
+      "generalTerms": "Términos Generales",
+      "generalTermsText": "Nos reservamos el derecho de revisar y modificar los Términos (incluyendo cualquier documento mencionado y vinculado a continuación) en cualquier momento. Debes visitar esta página periódicamente para revisar los Términos y Condiciones. Las enmiendas serán vinculantes y efectivas inmediatamente después de su publicación en este Sitio web. Si no estás de acuerdo con dichos cambios, debes detener inmediatamente el uso del Servicio. El uso continuado del Sitio web tras dicha publicación indicará tu acuerdo de estar sujeto a los Términos modificados. Cualquier apuesta no liquidada antes de que entren en vigor los Términos modificados estará sujeta a los Términos preexistentes.",
+      "obligations": "Tus Obligaciones",
+      "obligationsIntro": "Reconoces que en todo momento al acceder al Sitio web y usar el Servicio:",
+      "obligation1": "Tienes más de 18 años, o la edad legal en la que se permiten actividades de juego o apuestas según la ley o jurisdicción que te aplica. Nos reservamos el derecho de solicitar documentos de prueba de edad en cualquier momento.",
+      "obligation2": "Tienes capacidad legal y puedes celebrar un acuerdo legal vinculante con nosotros. No debes acceder al Sitio web ni utilizar el Servicio si no tienes capacidad legal.",
+      "obligation3": "Eres residente en una jurisdicción que permite el juego. No eres residente de ningún país en el que el acceso al juego en línea esté prohibido para sus residentes o para cualquier persona dentro de dicho país. Es tu única responsabilidad asegurarte de que tu uso del servicio sea legal.",
+      "obligation4": "No puedes usar una VPN, proxy o servicios o dispositivos similares que oculten o manipulen la identificación de tu ubicación real."
+    }
+  },
+  "header": {
+    "defaultWalletActive": "Saldo principal activado.",
+    "bonusWalletActive": "Saldo de bono activado.",
+    "addedToFavorites": "Añadido a juegos favoritos.",
+    "removedFromFavorites": "Eliminado de juegos favoritos.",
+    "bonus": "Bono",
+    "primary": "Principal",
+    "balance": "Saldo",
+    "telegram": "Telegram"
+  },
+  "title": {
+    "title": "Título de la página",
+    "lastUpdated": "Última actualización:",
+    "introduction": "Introducción",
+    "introduction1": "Estos términos y condiciones y los documentos mencionados a continuación (\"Términos\") se aplican al uso del sitio web actual yourloot.io (\"Sitio web\") y sus servicios relacionados o conectados (colectivamente, el \"Servicio\").",
+    "introduction2": "Debes revisar cuidadosamente estos Términos, ya que contienen información importante sobre tus derechos y obligaciones respecto al uso del Sitio web y forman un acuerdo legal vinculante entre tú, nuestro cliente (\"Cliente\"), y nosotros. Al usar este Sitio web y/o acceder al Servicio, tú, ya seas un invitado o un usuario registrado con una cuenta (\"Cuenta\"), aceptas estar sujeto a estos Términos, junto con cualquier enmienda que pueda publicarse de vez en cuando. Si no aceptas estos Términos, debes abstenerte de acceder al Servicio y usar el Sitio web.",
+    "introduction3": "El Servicio es propiedad de Cintra Soft Ltd., una compañía de responsabilidad limitada registrada en las Islas Vírgenes Británicas con el número de registro de compañía 2151527, con dirección registrada en 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Islas Vírgenes Británicas (\"Compañía\"), licenciada en el Estado de Anjouan bajo la Ley de Licencias de Juegos de Computadora 007 de 2005.",
+    "deposit": "¡Deposita ahora!"
+  },
+  "game": {
+    "new": "Nuevo",
+    "newsGames": "Juegos Nuevos",
+    "card": {
+      "select": "Seleccionar Juego",
+      "piggyTap": "Piggy Tap",
+      "pragmaticPlay": "Pragmatic Play"
+    },
+    "launcher": {
+      "loading": "Cargando juego..."
+    },
+    "popular": {
+      "title": "Juegos Populares",
+      "titleMobile": "Juegos",
+      "seeAll": "Ver Todo"
+    }
+  },
+  "search": {
+    "placeholder": "Buscar desde 3 caracteres",
+    "result": "Resultado de la búsqueda",
+    "bonusGames": "Juegos de Bono",
+    "noResults": "No se encontraron juegos"
+  },
+  "profile": {
+    "title": "Perfil",
+    "back": "Volver",
+    "store": "Tienda",
+    "setting": "Configuración del Perfil",
+    "logout": "Cerrar Sesión",
+    "myWallets": "Mis Billeteras",
+    "walletsDescription": "Administra tus billeteras",
+    "myBonuses": "Mis Bonos",
+    "myFavorites": "Favoritos",
+    "bonusesDescription": "¡Atrápalos todos!",
+    "myGames": "Mis Juegos",
+    "gamesDescription": "¡Gánalos todos!",
+    "exchange": "Intercambiar",
+    "exchangeDescription": "Aumenta tu saldo",
+    "realBalance": "Saldo Real",
+    "balance": "Saldo",
+    "primary": "Principal",
+    "bonus": "Bono",
+    "yourLootCoin": "Tus Loot Coins",
+    "manage": "Administrar",
+    "achievements": "Logros",
+    "firstSteps": "Primeros Pasos",
+    "exp": "EXP",
+    "inBonus": "Saldo de bono",
+    "tabGames": "Juegos Nuevos",
+    "newGameButton": "Encuentra un juego nuevo",
+    "outShopTitle": "Tienda",
+    "outShopDescription": "¡Explora la tienda!",
+    "outShopButton": "Ir a la tienda",
+    "casinoTitle": "Vestíbulo",
+    "casinoDescription": "¡Disfruta de juegos sin fin!",
+    "newGameDescription": "Gana en todas las novedades de {{year}}",
+    "casinoButton": "Prueba jugar",
+    "lobby": "Juegos Populares",
+    "lobbyDescription": "¿Realmente son tan populares?",
+    "tapGames": "Todos los Proveedores",
+    "tapGamesDescription": "¡Elige el mejor y gana!",
+    "newForYou": "Todas las Categorías",
+    "newForYouDescription": "¿Cuál será tu fortuna?",
+    "findNewGamesTitle": "Encuentra juegos nuevos",
+    "sectionHeaderTitle": "Otras cosas útiles",
+    "contactSupport": "Contactar con soporte",
+    "contactSupportDescription": "Haz preguntas o recibe ayuda",
+    "gotoProfile": "Ir al perfil",
+    "checkUpdateProfile": "Verifica y actualiza mi perfil",
+    "welcome": "Bienvenido,",
+    "exploreUpdate": "Explora y actualiza mi perfil.",
+    "lookSettings": "Echa un vistazo a la configuración de mi perfil.",
+    "cashback": "Reembolso",
+    "level": "Nivel",
+    "provideEmail": "¡Proporciona tu correo electrónico!",
+    "updateEmailKyc": "Por favor, actualiza tu correo electrónico para completar KYC",
+    "providePhone": "¡Proporciona tu número de teléfono!",
+    "updatePhoneKyc": "Por favor, actualiza tu teléfono para completar KYC",
+    "yourEmail": "Tu correo electrónico:",
+    "add": "Añadir",
+    "yourCountry": "Tu país:",
+    "birthDate": "Fecha de Nacimiento",
+    "missingBirthDate": "Falta la fecha de nacimiento, por favor añade una.",
+    "emailApplied": "Correo electrónico de configuración aplicado",
+    "emailAdded": "¡Correo electrónico añadido con éxito!",
+    "great": "¡Genial!",
+    "birthDateApplied": "Fecha de nacimiento de configuración aplicada",
+    "birthDateAdded": "¡Fecha de nacimiento añadida con éxito!",
+    "settings": "Configuraciones",
+    "changePassword": "Cambiar contraseña",
+    "logOut": "Cerrar sesión",
+    "signOut": "Cerrar Sesión",
+    "levelWithNumber": "Nivel {{number}}",
+    "loyaltyPoints": "Puntos de Lealtad: {{current}} / {{total}}",
+    "bets": "Apuestas: {{current}} / {{total}}",
+    "earnLoyaltyPoints": "Gana {{points}} Puntos de Lealtad (LP) {{percentage}} para alcanzar el nivel {{level}}.",
+    "maxLevelReached": "Nivel máximo alcanzado",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "ejemplo@gmail.com",
+    "confirmationLinkSent": "Enlace de confirmación enviado",
+    "confirmationLinkSentToEmail": "Se ha enviado un enlace de confirmación a tu correo electrónico.",
+    "validForFiveMinutes": "Es válido por 5 minutos."
+  },
+  "categories": {
+    "bonus": {
+      "title": "Juegos de Bono",
+      "description": "Solo los juegos categorizados como \"Tragamonedas\" por los proveedores, con un RTP menor al 96.1% y sin Jackpot progresivo."
+    },
+    "new": {
+      "title": "Nuevo",
+      "description": "Todos los géneros de juegos recién lanzados aparecerán y desaparecerán después de un mes al alcanzar un número determinado de juegos en la categoría (por ejemplo, 60)."
+    },
+    "slotGames": {
+      "title": "Tragamonedas",
+      "description": "Todos los juegos categorizados como \"Tragamonedas\" por los proveedores."
+    },
+    "crash": {
+      "title": "Juegos de Colisión",
+      "description": "Juegos categorizados como \"Juegos de Colisión\" por los proveedores.\nTodos los juegos de casino en línea donde los jugadores apuestan por el resultado de un multiplicador que aumenta rápidamente.\nEl objetivo es retirar antes de que el multiplicador colapse, lo que puede ocurrir en cualquier momento.\nEjemplos: Aviator, JetX, Crash, Coin Flip, Rocket."
+    },
+    "shows": {
+      "title": "Espectáculos de Juegos",
+      "description": "Todos los juegos categorizados como \"Espectáculos de Juegos\" por los proveedores,\nque cuentan con anfitriones en vivo, imágenes atractivas y la oportunidad para que los jugadores ganen premios basados en sus"
+    },
+    "blackjackAndRoulette": {
+      "title": "Juegos en Vivo",
+      "description": "Todas las mesas de Blackjack y Ruleta"
+    },
+    "liveBlackjack": {
+      "title": "Blackjack en Vivo",
+      "description": "Todas las mesas de Blackjack"
+    },
+    "liveRoulette": {
+      "title": "Ruleta en Vivo",
+      "description": "Todas las mesas de Ruleta"
+    },
+    "livePoker": {
+      "title": "Póker en Vivo",
+      "description": "Todos los juegos de Póker"
+    },
+    "sport": {
+      "title": "Deportes",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "lottery": {
+      "title": "Lotería",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "roulette": {
+      "title": "Ruleta",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "casual": {
+      "title": "Casual",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "craps": {
+      "title": "Dados",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "scratch": {
+      "title": "Raspaditas",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "poker": {
+      "title": "Póker",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "fishing": {
+      "title": "Juegos de Pesca",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "mines": {
+      "title": "Juegos de Minas",
+      "description": "Juegos deportivos categorizados como \"Deporte o Deporte Virtual\" por los proveedores, típicamente incluyen apuestas deportivas virtuales y juegos de simulación que imitan eventos deportivos de la vida real."
+    },
+    "summerVibe": {
+      "title": "Cosecha de Victorias",
+      "description": "Juegos de ambiente veraniego"
+    }
+  },
+  "achievements": {
+    "title": "Logros",
+    "seeAll": "Ver Todo",
+    "getPrize": "Obtener Premio",
+    "currentProgress": "Progreso actual:",
+    "status": {
+      "completed": "Completado",
+      "uncompleted": "No completado"
+    },
+    "claimPrize": "Reclamar Premio",
+    "congratulations": "¡Felicidades!",
+    "receivedPrize": "Has recibido un premio.",
+    "horray": "¡Hurra!"
+  },
+  "deposit": {
+    "title": "Depósito",
+    "method": "Método",
+    "betterInCrypto": "Mejor en Cripto",
+    "cryptoPayment": "Pago en criptomoneda",
+    "bankPayment": "Pago bancario",
+    "recipient": "Destinatario",
+    "chooseAmount": "Elegir cantidad",
+    "makeTransfer": "Realiza la transferencia usando los detalles a continuación",
+    "transferInstruction": "Por favor, transfiere la cantidad exacta a continuación a los detalles bancarios proporcionados dentro del límite de tiempo.",
+    "timeIsUp": "Se acabó el tiempo",
+    "timeoutDescription": "No recibimos tu transacción a tiempo. Si los fondos fueron enviados, por favor contacta con soporte.",
+    "makeDeposit": "Realizar un depósito",
+    "amountDescription": "Elige la cantidad que deseas depositar",
+    "next": "Siguiente",
+    "paymentMade": "Pago realizado",
+    "back": "Volver",
+    "amount": "Cantidad",
+    "amountPlaceholder": "Ingresa la cantidad ({{currency}})",
+    "amountTooLow": "Demasiado bajo. El mínimo es 500 {{currency}}.",
+    "yourBank": "Tu banco",
+    "bankName": "Nombre del banco",
+    "cardNumber": "Número de tarjeta",
+    "phoneNumber": "Número de teléfono",
+    "cardHolder": "Titular de la tarjeta",
+    "information": "Información",
+    "details": "Detalles",
+    "addDetails": "Añadir detalles",
+    "chooseBank": "Elige la cantidad y el banco",
+    "enterInfo": "Ingresa tu información",
+    "correctDetails": "Asegúrate de proporcionar los detalles correctos",
+    "personalAddress": "Tu dirección personal",
+    "cryptoAddress": "Tu dirección de depósito {{name}} ({{network}})",
+    "memo": "Memo",
+    "someMemo": "Algún memo importante",
+    "memoNote": "Por favor, presta atención al campo Memo. Si está lleno, usa el memo para realizar un depósito.",
+    "network": "Red",
+    "paymentMethods": {
+      "bankCard": "Tarjeta bancaria",
+      "cryptocurrency": "Criptomoneda",
+      "sbp": "SBP",
+      "sbpQr": "SBP QR"
+    },
+    "methods": {
+      "oneClickPay": "Pago en 1 Clic",
+      "mobile": "Móvil"
+    },
+    "error": {
+      "attemptFailed": "¡Ups! ¡Intento fallido! Por favor, intenta de nuevo 😊"
+    },
+    "description": "Cantidad de un depósito ₽500 - ₽350,000",
+    "from": "Desde",
+    "to": "hasta",
+    "inProgress": "Tu pago está en proceso",
+    "inProgressDescription": "Si la transacción es correcta, verás el reflejo en tu saldo pronto. Para más información, verifica los Detalles.",
+    "paymentFail": "Pago fallido",
+    "timeLeft": "Tiempo restante:",
+    "selectNetwork": "Ingresa la red",
+    "descriptionNetwork": "¡Solo puedes realizar un depósito en la red que seleccionaste!",
+    "cancelled": "Depósito cancelado.",
+    "cancelQuestion": "¿Cancelar Depósito?",
+    "cancelDescription": "Esto detendrá la transacción actual. ¿Estás seguro de que quieres cancelar?",
+    "cancelAction": "Cancelar Depósito",
+    "cancelPayment": "Cancelar Pago",
+    "minDeposit": "Depósito mín.",
+    "depositAboveMinimum": "Deposita por encima del mínimo para mantener los fondos seguros.",
+    "scanQR": "Escanea el QR o copia la dirección a continuación",
+    "redirectingOn": "Redirigiendo en",
+    "completePayment": "Por favor, completa el pago en",
+    "andReturn": "y regresa aquí.",
+    "processedAutomatically": "Tu depósito será procesado automáticamente",
+    "estimatedArrival": "Llegada estimada ≈ 1 min",
+    "transferInstruction1": "Al transferir, selecciona \"A otro país\" y el país deseado, copia el número de teléfono y selecciona el banco especificado.",
+    "transferInstruction2": "La transferencia debe realizarse a una tarjeta/cuenta.",
+    "detailedInstruction": "Instrucción Detallada",
+    "warningMessage": "Ten en cuenta que si el monto depositado es menor al límite mínimo, los fondos se perderán irreversiblemente.",
+    "inputInfo": {
+      "redirectInfo": "Si está disponible, verás los detalles para pagar directamente. De lo contrario, serás redirigido a una página de pago segura."
+    },
+    "process": {
+      "waiting": "Esperando la transacción...",
+      "checking": "Estamos verificando tu transacción...",
+      "youCanLeave": "Puedes salir de esta página — actualizaremos tu saldo automáticamente una vez detectado."
+    },
+    "processAlert": {
+      "failedToast": "Depósito fallido, intenta de nuevo o contacta con soporte.",
+      "successToast": "Depósito completado. Los fondos aparecerán pronto."
+    },
+    "continueDeposit": "Continuar Depósito",
+    "successful": {
+      "title": "Pago exitoso",
+      "description": "Los fondos aparecerán en tu saldo pronto.",
+      "paidButton": "Pagado",
+      "homeButton": "Página de Inicio",
+      "currency": "Moneda:",
+      "network": "Red:"
+    },
+    "failed": {
+      "title": "Pago fallido",
+      "cryptoNotDetected": "No pudimos detectar tu transacción en criptomoneda.",
+      "somethingWrong": "Algo salió mal.",
+      "contactSupport": "Si ya lo enviaste, por favor contacta con soporte.",
+      "tryAgain": "Intentar de Nuevo"
+    },
+    "v3": {
+      "cryptocurrencyPayment": "Pago en Criptomoneda",
+      "depositSuccessful": "Depósito exitoso. Saldo actualizado.",
+      "networkWarning": "Estás enviando {{crypto}} a través de la red {{network}}. Usar una red diferente resultará en la pérdida de fondos.",
+      "minimumAmountWarning": "Asegúrate de que el depósito cumpla con el monto mínimo. Los depósitos por debajo del mínimo no serán acreditados.",
+      "oneTransaction": "Realiza el pago en una sola transacción",
+      "noComments": "No dejes comentarios para la transferencia.",
+      "requisitesChange": "Los requisitos siempre cambian.",
+      "copyAmount": "Copia la cantidad",
+      "adjustedAmount": "Hemos ajustado tu monto de transferencia para verificar que este es tu pago y procesarlo automáticamente.",
+      "understood": "Entendido",
+      "awaitingTransfer": "Esperando tu transferencia...",
+      "paymentDone": "Pago Realizado",
+      "chooseAnotherMethod": "Elegir Otro Método",
+      "unableToVerify": "No se pudo verificar el pago. Intenta de nuevo o elige otro método.",
+      "checkingPayment": "Verificando tu pago...",
+      "processingTime": "Esto puede tomar hasta 25 minutos. Puedes volver a la página de inicio - te notificaremos cuando lleguen los fondos.",
+      "productInformation": "Información del Producto",
+      "transactionTimeout": "No recibimos tu transacción a tiempo. Si los fondos fueron enviados, por favor contacta con soporte.",
+      "contactSupport": "Contactar con Soporte",
+      "home": "Inicio",
+      "proceedToPayment": "Proceder al pago",
+      "bonusOnDeposit": "Bono en depósito",
+      "bonusDescription": "100% extra acreditado instantáneamente",
+      "depositAmount": "Monto del depósito",
+      "bonusBalance": "Saldo de bono"
+    },
+    "rateLimit": {
+      "title": "Límite de depósito alcanzado",
+      "description": "Has alcanzado tu límite de 3 intentos de depósito en los últimos 30 minutos.",
+      "tryAgain": "Puedes intentar de nuevo en {{time}}"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "back": "Volver",
+    "description": "Para cualquier requisito legal u otras preguntas, contáctanos en ",
+    "sendFeedback": "Enviar comentarios",
+    "contactSupport": "Contactar con soporte",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Para cualquier otra pregunta, no dudes en contactar con nuestro equipo de soporte o usar nuestro formulario de comentarios:",
+      "submit": "Enviar Mensaje",
+      "success": "¡Comentarios enviados!",
+      "error": "No se pudo enviar el mensaje",
+      "great": "¡Genial!",
+      "thanks": "Gracias por enviar tus comentarios. Te contactaremos lo antes posible.",
+      "feedback": {
+        "title": "Formulario de comentarios",
+        "description": "Contáctanos directamente usando el formulario de comentarios a continuación.",
+        "yourName": "Tu Nombre",
+        "yourEmail": "Tu Correo Electrónico",
+        "yourQuestion": "Tu pregunta",
+        "cancel": "Cancelar",
+        "sendMessage": "Enviar mensaje"
+      }
+    },
+    "info": {
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "workingHours": "Horario de Trabajo"
+    },
+    "socialMedia": {
+      "description": "Aquí puedes encontrar todos los enlaces a nuestras redes sociales."
+    }
+  },
+  "pageInDev": {
+    "title": "Página temporalmente no disponible",
+    "back": "Volver",
+    "message": "Por favor, regresa más tarde"
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "ejemplo@ejemplo.com",
+    "password": "Contraseña",
+    "passwordPlaceholder": "********",
+    "loginButton": "Iniciar Sesión",
+    "noAccount": "¿No tienes una cuenta?",
+    "registerHere": "Regístrate",
+    "orLoginWith": "O inicia sesión usando estas opciones:",
+    "wrongEmail": "Correo electrónico o nombre de usuario incorrecto.",
+    "wrongPassword": "Correo electrónico o contraseña inválidos",
+    "restorePassword": "Restaurar contraseña",
+    "restoreHere": "aquí",
+    "emailRequired": "Se requiere correo electrónico o nombre de usuario",
+    "passwordRequired": "Se requiere contraseña",
+    "passwordMinLength": "La contraseña debe tener al menos 8 caracteres"
+  },
+  "register": {
+    "title": "Registrarse",
+    "email": "Correo electrónico",
+    "registerBonus": "Arte promocional de bono de registro",
+    "emailPlaceholder": "ejemplo@ejemplo.com",
+    "password": "Contraseña",
+    "passwordPlaceholder": "********",
+    "registerButton": "Regístrate",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "loginHere": "Iniciar Sesión",
+    "orRegisterWith": "O elige otras opciones",
+    "passwordRequirements": "Mínimo 8 caracteres, debe incluir números.",
+    "emailRequired": "Se requiere correo electrónico",
+    "invalidEmail": "Por favor, ingresa una dirección de correo electrónico válida",
+    "passwordRequired": "Se requiere contraseña",
+    "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+    "passwordNumberRequired": "La contraseña debe incluir al menos un número",
+    "welcomeBonus": "Bono de Bienvenida",
+    "depositBonus": "Obtén $1,500 en tu primer depósito",
+    "depositBonusMobile1": "Obtén $1,500 en tu",
+    "depositBonusMobile2": "primer depósito",
+    "promoCode": {
+      "title": "Código promocional",
+      "placeholder": "Ingresa el código promocional",
+      "apply": "Aplicar",
+      "applied": "¡Código promocional aplicado!",
+      "error": "No eres elegible para este código promocional.",
+      "appliedDescription": "¡Felicidades! El código promocional fue aplicado. Has activado 100FS + Bono de Bienvenida del 100%!",
+      "appliedDescriptionNew": "¡Felicidades! El código promocional fue aplicado. Has activado {{newCode}}!",
+      "appliedDescriptionError": "¡El código promocional no es válido!",
+      "great": "¡Genial!"
+    },
+    "oneLastStep": "¡Un último paso!",
+    "completeSignUp": "Completa tu registro confirmando los detalles a continuación.",
+    "selectCountry": "Por favor, selecciona tu país",
+    "selectDateOfBirth": "Por favor, selecciona tu fecha de nacimiento",
+    "mustBe18": "Debes tener al menos 18 años",
+    "selectCurrency": "Por favor, selecciona tu moneda preferida",
+    "termsAndConditions": "Términos y Condiciones",
+    "signUpConfirm18Agree": "Al registrarte, confirmas que tienes 18+ y aceptas los",
+    "confirmAge": "Confirmo que tengo 18 años o más",
+    "agree": "Acepto",
+    "country": "País",
+    "dateOfBirth": "Fecha de Nacimiento",
+    "birthday": "Cumpleaños",
+    "day": "Día",
+    "month": "Mes",
+    "year": "Año",
+    "preferredCurrency": "Moneda Preferida",
+    "selectCur": "Seleccionar Moneda",
+    "language": "Idioma",
+    "selectLanguage": "Por favor, selecciona tu idioma"
+  },
+  "auth": {
+    "terms": "Términos y Condiciones",
+    "privacyPolicy": "Política de Privacidad",
+    "contactSupport": "Por favor, contacta con soporte o verifica el correo electrónico.",
+    "confirmationLink": "Enviamos un enlace de confirmación a tu correo.",
+    "forgotPassword": "Olvidé mi contraseña",
+    "restorePassword": "Restaurar contraseña",
+    "specifyEmail": "Especifica tu correo electrónico:",
+    "send": "Enviar",
+    "checkYourEmail": "Verifica tu correo electrónico",
+    "support": "Soporte",
+    "forgotPasswordQuestion": "¿Olvidaste tu contraseña?",
+    "forgotPasswordQuestion2": "Restablecer",
+    "passwordResetSuccessful": "¡Restablecimiento de contraseña exitoso!",
+    "passwordResetCongratulations": "¡Felicidades! Tu contraseña fue restablecida con éxito, por favor inicia sesión nuevamente con tu nueva contraseña.",
+    "contactSupportOrCheckEmail": "Por favor, contacta con soporte o verifica el correo electrónico.",
+    "tryAgain": "Intentar de nuevo",
+    "passwordChangedSuccessfully": "Tu contraseña cambió con éxito",
+    "pleaseChooseNewPassword": "Por favor, elige una nueva contraseña",
+    "newPassword": "Nueva contraseña",
+    "confirmNewPassword": "Confirmar nueva contraseña",
+    "title": "La contraseña debe contener:",
+    "englishLettersOnly": "Solo letras en inglés",
+    "minimumLength": "Mínimo 8 caracteres",
+    "upperLowerCase": "Letras mayúsculas y minúsculas",
+    "number": "Un número (0–9)",
+    "passwordRestore": "Restaurar contraseña",
+    "enterEmail": "Ingresa tu dirección de correo electrónico.",
+    "forgotEmail": "¿Olvidaste tu correo electrónico? Contacta con soporte.",
+    "repeatPassword": "Repite la nueva contraseña:",
+    "codeSentMessage": "Hemos enviado un código a tu correo electrónico. Es válido por 111 segundos",
+    "confirmationCode": "Código de confirmación:",
+    "codeRequired": "Se requiere el código",
+    "didntReceiveCode": "¿No recibiste el código?",
+    "resendInSeconds": "Reenviar en 59 segundos",
+    "continue": "Continuar",
+    "emailRequired": "Se requiere correo electrónico",
+    "emailMustContainAt": "El correo electrónico debe contener '@'",
+    "emailMaxLength": "El correo electrónico debe tener menos de o igual a 255 caracteres",
+    "confirmationCodePlaceholder": "YYYY",
+    "linkSent": "Se ha enviado el enlace.",
+    "changePassword": "Cambiar contraseña",
+    "newPasswordSet": "Nueva Contraseña Establecida",
+    "passwordUpdated": "Tu contraseña ha sido actualizada con éxito.",
+    "close": "Cerrar",
+    "linkExpired": "Enlace expirado",
+    "linkExpiredMessage": "Este enlace ha expirado. Por favor, solicita uno nuevo.",
+    "sendNewLink": "Enviar Nuevo Enlace",
+    "forgotEmailQuestion": "¿Olvidaste tu correo electrónico?",
+    "contactSupportLink": "Contactar con Soporte"
+  },
+  "balance": {
+    "setAsDefault": "Establecer como predeterminado",
+    "setAsMain": "Establecer como Principal",
+    "walletChanged": {
+      "title": "Billetera cambiada",
+      "description": "¡Felicidades!\nTu billetera predeterminada ahora es Criptomoneda USDT",
+      "great": "¡Genial!"
+    },
+    "walletChangedSuccessfully": "Billetera cambiada con éxito",
+    "primaryWalletChangedSuccessfully": "Billetera principal cambiada con éxito",
+    "walletChangeError": "Error al cambiar la billetera principal",
+    "walletSwitching": "Tu billetera está cambiando. Por favor, espera un momento...",
+    "errorSwitchWallet": "El saldo de bono aún no está disponible.",
+    "switchWallet": {
+      "title": "¿Estás seguro de que quieres cambiar tu saldo principal?",
+      "description": "Todos tus bonos activos pueden ser cancelados.",
+      "warningMessage": "Cambiar de billetera puede cancelar los bonos activos. Asegúrate de usar cualquier bono antes de cambiar.",
+      "switch": "Cambiar",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar"
+    },
+    "switchingWalletDialog": {
+      "title": "Cambiar Billetera Principal",
+      "warningTitle": "¿Estás seguro?",
+      "warningMessage": "Cambiar de billetera puede cancelar los bonos activos. Asegúrate de usar cualquier bono antes de cambiar.",
+      "switch": "Cambiar",
+      "cancel": "Cancelar"
+    },
+    "history": {
+      "action": "Acción",
+      "date": "Fecha",
+      "currency": "Moneda",
+      "amount": "Cantidad",
+      "status": "Estado"
+    },
+    "myWallets": "Mis Billeteras",
+    "back": "Volver",
+    "createNewWallet": "Crear nueva billetera",
+    "mainBalance": "Saldo Principal",
+    "inCurrency": "En {{currency}}",
+    "otherBalances": "Otros Saldos",
+    "bonus": "Bono",
+    "activeBalance": "Activar",
+    "yourLoot": "Tus Loot Coins",
+    "deposits": "Depósitos",
+    "withdrawals": "Retiros",
+    "accrual": "Acreditación",
+    "deduction": "Deducción",
+    "payments": "Pagos",
+    "oldWallets": {
+      "title": "Billeteras Disponibles",
+      "noWallets": "No se encontraron billeteras"
+    },
+    "manageFunds": "Administrar Fondos",
+    "primaryWallet": "Billetera Principal",
+    "primary": "Principal",
+    "additionalFunds": "Fondos Adicionales",
+    "otherWallets": "Otras Billeteras",
+    "makePrimary": "Hacer Principal"
+  },
+  "bonus": {
+    "title": {
+      "all": "Promociones",
+      "available": "Disponible",
+      "loyalty": "Lealtad",
+      "tournament": "Torneos",
+      "promotion": "Promociones",
+      "currentBonus": "Bono actual"
+    },
+    "myPromoCode": "Mis Códigos Promocionales",
+    "promocodeApplied": "Código promocional aplicado",
+    "promocodeAppliedSuccessfully": "Código promocional aplicado con éxito",
+    "enterPromoCode": "Ingresa el Código Promocional",
+    "applyNewPromoCode": "Aplicar Nuevo Código Promocional",
+    "enterNewPromocode": "Ingresa un nuevo código promocional",
+    "enterNewPromocodeToApply": "Ingresa un nuevo código promocional para aplicarlo a tu cuenta.",
+    "allPromotions": "Todas las promociones",
+    "back": "Volver",
+    "seeAll": "Ver todo",
+    "close": "Cerrar",
+    "otherPromotions": "Otras promociones",
+    "enterPromocode": "Ingresa el código promocional",
+    "apply": "Aplicar",
+    "promoCodeDes": "Ingresa un nuevo código promocional para aplicarlo a tu cuenta",
+    "chooseOne": "¡Elige uno para ti!",
+    "lobby": {
+      "title": "Vestíbulo",
+      "description": "Elige entre innumerables juegos y disfruta!"
+    },
+    "promotion": {
+      "tabgame": "Juegos de toque",
+      "checkout": "¡Echa un vistazo a nuestros juegos de toque y obtén premios!",
+      "checkoutBtn": "Echa un vistazo a los juegos de toque",
+      "casino": "Juegos de toque",
+      "checkoutCasino": "¡Echa un vistazo a nuestro juego estilo Tinder!",
+      "checkoutBtnCasino": "Echa un vistazo a los juegos de toque",
+      "enterPromocode": "Ingresa un nuevo código promocional",
+      "enterPromocodeDes": "Ingresa un nuevo código promocional para aplicarlo a tu cuenta.",
+      "apply": "Aplicar",
+      "promoCodeDesInput": "Ingresa el Código Promocional",
+      "availableGames": "Juegos para Bono",
+      "lobby": "Vestíbulo",
+      "lobbyDes": "Elige entre innumerables juegos y disfruta!",
+      "tabgameBox": "Juegos de toque",
+      "tabgameDes": "¡Echa un vistazo a nuestros juegos de toque y obtén premios!",
+      "newForYou": "Nuevo para ti",
+      "newForYouDes": "Juega un juego aleatorio que no hayas jugado antes.",
+      "otherGame": "Otro"
+    },
+    "banner": {
+      "title": "Bono de Bienvenida",
+      "description": "+100% al primer depósito",
+      "readMore": "Leer más"
+    },
+    "detail": {
+      "hotOffer": "¡Oferta atractiva para nuevos jugadores!",
+      "getBonus": "Obtén un bono del 100% en tu primer depósito hasta",
+      "howDoesItWork": "¿Cómo funciona?",
+      "work1": "1. Realiza tu primer depósito de $10 / 1,000 ₽ o más.",
+      "work2": "2. Obtén el 100% en tu cuenta de bono.",
+      "work3": "3. ¡Disfruta jugando con el bono!",
+      "additionalTerms": "Términos Adicionales",
+      "term1": "1. El bono se acredita solo en el primer depósito.",
+      "term2": "2. La apuesta para el bono es X35 del monto del bono y el depósito.",
+      "detailsAndConditions": "Detalles y condiciones detallados para cada bono -",
+      "promotions": "Promociones",
+      "get": "Obtener",
+      "getBonusAmount": "Obtén $1,500",
+      "firstDeposit": "En el primer depósito",
+      "deactive": "¡Bono desactivado!",
+      "desDeactive": "¡Felicidades! El código promocional está desactivado.",
+      "warning": "¡Advertencia!",
+      "activeBonus": "¡Tienes un bono activo!",
+      "message": "¿Estás seguro de que quieres desactivar el código promocional actual ",
+      "messagePrevious": "Esto desactivará tu bono anterior.",
+      "btnDeactive": "Desactivar",
+      "btnActive": "Activo",
+      "messageActive": "¿Estás seguro de que quieres cambiar el código promocional actual {{currentCode}} por {{newCode}}?",
+      "active": "¡Bono aplicado!",
+      "desActive": "¡Felicidades! El código promocional fue aplicado. Has activado el",
+      "desBonus": "Bono de Bienvenida del 100%!"
+    },
+    "term": {
+      "bonusTermsTitle": "Términos y condiciones del bono",
+      "bonusIntro": "El bono está disponible solo en el primer depósito",
+      "bonusTermsSection": "Términos del Bono",
+      "bonusAmount": "Monto del bono: 100%",
+      "minDeposit": "Depósito mínimo: desde 10 USD / 1,000 RUB",
+      "maxBonus": "Monto máximo del bono: 1500 USD / 130,000 RUB",
+      "wager": "Apuesta: 35",
+      "howToParticipate": "¿Cómo participar?",
+      "step1": "1. Inicia sesión o registra una cuenta.",
+      "step2": "2. Haz clic en el \"Activar\".",
+      "step3": "3. Realiza un depósito desde 10 USD.",
+      "step4": "4. ¡Disfruta jugando con el bono!",
+      "rulesTitle": "Reglas:",
+      "rule1": "1. La oferta de bono del 100% está disponible desde el 30.05.2025 hasta el 31.12.2025.",
+      "rule2": "2. La activación solo es posible en el primer depósito.",
+      "rule3": "3. El monto máximo del bono es 1500 USD / 130,000 RUB.",
+      "rule4": "4. Para activar la oferta de bono, se requiere un depósito único de al menos 10 USD / 1,000 RUB.",
+      "rule5": "5. Los fondos del bono se acreditarán en el Saldo de Bono.",
+      "rule6": "6. Solo las apuestas realizadas en tragamonedas de la sección <0>\"Juegos para bono\"</0> cuentan para el requisito de apuesta.",
+      "rule7": "7. El bono se apuesta primero usando el saldo real —específicamente, la parte en la que se acreditó el bono— y luego desde el saldo de bono.",
+      "rule8": "8. El saldo de bono estará disponible para todos los jugadores que hayan apostado el monto del depósito desde su saldo principal. Para seguir jugando con fondos de bono, ve al \"Panel de Saldo\" (ubicado en la cabecera del sitio web), selecciona \"Saldo de Bono\" o visita la sección \"Mis billeteras\" y activa \"Saldo de Bono\" con un solo clic. Si la activación es exitosa, aparecerá un indicador verde junto a \"Saldo de Bono.\" En caso de error, el sistema mostrará automáticamente una notificación correspondiente.",
+      "rule9": "9. El monto del bono debe apostarse 35 veces.",
+      "rule10": "10. Las ganancias de las apuestas que no cuentan para el requisito de apuesta se acreditarán en el saldo real, pero estos fondos no pueden usarse para apostar el bono.",
+      "rule11": "11. Si se realiza un depósito mientras un bono está activo, el monto depositado puede usarse para cumplir con el requisito de apuesta.",
+      "rule12": "12. El período de apuesta para el depósito calificado y el porcentaje del bono es de 7 días desde el momento del abono.",
+      "rule13": "13. Después de completar la apuesta del bono, se debe cumplir un requisito de apuesta de X1 para el retiro según las reglas del sitio.",
+      "rule14": "14. El retiro no está disponible durante un bono activo.",
+      "rule15": "15. Solo un bono puede estar activo en el casino en cualquier momento dado.",
+      "rule16": "16. Después de cumplir con el requisito de apuesta, las ganancias se transferirán al saldo real.",
+      "rule17": "17. Si cancelas el bono, los fondos restantes en el saldo real estarán sujetos a un requisito de apuesta de X1, y los fondos del bono serán cancelados.",
+      "rule18": "18. La promoción es válida solo para un número de teléfono, cuenta, dirección, dirección IP, número de tarjeta bancaria o cuenta de criptomoneda. La participación repetida en la promoción no está permitida. Participar en la promoción bajo una identidad diferente resultará en la cancelación de los resultados y el bloqueo de la cuenta sin reembolsar ningún fondo.",
+      "footerText": "© 2025 Casino. Todos los derechos reservados."
+    }
+  },
+  "claimedGifts": {
+    "title": "Regalos Reclamados",
+    "back": "Volver",
+    "allAchievements": "Todos los Logros",
+    "claimed": "Reclamado",
+    "rewardFor": "Recompensa por completar"
+  },
+  "gameInside": {
+    "backToLobby": "Volver al vestíbulo",
+    "toggleCurtains": "Cortinas",
+    "addToFavorites": "Añadir a favoritos",
+    "removeFromFavorites": "Eliminar de favoritos",
+    "fullScreen": "Pantalla Completa",
+    "deposit": "Depósito",
+    "otherGames": "Otros juegos",
+    "seeMore": "Ver más...",
+    "warning": "Advertencia",
+    "close": "Cerrar",
+    "bonusGames": "Juegos de Bono",
+    "bonusWalletError": "No puedes jugar con el saldo de bono 😣\nPor favor, elige Juegos para Bono o cambia al Saldo Principal"
+  },
+  "page404": {
+    "title": "404",
+    "message": "Lo sentimos, algo salió mal...",
+    "reload": "Página de Inicio"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "back": "Volver",
+    "ourLinks": "Nuestros enlaces",
+    "socialMediaDescription": "Aquí puedes encontrar todos los enlaces a nuestras redes sociales.",
+    "contactUs": "Contáctanos"
+  },
+  "bonusTerms": {
+    "title": "Términos y Condiciones del Bono",
+    "back": "Volver",
+    "lastUpdated": "Última actualización:",
+    "introduction": "Introducción",
+    "introduction1": "Estos términos y condiciones y los documentos mencionados a continuación (\"Términos\") se aplican al uso del sitio web actual yourloot.io (\"Sitio web\") y sus servicios relacionados o conectados (colectivamente, el \"Servicio\").",
+    "introduction2": "Debes revisar cuidadosamente estos Términos, ya que contienen información importante sobre tus derechos y obligaciones respecto al uso del Sitio web y forman un acuerdo legal vinculante entre tú, nuestro cliente (\"Cliente\"), y nosotros. Al usar este Sitio web y/o acceder al Servicio, tú, ya seas un invitado o un usuario registrado con una cuenta (\"Cuenta\"), aceptas estar sujeto a estos Términos, junto con cualquier enmienda que pueda publicarse de vez en cuando. Si no aceptas estos Términos, debes abstenerte de acceder al Servicio y usar el Sitio web.",
+    "introduction3": "El Servicio es propiedad de Cintra Soft Ltd., una compañía de responsabilidad limitada registrada en las Islas Vírgenes Británicas con el número de registro de compañía 2151527, con dirección registrada en 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Islas Vírgenes Británicas (\"Compañía\"), licenciada en el Estado de Anjouan bajo la Ley de Licencias de Juegos de Computadora 007 de 2005."
+  },
+  "cookiePolicy": {
+    "title": "Política de KYC",
+    "back": "Volver",
+    "lastUpdated": "Última actualización:",
+    "introduction": {
+      "title": "1. Introducción",
+      "content": "Estos términos y condiciones y los documentos mencionados a continuación (\"Términos\") se aplican al uso del sitio web actual yourloot.io (\"Sitio web\") y sus servicios relacionados o conectados (colectivamente, el \"Servicio\")."
+    },
+    "generalTerms": {
+      "title": "2. Términos Generales",
+      "content": "Nos reservamos el derecho de revisar y modificar los Términos (incluyendo cualquier documento mencionado y vinculado a continuación) en cualquier momento. Debes visitar esta página periódicamente para revisar los Términos y Condiciones. Las enmiendas serán vinculantes y efectivas inmediatamente después de su publicación en este Sitio web. Si no estás de acuerdo con dichos cambios, debes detener inmediatamente el uso del Servicio. El uso continuado del Sitio web tras dicha publicación indicará tu acuerdo de estar sujeto a los Términos modificados. Cualquier apuesta no liquidada antes de que entren en vigor los Términos modificados estará sujeta a los Términos preexistentes."
+    },
+    "obligations": {
+      "title": "3. Tus Obligaciones",
+      "content": "Reconoces que en todo momento al acceder al Sitio web y usar el Servicio:",
+      "items": [
+        "Tienes más de 18 años, o la edad legal en la que se permiten actividades de juego o apuestas según la ley o jurisdicción que te aplica. Nos reservamos el derecho de solicitar documentos de prueba de edad en cualquier momento.",
+        "Tienes capacidad legal y puedes celebrar un acuerdo legal vinculante con nosotros. No debes acceder al Sitio web ni utilizar el Servicio si no tienes capacidad legal.",
+        "Eres residente en una jurisdicción que permite el juego. No eres residente de ningún país en el que el acceso al juego en línea esté prohibido para sus residentes o para cualquier persona dentro de dicho país. Es tu única responsabilidad asegurarte de que tu uso del servicio sea legal.",
+        "No puedes usar una VPN, proxy o servicios o dispositivos similares que oculten o manipulen la identificación de tu ubicación real.",
+        "Eres el usuario autorizado del método de pago que utilizas.",
+        "Debes realizar todos los pagos hacia nosotros de buena fe y no intentar revertir un pago realizado o tomar cualquier acción que cause que dicho pago sea revertido por un tercero.",
+        "Al realizar apuestas, puedes perder parte o la totalidad de tu dinero depositado en el Servicio de acuerdo con estos Términos y serás completamente responsable de esa pérdida.",
+        "Al realizar apuestas, no debes usar ninguna información obtenida en violación de cualquier legislación vigente en el país en el que te encontrabas cuando se realizó la apuesta.",
+        "No estás actuando en nombre de otra parte ni con fines comerciales, sino únicamente en tu propio nombre como individuo privado en capacidad personal.",
+        "No debes intentar manipular ningún mercado o elemento dentro del Servicio de mala fe ni de una manera que afecte negativamente la integridad del Servicio o de nosotros.",
+        "Debes actuar de buena fe en relación con nosotros y el Servicio en todo momento y para todas las apuestas realizadas usando el Servicio.",
+        "Tú, o, si aplica, tus empleados, empleadores, agentes o familiares, no estás registrado como Afiliado en nuestro programa de Afiliados."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Uso Restringido",
+      "content": "No debes usar el Servicio:",
+      "items": [
+        "Si tienes menos de 18 años (o por debajo de la edad de mayoría estipulada en las leyes de la jurisdicción que te aplica) o si no tienes la capacidad legal para celebrar un acuerdo legal vinculante con nosotros o estás actuando como agente para, o en nombre de, una persona menor de 18 años (o por debajo de la edad de mayoría estipulada en las leyes de la jurisdicción que te aplica);",
+        "Si resides en un país en el que el acceso al juego en línea esté prohibido para sus residentes o para cualquier persona dentro de dicho país.",
+        "Si eres residente de uno de los siguientes países, o accedes al Sitio web desde uno de los siguientes países:"
+      ],
+      "restrictedCountries": [
+        "Austria",
+        "Francia y sus territorios",
+        "Alemania",
+        "Países Bajos y sus territorios",
+        "España",
+        "Unión de Comoras"
+      ]
+    }
+  },
+  "menu": {
+    "bonuses": "Bonos",
+    "notifications": "Notificaciones",
+    "wallet": "Billetera",
+    "games": "Juegos",
+    "liveCasino": "Casino en Vivo",
+
+    "legal": "Legal",
+    "casino": "Casino",
+    "description": "El Servicio es propiedad de Cintra Soft Ltd., una compañía de responsabilidad limitada registrada en las Islas Vírgenes Británicas con el número de registro de compañía 2151527, con dirección registrada en 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, Islas Vírgenes Británicas (\"Compañía\"), licenciada en el Estado de Anjouan bajo la Ley de Licencias de Juegos de Computadora 007 de 2005."
+  },
+  "home": {
+    "poker": "Póker",
+    "blackjack": "Blackjack",
+    "roulette": "Ruleta",
+    "readMore": "Leer más",
+    "featuredProviders": "Juegos",
+    "welcomeBanner": "¡Bienvenido!",
+    "welcomeBannerDes": "¡Nuevo sitio - nuevos horizontes!",
+    "getBonusDeposit": "Depositar",
+    "crypto": "¡Mejor en Cripto!",
+    "harvest": "Cosecha de Victorias",
+    "harvestDescription": "Explora juegos de otoño",
+    "getBonus": "Obtener bono",
+    "ftdBonus": "$1,500",
+    "ftdBonusDes": "En el primer depósito",
+    "other": "Otro",
+    "choseCategory": "Elegir Categoría",
+    "liveGames": "Juegos en Vivo",
+    "yourlootStore": "Tienda YourLoot",
+    "checkout": "Consulta las últimas ofertas",
+    "store": "Tienda",
+    "titleProviders": "Proveedores",
+    "desProviders": "Consulta los últimos proveedores",
+    "titleCategories": "Categorías",
+    "desCategories": "¡Gánalas todas!",
+    "titleSearch": "Buscar",
+    "desSearch": "Busca tu favorito",
+    "seeAll": "Ver todo",
+    "seeAllGames": "Ver todos los juegos",
+    "useLoop": "Usa el Loop",
+    "desUseLoop": "Más de 10,000 juegos",
+    "maybeYou": "Quizás te gustaría:",
+    "back": "Volver",
+    "categoryName": "Nombre de la Categoría",
+    "quickLinks": "Enlaces Rápidos",
+    "manageFunds": "Administrar Fondos",
+    "achievements": "Logros",
+    "categories": "Categorías",
+    "searchCategory": "Buscar categoría",
+    "popular": "Popular",
+    "providers": "Proveedores",
+    "searchProvider": "Buscar proveedor",
+    "favorites": "Favoritos",
+    "all": "Todos los Juegos",
+    "new": "Nuevo",
+    "slots": "Tragamonedas",
+    "crash": "Colisión",
+    "fast": "Rápido",
+    "recommendedGames": "Recomendados",
+    "bonus": "Juegos de Bono",
+    "shows": "Espectáculos de Juegos",
+    "livePoker": "Póker en Vivo",
+    "liveBlackjack": "Blackjack en Vivo",
+    "liveRoulette": "Ruleta en Vivo",
+    "bannerV2": {
+      "title": "Bono de Bienvenida 2X",
+      "description": "Obtén hasta $1,500<br/>en tu primer depósito",
+      "cryptoBonus": "Bono de Criptomoneda",
+      "cryptoBonusDescription": "Diario +7%<br/>en tu depósito"
+    }
+  },
+  "footer": {
+    "menu": {
+      "slots": "Casino",
+      "bonuses": "Bonos",
+      "deposit": "Depósito",
+      "support": "Soporte",
+      "menu": "Menú"
+    }
+  },
+  "loyaltyProgram": {
+    "title": "Programa de Lealtad",
+    "back": "Volver",
+    "lastUpdated": "Última actualización:",
+    "introduction": {
+      "title": "1. Introducción",
+      "content": "Estos términos y condiciones y los documentos mencionados a continuación (\"Términos\") se aplican al uso del sitio web actual yourloot.io (\"Sitio web\") y sus servicios relacionados o conectados (colectivamente, el \"Servicio\")."
+    },
+    "generalTerms": {
+      "title": "2. Términos Generales",
+      "content": "Nos reservamos el derecho de revisar y modificar los Términos (incluyendo cualquier documento mencionado y vinculado a continuación) en cualquier momento. Debes visitar esta página periódicamente para revisar los Términos y Condiciones. Las enmiendas serán vinculantes y efectivas inmediatamente después de su publicación en este Sitio web. Si no estás de acuerdo con dichos cambios, debes detener inmediatamente el uso del Servicio. El uso continuado del Sitio web tras dicha publicación indicará tu acuerdo de estar sujeto a los Términos modificados. Cualquier apuesta no liquidada antes de que entren en vigor los Términos modificados estará sujeta a los Términos preexistentes."
+    },
+    "obligations": {
+      "title": "3. Tus Obligaciones",
+      "content": "Reconoces que en todo momento al acceder al Sitio Web y utilizar el Servicio:",
+      "items": [
+        "Tienes más de 18 años, o la edad legal en la que se permiten actividades de juego o apuestas según la ley o jurisdicción que te aplica. Nos reservamos el derecho de solicitar documentos que acrediten tu edad en cualquier momento.",
+        "Tienes capacidad legal y puedes celebrar un acuerdo legal vinculante con nosotros. No debes acceder al Sitio Web ni utilizar el Servicio si no tienes capacidad legal.",
+        "Resides en una jurisdicción que permite el juego. No eres residente de ningún país donde el acceso al juego en línea esté prohibido para sus residentes o para cualquier persona dentro de dicho país. Es tu exclusiva responsabilidad asegurarte de que el uso del servicio sea legal.",
+        "No puedes usar una VPN, proxy o servicios o dispositivos similares que oculten o manipulen la identificación de tu ubicación real.",
+        "Eres el usuario autorizado del método de pago que utilizas.",
+        "Debes realizar todos los pagos hacia nosotros de buena fe y no intentar revertir un pago realizado ni tomar ninguna acción que cause la reversión de dicho pago por parte de un tercero.",
+        "Al realizar apuestas, puedes perder parte o todo el dinero depositado en el Servicio de acuerdo con estos Términos, y serás completamente responsable de esa pérdida.",
+        "Al realizar apuestas, no debes usar ninguna información obtenida en violación de cualquier legislación vigente en el país en el que te encontrabas cuando se realizó la apuesta.",
+        "No actúas en nombre de otra parte ni con fines comerciales, sino únicamente en tu propio nombre como persona privada en capacidad personal.",
+        "No debes intentar manipular ningún mercado o elemento dentro del Servicio de mala fe ni de manera que afecte negativamente la integridad del Servicio o de nosotros.",
+        "Debes actuar de buena fe en relación con nosotros y el Servicio en todo momento y para todas las apuestas realizadas utilizando el Servicio.",
+        "Tú, o, en su caso, tus empleados, empleadores, agentes o familiares, no están registrados como Afiliados en nuestro programa de Afiliados."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Uso Restringido",
+      "content": "No debes usar el Servicio:",
+      "items": [
+        "Si tienes menos de 18 años (o menor que la mayoría de edad estipulada en las leyes de la jurisdicción que te aplica) o si no puedes legalmente celebrar un acuerdo legal vinculante con nosotros o estás actuando como agente o en nombre de una persona menor de 18 años (o menor que la mayoría de edad según la jurisdicción aplicable);",
+        "Si resides en un país donde el acceso al juego en línea esté prohibido para sus residentes o para cualquier persona dentro de dicho país.",
+        "Si eres residente de uno de los siguientes países, o accedes al Sitio Web desde uno de los siguientes países:"
+      ],
+      "restrictedCountries": [
+        "Austria",
+        "Francia y sus territorios",
+        "Alemania",
+        "Países Bajos y sus territorios",
+        "España",
+        "Unión de Comoras"
+      ]
+    }
+  },
+  "language": {
+    "title": "Cambiar idioma",
+    "placeholder": "Idioma",
+    "select": "Por favor, selecciona tu idioma"
+  },
+  "common": {
+    "english": "Inglés",
+    "azerbaijani": "Azerbaiyano",
+    "kazakh": "Kazajo",
+    "uzbek": "Uzbeko",
+    "russian": "Ruso",
+    "back": "Volver",
+    "required": "Requerido",
+    "login": "Iniciar sesión",
+    "warning": "Advertencia",
+    "close": "Cerrar",
+    "topUp": "Recargar",
+    "finish": "Finalizar",
+    "create": "Crear",
+    "goBack": "Regresar",
+    "cancel": "Cancelar"
+  },
+  "pagination": {
+    "showing": "Mostrando:",
+    "of": "de",
+    "showMore": "Mostrar más"
+  },
+  "session": {
+    "endedTitle": "Sesión Finalizada",
+    "endedDesc": "Tu sesión ha terminado debido a inactividad. Inicia sesión para continuar."
+  },
+  "bannerProfile": {
+    "header": "Encabezado del Banner",
+    "description": "Descripción del Banner",
+    "cta": "Explora juegos de tap"
+  },
+  "promoDefault": {
+    "title": "Página de Promoción Predeterminada",
+    "header": "Encabezado del Banner",
+    "lastUpdated": "Última actualización: 16.9.2024",
+    "description": "Descripción de la promoción",
+    "name": "Nombre de la promoción",
+    "play": "Jugar ahora",
+    "content": "Estos términos y condiciones y los documentos mencionados a continuación (\"Términos\") se aplican al uso del sitio web actual yourloot.io (\"Sitio Web\") y sus servicios relacionados o conectados (colectivamente, el \"Servicio\"). Debes revisar cuidadosamente estos Términos, ya que contienen información importante sobre tus derechos y obligaciones relacionados con el uso del Sitio Web y forman un acuerdo legal vinculante entre tú, nuestro cliente (\"Cliente\"), y nosotros. Al usar este Sitio Web y/o acceder al Servicio, tú, ya seas un invitado o un usuario registrado con una cuenta (\"Cuenta\"), aceptas estar sujeto a estos Términos, junto con cualquier enmienda que pueda publicarse de vez en cuando. Si no aceptas estos Términos, debes abstenerte de acceder al Servicio y usar el Sitio Web. El Servicio es propiedad de Cintra Soft Ltd., una compañía de responsabilidad limitada registrada en las Islas Vírgenes Británicas con el número de registro de compañía 2151527, con dirección registrada en 1st Floor, Columbus Centre, PO Box 2283, Road Town, Tortola VG 1110, Islas Vírgenes Británicas (\"Compañía\"), licenciada en el Estado de Anjouan bajo la Ley de Licencias de Juegos por Computadora 007 de 2005.",
+    "introduction": "Introducción",
+    "back": "Volver"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "backButton": "Volver",
+    "searchPlaceholder": "Buscar",
+    "sections": {
+      "profile": {
+        "value": "Secciones de Perfil",
+        "content": [
+          {
+            "title": "¿Cómo acceder a tu perfil?",
+            "content": "Respuesta: Haz clic en el ícono de perfil (avatar o nombre de usuario) en la esquina superior derecha de la pantalla."
+          },
+          {
+            "title": "Mis Carteras",
+            "content": {
+              "whatIsIt": "¿Qué es? </br> Una sección para gestionar tus carteras y monedas.",
+              "mainFunctions": "Funciones principales:",
+              "createWallets": "Crear nuevas carteras.",
+              "selectCurrency": "Seleccionar moneda de saldo (USD, EUR, RUB, etc.).",
+              "viewTransactions": "Ver historial de transacciones.",
+              "setupDepositMethods": "Configurar métodos de depósito preferidos.",
+              "important": "Importante: La moneda seleccionada afecta la visualización del saldo en todas las secciones.",
+              "currencyImpact": ""
+            }
+          },
+          {
+            "title": "Mis Bonos",
+            "content": {
+              "whatIsIt": "¿Qué es? </br> Una sección para trabajar con bonos y promociones.",
+              "mainFunctions": "Funciones principales:",
+              "activatePromos": "Activar códigos promocionales.",
+              "trackProgress": "Seguimiento del progreso en programas de bonos (por ejemplo, \"Bono de Bienvenida\").",
+              "viewOffers": "Ver promociones disponibles y sus condiciones.",
+              "manageCashback": "Gestionar cashback y otras recompensas."
+            }
+          },
+          {
+            "title": "Mis Juegos",
+            "content": {
+              "whatIsIt": "¿Qué es? </br> Tu colección personal de juegos favoritos.",
+              "mainFunctions": "Funciones principales:",
+              "storeGames": "Almacenar los juegos que juegas con más frecuencia.",
+              "quickLaunch": "Lanzamiento rápido de tus tragamonedas, póker o ruleta favoritos.",
+              "addRemoveGames": "Agregar/eliminar juegos a través del menú \"Favoritos\" en el lobby del juego."
+            }
+          },
+          {
+            "title": "Intercambio",
+            "content": {
+              "whatIsIt": "¿Qué es? </br> Una sección para intercambiar saldo real por moneda del juego (IGC).",
+              "howItWorks": "Cómo funciona:",
+              "selectAmount": "Selecciona la cantidad a convertir.",
+              "specifyCurrency": "Elige la moneda (por ejemplo, 100 RUB → 500 IGC).",
+              "confirmOperation": "Confirma la transacción.",
+              "usingIgc": "Uso de IGC:",
+              "purchaseItems": "Comprar artículos en el juego, participar en torneos y promociones."
+            }
+          },
+          {
+            "title": "Logros",
+            "content": {
+              "whatIsIt": "¿Qué es? </br> Una sección para seguir tus logros en el juego.",
+              "mainFunctions": "Funciones principales:",
+              "viewTasks": "Ver tareas completadas y en curso (por ejemplo, \"Juega 10 rondas de póker\").",
+              "receiveRewards": "Obtener recompensas por logros (bonos, IGC, artículos exclusivos).",
+              "trackProgress": "Seguimiento del progreso a través de una barra de actividad."
+            }
+          },
+          {
+            "title": "Nuestra Tienda",
+            "content": {
+              "whatIsIt": "¿Qué es? </br> La tienda dentro del juego.",
+              "assortment": "Artículos disponibles:",
+              "boxes": "Cajas: Conjuntos aleatorios de artículos o bonos.",
+              "gifts": "Regalos: Pegatinas, skins, animaciones de personajes.",
+              "products": "Productos: Potenciadores, bonos temporales de experiencia o IGC.",
+              "howToBuy": "¿Cómo comprar?",
+              "selectItem": "Selecciona el artículo.",
+              "pay": "Paga con IGC o moneda real.",
+              "receive": "Recibe el artículo en tu inventario."
+            }
+          }
+        ]
+      },
+      "newWallet": {
+        "selectNetwork": "Seleccionar Red",
+        "createWalletError": "Error al crear la cartera"
+      },
+      "wallet": {
+        "value": "Cartera",
+        "content": [
+          {
+            "title": "¿Cómo crear una nueva cartera?",
+            "content": {
+              "step1": "Ve a la sección \"Crear nueva cartera\"",
+              "step2": "Selecciona el tipo de cartera: \"Cartera de Moneda.\"",
+              "step3": "Haz clic en \"Confirmar\""
+            }
+          },
+          {
+            "title": "¿Cómo elegir la moneda de la cartera?",
+            "content": {
+              "step1": "Encuentra la moneda deseada en la lista (por ejemplo, BYN — Rublo bielorruso).",
+              "step2": "Haz clic en \"Confirmar\"."
+            }
+          },
+          {
+            "title": "¿Qué hacer después de crear una cartera?",
+            "content": {
+              "step1": "El sistema solicitará confirmación (\"Confirmación de creación de cartera\").",
+              "step2": "Si deseas establecer la nueva cartera como principal, aparecerá una advertencia:",
+              "warningText": "\"Todos tus bonos activos pueden ser cancelados\"",
+              "step3": "Haz clic en \"Confirmar\" para completar el proceso."
+            }
+          },
+          {
+            "title": "¿Puedo tener varias carteras fiat?",
+            "content": {
+              "answer": "¡Sí! Puedes crear tantas carteras como necesites.",
+              "switchWallets": "Para cambiar entre ellas, usa la sección \"Carteras Disponibles\" en la interfaz principal."
+            }
+          },
+          {
+            "title": "¿Qué pasa si seleccioné la moneda incorrecta?",
+            "content": {
+              "cancelAction": "Cancela la acción en cualquier etapa haciendo clic en \"Cancelar.\"",
+              "contactSupport": "Si la cartera ya está creada, contacta al soporte para eliminación o ajustes. (<a href=\"/contact\" class=\"text-blue-500 underline\">Enlace de Soporte</a>)"
+            }
+          }
+        ]
+      },
+      "deposit": {
+        "value": "¿Cómo Depositar?",
+        "content": [
+          {
+            "title": "Seleccionar una Cartera",
+            "content": {
+              "attention": "¡Importante!",
+              "beforeDeposit": "Antes de depositar, asegúrate de haber seleccionado la cartera correcta. Esto afecta:",
+              "availableMethods": "Métodos de depósito disponibles.",
+              "balanceCurrency": "Moneda del saldo (por ejemplo, seleccionar una cartera en EUR muestra el saldo en euros, no en dólares)."
+            }
+          },
+          {
+            "title": "Depositar en una Cartera RUB",
+            "content": {
+              "method1Title": "Para carteras RUB, hay tres métodos disponibles: </br> </br>Método 1: Depósito con Tarjeta",
+              "method1Steps": [
+                "Selecciona \"Depósito con Tarjeta\".",
+                "Elige un banco asociado (por ejemplo, Sberbank, Tinkoff).",
+                "Ingresa la cantidad → Haz clic en \"Siguiente\".",
+                "Transfiere el dinero usando los detalles proporcionados.",
+                "Confirma el pago haciendo clic en \"Confirmar\"."
+              ],
+              "method1Time": "⏳ Procesamiento: 30–60 minutos. Si el pago no ha llegado, contacta al soporte.",
+              "method2Title": "Método 2: Sistema de Pagos Rápidos (FPS)",
+              "method2Steps": [
+                "Selecciona \"FPS\" → Elige tu banco (por ejemplo, Alfa-Bank).",
+                "Ingresa la cantidad → Haz clic en \"Siguiente\".",
+                "Completa la transferencia a través del sistema de pagos rápidos.",
+                "Confirma la transacción."
+              ],
+              "method2Time": "⏳ Procesamiento: 30–60 minutos. Para retrasos, contacta al soporte.",
+              "method3Title": "Método 3: Depósito en Criptomoneda",
+              "method3Steps": [
+                "Selecciona \"Criptomoneda\" → Elige la moneda (por ejemplo, Tether).",
+                "Selecciona la red (TRC20, ERC20, etc.).",
+                "Copia la dirección de la cartera o escanea el código QR.",
+                "Envía la criptomoneda a la dirección proporcionada."
+              ],
+              "method4Title": "Método 4: Depósito con YooMoney (Tráfico secundario - disponible después de ciertas acciones)",
+              "important": "Notas Críticas:",
+              "supportedCurrencies": "Solo envía monedas soportadas. ¡Las monedas no soportadas se perderán permanentemente!",
+              "networkMatch": "Verifica siempre que la red coincida con los requisitos de la plataforma."
+            }
+          },
+          {
+            "title": "Después del Depósito",
+            "content": {
+              "fiatProcessing": "Fiat (RUB/EUR): Puede tomar más tiempo que cripto (hasta 60 minutos). Si no se recibe, contacta al soporte.",
+              "cryptoProcessing": "Cripto: Depende de la congestión de la red (10 minutos a varias horas).",
+              "ifNotCredited": "Si los fondos no se acreditan:",
+              "checkHistory": "Verifica los recibos de transacciones en \"Historial de Transacciones\".",
+              "contactSupport": "Contacta al soporte con los detalles de pago adjuntos.",
+              "tips": "Consejos Útiles:",
+              "saveReceipts": "✔ Siempre guarda los recibos de pago y los hashes de transacciones.",
+              "doubleCheckCryptoAddress": "✔ Verifica dos veces las direcciones de cripto antes de enviar."
+            }
+          }
+        ]
+      },
+      "main": {
+        "value": "Secciones Principales",
+        "content": [
+          {
+            "title": "¿Cómo depositar fondos?",
+            "content": "Haz clic en \"Depósito\" en el menú principal. Selecciona el tipo de moneda y sigue las instrucciones de transferencia."
+          },
+          {
+            "title": "¿Cómo retirar fondos?",
+            "content": "Ve a la sección \"Retirar\". Especifica la cantidad y el tipo de moneda."
+          },
+          {
+            "title": "¿Dónde encontrar juegos populares?",
+            "content": "Disponibles en el bloque \"Juegos Populares\"."
+          },
+          {
+            "title": "¿Qué son los \"Proveedores\"?",
+            "content": "Esta sección contiene nuestros socios y proveedores de servicios."
+          }
+        ]
+      },
+      "navigation": {
+        "value": "Navegación por Secciones",
+        "content": [
+          {
+            "title": "¿Cómo acceder al perfil?",
+            "content": {
+              "method1": "Método 1: Haz clic en \"Ir al Perfil\" en la página principal.",
+              "method2": "Método 2: Haz clic en el ícono de persona en la esquina superior derecha."
+            }
+          },
+          {
+            "title": "¿Cómo gestionar carteras?",
+            "content": {
+              "step1": "Ve a la sección \"Mis Carteras\".",
+              "step2": "Haz clic en el botón de flecha → junto al nombre de la sección."
+            }
+          },
+          {
+            "title": "¿Cómo gestionar bonos?",
+            "content": {
+              "step1": "Abre la sección \"Mis Bonos\".",
+              "step2": "Haz clic en el botón de flecha → para acceder a los ajustes."
+            }
+          },
+          {
+            "title": "Consejos Útiles",
+            "content": {
+              "tip1": "Los botones de flecha → generalmente llevan a submenús o paneles de acción.",
+              "tip2": "Si una sección no carga: actualiza la página o verifica la conexión a internet."
+            }
+          },
+          {
+            "content": "⚠ Importante: Todas las secciones solo están disponibles después de la autorización. Asegúrate de haber iniciado sesión en tu cuenta."
+          },
+          {
+            "title": "Esta versión",
+            "content": {
+              "tip1": "Utiliza una terminología clara y consistente.",
+              "tip2": "Mantiene tu estructura original.",
+              "tip3": "Incluye todas las notas de seguridad.",
+              "tip4": "Presenta instrucciones concisas y accionables."
+            }
+          }
+        ]
+      },
+      "gameCategories": {
+        "value": "Categorías de Juegos",
+        "content": [
+          {
+            "title": "Póker",
+            "content": "Variaciones clásicas y modernas de póker: torneos, Texas Hold'em, Omaha y otros formatos populares."
+          },
+          {
+            "title": "Juegos de Pesca",
+            "content": "Aventuras de pesca: atrapa peces, exploración submarina y jugabilidad estratégica con equipos de pesca."
+          },
+          {
+            "title": "Juegos de Minas",
+            "content": "Juegos de estrategia de campos minados: búsqueda de tesoros, desactivación de minas y acertijos basados en lógica."
+          },
+          {
+            "title": "Novedades",
+            "content": "Últimas adiciones a la plataforma - lanzamientos nuevos y proyectos exclusivos."
+          },
+          {
+            "title": "Tragamonedas",
+            "content": "Máquinas tragamonedas clásicas con jackpots, rondas de bonos y temáticas narrativas."
+          },
+          {
+            "title": "Programas de Juegos",
+            "content": "Juegos interactivos estilo programa: cuestionarios, \"Rueda de la Fortuna\" y sorteos con presentadores."
+          },
+          {
+            "title": "Blackjack y Ruleta",
+            "content": "Mesas tradicionales de blackjack y ruleta con diversos límites de apuestas."
+          },
+          {
+            "title": "Blackjack en Vivo",
+            "content": "Blackjack en tiempo real con crupieres en vivo."
+          },
+          {
+            "title": "Póker en Vivo",
+            "content": "Torneos de póker con jugadores y crupieres en vivo."
+          },
+          {
+            "title": "Lotería",
+            "content": "Sorteos basados en boletos con premios instantáneos."
+          },
+          {
+            "title": "Ruleta",
+            "content": {
+              "classic": "Ruleta clásica (en la sección de Juegos de Choque)",
+              "sports": "Ruleta deportiva (apuestas en eventos en la sección de Deportes)"
+            }
+          },
+          {
+            "title": "Dados",
+            "content": "Juegos de dados simplificados con reglas intuitivas."
+          },
+          {
+            "title": "Raspaditas",
+            "content": "Boletos virtuales de rascar para ganancias instantáneas."
+          }
+        ]
+      },
+      "withdraw": {
+        "value": "¿Cómo Retirar Fondos?",
+        "content": [
+          {
+            "title": "1. Retiro Bancario",
+            "content": {
+              "important": "¡Importante!",
+              "checkBankAccount": "Asegúrate de que tu cuenta bancaria esté correctamente vinculada",
+              "withdrawalLimits": "Límites de retiro: $10 - $350,000 por transacción",
+              "steps": "Pasos:",
+              "enterAmount": "Ingresa la cantidad de retiro (usa los botones \"+\" o escribe manualmente)",
+              "specifyBankDetails": "Proporciona los detalles bancarios:",
+              "fullAccountNumber": "Número completo de la cuenta bancaria (por ejemplo, 0123 4567 8900 1123)",
+              "selectBank": "Selecciona tu banco desde el menú desplegable",
+              "confirm": "Confirma → Espera el procesamiento",
+              "processingTime": "⏳ Tiempo de procesamiento: 1-3 días hábiles."
+            }
+          },
+          {
+            "title": "2. Retiro en Criptomoneda",
+            "content": {
+              "supportedCoins": "Monedas Soportadas:",
+              "bitcoinNetwork": "Red Bitcoin: Bitcoin (BTC), Tether (USDT), Binance Coin (BNB).",
+              "ethereumNetwork": "Red Ethereum: Toncoin (TON), USD Coin (USDC).",
+              "steps": "Pasos:",
+              "selectCoinNetwork": "Selecciona la moneda y la red (por ejemplo, USDT en TRC20).",
+              "pasteWalletAddress": "Pega la dirección de tu cartera (por ejemplo, UQBJ_647UnSxulxxE3wnXUlbbPeiyAsrU...).",
+              "enterAmountConfirm": "Ingresa la cantidad → Confirma.",
+              "importantNotes": "Notas Críticas:",
+              "doubleCheckAddresses": "¡Verifica siempre las direcciones! Red incorrecta = pérdida permanente.",
+              "minimumWithdrawal": "Retiro mínimo: $10 equivalente."
+            }
+          }
+        ]
+      },
+      "troubleshooting": {
+        "value": "Solución de Problemas",
+        "content": [
+          {
+            "title": "¿Dinero no recibido?",
+            "content": {
+              "checkTransactionHistory": "Verifica el Historial de Transacciones",
+              "contactSupport": "Contacta al soporte con el recibo de pago."
+            }
+          },
+          {
+            "title": "Consejos",
+            "content": {
+              "saveReceipts": "Guarda los recibos de pago",
+              "cryptoCheckHash": "Para cripto: verifica el hash de la transacción"
+            }
+          }
+        ]
+      },
+      "myBonus": {
+        "value": "Mis Bonos",
+        "content": [
+          {
+            "title": "1. Bono de Bienvenida ($1,500)",
+            "content": {
+              "howToGet": "Cómo obtenerlo:",
+              "depositStep": "Realiza tu primer depósito (desde $10)",
+              "bonusPercentage": "Obtén +100% del depósito (por ejemplo, $50 → $50 de bono)",
+              "useBonus": "Usa el bono en juegos",
+              "conditions": "Condiciones:",
+              "maxBonus": "Máximo: $1,500",
+              "wager": "Apuesta: 30x (del monto del bono)",
+              "term": "Plazo: 7 días"
+            }
+          },
+          {
+            "title": "2. Códigos Promocionales",
+            "content": {
+              "howToActivate": "Cómo activar:",
+              "step1": "En la sección \"Mis Bonos\" → \"Ingresar código promocional\"",
+              "step2": "Ingresa el código (por ejemplo, WELCOME2024)",
+              "step3": "Haz clic en \"Aplicar\""
+            }
+          },
+          {
+            "title": "3. Otras Promociones",
+            "content": {
+              "additionalBonuses": "Bonos adicionales: Ofertas semanales/mensuales (ver \"Todas las Promociones\")",
+              "cashback": "Cashback: Hasta 15% de las pérdidas (acreditado los lunes)"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "wallet": {
+    "title": "Cartera",
+    "createWallet": {
+      "title": "Crear Cartera"
+    },
+    "primaryChanged": "Cartera principal cambiada con éxito.",
+    "createTitle": "Crear Cartera",
+    "balancer": {
+      "primaryWallet": "Cartera Principal",
+      "createNew": "Crear Nueva"
+    },
+    "item": {
+      "primary": "Principal",
+      "makePrimary": "Hacer Principal"
+    },
+    "walletRequired": "Se requiere una cartera de {{cryptoCurrency}}",
+    "createDescription": "No tienes una cartera en esta moneda. Crea una para continuar.",
+    "manageFunds": {
+      "title": "Gestionar Fondos"
+    },
+    "transactionHistory": {
+      "title": "Historial de Transacciones",
+      "orderTypes": {
+        "deposit": "DEPÓSITO",
+        "withdraw": "RETIRO",
+        "transfer": "TRANSFERENCIA",
+        "bonus": "BONO",
+        "bet": "APUESTA",
+        "win": "GANANCIA"
+      }
+    }
+  },
+  "payment": {
+    "history": "Historial",
+    "depositMethodsInfo": "Los métodos de depósito dependen de la moneda de tu cartera.",
+    "withdrawMethodsInfo": "Los métodos de retiro dependen de la moneda de tu cartera."
+  },
+  "history": {
+    "contactUs": "Contáctanos si tienes alguna pregunta",
+    "messageUs": "Envíanos un mensaje",
+    "loadingMore": "Cargando más...",
+    "scrollToLoadMore": "Desplázate para cargar más",
+    "noMoreItems": "No hay más elementos para cargar"
+  },
+  "depositPage": {
+    "wallet": "Billetera",
+    "bank": "Banco",
+    "crypto": "Cripto"
+  },
+  "halloween": {
+    "title": "Halloween",
+    "description": "Juegos de Halloween"
+  }
+}

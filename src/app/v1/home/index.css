@@ -1,0 +1,9 @@
+/* styles/globals.css */
+.scroll-hide-home-page {
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* IE/Edge */
+  }
+  
+.scroll-hide-home-page::-webkit-scrollbar {
+    display: none;                  /* Chrome/Safari */
+}

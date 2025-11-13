@@ -1,0 +1,4622 @@
+openapi: 3.0.0
+info:
+  title: API Gateway
+  version: 1.0.0
+servers:
+  - url: https://api.yourloot.xyz
+paths:
+  /auth/registration:
+    post:
+      tags:
+        - registration-controller
+      operationId: register
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegistrationRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/BaseResponseRegistrationResponse'
+  /auth/providers/first-broker-login:
+    post:
+      tags:
+        - providers-controller
+      operationId: firstBrokerLogin
+      parameters:
+        - name: request
+          in: query
+          required: true
+          schema:
+            $ref: '#/components/schemas/FirstBrokerLoginRequest'
+        - name: Cookie
+          in: header
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              additionalProperties:
+                type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseRegistrationResponse'
+  /auth/login:
+    post:
+      tags:
+        - login-controller
+      operationId: login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/BaseResponseLoginResponse'
+  /auth/email-verification:
+    post:
+      tags:
+        - email-verification-controller
+      operationId: verifyCode
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmailVerificationRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: object
+  /auth/email-verification/{userId}:
+    patch:
+      tags:
+        - email-verification-controller
+      operationId: resendEmailVerification
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseRegistrationResponse'
+  /auth/broker/yandex/login:
+    get:
+      tags:
+        - yandex-controller
+      operationId: yandexLogin
+      parameters:
+        - name: requestParams
+          in: query
+          required: true
+          schema:
+            type: object
+            additionalProperties:
+              type: string
+        - name: Cookie
+          in: header
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /auth/broker/yandex/endpoint:
+    get:
+      tags:
+        - yandex-controller
+      operationId: yandexCallbackEndpoint
+      parameters:
+        - name: requestParams
+          in: query
+          required: true
+          schema:
+            type: object
+            additionalProperties:
+              type: string
+        - name: Cookie
+          in: header
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /auth/broker/telegram/login:
+    get:
+      tags:
+        - telegram-controller
+      operationId: telegramLogin
+      parameters:
+        - name: requestParams
+          in: query
+          required: true
+          schema:
+            type: object
+            additionalProperties:
+              type: string
+        - name: Cookie
+          in: header
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /auth/broker/telegram/endpoint:
+    get:
+      tags:
+        - telegram-controller
+      operationId: telegramCallbackEndpoint
+      parameters:
+        - name: requestParams
+          in: query
+          required: true
+          schema:
+            type: object
+            additionalProperties:
+              type: string
+        - name: Cookie
+          in: header
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /users/{clientId}/profile:
+    get:
+      summary: Get user profile
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: User identifier
+      responses:
+        '200':
+          description: User profile retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '404':
+          description: User not found
+    put:
+      summary: Update user profile
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: User identifier
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserProfileRequest'
+      responses:
+        '200':
+          description: User profile updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserProfile'
+        '400':
+          description: Invalid request data
+        '404':
+          description: User not found
+  /kyc/submit:
+    post:
+      summary: Submit documents for KYC verification
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/KYCSubmissionRequest'
+      responses:
+        '200':
+          description: Documents successfully submitted for review
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KYCSubmissionResponse'
+        '400':
+          description: Invalid request data
+  /kyc/status/{clientId}:
+    get:
+      summary: Get user KYC verification status
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: User identifier
+      responses:
+        '200':
+          description: KYC status retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KYCStatusResponse'
+        '404':
+          description: User not found
+  /kyc/update:
+    put:
+      summary: Update user KYC information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/KYCUpdateRequest'
+      responses:
+        '200':
+          description: KYC information updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KYCUpdateResponse'
+        '400':
+          description: Invalid request data
+  /payments/deposit:
+    post:
+      summary: Deposit to user account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DepositRequest'
+      responses:
+        '200':
+          description: Deposit processed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DepositResponse'
+        '400':
+          description: Invalid request data
+  /payments/withdraw:
+    post:
+      summary: Withdraw funds from user account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WithdrawRequest'
+      responses:
+        '200':
+          description: Withdrawal request processed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WithdrawResponse'
+        '400':
+          description: Invalid request data
+        '402':
+          description: Insufficient funds
+  '/loyalty/trigger/{triggerId}':
+    get:
+      tags:
+        - trigger-controller
+      operationId: getTrigger
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetTriggerResponse'
+    put:
+      tags:
+        - trigger-controller
+      operationId: updateTrigger
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/UpdateTriggerRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/UpdateTriggerResponse'
+    post:
+      tags:
+        - trigger-controller
+      operationId: triggerAction
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/TriggerActionResponse'
+    delete:
+      tags:
+        - trigger-controller
+      operationId: deleteTrigger
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/BaseResponseVoid'
+  '/loyalty/trigger-reward/{triggerRewardId}':
+    get:
+      tags:
+        - trigger-rewards-controller
+      operationId: getTriggerReward
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerRewardId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetRewardResponse'
+    put:
+      tags:
+        - trigger-rewards-controller
+      operationId: updateTriggerReward
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerRewardId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/UpdateRewardRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/UpdateRewardResponse'
+    delete:
+      tags:
+        - trigger-rewards-controller
+      operationId: deleteTriggerReward
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: triggerRewardId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/BaseResponseVoid'
+  '/loyalty/promotions/{promotionId}':
+    get:
+      tags:
+        - promotions-controller
+      operationId: getPromotion
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: promotionId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetPromotionResponse'
+    put:
+      tags:
+        - promotions-controller
+      operationId: updatePromotion
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: promotionId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/UpdatePromotionRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/CreateRewardResponse'
+  '/loyalty/level/create':
+    post:
+      tags:
+        - levels-controller
+      operationId: createNewLevel
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/CreateLevelRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/CreateLevelResponse'
+  '/loyalty/level/assign/{levelId}/to-player/{playerId}':
+    post:
+      tags:
+        - levels-controller
+      operationId: assignLevelToPlayer
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: levelId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/AssignLevelToPlayerResponse'
+  '/loyalty/items':
+    get:
+      tags:
+        - items-controller
+      operationId: getAllItems
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - ACTIVE
+                - INACTIVE
+            default:
+              - ACTIVE
+              - INACTIVE
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllItemsResponse'
+    post:
+      tags:
+        - items-controller
+      operationId: createNewItem
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/CreateItemRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/CreateItemResponse'
+  '/loyalty/bonus-programs':
+    get:
+      tags:
+        - bonus-programs-controller
+      operationId: getAllPrograms
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - ACTIVE
+                - INACTIVE
+            default:
+              - ACTIVE
+              - INACTIVE
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllBonusProgramsResponse'
+    post:
+      tags:
+        - bonus-programs-controller
+      operationId: createProgram
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              '$ref': '#/components/schemas/CreateBonusProgramRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/CreateBonusProgramResponse'
+  '/loyalty/trigger/get-all':
+    get:
+      tags:
+        - trigger-controller
+      operationId: getAllTriggers
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - updatedAt
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllTriggersResponse'
+  '/loyalty/trigger-reward/get-all':
+    get:
+      tags:
+        - trigger-rewards-controller
+      operationId: getAllTriggerRewards
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - updatedAt
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllRewardsResponse'
+  '/loyalty/promotions/suggested':
+    get:
+      tags:
+        - promotions-controller
+      operationId: getSuggestedPromotions
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllPromotionsResponse'
+  '/loyalty/promotions/completed':
+    get:
+      tags:
+        - promotions-controller
+      operationId: getCompletedPromotions
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllPromotionsResponse'
+  '/loyalty/promotions/cancelled':
+    get:
+      tags:
+        - promotions-controller
+      operationId: getCancelledPromotions
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllPromotionsResponse'
+  '/loyalty/promotions/active':
+    get:
+      tags:
+        - promotions-controller
+      operationId: getActivePromotions
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllPromotionsResponse'
+  '/loyalty/players/items':
+    get:
+      tags:
+        - items-controller
+      operationId: getAllPlayerItems
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - ACTIVE
+                - INACTIVE
+            default:
+              - ACTIVE
+              - INACTIVE
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - DESC
+              - acquiredAt
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllPlayerItemsResponse'
+  '/loyalty/mechanic-reward/get-all':
+    get:
+      tags:
+        - mechanic-rewards-controller
+      operationId: getAllMechanicRewards
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: string
+            format: uuid
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - updatedAt
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllRewardsResponse'
+  '/loyalty/level/get-player/{playerId}':
+    get:
+      tags:
+        - levels-controller
+      operationId: getPlayerLevel
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetPlayerLevelResponse'
+  '/loyalty/level/get-all':
+    get:
+      tags:
+        - levels-controller
+      operationId: getAllLevels
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: bonusProgramId
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: query
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - ACTIVE
+                - INACTIVE
+            default:
+              - ACTIVE
+              - INACTIVE
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 0
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            default: 20
+        - name: sort
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+            default:
+              - ASC
+              - name
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/GetAllLevelsResponse'
+  '/loyalty/target-segment/{targetSegmentId}':
+    delete:
+      tags:
+        - target-segments-controller
+      operationId: deleteTargetSegment
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: targetSegmentId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/BaseResponseVoid'
+  '/loyalty/level/remove-level/{levelId}/from-player/{playerId}':
+    delete:
+      tags:
+        - levels-controller
+      operationId: removePlayerLevel
+      parameters:
+        - name: X-USER-ID
+          in: header
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: playerId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: levelId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                '$ref': '#/components/schemas/RemovePlayerLevelResponse'
+  /support/ticket:
+    post:
+      summary: Create support ticket
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SupportTicketRequest'
+      responses:
+        '201':
+          description: Ticket created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SupportTicketResponse'
+        '400':
+          description: Invalid request data
+  /communications/send:
+    post:
+      summary: Send message to user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommunicationRequest'
+      responses:
+        '200':
+          description: Message sent successfully
+        '400':
+          description: Invalid request data
+  /antifraud/transaction/check:
+    post:
+      summary: Check transaction for fraud
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TransactionCheckRequest'
+      responses:
+        '200':
+          description: Transaction check result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TransactionCheckResponse'
+        '400':
+          description: Invalid request data
+  /antifraud/report:
+    post:
+      summary: Report suspicious activity
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SuspiciousActivityReport'
+      responses:
+        '200':
+          description: Report submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuspiciousActivityResponse'
+        '400':
+          description: Invalid request data
+  /antifraud/risk/{clientId}:
+    get:
+      summary: Get user's fraud risk level
+      parameters:
+        - name: clientId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: User identifier
+      responses:
+        '200':
+          description: Fraud risk level retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FraudRiskResponse'
+        '404':
+          description: User not found
+  /notifications/send:
+    post:
+      tags:
+        - notification-controller
+      operationId: sendNotification
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NotificationCreationRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseNotificationCreationResponse'
+  /notifications/{user_id}:
+    get:
+      tags:
+        - notification-controller
+      operationId: getNotifications
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseNotificationResponse'
+  /wallets:
+    post:
+      tags:
+        - wallet-controller
+      operationId: createWallet
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/WalletCreationRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseWalletResponse'
+  /orders:
+    post:
+      tags:
+        - order-controller
+      operationId: makeOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponsePaymentOrderResponse'
+  /orders/callback:
+    post:
+      tags:
+        - order-controller
+      operationId: orderCallback
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderCallbackRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+  /wallets/users/{userId}:
+    get:
+      tags:
+        - wallet-controller
+      operationId: getUserWallets
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: pageable
+          in: query
+          required: true
+          schema:
+            $ref: '#/components/schemas/Pageable'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponsePageWalletWithOrdersResponse'
+  /wallets/users/{userId}/currencies/{currency}:
+    get:
+      tags:
+        - wallet-controller
+      operationId: getWalletByUserIdAndCurrency
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: currency
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseWalletResponse'
+
+  /users/{userId}/profile:
+    get:
+      tags:
+        - user-controller
+      operationId: getProfile
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseUserProfileResponse'
+    put:
+      tags:
+        - user-controller
+      operationId: updateProfile
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdateRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseUserProfileResponse'
+  /users:
+    post:
+      tags:
+        - user-controller
+      operationId: createUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserCreationRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseUserProfileResponse'
+  /users/{userId}/email-verified:
+    get:
+      tags:
+        - user-controller
+      operationId: isUserEmailVerified
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseBoolean'
+    patch:
+      tags:
+        - user-controller
+      operationId: markEmailAsVerified
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseUserProfileResponse'
+
+  /games:
+    post:
+      tags:
+        - game-controller
+      operationId: launchRealGame
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GameLaunchRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseGameLaunchResponse'
+  /games/v2/a8r_casino.Player/Balance:
+    post:
+      tags:
+        - player-callback-controller
+      operationId: playerBalance
+      parameters:
+        - name: X-REQUEST-SIGN
+          in: header
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PlayerBalanceRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PlayerBalanceResponse'
+  /games/bonuses:
+    post:
+      tags:
+        - bonus-controller
+      operationId: issue
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BonusIssueRequest'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponseBonusIssueResponse'
+components:
+  schemas:
+    # Users
+    AddressRequest:
+      type: object
+      properties:
+        street:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        postalCode:
+          type: string
+        country:
+          type: string
+      required:
+        - city
+        - country
+        - postalCode
+        - state
+        - street
+    PreferencesRequest:
+      type: object
+      properties:
+        language:
+          type: string
+        currency:
+          type: string
+      required:
+        - currency
+        - language
+    UserUpdateRequest:
+      type: object
+      properties:
+        username:
+          type: string
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        phoneNumber:
+          type: string
+        dateOfBirth:
+          type: string
+          pattern: ^(?!\s*$).+
+        address:
+          $ref: '#/components/schemas/AddressRequest'
+        preferences:
+          $ref: '#/components/schemas/PreferencesRequest'
+      required:
+        - email
+        - firstName
+        - lastName
+        - phoneNumber
+        - username
+    AddressResponse:
+      type: object
+      properties:
+        addressId:
+          type: string
+          format: uuid
+        street:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        postalCode:
+          type: string
+        country:
+          type: string
+    BaseResponseUserProfileResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/UserProfileResponse'
+    PreferencesResponse:
+      type: object
+      properties:
+        preferencesId:
+          type: string
+          format: uuid
+        language:
+          type: string
+        currency:
+          type: string
+    UserProfileResponse:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        username:
+          type: string
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        phoneNumber:
+          type: string
+        dateOfBirth:
+          type: string
+        address:
+          $ref: '#/components/schemas/AddressResponse'
+        preferences:
+          $ref: '#/components/schemas/PreferencesResponse'
+        emailVerified:
+          type: boolean
+    UserCreationRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        username:
+          type: string
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        phoneNumber:
+          type: string
+        dateOfBirth:
+          type: string
+          pattern: ^(?!\s*$).+
+        address:
+          $ref: '#/components/schemas/AddressRequest'
+        preferences:
+          $ref: '#/components/schemas/PreferencesRequest'
+      required:
+        - email
+        - firstName
+        - lastName
+        - phoneNumber
+        - userId
+        - username
+    BaseResponseBoolean:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: boolean
+    # Wallet
+    WalletCreationRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        currency:
+          type: string
+      required:
+        - currency
+        - userId
+    BaseResponseWalletResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/WalletResponse'
+    WalletResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        currency:
+          type: string
+        amount:
+          type: number
+          format: double
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    Extra:
+      type: object
+      properties:
+        userAgent:
+          type: string
+        fingerprint:
+          type: string
+        registeredAt:
+          type: integer
+          format: int64
+      required:
+        - fingerprint
+        - registeredAt
+        - userAgent
+    OrderRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        orderType:
+          type: string
+          enum:
+            - DEPOSIT
+            - WITHDRAWAL
+        currency:
+          type: string
+        paymentSystem:
+          type: string
+        userIp:
+          type: string
+        card:
+          type: string
+        owner:
+          type: string
+        amount:
+          type: number
+          format: double
+        bank:
+          type: string
+        extra:
+          $ref: '#/components/schemas/Extra'
+      required:
+        - amount
+        - currency
+        - extra
+        - orderType
+        - userId
+        - userIp
+    BaseResponsePaymentOrderResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/PaymentOrderResponse'
+    PaymentOrderResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+        externalId:
+          type: string
+          format: uuid
+        phoneNumber:
+          type: string
+        bankName:
+          type: string
+        cardHolderName:
+          type: string
+        countryName:
+          type: string
+        amount:
+          type: number
+          format: double
+        status:
+          type: string
+        failCause:
+          type: string
+    ExchangeRate:
+      type: object
+      properties:
+        pair:
+          type: string
+        rate:
+          type: string
+    OrderCallbackRequest:
+      type: object
+      properties:
+        clientOrderId:
+          type: string
+          format: uuid
+        externalID:
+          type: string
+          format: uuid
+        ID:
+          type: integer
+          format: int64
+        typeOfCallback:
+          type: string
+        currency:
+          type: string
+        status:
+          type: string
+        fee:
+          type: number
+          format: double
+        amount:
+          type: number
+          format: double
+        orderType:
+          type: string
+        comment:
+          type: string
+        mid:
+          type: string
+        cardMask:
+          type: string
+        createdAt:
+          type: integer
+          format: int64
+        updatedAt:
+          type: integer
+          format: int64
+        exchangeRate:
+          $ref: '#/components/schemas/ExchangeRate'
+        success:
+          type: boolean
+      required:
+        - clientOrderId
+    Pageable:
+      type: object
+      properties:
+        page:
+          type: integer
+          format: int32
+          minimum: 0
+        size:
+          type: integer
+          format: int32
+          minimum: 1
+        sort:
+          type: array
+          items:
+            type: string
+    BaseResponsePageWalletWithOrdersResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/PageWalletWithOrdersResponse'
+    OrderDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        orderType:
+          type: string
+          enum:
+            - DEPOSIT
+            - WITHDRAWAL
+        status:
+          type: string
+        amount:
+          type: number
+          format: double
+        fee:
+          type: number
+          format: double
+        callbackId:
+          type: integer
+          format: int64
+        exchangeRate:
+          $ref: '#/components/schemas/ExchangeRate'
+        amountInUsdt:
+          type: number
+          format: double
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    PageWalletWithOrdersResponse:
+      type: object
+      properties:
+        totalElements:
+          type: integer
+          format: int64
+        totalPages:
+          type: integer
+          format: int32
+        size:
+          type: integer
+          format: int32
+        content:
+          type: array
+          items:
+            $ref: '#/components/schemas/WalletWithOrdersResponse'
+        number:
+          type: integer
+          format: int32
+        sort:
+          $ref: '#/components/schemas/SortObject'
+        first:
+          type: boolean
+        last:
+          type: boolean
+        numberOfElements:
+          type: integer
+          format: int32
+        pageable:
+          $ref: '#/components/schemas/PageableObject'
+        empty:
+          type: boolean
+    PageableObject:
+      type: object
+      properties:
+        offset:
+          type: integer
+          format: int64
+        sort:
+          $ref: '#/components/schemas/SortObject'
+        paged:
+          type: boolean
+        pageNumber:
+          type: integer
+          format: int32
+        pageSize:
+          type: integer
+          format: int32
+        unpaged:
+          type: boolean
+    SortObject:
+      type: object
+      properties:
+        empty:
+          type: boolean
+        sorted:
+          type: boolean
+        unsorted:
+          type: boolean
+    WalletWithOrdersResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        currency:
+          type: string
+        amount:
+          type: number
+          format: double
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        orders:
+          type: array
+          items:
+            $ref: '#/components/schemas/OrderDto'
+
+    # User KYC
+    KYCSubmissionRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        documentType:
+          type: string
+          description: Document type
+          enum:
+            - PASSPORT
+            - ID_CARD
+            - DRIVER_LICENSE
+        documentFront:
+          type: string
+          format: binary
+          description: File with image of the front side of the document
+        documentBack:
+          type: string
+          format: binary
+          description: File with image of the back side of the document (if applicable)
+        selfie:
+          type: string
+          format: binary
+          description: File with user selfie holding the document
+      required:
+        - clientId
+        - documentType
+        - documentFront
+        - selfie
+    KYCSubmissionResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Operation success
+        message:
+          type: string
+          description: Message regarding the operation result
+      required:
+        - success
+        - message
+    KYCStatusResponse:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        status:
+          type: string
+          description: Current KYC verification status
+          enum:
+            - PENDING
+            - VERIFIED
+            - REJECTED
+        rejectionReason:
+          type: string
+          description: Reason for rejection (if status is REJECTED)
+      required:
+        - clientId
+        - status
+    KYCUpdateRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        firstName:
+          type: string
+          description: First name
+        lastName:
+          type: string
+          description: Last name
+        dateOfBirth:
+          type: string
+          format: date
+          description: User's date of birth
+        address:
+          type: object
+          description: User address
+          properties:
+            street:
+              type: string
+            city:
+              type: string
+            state:
+              type: string
+            postalCode:
+              type: string
+            country:
+              type: string
+      required:
+        - clientId
+        - firstName
+        - lastName
+        - dateOfBirth
+        - address
+    KYCUpdateResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Operation success
+        message:
+          type: string
+          description: Message regarding the operation result
+      required:
+        - success
+        - message
+    # Registration and authentication
+    RegisterRequest:
+      type: object
+      properties:
+        username:
+          type: string
+          description: User login
+        password:
+          type: string
+          format: password
+          description: User password
+        email:
+          type: string
+          format: email
+          description: User email
+        phone:
+          type: string
+          description: User phone number
+      required:
+        - username
+        - password
+    RegisterResponse:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: Unique user identifier
+        message:
+          type: string
+          description: Registration success message
+      required:
+        - clientId
+        - message
+    LoginRequest:
+      type: object
+      properties:
+        username:
+          type: string
+          description: User login
+        password:
+          type: string
+          format: password
+          description: User password
+      required:
+        - username
+        - password
+    LoginResponse:
+      type: object
+      properties:
+        token:
+          type: string
+          description: JWT token for authentication
+        clientId:
+          type: string
+          description: Unique user identifier
+      required:
+        - token
+        - clientId
+    # User profile
+    UserProfile:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        username:
+          type: string
+          description: User login
+        email:
+          type: string
+          format: email
+          description: User email
+        phone:
+          type: string
+          description: User phone number
+        firstName:
+          type: string
+          description: First name
+        lastName:
+          type: string
+          description: Last name
+        dateOfBirth:
+          type: string
+          format: date
+          description: User's date of birth
+        address:
+          type: object
+          description: User address
+          properties:
+            street:
+              type: string
+            city:
+              type: string
+            state:
+              type: string
+            postalCode:
+              type: string
+            country:
+              type: string
+        preferences:
+          type: object
+          description: User preferences
+          properties:
+            language:
+              type: string
+            currency:
+              type: string
+      required:
+        - clientId
+        - username
+        - email
+    UpdateUserProfileRequest:
+      type: object
+      properties:
+        email:
+          type: string
+          format: email
+          description: User email
+        phone:
+          type: string
+          description: User phone number
+        firstName:
+          type: string
+          description: First name
+        lastName:
+          type: string
+          description: Last name
+        dateOfBirth:
+          type: string
+          format: date
+          description: User's date of birth
+        address:
+          type: object
+          description: User address
+          properties:
+            street:
+              type: string
+            city:
+              type: string
+            state:
+              type: string
+            postalCode:
+              type: string
+            country:
+              type: string
+        preferences:
+          type: object
+          description: User preferences
+          properties:
+            language:
+              type: string
+            currency:
+              type: string
+      required: []
+    # Payments
+    DepositRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        amount:
+          type: number
+          format: double
+          description: Deposit amount
+        paymentMethod:
+          type: string
+          description: Payment method
+      required:
+        - clientId
+        - amount
+        - paymentMethod
+    DepositResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Transaction identifier
+        status:
+          type: string
+          description: Transaction status
+      required:
+        - transactionId
+        - status
+    WithdrawRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        amount:
+          type: number
+          format: double
+          description: Withdrawal amount
+        paymentMethod:
+          type: string
+          description: Withdrawal method
+      required:
+        - clientId
+        - amount
+        - paymentMethod
+    WithdrawResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Transaction identifier
+        status:
+          type: string
+          description: Transaction status
+      required:
+        - transactionId
+        - status
+    # Games
+    GameLaunchRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        walletId:
+          type: string
+          format: uuid
+        currency:
+          type: string
+        clientType:
+          type: string
+        game:
+          type: string
+        ip:
+          type: string
+        jurisdiction:
+          type: string
+        locale:
+          type: string
+        depositUrl:
+          type: string
+        returnUrl:
+          type: string
+      required:
+        - clientType
+        - currency
+        - game
+        - ip
+        - locale
+        - userId
+        - walletId
+    BaseResponseGameLaunchResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/GameLaunchResponse'
+    GameLaunchResponse:
+      type: object
+      properties:
+        launchUrl:
+          type: string
+    PlayerBalanceRequest:
+      type: object
+      properties:
+        currency:
+          type: string
+        game_id:
+          type: string
+        player_id:
+          type: string
+        session_payload:
+          type: string
+      required:
+        - currency
+        - player_id
+    PlayerBalanceResponse:
+      type: object
+      properties:
+        balance:
+          type: string
+      required:
+        - balance
+    BonusIssueRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        walletId:
+          type: string
+          format: uuid
+        currency:
+          type: string
+        betLevel:
+          type: integer
+          format: int32
+        bonusType:
+          type: string
+        games:
+          type: array
+          items:
+            type: string
+          uniqueItems: true
+        validUntil:
+          type: string
+      required:
+        - betLevel
+        - bonusType
+        - currency
+        - games
+        - userId
+        - validUntil
+        - walletId
+    BaseResponseBonusIssueResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/BonusIssueResponse'
+    BonusIssueResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        walletId:
+          type: string
+          format: uuid
+        currency:
+          type: string
+        status:
+          type: string
+          enum:
+            - ISSUED
+            - USED
+            - CANCELED
+            - EXPIRED
+        betLevel:
+          type: integer
+          format: int32
+        bonusType:
+          type: string
+        games:
+          type: array
+          items:
+            type: string
+          uniqueItems: true
+        validUntil:
+          type: string
+          format: date-time
+    # Loyalty
+    UpdateTriggerRequest:
+      type: object
+      properties:
+        triggerId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        userActionName:
+          type: string
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        minAmount:
+          type: number
+          format: double
+        isMandatory:
+          type: boolean
+        maxRepeats:
+          type: integer
+          format: int32
+    TriggerContent:
+      type: object
+      properties:
+        triggerId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        userActionName:
+          type: string
+        bonusIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        minAmount:
+          type: number
+          format: double
+        maxRepeats:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        mandatory:
+          type: boolean
+    UpdateTriggerResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/TriggerContent'
+    FreeSpinsDto:
+      type: object
+      properties:
+        mechanicId:
+          type: string
+          format: uuid
+        gameId:
+          type: string
+          format: uuid
+        amount:
+          type: integer
+          format: int64
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        betSize:
+          type: number
+        assignedAt:
+          type: string
+          format: date-time
+        expireAt:
+          type: string
+          format: date-time
+        expiresAfterMinutes:
+          type: integer
+          format: int32
+        used:
+          type: boolean
+    UpdateRewardRequest:
+      type: object
+      properties:
+        triggerRewardId:
+          type: string
+          format: uuid
+        mechanicRewardId:
+          type: string
+          format: uuid
+        triggerId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        rewardType:
+          type: string
+          enum:
+            - BONUS_BBK
+            - BONUS_CASH
+            - BONUS_CRYPTO
+            - BONUS_PERCENT_ON_DEPOSIT
+            - FREE_SPINS
+            - STORE_ACCESS
+            - WELCOME_BONUS_BBK
+            - WELCOME_BONUS_CASH
+            - WELCOME_BONUS_CRYPTO
+            - WELCOME_BONUS_FREE_SPINS
+            - WELCOME_BONUS_BONUS_PERCENT_ON_DEPOSIT
+            - CASHBACK_ACCESS
+            - MINI_GAME_ACCESS
+            - ACHIEVEMENT
+            - CASHBACK_UPGRADE
+            - ADDITIONAL_MINI_GAMES_ACCESS
+            - LEVEL_UP
+        description:
+          type: string
+        freeSpins:
+          type: array
+          items:
+            '$ref': '#/components/schemas/FreeSpinsDto'
+        achievementName:
+          type: string
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        currencyAmount:
+          type: number
+        percent:
+          type: number
+          format: double
+        storeAccess:
+          type: boolean
+        levelName:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+    RewardContent:
+      type: object
+      properties:
+        triggerRewardId:
+          type: string
+          format: uuid
+        mechanicRewardId:
+          type: string
+          format: uuid
+        triggerId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        rewardType:
+          type: string
+          enum:
+            - BONUS_BBK
+            - BONUS_CASH
+            - BONUS_CRYPTO
+            - BONUS_PERCENT_ON_DEPOSIT
+            - FREE_SPINS
+            - STORE_ACCESS
+            - WELCOME_BONUS_BBK
+            - WELCOME_BONUS_CASH
+            - WELCOME_BONUS_CRYPTO
+            - WELCOME_BONUS_FREE_SPINS
+            - WELCOME_BONUS_BONUS_PERCENT_ON_DEPOSIT
+            - CASHBACK_ACCESS
+            - MINI_GAME_ACCESS
+            - ACHIEVEMENT
+            - CASHBACK_UPGRADE
+            - ADDITIONAL_MINI_GAMES_ACCESS
+            - LEVEL_UP
+        description:
+          type: string
+        freeSpins:
+          type: array
+          items:
+            '$ref': '#/components/schemas/FreeSpinsDto'
+        achievementName:
+          type: string
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        currencyAmount:
+          type: number
+        percent:
+          type: number
+          format: double
+        storeAccess:
+          type: boolean
+        levelName:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    UpdateRewardResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/RewardContent'
+    BonusDto:
+      type: object
+      properties:
+        bonusId:
+          type: string
+          format: uuid
+        bonusType:
+          type: string
+          enum:
+            - BBK
+            - FREE_SPINS
+            - FREE_BETS
+            - PERCENT_ON_DEPOSIT
+            - BONUS_MONEY
+            - PROMO_CODE
+            - CASHBACK
+            - PHYSICAL_PRIZE
+        description:
+          type: string
+        bonusAssignmentType:
+          type: string
+          enum:
+            - INSTANT
+            - ON_DEMAND
+            - END_OF_PERIOD
+        promotionId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        triggerId:
+          type: string
+          format: uuid
+        expirationDateTime:
+          type: string
+          format: date-time
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        gameId:
+          type: string
+          format: uuid
+        numberOfBets:
+          type: integer
+          format: int64
+        numberOfSpins:
+          type: integer
+          format: int64
+        percent:
+          type: number
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        betSize:
+          type: number
+        amount:
+          type: number
+        wager:
+          type: number
+        prizeId:
+          type: string
+          format: uuid
+        mainAccountPercentage:
+          type: number
+          format: double
+        bonusAccountPercentage:
+          type: number
+          format: double
+        promoCode:
+          type: string
+    UpdatePromotionRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        mechanicId:
+          type: string
+          format: uuid
+        targetSegmentIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        promotionBonuses:
+          type: array
+          items:
+            '$ref': '#/components/schemas/BonusDto'
+        isAutoAssignable:
+          type: boolean
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    PromotionContent:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        mechanicId:
+          type: string
+          format: uuid
+        targetSegmentIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        bonusIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        isAutoAssignable:
+          type: boolean
+        promoCode:
+          type: string
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    UpdatePromotionResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/PromotionContent'
+    ItemContent:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        properties:
+          '$ref': '#/components/schemas/JsonNode'
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+        acquiredAt:
+          type: string
+          format: date-time
+        lastUpdatedAt:
+          type: string
+          format: date-time
+    JsonNode:
+      type: object
+    UpdatePlayerItemStatusResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/ItemContent'
+        playerId:
+          type: string
+          format: uuid
+        playerItemStatus:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    UpdateLevelRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    LevelContent:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        bonusProgramId:
+          type: string
+          format: uuid
+        name:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+        mechanics:
+          type: array
+          items:
+            '$ref': '#/components/schemas/MechanicDto'
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    MechanicDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        levelIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        promotionId:
+          type: string
+          format: uuid
+        name:
+          type: string
+        type:
+          type: string
+          enum:
+            - DEPOSIT
+            - NO_DEPOSIT
+            - MIXED
+        triggers:
+          type: array
+          items:
+            '$ref': '#/components/schemas/TriggerDto'
+        bonusIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        mandatoryTriggers:
+          type: integer
+          format: int32
+        nonMandatoryTriggers:
+          type: integer
+          format: int32
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    TriggerDto:
+      type: object
+      properties:
+        triggerId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        userActionName:
+          type: string
+        bonusIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        minAmount:
+          type: number
+          format: double
+        maxRepeats:
+          type: integer
+          format: int32
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        mandatory:
+          type: boolean
+    UpdateLevelResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/LevelContent'
+    UpdateItemRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        jsonProperties:
+          type: string
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    UpdateItemResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/ItemContent'
+    UpdateBonusProgramRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        termsAndConditions:
+          type: string
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    BonusProgramContent:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        levels:
+          type: array
+          items:
+            '$ref': '#/components/schemas/LevelDto'
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        termsAndConditions:
+          type: string
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    LevelDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        bonusProgramId:
+          type: string
+          format: uuid
+        name:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+        mechanics:
+          type: array
+          items:
+            '$ref': '#/components/schemas/MechanicDto'
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    UpdateBonusProgramResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/BonusProgramContent'
+    CreateUserEventRequest:
+      type: object
+      properties:
+        countryCode:
+          type: string
+        userEvent:
+          type: string
+          enum:
+            - USER_LOGIN
+            - PUSH_START
+            - PUSH_PLAY
+            - TS_APPROVE
+            - WEB_SITE_REGISTRATION
+            - FIRST_DEPOSIT_GREATER_THAN
+            - FIRST_PERSONAL_ACCOUNT_VISIT
+            - SECOND_DEP_AFTER_WB
+            - THIRD_DEP_AFTER_WB
+            - TOURNAMENT_PARTICIPATION
+            - G_O_M_PLAYED
+            - DAILY_LOGIN_AND_ONE_BET
+            - MINI_GAME_FIRST_PLAYED
+            - MINI_GAME_RETENTION
+            - PLAYED_20_SLOTS
+            - PLAYED_40_SLOTS
+            - PLAYED_10_NEW_CATEGORY_SLOTS
+            - PLAYED_20_NEW_CATEGORY_SLOTS
+            - DEP_ON_PROMO_FIAT
+            - DEP_ON_PROMO_CRYPTO
+            - GGR_REACHES
+            - SUM_DEP_REACHES
+            - DEPOSIT
+            - WB_ACTIVATION_FAILED
+            - SECOND_DEP_DURING_WB_FAILED
+            - THIRD_DEP_DURING_WB_FAILED
+            - CRYPTO_DEP_1_FAILED
+            - CRYPTO_DEP_2_FAILED
+            - CRYPTO_DEP_3_FAILED
+            - CRYPTO_DEP_4_FAILED
+            - CRYPTO_DEP_5_FAILED
+            - CRYPTO_DEP_6_FAILED
+            - WB_ACTIVATION
+            - SECOND_DEP_DURING_WB
+            - THIRD_DEP_DURING_WB
+            - NO_WIN_DURING_WB
+            - ALL_FS_WERE_MADE_DURING_WB
+            - DEP_AND_WIN_FULLY_WAGERED_DURING_WB
+            - DAILY_LOGIN_STREAK_3
+            - DAILY_LOGIN_STREAK_7
+            - DAILY_LOGIN_STREAK_14
+            - DAILY_LOGIN_STREAK_20
+            - DAILY_LOGIN_STREAK_30
+            - DAILY_LOGIN_STREAK_45
+            - DAILY_LOGIN_STREAK_60
+            - PLAYED_10_SLOTS_DAILY
+            - PLAYED_15_SLOTS_DAILY
+            - PLAYED_20_SLOTS_DAILY
+            - PLAYED_25_SLOTS_DAILY
+            - PLAYED_30_SLOTS_DAILY
+            - PLAYED_40_SLOTS_DAILY
+            - COME_BACK_2
+            - COME_BACK_10
+            - COME_BACK_30
+            - COME_BACK_60
+            - COME_BACK_90
+            - COME_BACK_120
+            - CRYPTO_DEP_1
+            - CRYPTO_DEP_2
+            - CRYPTO_DEP_3
+            - CRYPTO_DEP_4
+            - CRYPTO_DEP_5
+            - CRYPTO_DEP_6
+            - FIRST_BBK_EXCHANGE
+            - SECOND_BBK_EXCHANGE
+            - THIRD_BBK_EXCHANGE
+            - PROMO_LETTER_READ
+            - PROMO_LETTER_LINK_USED
+            - ALL_PROMO_LETTER_LINKS_USED
+            - PROMO_SMS_LINK_USED
+            - PROMO_PUSH_LINK_USED
+            - EMAIL_CONFIRMATION
+            - PHONE_CONFIRMATION
+            - AML_VERIFICATION
+            - YANDEX_VERIFICATION
+            - TELEGRAM_VERIFICATION
+            - KYC_VERIFICATION
+            - REFERRALS_1
+            - REFERRALS_2
+            - REFERRALS_5
+            - VISITED_ALL_SLOT_CATEGORIES
+            - FIRST_REQUEST_CUSTOMER_SUPPORT
+            - PLAYED_ALL_SLOT_CATEGORIES
+            - FIRST_VISIT_FAQ
+            - FIRST_VISIT_BONUS_SECTION
+            - FAVORITES_SECTION_WAS_CUSTOMIZED
+            - SUBSCRIPTION_TG_PROMO
+            - SUBSCRIPTION_ALL_SOCIALS
+            - FIRST_DEPOSIT_SECTION_VISIT
+            - CHANGED_WEBSITE_LANGUAGE
+            - COMPLETED_OBG
+            - CASHBACK_ACQUIRED_1
+            - CASHBACK_ACQUIRED_2
+            - CASHBACK_ACQUIRED_3
+            - CASHBACK_ACQUIRED_4
+            - FIRST_DEP
+            - SECOND_DEP
+            - THIRD_DEP
+            - REGULAR_DEP_GRATER_THAN_10_USD
+            - CRYPTO_BONUS_ACTIVATED
+            - DAILY_BONUS_ACTIVATED
+            - CASHBACK_RECEIVED
+            - BIRTHDAY_BONUS_RECEIVED
+            - WOF_PARTICIPATED
+            - PAYMENT_METHOD_ACTIVATED_1
+            - PAYMENT_METHOD_ACTIVATED_2
+            - PAYMENT_METHOD_ACTIVATED_3
+            - PAYMENT_METHOD_ACTIVATED_4
+            - FIRST_BBK_PURCHASE
+            - SECOND_BBK_PURCHASE
+            - THIRD_BBK_PURCHASE
+            - POM_PLAYED
+            - GOW_PLAYED
+            - FAVORITES_PLAYED
+            - PLAYED_10_NEW_PERSONAL_SLOTS
+            - PLAYED_20_NEW_PERSONAL_SLOTS
+            - PLAYED_40_NEW_PERSONAL_SLOTS
+            - PLAYED_80_NEW_PERSONAL_SLOTS
+            - PLAYED_100_NEW_PERSONAL_SLOTS
+        userId:
+          type: string
+          format: uuid
+        promoCode:
+          type: string
+        depositDto:
+          '$ref': '#/components/schemas/DepositDto'
+        ggrReaches:
+          type: number
+        sumDepReaches:
+          type: number
+    DepositDto:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        depositAmount:
+          type: number
+        depositDateTime:
+          type: string
+    BaseResponseVoid:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: object
+    CreateTriggerRequest:
+      type: object
+      properties:
+        mechanicId:
+          type: string
+          format: uuid
+        userActionName:
+          type: string
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        minAmount:
+          type: number
+          format: double
+        maxRepeats:
+          type: integer
+          format: int32
+        mandatory:
+          type: boolean
+    CreateTriggerResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/TriggerContent'
+    CreateRewardRequest:
+      type: object
+      properties:
+        triggerId:
+          type: string
+          format: uuid
+        mechanicId:
+          type: string
+          format: uuid
+        rewardType:
+          type: string
+          enum:
+            - BONUS_BBK
+            - BONUS_CASH
+            - BONUS_CRYPTO
+            - BONUS_PERCENT_ON_DEPOSIT
+            - FREE_SPINS
+            - STORE_ACCESS
+            - WELCOME_BONUS_BBK
+            - WELCOME_BONUS_CASH
+            - WELCOME_BONUS_CRYPTO
+            - WELCOME_BONUS_FREE_SPINS
+            - WELCOME_BONUS_BONUS_PERCENT_ON_DEPOSIT
+            - CASHBACK_ACCESS
+            - MINI_GAME_ACCESS
+            - ACHIEVEMENT
+            - CASHBACK_UPGRADE
+            - ADDITIONAL_MINI_GAMES_ACCESS
+            - LEVEL_UP
+        description:
+          type: string
+        freeSpins:
+          type: array
+          items:
+            '$ref': '#/components/schemas/FreeSpinsDto'
+        achievementName:
+          type: string
+        currencyName:
+          type: string
+          enum:
+            - USD
+            - EUR
+            - GBP
+            - ETH
+            - SOL
+            - TON
+            - BTC
+            - BBK
+        currencyAmount:
+          type: number
+        percent:
+          type: number
+          format: double
+        storeAccess:
+          type: boolean
+        levelName:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+    CreateRewardResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/RewardContent'
+    CreateTargetSegmentRequest:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+            - Demographic
+            - Behavioral
+            - EngagementBased
+            - TimeBased
+            - Spending
+            - DevicePlatform
+            - Loyalty
+            - PaymentMethod
+            - EventBased
+            - RiskProfiles
+            - GeoLocation
+        name:
+          type: string
+        description:
+          type: string
+        countryCodes:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        genders:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        gameTypes:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        appTypes:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        achievements:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        currencies:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        bdUpperRange:
+          type: number
+        bdLowerRange:
+          type: number
+        intUpperRange:
+          type: integer
+          format: int32
+        intLowerRange:
+          type: integer
+          format: int32
+        timeUpperRange:
+          type: string
+          format: date-time
+        timeLowerRange:
+          type: string
+          format: date-time
+    CreateTargetSegmentResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/TargetSegmentContent'
+    TargetSegmentContent:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        type:
+          type: string
+          enum:
+            - Demographic
+            - Behavioral
+            - EngagementBased
+            - TimeBased
+            - Spending
+            - DevicePlatform
+            - Loyalty
+            - PaymentMethod
+            - EventBased
+            - RiskProfiles
+            - GeoLocation
+        name:
+          type: string
+        description:
+          type: string
+        countryCodes:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        genders:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        gameTypes:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        appTypes:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        achievements:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        currencies:
+          uniqueItems: true
+          type: array
+          items:
+            type: string
+        bdUpperRange:
+          type: number
+        bdLowerRange:
+          type: number
+        intUpperRange:
+          type: integer
+          format: int32
+        intLowerRange:
+          type: integer
+          format: int32
+        timeUpperRange:
+          type: string
+          format: date-time
+        timeLowerRange:
+          type: string
+          format: date-time
+    CreatePromotionRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        mechanicId:
+          type: string
+          format: uuid
+        targetSegmentIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+        promotionBonuses:
+          type: array
+          items:
+            '$ref': '#/components/schemas/BonusDto'
+        isAutoAssignable:
+          type: boolean
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    CreatePromotionResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/PromotionContent'
+    AssignItemToPlayerResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/ItemContent'
+        playerId:
+          type: string
+          format: uuid
+    CreateLevelRequest:
+      required:
+        - bonusProgramId
+      type: object
+      properties:
+        bonusProgramId:
+          type: string
+          format: uuid
+        name:
+          type: string
+          enum:
+            - LEVEL_0
+            - LEVEL_1
+            - LEVEL_2
+            - LEVEL_3
+            - LEVEL_4
+            - LEVEL_5
+            - LEVEL_6
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    CreateLevelResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/LevelContent'
+    AssignLevelToPlayerResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/LevelContent'
+        playerId:
+          type: string
+          format: uuid
+        assignedAt:
+          type: string
+          format: date-time
+    CreateItemRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        jsonProperties:
+          type: string
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    CreateItemResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/ItemContent'
+    CreateBonusProgramRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+        termsAndConditions:
+          type: string
+        status:
+          type: string
+          enum:
+            - ACTIVE
+            - INACTIVE
+    CreateBonusProgramResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/BonusProgramContent'
+    GetTriggerResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/TriggerContent'
+    GetAllTriggersResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/TriggerContent'
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    PageInfo:
+      type: object
+      properties:
+        totalPages:
+          type: integer
+          format: int32
+        totalElements:
+          type: integer
+          format: int64
+        first:
+          type: boolean
+        last:
+          type: boolean
+        empty:
+          type: boolean
+        size:
+          type: integer
+          format: int32
+        page:
+          type: integer
+          format: int32
+        numberOfElements:
+          type: integer
+          format: int32
+        sorted:
+          type: boolean
+    GetRewardResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/RewardContent'
+    GetAllRewardsResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/RewardContent'
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    GetAllPromotionsResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/PromotionContent'
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    GetPromotionResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/PromotionContent'
+    GetAllPlayerItemsResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/ItemContent'
+        playerId:
+          type: string
+          format: uuid
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    GetLevelResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/LevelContent'
+    GetPlayerLevelResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/LevelContent'
+        playerId:
+          type: string
+          format: uuid
+    GetAllLevelsResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/LevelContent'
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    GetAllItemsResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/ItemContent'
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    GetItemResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/ItemContent'
+    GetAllBonusProgramsResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          type: array
+          items:
+            '$ref': '#/components/schemas/BonusProgramContent'
+        pageInfo:
+          '$ref': '#/components/schemas/PageInfo'
+    GetBonusProgramResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/BonusProgramContent'
+    RemoveItemFromPlayerResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/ItemContent'
+        playerId:
+          type: string
+          format: uuid
+    RemovePlayerLevelResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          '$ref': '#/components/schemas/LevelContent'
+        playerId:
+          type: string
+          format: uuid
+
+    # Support
+    SupportTicketRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        subject:
+          type: string
+          description: Ticket subject
+        message:
+          type: string
+          description: Ticket message
+      required:
+        - clientId
+        - subject
+        - message
+    SupportTicketResponse:
+      type: object
+      properties:
+        ticketId:
+          type: string
+          description: Ticket identifier
+        status:
+          type: string
+          description: Ticket status
+      required:
+        - ticketId
+        - status
+    # Communications
+    CommunicationRequest:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        channel:
+          type: string
+          description: Communication channel
+          enum:
+            - EMAIL
+            - SMS
+            - PUSH
+        message:
+          type: string
+          description: Message text
+      required:
+        - clientId
+        - channel
+        - message
+    # Anti-fraud
+    TransactionCheckRequest:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        clientId:
+          type: string
+          description: User identifier
+        amount:
+          type: number
+          format: double
+          description: Transaction amount
+        currency:
+          type: string
+          description: Transaction currency
+        paymentMethod:
+          type: string
+          description: Payment method
+        ipAddress:
+          type: string
+          format: ipv4
+          description: User's IP address
+        userAgent:
+          type: string
+          description: User's browser/device information
+        timestamp:
+          type: string
+          format: date-time
+          description: Transaction timestamp
+      required:
+        - transactionId
+        - clientId
+        - amount
+        - currency
+        - paymentMethod
+        - ipAddress
+        - timestamp
+    TransactionCheckResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          description: Unique transaction identifier
+        isFraud:
+          type: boolean
+          description: Flag indicating if the transaction is fraudulent
+        riskScore:
+          type: number
+          format: float
+          description: Transaction risk score (from 0 to 100)
+        message:
+          type: string
+          description: Additional information or recommendations
+      required:
+        - transactionId
+        - isFraud
+        - riskScore
+    SuspiciousActivityReport:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier (if known)
+        activityType:
+          type: string
+          description: Suspicious activity type
+          enum:
+            - UNAUTHORIZED_ACCESS
+            - MULTIPLE_FAILED_LOGINS
+            - SUSPICIOUS_TRANSACTION
+            - UNUSUAL_ACTIVITY
+            - OTHER
+        description:
+          type: string
+          description: Description of suspicious activity
+          maxLength: 1000
+        reportedBy:
+          type: string
+          description: Reported by (user or system)
+        timestamp:
+          type: string
+          format: date-time
+          description: Activity detection timestamp
+      required:
+        - activityType
+        - description
+        - reportedBy
+        - timestamp
+    SuspiciousActivityResponse:
+      type: object
+      properties:
+        reportId:
+          type: string
+          description: Report identifier
+        status:
+          type: string
+          description: Report processing status
+      required:
+        - reportId
+        - status
+    FraudRiskResponse:
+      type: object
+      properties:
+        clientId:
+          type: string
+          description: User identifier
+        riskScore:
+          type: number
+          format: float
+          description: Current user risk score (from 0 to 100)
+        riskLevel:
+          type: string
+          description: Risk category
+          enum:
+            - LOW
+            - MEDIUM
+            - HIGH
+        lastUpdated:
+          type: string
+          format: date-time
+          description: Last risk score update timestamp
+      required:
+        - clientId
+        - riskScore
+        - riskLevel
+        - lastUpdated
+    # Notifications
+    NotificationCreationRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        message:
+          type: string
+        notificationType:
+          type: string
+          enum:
+            - INFO
+            - WARNING
+            - ALERT
+            - PROMOTION
+            - VERIFICATION
+        channel:
+          type: string
+          enum:
+            - EMAIL
+            - SMS
+            - PUSH
+            - IN_APP
+            - TELEGRAM
+        data:
+          type: object
+          additionalProperties:
+            type: string
+      required:
+        - channel
+        - message
+        - notificationType
+        - title
+        - userId
+    BaseResponseNotificationCreationResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/NotificationCreationResponse'
+    NotificationCreationResponse:
+      type: object
+      properties:
+        notificationId:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum:
+            - SUCCESS
+            - BAD_REQUEST
+            - NOT_FOUND
+            - INTERNAL_ERROR
+            - UNAUTHORIZED
+            - TOO_MANY_REQUESTS
+            - ACCESS_DENIED
+    BaseResponseNotificationResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/NotificationResponse'
+    NotificationDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        message:
+          type: string
+        notificationType:
+          type: string
+        channel:
+          type: string
+        data:
+          type: object
+          additionalProperties:
+            type: string
+        responseNotificationId:
+          type: string
+          format: uuid
+        status:
+          type: string
+    NotificationResponse:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        notifications:
+          type: array
+          items:
+            $ref: '#/components/schemas/NotificationDto'
+    RegistrationRequest:
+      type: object
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        phoneNumber:
+          type: string
+      required:
+        - email
+        - firstName
+        - lastName
+        - password
+        - phoneNumber
+        - username
+    BaseResponseRegistrationResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/RegistrationResponse'
+    RegistrationResponse:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        message:
+          type: string
+    FirstBrokerLoginRequest:
+      type: object
+      properties:
+        username:
+          type: string
+        email:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        phoneNumber:
+          type: string
+      required:
+        - email
+        - firstName
+        - lastName
+        - phoneNumber
+        - username
+    BaseResponseLoginResponse:
+      type: object
+      properties:
+        traceId:
+          type: string
+        timestamp:
+          type: string
+        contentType:
+          type: string
+        content:
+          $ref: '#/components/schemas/LoginResponse'
+    EmailVerificationRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        email:
+          type: string
+        verificationCode:
+          type: string
+      required:
+        - email
+        - userId
+        - verificationCode

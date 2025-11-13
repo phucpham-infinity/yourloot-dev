@@ -1,0 +1,53 @@
+/* Custom CSS cho Telegram Login Button */
+.telegram-login-button {
+    /* Ẩn button mặc định */
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 10;
+    pointer-events: auto;
+    display: block;
+    background: transparent;
+    border: none;
+  }
+  
+  .custom-telegram-wrapper {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .telegram-click-area {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  /* Đảm bảo icon không chặn sự kiện click của nút thật */
+  .telegram-click-area svg {
+    pointer-events: none;
+  }
+
+  
+  /* .custom-telegram-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 136, 204, 0.4);
+    background: linear-gradient(135deg, #0077b3, #0091d1);
+  } */
+  
+  /* .custom-telegram-btn:active {
+    transform: translateY(0);
+  } */
+
+  #telegram-login-Nuyen_bot {
+    width: 60px !important;
+  }
+
+  #telegram-login-ylauthtestbot {
+    width: 60px !important;
+  }

@@ -1,0 +1,1819 @@
+{
+  "app": {
+    "name": "YourLoot"
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "content": "Terms and Conditions"
+  },
+  "myItems": {
+    "title": "My items",
+    "search": "Search",
+    "shop": "Shop"
+  },
+  "depositWithdrawV2": {
+    "selectMethod": "Select Method",
+    "selectCrypto": "Select Crypto",
+    "walletCurrencyWarning": "Your primary wallet currency determines which deposit methods are shown.",
+    "cryptoBonusMessage": "Get a + 7% bonus on crypto deposits!",
+    "methods": {
+      "uzcard": "Uzcard",
+      "humo": "Humo",
+      "crypto": "Crypto",
+      "cryptoBonus": "+7% Bonus",
+      "bankCards": "Bank Cards",
+      "fps": "FPS",
+      "fpsQr": "FPS CIS",
+      "fpsSber": "FPS Sber",
+      "sberPay": "Sber Pay",
+      "tPay": "T-Pay",
+      "yukassa": "ЮKassa",
+      "alfa": "Alfa Bank",
+      "fpsAlfa": "FPS Alfa",
+      "fastPayments": "Fast Payments"
+    }
+  },
+  "noGame": {
+    "search": {
+      "title": "No results found",
+      "description": "Try searching with a different keyword."
+    },
+    "empty": {
+      "title": "Nothing here yet",
+      "description": "This category is being updated. New games will appear soon."
+    }
+  },
+  "bonusLanding": {
+    "buttons": {
+      "viewPromotion": "View Promotion",
+      "signUpToClaim": "Sign up to claim",
+      "getBonusNow": "Get the bonus now"
+    },
+    "descriptions": {
+      "viewPromotionDesc": "View your available Welcome Bonus promotion!",
+      "activateBonusDeposit": "Activate the bonus on your first deposit!",
+      "activateBonusGetBonus": "Activate the bonus on your first deposit and get up to 1,500 USD in your account!",
+      "signUpForBonus": "Sign up now to claim your Welcome Bonus!"
+    },
+    "badges": {
+      "doubleDeposit": {
+        "title": "Double your deposit",
+        "description": "100% bonus on your first account top-up"
+      },
+      "upTo1500": {
+        "title": "Up to 1,500 USD",
+        "description": "Get up to 130,000 RUB in bonus funds"
+      },
+      "easyActivation": {
+        "title": "Easy activation",
+        "description": "The bonus is activated automatically upon deposit"
+      }
+    },
+    "terms": {
+      "title": "Bonus terms",
+      "minimumDeposit": {
+        "title": "Minimum deposit",
+        "description": "10 USD / 1,000 RUB"
+      },
+      "availability": {
+        "title": "Availability",
+        "description": "Only on the first deposit"
+      },
+      "maximumBonus": {
+        "title": "Maximum bonus",
+        "description": "1,500 USD / 130,000 RUB"
+      },
+      "wageringRequirement": {
+        "title": "Wagering requirement",
+        "description": "x35"
+      },
+      "activation": {
+        "title": "Activation",
+        "description": "On the first deposit"
+      },
+      "wageringPeriod": {
+        "title": "Wagering period",
+        "description": "7 days"
+      }
+    }
+  },
+  "withdraw": {
+    "title": "Withdraw",
+    "description": "Withdraw your assets",
+    "instructions": "Instructions",
+    "cryptoPayment": "Crypto payment",
+    "bankPayment": "Bank payment",
+    "amountTooLow": "Too low. Minimum is {{minAmount}} {{currency}}.",
+    "amountTooHigh": "Too high. Maximum is {{maxAmount}} {{currency}}.",
+    "insufficientFunds": "You don't have enough funds.",
+    "requestedTitle": "Withdrawal Requested",
+    "unavailable": {
+      "title": "Withdrawal Unavailable",
+      "cannotNow": "Can't Withdraw Right Now",
+      "description": "You have a deposit in progress. Please wait until it's complete to withdraw funds.",
+      "wageringNotMet": "Wagering requirement not met",
+      "wageringDescription": "To withdraw, you need to wager the required amount first. Check your bonus or balance terms for details."
+    },
+    "processAlert": {
+      "inProgress": "Withdrawal still in progress.",
+      "timeLeft": "Time left:",
+      "continueWithdraw": "Continue Withdraw",
+      "continue": "Continue",
+      "failedToast": "Withdrawal failed, please try again or contact support.",
+      "successToast": "Withdrawal complete. Funds will appear shortly."
+    },
+    "cancelQuestion": "Cancel Withdrawal?",
+    "cancelDescription": "Are you sure you want to cancel your withdrawal request? The funds will return to your balance.",
+    "cancelAction": "Cancel Withdrawal",
+    "keepRequest": "Keep Request",
+    "canceled": "Withdraw request canceled.",
+    "requested": {
+      "submitted": "Your withdrawal has been submitted",
+      "processingInfo": "Processing time varies by method. We'll notify you when it's complete."
+    },
+    "failed": {
+      "title": "Withdrawal Failed",
+      "somethingWrong": "Something went wrong",
+      "description": "Please try again or contact support.",
+      "tryAgain": "Try Again",
+      "contactSupport": "Contact Support"
+    },
+    "emptyMethod": {
+      "title": "No withdrawal methods available for this currency",
+      "description": "Switch to another currency to continue"
+    },
+    "bankCard": {
+      "makeTransfer": "Make transfer using the details below",
+      "chooseBank": "Choose your bank",
+      "amount": "Amount",
+      "amountPlaceholder": "Enter amount {{currency}}",
+      "amountDescription": "Available: {{amount}} {{currency}}",
+      "bankNumber": "Bank number",
+      "yourPhoneNumber": "Phone number",
+      "yourPhoneNumberPlaceholder": "+7 912 123 32 43",
+      "bankNumberPlaceholder": "Enter card number",
+      "next": "Next",
+      "owner": "Owner",
+      "ownerPlaceholder": "John Doe",
+      "done": {
+        "title": "Withdrawal progressing",
+        "description": "Details of your withdrawal will be available in the “Details” panel",
+        "details": "Details",
+        "backHome": "Back home",
+        "bankCardAlt": "Bank Card"
+      },
+      "selectBankDescription": "Select your bank",
+      "enterInfo": "Enter your info",
+      "phoneNumber": "Phone number",
+      "yourBank": "Your bank",
+      "phoneNumberPlaceholder": "Enter phone number",
+      "withdraw": "Withdraw",
+      "processDescription": "System is working with your payment, it will take no more than couple of minutes",
+      "pleaseWait": "Please wait"
+    },
+    "cryptocurrency": {
+      "selectTitle": "Select cryptocurrency",
+      "selectDescription": "Make transfer using the details below",
+      "title": "Enter your info",
+      "description": "Make sure to provide the correct details",
+      "amount": "Amount",
+      "amountPlaceholder": "{{currency}} 1,923,234,99",
+      "amountDescription": "Amount of one deposit {{currency}}500 - {{currency}}100,000",
+      "plus10": "+$10",
+      "plus100": "+$100",
+      "plus1000": "+$1000",
+      "walletAddress": "Wallet Address",
+      "walletAddressPlaceholder": "Enter wallet address",
+      "withdraw": "Withdraw",
+      "doneTitle": "Withdrawal progressing",
+      "doneDescription": "Details of your withdrawal will be available in the “Details” panel",
+      "doneDetails": "You can track the status in the details panel. If you have any questions, please contact support.",
+      "backHome": "Back home",
+      "details": "Details"
+    }
+  },
+  "support": {
+    "title": "Contact support",
+    "description": "We are happy to help.",
+    "button": "Contact support"
+  },
+  "promo": {
+    "title": "Promo name",
+    "deposit": "Deposit now!",
+    "welcome": "YourLoot Welcome Bonus",
+    "depositFree": "Deposit now and get 100FS for free!",
+    "code": {
+      "title": "Got a promo code?",
+      "description": "Enter the promocode to apply it to your account",
+      "placeholder": "Enter it here...",
+      "apply": "Apply",
+      "ok": "Ok",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "warningMessage": "All active bonuses will be cancelled if you apply this promo code.",
+      "applyingMessage": "Applying promo code. Please wait a little bit ..."
+    },
+    "refer": {
+      "title": "Promocodes",
+      "description": "Check out latest offers",
+      "button": "Promocodes"
+    },
+    "active": {
+      "title": "Active Promo Code"
+    },
+    "available": {
+      "title": "Available Promo Codes"
+    }
+  },
+  "promotionV2": {
+    "title": "Promotions",
+    "bonuses": "Bonuses",
+    "subtitle": "All events, bonuses, and offers in one place.",
+    "header": {
+      "description": "Discover offers and exclusive rewards. Activate promotions to boost your gaming experience."
+    },
+    "active": "Active",
+    "available": "Available",
+    "loading": "Loading active promotions...",
+    "loadingAvailablePromotions": "Loading available promotions...",
+    "noAvailablePromotions": "You don't have any available promotions yet.",
+    "noActivePromotion": "You don't have any active promotion yet.",
+    "activeWarning": "You have an active promotion. Activating a new promotion will forfeit progress on your current one.",
+    "promoCodes": "Promo Codes",
+    "promoCodePlaceholder": "Got a promo code? Enter it here...",
+    "applying": "Applying...",
+    "apply": "Apply",
+    "loadingPromoCodes": "Loading promo codes...",
+    "noActivePromoCodes": "No active promo codes available",
+    "loadingPromotionDetails": "Loading promotion details...",
+    "promotionNotFound": "Promotion not found",
+    "expired": "Expired",
+    "canceled": "Canceled",
+    "deactivate": "Deactivate",
+    "activate": "Activate",
+    "termsAndConditions1": "Terms & Conditions",
+    "areYouSure": "Deactivate promotion?",
+    "activatePromotion": "Activate promotion",
+    "loseProgress": "You'll lose any progress made with this promotion.",
+    "wantToActivate": "You'll about active ${promotion.name}",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "warningMessage": "All active bonuses will be cancelled if you apply this promo code.",
+    "applyingMessage": "Applying promo code. Please wait a little bit ...",
+    "promotionDeactivated": "{{name}} deactivated.",
+    "failedToDeactivate": "Failed to deactivate {{name}}.",
+    "promotionActivated": "{{name}} activated.",
+    "failedToActivate": "Failed to activate {{name}}.",
+    "promoCodeApplied": "The code {{code}} is applied successfully",
+    "switchActivePromotion": "Switch Active Promotion?",
+    "switchPromotionMessage": "You already have an active promotion. Switching to a new one will reset your current progress.",
+    "keepCurrent": "Keep Current",
+    "switch": "Switch",
+    "promotions": {
+      "welcomeBonus": {
+        "name": "100% Welcome Bonus",
+        "description": "Get 100% bonus on your first deposit up to $100"
+      },
+      "cryptoBonus": {
+        "name": "Crypto Bonus +7% to Deposit",
+        "short": "Crypto Bonus",
+        "description": "Get an extra 7% bonus when you deposit with cryptocurrency"
+      },
+      "freeSpins": {
+        "name": "Free Spins for Deposit",
+        "description": "Get free spins when you make a deposit"
+      }
+    },
+    "timer": {
+      "expires": "Expires",
+      "expiresIn": "Expires in",
+      "available": "Available",
+      "canceledOn": "Canceled on {{date}}",
+      "expiredOn": "Expired on {{date}}",
+      "canceledDescription": "This promotion has been canceled and is no longer available.",
+      "expiredDescription": "This promotion has expired and is no longer available.",
+      "activeDescription": "This promotion will automatically deactivate when it expires",
+      "availableDescription": "This promotion is available until the timer ends."
+    },
+    "details": {
+      "howToParticipate": "How to Participate?",
+      "details": "Details",
+      "cryptoInstructions": "Enter promo code YLCrypto<br/>Make your first crypto deposit of at least 10 USDT (or equivalent)<br/>Receive your bonus automatically",
+      "cryptoDetails": "1. The bonus is available daily on the first cryptocurrency deposit of the day.<br/>2. The bonus amount is 7%.<br/>3. The minimum deposit amount is 10 USDT (or equivalent).<br/>4. The maximum bonus amount is 50 USDT (or equivalent).<br/>5. Wager: x1.<br/>6. The bonus is available once within the period from 00:00 to 23:59 UTC.<br/>7. The wagering period is 24 hours from the moment of crediting.<br/>8. Withdrawals are unavailable while a bonus is active.",
+      "standardInstructions": "Register or log in<br/>Deposit at least $10<br/>Play with your boosted balance",
+      "bonusAmount": "Bonus amount: 100%",
+      "minDeposit": "Minimum deposit: from 10 USD / 1,000 RUB",
+      "maxBonus": "Maximum bonus amount: 1500 USD / 130,000 RUB",
+      "wager": "Wager: 35"
+    },
+    "promoCodeSection": {
+      "enterPromoCode": "Please enter a promo code",
+      "title": "Promo Codes",
+      "placeholder": "Got a promo code? Enter it here...",
+      "applying": "Applying...",
+      "apply": "Apply",
+      "activatedPromoCode": "You activated additional promo code.",
+      "loading": "Loading promo codes...",
+      "noActivePromoCodes": "No active promo codes available"
+    },
+    "bonusGames": {
+      "title": "Bonus games",
+      "seeAll": "See All"
+    },
+    "halloweenGames": {
+      "title": "Halloween games",
+      "seeAll": "See All"
+    },
+    "termsAndConditions": {
+      "introduction": "Introduction",
+      "introText1": "These terms and conditions and the documents referred to below (\" Terms \") apply to the use of the current website yourloot.io (\" Website \") and its related or connected services (collectively, the \" Service \").",
+      "introText2": "You should carefully review these Terms as they contain important information concerning your rights and obligations concerning the use of the Website and form a binding legal agreement between you - our customer (\" Customer \"), and us. By using this Website and/or accessing the Service, you, whether you are a guest or a registered user with an account (\" Account \"), agree to be bound by these Terms, together with any amendments, which may be published from time to time. If you do not accept these Terms, you should refrain from accessing the Service and using the Website.",
+      "introText3": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\" Company \"), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005.",
+      "generalTerms": "General Terms",
+      "generalTermsText": "We reserve the right to revise and amend the Terms (including any documents referred to and linked to below) at any time. You should visit this page periodically to review the Terms and Conditions. Amendments will be binding and effective immediately upon publication on this Website. If you object to any such changes, you must immediately stop using the Service. Your continued use of the Website following such publication will indicate your agreement to be bound by the Terms as amended. Any bets not settled prior to the changed Terms taking effect will be subject to the pre-existing Terms.",
+      "obligations": "Your Obligations",
+      "obligationsIntro": "You acknowledge that at all times when accessing the Website and using the Service:",
+      "obligation1": "You are over 18, or the legal age at which gambling, or gaming activities are allowed under the law or jurisdiction that applies to you. We reserve the right to request proof of age documents from you at any time.",
+      "obligation2": "You are of legal capacity and can enter into a binding legal agreement with us. You must not access the Website or utilize the Service if you are not of legal capacity.",
+      "obligation3": "You are a resident in a jurisdiction that allows gambling. You are not a resident of any country in which access to online gambling to its residents or to any person within such country is prohibited. It is your sole responsibility to ensure that your use of the service is legal.",
+      "obligation4": "You may not use a VPN, proxy or similar services or devices that mask or manipulate the identification of your real location."
+    }
+  },
+  "header": {
+    "defaultWalletActive": "Primary balance activated.",
+    "bonusWalletActive": "Bonus balance activated.",
+    "addedToFavorites": "Added to favorite games.",
+    "removedFromFavorites": "Removed from favorite games.",
+    "bonus": "Bonus",
+    "primary": "Primary",
+    "balance": "Balance",
+    "telegram": "Telegram"
+  },
+  "title": {
+    "title": "Page title",
+    "lastUpdated": "Last updated:",
+    "introduction": "Introduction",
+    "introduction1": "These terms and conditions and the documents referred to below (\"Terms\") apply to the use of the current website yourloot.io (\"Website\") and its related or connected services (collectively, the \"Service\").",
+    "introduction2": "You should carefully review these Terms as they contain important information concerning your rights and obligations concerning the use of the Website and form a binding legal agreement between you - our customer (\"Customer\"), and us. By using this Website and/or accessing the Service, you, whether you are a guest or a registered user with an account (\"Account\"), agree to be bound by these Terms, together with any amendments, which may be published from time to time. If you do not accept these Terms, you should refrain from accessing the Service and using the Website.",
+    "introduction3": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Company\"), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005.",
+    "deposit": "Deposit now!"
+  },
+  "game": {
+    "new": "New",
+    "newsGames": "New Games",
+    "card": {
+      "select": "Select Game",
+      "piggyTap": "Piggy Tap",
+      "pragmaticPlay": "Pragmatic Play"
+    },
+    "launcher": {
+      "loading": "Loading game..."
+    },
+    "popular": {
+      "title": "Popular Games",
+      "titleMobile": "Games",
+      "seeAll": "See All"
+    }
+  },
+  "search": {
+    "placeholder": "Search from 3 characters",
+    "result": "Search result",
+    "bonusGames": "Bonus Games",
+    "noResults": "No games found"
+  },
+  "profile": {
+    "title": "Profile",
+    "back": "Back",
+    "store": "Store",
+    "setting": "Profile Setting",
+    "logout": "Logout",
+    "myWallets": "My Wallets",
+    "walletsDescription": "Manage your wallets",
+    "myBonuses": "My Bonuses",
+    "myFavorites": "Favorites",
+    "bonusesDescription": "Catch them all",
+    "myGames": "My Games",
+    "gamesDescription": "Win them all",
+    "exchange": "Exchange",
+    "exchangeDescription": "Make balance bigger",
+    "realBalance": "Real Balance",
+    "balance": "Balance",
+    "primary": "Primary",
+    "bonus": "Bonus",
+    "yourLootCoin": "Your Loot Coins",
+    "manage": "Manage",
+    "achievements": "Achievements",
+    "firstSteps": "First Steps",
+    "exp": "EXP",
+    "inBonus": "Bonus balance",
+    "tabGames": "New Games",
+    "newGameButton": "Find a new game",
+    "outShopTitle": "Shop",
+    "outShopDescription": "Loot out the Store!",
+    "outShopButton": "Go to shop",
+    "casinoTitle": "Lobby",
+    "casinoDescription": "Enjoy endless games!",
+    "newGameDescription": "Win in all {{year}} novelties",
+    "casinoButton": "Try to play",
+    "lobby": "Popular Games",
+    "lobbyDescription": "Are they really that popular?",
+    "tapGames": "All Providers",
+    "tapGamesDescription": "Pick the best and win!",
+    "newForYou": "All Categories",
+    "newForYouDescription": "Which one will be fortune?",
+    "findNewGamesTitle": "Find new games",
+    "sectionHeaderTitle": "Other useful stuff",
+    "contactSupport": "Contact support",
+    "contactSupportDescription": "Ask questions or receive help",
+    "gotoProfile": "Go to profile",
+    "checkUpdateProfile": "Check and update my profile",
+    "welcome": "Welcome,",
+    "exploreUpdate": "Explore and update my profile.",
+    "lookSettings": "Take a look at my profile settings.",
+    "cashback": "Cashback",
+    "level": "Level",
+    "provideEmail": "Provide your email!",
+    "updateEmailKyc": "Please update your email to complete KYC",
+    "providePhone": "Provide your phone number!",
+    "updatePhoneKyc": "Please update your phone to complete KYC",
+    "yourEmail": "Your email:",
+    "add": "Add",
+    "yourCountry": "Your country:",
+    "birthDate": "Birth Date",
+    "missingBirthDate": "Missing birth date, please add one.",
+    "emailApplied": "Settings email applied",
+    "emailAdded": "Email successfully added!",
+    "great": "Great",
+    "birthDateApplied": "Settings birth date applied",
+    "birthDateAdded": "Birth date successfully added!",
+    "settings": "Settings",
+    "changePassword": "Change password",
+    "logOut": "Log out",
+    "signOut": "Sign Out",
+    "levelWithNumber": "Level {{number}}",
+    "loyaltyPoints": "Loyalty Points: {{current}} / {{total}}",
+    "bets": "Bets: {{current}} / {{total}}",
+    "earnLoyaltyPoints": "Earn {{points}} Loyalty Points (LP) {{percentage}} to reach level {{level}}.",
+    "maxLevelReached": "Max level reached",
+    "email": "Email",
+    "emailPlaceholder": "example@gmail.com",
+    "confirmationLinkSent": "Confirmation link sent",
+    "confirmationLinkSentToEmail": "A confirmation link has been sent to your email.",
+    "validForFiveMinutes": "It's valid for 5 minutes."
+  },
+  "categories": {
+    "halloween": {
+      "title": "Halloween",
+      "description": "Halloween"
+    },
+    "gameShow": {
+      "title": "Game Shows",
+      "description": "Game Shows"
+    },
+    "liveGames": {
+      "title": "Live Games",
+      "description": "Live Games"
+    },
+    "bonus": {
+      "title": "Bonus",
+      "description": "Only the games categorized as \"Slots\" by the providers, that have less than 96.1% RTP and are without a progressive Jackpot."
+    },
+    "new": {
+      "title": "New",
+      "description": "Аll newly released game genres should appear and disappear after a month by reaching a certain number of games in the category (for example 60)."
+    },
+    "slotGames": {
+      "title": "Slots",
+      "description": "All games categorized as \"Slots\" by the providers."
+    },
+    "crash": {
+      "title": "Crash",
+      "description": "Games categorized as \"Crash Games\" by the providers.\nAll online casino games where players bet on the outcome of a rapidly increasing multiplier.\nThe objective is to cash out before the multiplier crashes, which can happen at any moment.\nExamples: Aviator, JetX, Crash, Coin Flip, Rocket."
+    },
+    "shows": {
+      "title": "Game Shows",
+      "description": "All games categorized as \"Game Shows\" by the providers,\nthat feature live hosts, engaging visuals, and the opportunity for players to win prizes based on their"
+    },
+    "blackjackAndRoulette": {
+      "title": "Live Games",
+      "description": "All Blackjack & Roulette tables"
+    },
+    "liveBlackjack": {
+      "title": "Live Blackjack",
+      "description": "All Blackjack tables"
+    },
+    "liveRoulette": {
+      "title": "Live Roulette",
+      "description": "All Roulette tables"
+    },
+    "livePoker": {
+      "title": "Live Poker",
+      "description": "All Poker games"
+    },
+    "sport": {
+      "title": "Sport",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "lottery": {
+      "title": "Lottery",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "roulette": {
+      "title": "Roulette",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "casual": {
+      "title": "Casual",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "craps": {
+      "title": "Craps",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "scratch": {
+      "title": "Scratch",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "poker": {
+      "title": "Poker",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "fishing": {
+      "title": "Fishing Games",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "mines": {
+      "title": "Mines Games",
+      "description": "Sports games categorized as \"Sport or Virtual sport\" by the providers, typically include virtual sports betting and simulation games that mimic real-life sporting events. "
+    },
+    "summerVibe": {
+      "title": "Harvest of Wins",
+      "description": "Summer Vibe games"
+    }
+  },
+  "achievements": {
+    "title": "Achievements",
+    "seeAll": "See All",
+    "getPrize": "Get Prize",
+    "currentProgress": "Current progress:",
+    "status": {
+      "completed": "Completed",
+      "uncompleted": "Uncompleted"
+    },
+    "claimPrize": "Claim Prize",
+    "congratulations": "Congratulations!",
+    "receivedPrize": "You have received a prize.",
+    "horray": "Horray"
+  },
+  "deposit": {
+    "title": "Deposit",
+    "method": "Method",
+    "betterInCrypto": "Better in Crypto",
+    "cryptoPayment": "Crypto payment",
+    "bankPayment": "Bank payment",
+    "recipient": "Recipient",
+    "chooseAmount": "Choose amount",
+    "makeTransfer": "Make transfer using the details below",
+    "transferInstruction": "Please transfer the exact amount below to the provided bank details within the time limit.",
+    "timeIsUp": "Time is up",
+    "timeoutDescription": "We didn’t receive your transaction in time. If the funds were sent, please contact support.",
+    "makeDeposit": "Make a deposit",
+    "amountDescription": "Choose the amount you want to deposit",
+    "next": "Next",
+    "paymentMade": "Payment made",
+    "back": "Back",
+    "amount": "Amount",
+    "amountPlaceholder": "Enter amount ({{currency}})",
+    "amountTooLow": "Too low. Minimum is {{minAmount}} {{currency}}.",
+    "amountTooHigh": "Too high. Maximum is {{maxAmount}} {{currency}}.",
+    "yourBank": "Your bank",
+    "bankName": "Bank name",
+    "cardNumber": "Card Number",
+    "phoneNumber": "Phone Number",
+    "cardHolder": "Card Holder",
+    "information": "Information",
+    "details": "Details",
+    "addDetails": "Add details",
+    "chooseBank": "Choose the amount and the bank",
+    "enterInfo": "Enter your info",
+    "correctDetails": "Make sure to provide the correct details",
+    "personalAddress": "Your personal address ",
+    "cryptoAddress": "Your {{name}} ({{network}}) deposit address",
+    "memo": "Memo",
+    "someMemo": "Some important memo",
+    "memoNote": "Please, pay attention to the Memo field. If it is full, use the memo to make a deposit.",
+    "network": "Network",
+    "paymentMethods": {
+      "bankCard": "Bank card",
+      "cryptocurrency": "Crypto",
+      "sbp": "SBP",
+      "sbpQr": "SBP QR"
+    },
+    "methods": {
+      "oneClickPay": "1 Click Pay",
+      "mobile": "Mobile"
+    },
+    "error": {
+      "attemptFailed": "Oops! Attempt failed! Please try again 😊"
+    },
+    "description": "Amount of one deposit ₽500 - ₽350,000",
+    "from": "From",
+    "to": "to",
+    "inProgress": "Your payment in progress",
+    "inProgressDescription": "If the transaction is correct, you will see it reflected in your balance shortly. For more information, check the Details.",
+    "paymentFail": "Payment failed",
+    "timeLeft": "Time left:",
+    "selectNetwork": "Enter network",
+    "descriptionNetwork": "You can only make deposit in the network you selected!",
+    "cancelled": "Deposit canceled.",
+    "cancelQuestion": "Cancel Deposit?",
+    "cancelDescription": "This will stop the current transaction. Are you sure you want to cancel?",
+    "cancelAction": "Cancel Deposit",
+    "cancelPayment": "Cancel Payment",
+    "minDeposit": "Min. deposit",
+    "depositAboveMinimum": "Deposit above the minimum to keep funds safe.",
+    "scanQR": "Scan QR or copy address below",
+    "redirectingOn": "Redirecting on",
+    "completePayment": "Please complete payment on",
+    "andReturn": "and return here.",
+    "processedAutomatically": "Your deposit will be processed automatically",
+    "estimatedArrival": "Est. arrival ≈ 1 mins",
+    "transferInstruction1": "When transferring, select \"To another country\" and the desired country, copy the phone number and select the specified bank.",
+    "transferInstruction2": "The transfer must be made to a card/account.",
+    "detailedInstruction": "Detailed Instruction",
+    "warningMessage": "Please note that if the deposited amount is less than the minimum limit, the funds will be lost irreversibly.",
+    "inputInfo": {
+      "redirectInfo": "If available, you’ll see requisites to pay directly. Otherwise, you’ll be redirected to a secure payment page."
+    },
+    "process": {
+      "waiting": "Waiting for Transaction...",
+      "checking": "We're checking your transaction...",
+      "youCanLeave": "You can leave this page — we'll update your balance automatically once detected."
+    },
+    "processAlert": {
+      "failedToast": "Deposit failed, please try again or contact support.",
+      "successToast": "Deposit complete. Funds will appear shortly."
+    },
+    "continueDeposit": "Continue Deposit",
+    "successful": {
+      "title": "Payment successful",
+      "description": "Funds will appear in your balance soon.",
+      "paidButton": "Paid",
+      "homeButton": "Home Page",
+      "currency": "Currency:",
+      "network": "Network:"
+    },
+    "failed": {
+      "title": "Payment failed",
+      "cryptoNotDetected": "We couldn’t detect your crypto transaction.",
+      "somethingWrong": "Something went wrong.",
+      "contactSupport": "If you’ve already sent it, please contact support.",
+      "tryAgain": "Try Again"
+    },
+    "v3": {
+      "cryptocurrencyPayment": "Cryptocurrency Payment",
+      "depositSuccessful": "Deposit successful. Balance updated.",
+      "networkWarning": "You are sending {{crypto}} via the {{network}} network. Using a different network will result in loss of funds.",
+      "minimumAmountWarning": "Please ensure the deposit meets the minimum amount. Deposits below the minimum will not be credited.",
+      "oneTransaction": "Make payment in one transaction",
+      "noComments": "Do not leave comments for the transfer.",
+      "requisitesChange": "Requistes always change.",
+      "copyAmount": "Copy the amount",
+      "adjustedAmount": "We've adjusted your transfer amount to verify this is your payment and process it automatically.",
+      "understood": "Understood",
+      "awaitingTransfer": "Awaiting your transfer...",
+      "paymentDone": "Payment Done",
+      "chooseAnotherMethod": "Choose Another Method",
+      "unableToVerify": "Unable to verify payment. Please try again or choose another method.",
+      "checkingPayment": "Checking your payment...",
+      "processingTime": "This may take up to 25 minutes. You can return to the home page - we'll notify you when the funds arrive.",
+      "productInformation": "Product Information",
+      "transactionTimeout": "We didn't receive your transaction in time. If the funds were sent, please contact support.",
+      "contactSupport": "Contact Support",
+      "home": "Home",
+      "proceedToPayment": "Proceed to payment",
+      "bonusOnDeposit": "Bonus on deposit",
+      "bonusDescription": "100% extra credited instantly",
+      "depositAmount": "Deposit amount",
+      "bonusBalance": "Bonus balance"
+    },
+    "rateLimit": {
+      "title": "Deposit limit reached",
+      "description": "You've reached your limit of 3 deposit attempts within the past 30 minutes.",
+      "tryAgain": "You can try again in {{time}}"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "back": "Back",
+    "description": "For any legal requirements or other questions please contact us at ",
+    "sendFeedback": "Send feedback",
+    "contactSupport": "Contact support",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "For any other questions feel free to reach our support team or use our feedback form:",
+      "submit": "Send Message",
+      "success": "Feedback is send!",
+      "error": "Failed to send message",
+      "great": "Great!",
+      "thanks": "Thank you for sending your feedback. We will contact you as soon as possible.",
+      "feedback": {
+        "title": "Feedback form",
+        "description": "Contact us directly by using the feedback form below.",
+        "yourName": "Your Name",
+        "yourEmail": "Your Email",
+        "yourQuestion": "Your question",
+        "cancel": "Cancel",
+        "sendMessage": "Send message"
+      }
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "workingHours": "Working Hours"
+    },
+    "socialMedia": {
+      "description": "Here you can find all links to our social media."
+    }
+  },
+  "pageInDev": {
+    "title": "Page is temporarily unavailable",
+    "back": "Back",
+    "message": "Please come back later"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "emailPlaceholder": "example@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "********",
+    "loginButton": "Login",
+    "noAccount": "Don't have an account?",
+    "registerHere": "Sign Up",
+    "orLoginWith": "Or, login using this options:",
+    "wrongEmail": "Wrong email or username.",
+    "wrongPassword": "Invalid email or password",
+    "restorePassword": "Restore password",
+    "restoreHere": "here",
+    "emailRequired": "Email or Username is required",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 8 characters"
+  },
+  "register": {
+    "title": "Register",
+    "email": "Email",
+    "registerBonus": "Register bonus promo art",
+    "emailPlaceholder": "example@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "********",
+    "registerButton": "Sign Up",
+    "haveAccount": "Already have an account?",
+    "loginHere": "Login",
+    "orRegisterWith": "Or choose other options",
+    "passwordRequirements": "Minimum 8 characters, must include numbers.",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordNumberRequired": "Password must include at least one number",
+    "welcomeBonus": "Welcome Bonus",
+    "depositBonus": "Get $1 500 on your 1st deposit",
+    "depositBonusMobile1": "Get $1 500 on your",
+    "depositBonusMobile2": "1st deposit",
+    "promoCode": {
+      "title": "Promo code",
+      "placeholder": "Enter Promocode",
+      "apply": "Apply",
+      "applied": "Promo code applied!",
+      "error": "You are not eligible for this promo code.",
+      "appliedDescription": "Congratulations! Promocode is applied. You have activated 100FS + 100% Welcome Bonus!",
+      "appliedDescriptionNew": "Congratulations! Promocode is applied. You have activated {{newCode}}!",
+      "appliedDescriptionError": "Promo code is not valid!",
+      "great": "Great!"
+    },
+    "oneLastStep": "One last step !",
+    "completeSignUp": "Complete your sign-up by confirming the details below.",
+    "selectCountry": "Please select your country",
+    "selectDateOfBirth": "Please select your date of birth",
+    "mustBe18": "You must be at least 18 years old",
+    "selectCurrency": "Please select your preferred currency",
+    "termsAndConditions": "Terms and Conditions",
+    "signUpConfirm18Agree": "By signing up, you confirm you’re 18+ and agree to the",
+    "confirmAge": "I confirm that i am 18 years old or older",
+    "agree": "I agree with",
+    "country": "Country",
+    "dateOfBirth": "Date of Birth",
+    "birthday": "Birthday",
+    "day": "Day",
+    "month": "Month",
+    "year": "Year",
+    "preferredCurrency": "Preferred Currency",
+    "selectCur": "Select Currency",
+    "language": "Language",
+    "selectLanguage": "Please select your language"
+  },
+  "auth": {
+    "terms": "Terms and Conditions",
+    "privacyPolicy": "Privacy policy",
+    "contactSupport": "Please contact support or check the email.",
+    "confirmationLink": "We send the confirmation link to your mail.",
+    "forgotPassword": "Forgot password",
+    "restorePassword": "Restore password",
+    "specifyEmail": "Specify your Email:",
+    "send": "Send",
+    "checkYourEmail": "Check your email",
+    "support": "Support",
+    "forgotPasswordQuestion": "Forgot Password?",
+    "forgotPasswordQuestion2": "Reset",
+    "passwordResetSuccessful": "Password reset successful!",
+    "passwordResetCongratulations": "Congratulations! Your password was successfully reset, please login again with your new password.",
+    "contactSupportOrCheckEmail": "Please contact support or check the email.",
+    "tryAgain": "Try again",
+    "passwordChangedSuccessfully": "Your password changed successfully",
+    "pleaseChooseNewPassword": "Please choose new password",
+    "newPassword": "New password",
+    "confirmNewPassword": "Confirm new password",
+    "title": "Password must contain:",
+    "englishLettersOnly": "English letters only",
+    "minimumLength": "Minimum 8 characters",
+    "upperLowerCase": "Upper & lower case letters",
+    "number": "A number (0–9)",
+    "passwordRestore": "Password restore",
+    "enterEmail": "Enter your Email address.",
+    "forgotEmail": "Forgot email? Contact support.",
+    "repeatPassword": "Repeat new password:",
+    "codeSentMessage": "We've sent a code to your email. It's valid for 111 seconds",
+    "confirmationCode": "Confirmation code:",
+    "codeRequired": "Code is required",
+    "didntReceiveCode": "Didn't receive code?",
+    "resendInSeconds": "Resend in 59 sec",
+    "continue": "Continue",
+    "emailRequired": "Email is required",
+    "emailMustContainAt": "Email must contain '@'",
+    "emailMaxLength": "Email must be less than or equal to 255 characters",
+    "confirmationCodePlaceholder": "YYYY",
+    "linkSent": "Link has been sent.",
+    "changePassword": "Change password",
+    "newPasswordSet": "New Password Set",
+    "passwordUpdated": "Your password has been updated successfully.",
+    "close": "Close",
+    "linkExpired": "Link expired",
+    "linkExpiredMessage": "This link has expired. Please request a new one.",
+    "sendNewLink": "Send New Link",
+    "forgotEmailQuestion": "Forgot Email?",
+    "contactSupportLink": "Contact Support"
+  },
+  "balance": {
+    "setAsDefault": "Set as default",
+    "setAsMain": "Set as Main",
+    "walletChanged": {
+      "title": "Wallet changed",
+      "description": "Congratulations!\nYour default wallet now Cryptocurrency USDT",
+      "great": "Great!"
+    },
+    "walletChangedSuccessfully": "Wallet changed successfully",
+    "primaryWalletChangedSuccessfully": "Primary wallet changed successfully",
+    "walletChangeError": "Primary wallet changed error",
+    "walletSwitching": "Your wallet is switching. Please wait a little bit ...",
+    "errorSwitchWallet": "The bonus balance isn't available yet.",
+    "switchWallet": {
+      "title": "Are you sure you want to switch your main balance?",
+      "description": "All your active bonuses can be canceled.",
+      "warningMessage": "Switching wallets can cancel active bonuses. Make sure to use any bonuses before changing.",
+      "switch": "Switch",
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
+    "switchingWalletDialog": {
+      "title": "Switch Primary Wallet",
+      "warningTitle": "Are you sure?",
+      "warningMessage": "Switching wallets can cancel active bonuses. Make sure to use any bonuses before changing.",
+      "switch": "Switch",
+      "cancel": "Cancel"
+    },
+    "history": {
+      "action": "Action",
+      "date": "Date",
+      "currency": "Currency",
+      "amount": "Amount",
+      "status": "Status"
+    },
+    "myWallets": "My Wallets",
+    "back": "Back",
+    "createNewWallet": "Create new wallet",
+    "mainBalance": "Main Balance",
+    "inCurrency": "In {{currency}}",
+    "otherBalances": "Other Balances",
+    "bonus": "Bonus",
+    "activeBalance": "Activate",
+    "yourLoot": "Your Loot Coins",
+    "deposits": "Deposits",
+    "withdrawals": "Withdrawals",
+    "accrual": "Accrual",
+    "deduction": "Deduction",
+    "payments": "Payments",
+    "oldWallets": {
+      "title": "Available Wallets",
+      "noWallets": "No wallets found"
+    },
+    "manageFunds": "Manage Funds",
+    "primaryWallet": "Primary Wallet",
+    "primary": "Primary",
+    "additionalFunds": "Additional Funds",
+    "otherWallets": "Other Wallets",
+    "makePrimary": "Make Primary"
+  },
+  "bonus": {
+    "title": {
+      "all": "Promotions",
+      "available": "Available",
+      "loyalty": "Loyalty",
+      "tournament": "Tournaments",
+      "promotion": "Promotions",
+      "currentBonus": "Current bonus"
+    },
+    "myPromoCode": "My Promo Codes",
+    "promocodeApplied": "Promocode applied",
+    "promocodeAppliedSuccessfully": "Promocode applied successfully",
+    "enterPromoCode": "Enter Promo Code",
+    "applyNewPromoCode": "Apply New Promo Code",
+    "enterNewPromocode": "Enter new promocode",
+    "enterNewPromocodeToApply": "Enter new promocode to apply it to your account.",
+    "allPromotions": "All promotions",
+    "back": "Back",
+    "seeAll": "See all",
+    "close": "Close",
+    "otherPromotions": "Other promotions",
+    "enterPromocode": "Enter promo code",
+    "apply": "Apply",
+    "promoCodeDes": "Enter new promo code to apply it to your account",
+    "chooseOne": "Choose one for you!",
+    "lobby": {
+      "title": "Lobby",
+      "description": "Choose from countless games and enjoy!"
+    },
+    "promotion": {
+      "tabgame": "Tap games",
+      "checkout": "Check out our tap games and get prizes!",
+      "checkoutBtn": "Check out tap games",
+      "casino": "Tap games",
+      "checkoutCasino": "Check out our tinder-like game!",
+      "checkoutBtnCasino": "Check out tap games",
+      "enterPromocode": "Enter new promo code",
+      "enterPromocodeDes": "Enter new promo code to apply it to your account.",
+      "apply": "Apply",
+      "promoCodeDesInput": "Enter Promo Code",
+      "availableGames": "Games for Bonus",
+      "lobby": "Lobby",
+      "lobbyDes": "Choose from countless games and enjoy!",
+      "tabgameBox": "Tap games",
+      "tabgameDes": "Check out our tap games and get prizes!",
+      "newForYou": "New for you",
+      "newForYouDes": "Play a random game you haven’t played before.",
+      "otherGame": "Other"
+    },
+    "banner": {
+      "title": "Welcome Bonus",
+      "description": "+100% to the first deposit",
+      "readMore": "Read more"
+    },
+    "detail": {
+      "hotOffer": "Hot offer for new players!",
+      "getBonus": "Get a 100% bonus on your first deposit up to",
+      "howDoesItWork": "How does it work?",
+      "work1": "1. Make your 1st deposit of $10 / 1 000 ₽ or more.",
+      "work2": "2. Get 100% on your bonus account.",
+      "work3": "3. Enjoy playing with the bonus!",
+      "additionalTerms": "Additional Terms",
+      "term1": "1. TThe bonus is credited only on the 1st deposit.",
+      "term2": "2. The wager for the bonus is X35 of the bonus amount and the deposit.",
+      "detailsAndConditions": "Detailed details and conditions for each bonus -",
+      "promotions": "Promotions",
+      "get": "Get",
+      "getBonusAmount": "Get $1 500",
+      "firstDeposit": "On the 1st deposit",
+      "deactive": "Bonus is deactivated!",
+      "desDeactive": "Congratulations! Promo code is deactivated.",
+      "warning": "Warning!",
+      "activeBonus": "You have active bonus!",
+      "message": "Are you sure you want to deactive current promo code ",
+      "messagePrevious": "This will disbale your previous bonus.",
+      "btnDeactive": "Deactivate",
+      "btnActive": "Active",
+      "messageActive": "Are you sure you want to switch current promo code {{currentCode}} to {{newCode}}?",
+      "active": "Bonus is applied!",
+      "desActive": "Congratulations! Promo code is applied. You have activated the",
+      "desBonus": "Welcome Bonus of 100%!"
+    },
+    "term": {
+      "bonusTermsTitle": "Bonus terms & conditions",
+      "bonusIntro": "The bonus is available only on the first deposit",
+      "bonusTermsSection": "Bonus Terms",
+      "bonusAmount": "Bonus amount: 100%",
+      "minDeposit": "Minimum deposit: from 10 USD / 1 000 RUB",
+      "maxBonus": "Maximum bonus amount: 1500 USD / 130 000 RUB",
+      "wager": "Wager: 35",
+      "howToParticipate": "How to participate?",
+      "step1": "1. Log in or register an account.",
+      "step2": "2. Click the \"Activate\" button.",
+      "step3": "3. Make a deposit starting from 10 USD.",
+      "step4": "4. Enjoy playing with the bonus!",
+      "rulesTitle": "Rules:",
+      "rule1": "1. The 100% bonus offer is available from 30.05.2025 until 31.12.2025.",
+      "rule2": "2. Activation is only possible on the first deposit.",
+      "rule3": "3. The maximum bonus amount is 1500 USD / 130,000 RUB.",
+      "rule4": "4. To activate the bonus offer, a single deposit of at least 10 USD / 1,000 RUB is required.",
+      "rule5": "5. Bonus funds will be credited to the Bonus Balance.",
+      "rule6": "6. Only bets placed on slots from the <0>\"Games for bonus\"</0> section count towards the wagering requirement.",
+      "rule7": "7. The bonus is wagered using the real balance first — specifically, the portion on which the bonus was credited — and then from the bonus balance.",
+      "rule8": "8. The bonus balance becomes available to all players who have wagered the deposit amount from their main balance. To continue playing using bonus funds, go to the \"Balance Panel\" (located in the website header), select \"Bonus Balance\" or visit \"My wallets\" section and activate \"Bonus Balance\" with a single click. If the activation is successful, a green indicator will appear next to \"Bonus Balance.\" In case of an error, the system will automatically display a corresponding notification.",
+      "rule9": "9. The bonus amount must be wagered 35 times.",
+      "rule10": "10. Winnings from bets that do not count towards the wagering requirement will be credited to the real balance, but these funds cannot be used to wager the bonus.",
+      "rule11": "11. If a deposit is made while a bonus is active, the deposited amount can be used to meet the wagering requirement.",
+      "rule12": "12. The wagering period for the qualified deposit and the bonus percentage is 7 days from the moment of crediting.",
+      "rule13": "13. After completing the bonus wagering, a wagering requirement of X1 must be met for withdrawal according to the site rules.",
+      "rule14": "14. Withdrawal is not available during an active bonus.",
+      "rule15": "15. Only one bonus can be active in the casino at any given time.",
+      "rule16": "16. After fulfilling the wagering requirement, the winnings will be transferred to the real balance.",
+      "rule17": "17. If you cancel the bonus, the remaining funds in the real balance will be subject to a X1 wagering requirement, and the bonus funds will be canceled.",
+      "rule18": "18. The promotion is valid for only one phone number, account, address, IP address, bank card number, or crypto account. Repeated participation in the promotion is not allowed. Participating in the promotion under a different identity will result in the cancellation of results and account blocking without refunding any funds.",
+      "footerText": "© 2025 Casino. All rights reserved."
+    }
+  },
+  "claimedGifts": {
+    "title": "Claimed Gifts",
+    "back": "Back",
+    "allAchievements": "All Achievements",
+    "claimed": "Claimed",
+    "rewardFor": "Reward for completing"
+  },
+  "gameInside": {
+    "backToLobby": "Back to lobby",
+    "toggleCurtains": "Curtains",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites",
+    "fullScreen": "Full Screen",
+    "deposit": "Deposit",
+    "otherGames": "Other games",
+    "seeMore": "See more...",
+    "warning": "Warning",
+    "close": "Close",
+    "bonusGames": "Bonus Games",
+    "bonusWalletError": "You can't play it with bonus balance 😣\nPlease choose Games for Bonus or switch to Main Balance",
+    "bonusBalanceAlert": "Bonus Balance Alert",
+    "activeBonusBalance": "You have an active bonus balance",
+    "notBonusGame": "This game isn't a bonus game. Play bonus games or switch to primary balance to continue.",
+    "playBonusGames": "Play Bonus Games",
+    "switchBalance": "Switch Balance",
+    "areYouSure": "Are you sure?",
+    "switchingWalletsWarning": "Switching wallets can cancel active bonuses. Make sure to use any bonuses before changing.",
+    "cancelSwitch": "Cancel switch",
+    "switch": "Switch"
+  },
+  "store": {
+    "title": "Store",
+    "description": "Purchase and activate bonuses such as free spins and more.",
+    "empty": "No bonuses available yet.",
+    "buyWithCoins": "Buy with Coins",
+    "buyWithCash": "Buy with Cash",
+    "bonusPurchased": "Bonus Purchased!",
+    "successfullyPurchased": "You've successfully purchased {{title}}.",
+    "activateInstructions": "To activate it, go to Bonuses, select the bonus and click Activate.",
+    "goToPromotions": "Go to Promotions",
+    "confirmPurchase": "Confirm Purchase",
+    "aboutToBuy": "You're about to buy {{title}}.",
+    "cancel": "Cancel",
+    "purchase": "Purchase",
+    "purchaseHistory": "Purchase History",
+    "historyEmpty": "You haven't made any purchases yet.",
+    "bonus": "Bonus",
+    "date": "Date",
+    "price": "Price",
+    "unlimited": "Unlimited",
+    "unlocksAtLevel": "Unlocks at Level {{level}}",
+    "limitedTime": "Limited Time",
+    "premium": "Premium",
+    "megaDeal": "Mega Deal",
+    "vipOnly": "VIP Only",
+    "availableForCertainGames": "Available only for certain games"
+  },
+  "page404": {
+    "title": "404",
+    "message": "We are sorry, something went wrong...",
+    "reload": "Home Page"
+  },
+  "about": {
+    "title": "About Us",
+    "back": "Back",
+    "ourLinks": "Our links",
+    "socialMediaDescription": "Here you can find all links to our social media.",
+    "contactUs": "Contact Us"
+  },
+  "bonusTerms": {
+    "title": "Bonus Terms & Conditions",
+    "back": "Back",
+    "lastUpdated": "Last updated:",
+    "introduction": "Introduction",
+    "introduction1": "These terms and conditions and the documents referred to below (\"Terms\") apply to the use of the current website yourloot.io (\"Website\") and its related or connected services (collectively, the \"Service\").",
+    "introduction2": "You should carefully review these Terms as they contain important information concerning your rights and obligations concerning the use of the Website and form a binding legal agreement between you - our customer (\"Customer\"), and us. By using this Website and/or accessing the Service, you, whether you are a guest or a registered user with an account (\"Account\"), agree to be bound by these Terms, together with any amendments, which may be published from time to time. If you do not accept these Terms, you should refrain from accessing the Service and using the Website.",
+    "introduction3": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Company\"), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005."
+  },
+  "cookiePolicy": {
+    "title": "KYC Policy",
+    "back": "Back",
+    "lastUpdated": "Last updated:",
+    "introduction": {
+      "title": "1. Introduction",
+      "content": "These terms and conditions and the documents referred to below (\"Terms\") apply to the use of the current website yourloot.io (\"Website\") and its related or connected services (collectively, the \"Service\")."
+    },
+    "generalTerms": {
+      "title": "2. General Terms",
+      "content": "We reserve the right to revise and amend the Terms (including any documents referred to and linked to below) at any time. You should visit this page periodically to review the Terms and Conditions. Amendments will be binding and effective immediately upon publication on this Website. If you object to any such changes, you must immediately stop using the Service. Your continued use of the Website following such publication will indicate your agreement to be bound by the Terms as amended. Any bets not settled prior to the changed Terms taking effect will be subject to the pre-existing Terms."
+    },
+    "obligations": {
+      "title": "3. Your Obligations",
+      "content": "You acknowledge that at all times when accessing the Website and using the Service:",
+      "items": [
+        "You are over 18, or the legal age at which gambling, or gaming activities are allowed under the law or jurisdiction that applies to you. We reserve the right to request proof of age documents from you at any time.",
+        "You are of legal capacity and can enter into a binding legal agreement with us. You must not access the Website or utilize the Service if you are not of legal capacity.",
+        "You are a resident in a jurisdiction that allows gambling. You are not a resident of any country in which access to online gambling to its residents or to any person within such country is prohibited. It is your sole responsibility to ensure that your use of the service is legal.",
+        "You may not use a VPN, proxy or similar services or devices that mask or manipulate the identification of your real location.",
+        "You are the authorized user of the payment method you use.",
+        "You must make all payments to us in good faith and not attempt to reverse a payment made or take any action which will cause such payment to be reversed by a third party.",
+        "When placing bets you may lose some or all of your money deposited to the Service in accordance with these Terms and you will be fully responsible for that loss.",
+        "When placing bets you must not use any information obtained in breach of any legislation in force in the country in which you were when the bet was placed.",
+        "You are not acting on behalf of another party or for any commercial purposes, but solely on your own behalf as a private individual in a personal capacity.",
+        "You must not either attempt to manipulate any market or element within the Service in bad faith nor in a manner that adversely affects the integrity of the Service or us.",
+        "You must generally act in good faith in relation to us of the Service at all times and for all bets made using the Service.",
+        "You, or, if applicable, your employees, employers, agents, or family members, are not registered as an Affiliate in our Affiliate program."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Restricted use",
+      "content": "You must not use the Service:",
+      "items": [
+        "If you are under the age of 18 years (or below the age of majority as stipulated in the laws of the jurisdiction applicable to you) or if you are not legally able to enter into a binding legal agreement with us or you acting as an agent for, or otherwise on behalf, of a person under 18 years (or below the age of majority as stipulated in the laws of the jurisdiction applicable to you);",
+        "If you reside in a country in which access to online gambling to its residents or to any person within such country is prohibited.",
+        "If you are a resident of one of the following countries, or accessing the Website from one of the following countries:"
+      ],
+      "restrictedCountries": [
+        "Austria",
+        "France and it's territories",
+        "Germany",
+        "Netherlands and it's territories",
+        "Spain",
+        "Union of Comoros"
+      ]
+    }
+  },
+  "menu": {
+    "home": "Home",
+    "bonuses": "Bonuses",
+    "notifications": "Notifications",
+    "wallet": "Wallet",
+    "games": "Games",
+    "liveCasino": "Live Casino",
+    "about_us": "About Us",
+    "affiliate_program": "Affiliate Program",
+    "contact_us": "Contact Us",
+    "faq": "FAQ",
+    "legal": "Legal",
+    "casino": "Casino",
+    "description": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (“Company”), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005."
+  },
+  "home": {
+    "poker": "Poker",
+    "blackjack": "Blackjack",
+    "roulette": "Roulette",
+    "readMore": "Read more",
+    "featuredProviders": "Games",
+    "welcomeBanner": "Welcome!",
+    "welcomeBannerDes": "New site - new horizons!",
+    "getBonusDeposit": "Deposit",
+    "crypto": "Better in Crypto!",
+    "harvest": "Harvest of Wins",
+    "harvestDescription": "Explore autumn games",
+    "getBonus": "Get bonus",
+    "ftdBonus": "$1 500",
+    "ftdBonusDes": "On the 1st deposit",
+    "other": "Other",
+    "choseCategory": " Choose Category",
+    "liveGames": "Live Games",
+    "yourlootStore": "Your Loot Store",
+    "checkout": "Check out latest offers",
+    "store": "Store",
+    "titleProviders": "Providers",
+    "desProviders": "Check out latest providers",
+    "titleCategories": "Categories",
+    "desCategories": "Win them all",
+    "titleSearch": "Search",
+    "desSearch": "Search for your favorite",
+    "seeAll": "See all",
+    "seeAllGames": "See all games",
+    "useLoop": "Use the Loop",
+    "desUseLoop": "More than 10 000 games",
+    "maybeYou": "Maybe you would like to:",
+    "back": "Back",
+    "categoryName": "Category Name",
+    "quickLinks": "Quick Links",
+    "manageFunds": "Manage Funds",
+    "achievements": "Achievements",
+    "categories": "Categories",
+    "searchCategory": "Search category",
+    "popular": "Popular",
+    "providers": "Providers",
+    "searchProvider": "Search provider",
+    "favorites": "Favorites",
+    "all": "All Games",
+    "new": "New",
+    "slots": "Slots",
+    "crash": "Crash",
+    "fast": "Fast",
+    "recommendedGames": "Recommended",
+    "bonus": "Bonus Games",
+    "shows": "Game Shows",
+    "livePoker": "Live Poker",
+    "liveBlackjack": "Live Blackjack",
+    "liveRoulette": "Live Roulette",
+    "bannerV2": {
+      "title": "2X Welcome Bonus",
+      "description": "Get up to $1,500<br/>on your first deposit",
+      "cryptoBonus": "Crypto Bonus",
+      "cryptoBonusDescription": "Daily +7%<br/>on your deposit"
+    }
+  },
+  "footer": {
+    "privacy_policy": "Privacy Policy",
+    "terms_conditions": "Terms & Conditions",
+    "cookie_policy": "KYC Policy",
+    "responsible_gaming": "Responsible Gaming",
+    "loyalty_program": "Loyalty Program",
+    "bonus_tc": "Bonus T&C",
+    "company_info": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Company\"), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005.",
+    "copyright": "© 2025 YourLoot",
+    "menu": {
+      "slots": "Casino",
+      "bonuses": "Bonuses",
+      "deposit": "Deposit",
+      "support": "Support",
+      "menu": "Menu"
+    }
+  },
+
+  "loyaltyProgram": {
+    "title": "Loyalty Program",
+    "back": "Back",
+    "lastUpdated": "Last updated:",
+    "introduction": {
+      "title": "1. Introduction",
+      "content": "These terms and conditions and the documents referred to below (\"Terms\") apply to the use of the current website yourloot.io (\"Website\") and its related or connected services (collectively, the \"Service\")."
+    },
+    "generalTerms": {
+      "title": "2. General Terms",
+      "content": "We reserve the right to revise and amend the Terms (including any documents referred to and linked to below) at any time. You should visit this page periodically to review the Terms and Conditions. Amendments will be binding and effective immediately upon publication on this Website. If you object to any such changes, you must immediately stop using the Service. Your continued use of the Website following such publication will indicate your agreement to be bound by the Terms as amended. Any bets not settled prior to the changed Terms taking effect will be subject to the pre-existing Terms."
+    },
+    "obligations": {
+      "title": "3. Your Obligations",
+      "content": "You acknowledge that at all times when accessing the Website and using the Service:",
+      "items": [
+        "You are over 18, or the legal age at which gambling, or gaming activities are allowed under the law or jurisdiction that applies to you. We reserve the right to request proof of age documents from you at any time.",
+        "You are of legal capacity and can enter into a binding legal agreement with us. You must not access the Website or utilize the Service if you are not of legal capacity.",
+        "You are a resident in a jurisdiction that allows gambling. You are not a resident of any country in which access to online gambling to its residents or to any person within such country is prohibited. It is your sole responsibility to ensure that your use of the service is legal.",
+        "You may not use a VPN, proxy or similar services or devices that mask or manipulate the identification of your real location.",
+        "You are the authorized user of the payment method you use.",
+        "You must make all payments to us in good faith and not attempt to reverse a payment made or take any action which will cause such payment to be reversed by a third party.",
+        "When placing bets you may lose some or all of your money deposited to the Service in accordance with these Terms and you will be fully responsible for that loss.",
+        "When placing bets you must not use any information obtained in breach of any legislation in force in the country in which you were when the bet was placed.",
+        "You are not acting on behalf of another party or for any commercial purposes, but solely on your own behalf as a private individual in a personal capacity.",
+        "You must not either attempt to manipulate any market or element within the Service in bad faith nor in a manner that adversely affects the integrity of the Service or us.",
+        "You must generally act in good faith in relation to us of the Service at all times and for all bets made using the Service.",
+        "You, or, if applicable, your employees, employers, agents, or family members, are not registered as an Affiliate in our Affiliate program."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Restricted use",
+      "content": "You must not use the Service:",
+      "items": [
+        "If you are under the age of 18 years (or below the age of majority as stipulated in the laws of the jurisdiction applicable to you) or if you are not legally able to enter into a binding legal agreement with us or you acting as an agent for, or otherwise on behalf, of a person under 18 years (or below the age of majority as stipulated in the laws of the jurisdiction applicable to you);",
+        "If you reside in a country in which access to online gambling to its residents or to any person within such country is prohibited.",
+        "If you are a resident of one of the following countries, or accessing the Website from one of the following countries:"
+      ],
+      "restrictedCountries": [
+        "Austria",
+        "France and it's territories",
+        "Germany",
+        "Netherlands and it's territories",
+        "Spain",
+        "Union of Comoros"
+      ]
+    }
+  },
+  "language": {
+    "title": "Change language",
+    "placeholder": "Language",
+    "select": "Please select your language"
+  },
+  "common": {
+    "english": "English",
+    "azerbaijani": "Azerbaijani",
+    "kazakh": "Kazakh",
+    "uzbek": "Uzbek",
+    "russian": "Russian",
+    "scrollToTop": "Scroll to Top",
+    "back": "Back",
+    "required": "Required",
+    "login": "Log In",
+    "warning": "Warning",
+    "close": "Close",
+    "topUp": "Top Up",
+    "finish": "Finish",
+    "create": "Create",
+    "goBack": "Go Back",
+    "cancel": "Cancel"
+  },
+  "pagination": {
+    "showing": "Showing:",
+    "of": "of",
+    "showMore": "Show more"
+  },
+  "session": {
+    "endedTitle": "Session Ended",
+    "endedDesc": "Your session is over due to inactivity. Log in to continue."
+  },
+  "bannerProfile": {
+    "header": "Banner Header",
+    "description": "Banner description",
+    "cta": "Check out tap games"
+  },
+  "promoDefault": {
+    "title": "Promo Page Default",
+    "header": "Banner Header",
+    "lastUpdated": "Last updated: 16.9.2024",
+    "description": "Promo description",
+    "name": "Promo name",
+    "play": "Play now",
+    "content": "These terms and conditions and the documents referred to below (\"Terms\") apply to the use of the current website yourloot.io (\"Website\") and its related or connected services (collectively, the \"Service\"). You should carefully review these Terms as they contain important information concerning your rights and obligations concerning the use of the Website and form a binding legal agreement between you - our customer (\"Customer\"), and us. By using this Website and/or accessing the Service, you, whether you are a guest or a registered user with an account (\"Account\"), agree to be bound by these Terms, together with any amendments, which may be published from time to time. If you do not accept these Terms, you should refrain from accessing the Service and using the Website. The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Company\"), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005.",
+    "introduction": "Introduction",
+    "back": "Back"
+  },
+  "faq": {
+    "title": "FAQ",
+    "backButton": "Back",
+    "searchPlaceholder": "Search",
+    "sections": {
+      "profile": {
+        "value": "Profile Sections",
+        "content": [
+          {
+            "title": "How to Access your profile?",
+            "content": "Answer: Click on the profile icon (avatar or username) in the top-right corner of the screen.."
+          },
+          {
+            "title": "My Wallets",
+            "content": {
+              "whatIsIt": "What is it? </br> A section for managing your wallets and currencies.",
+              "mainFunctions": "Key Features:",
+              "createWallets": "Creating new wallets.",
+              "selectCurrency": "Selecting balance currency (USD, EUR, RUB, etc.).",
+              "viewTransactions": "Viewing transaction history.",
+              "setupDepositMethods": "Setting preferred deposit methods.",
+              "important": "Important: The selected currency affects the display of the balance in all sections.",
+              "currencyImpact": ""
+            }
+          },
+          {
+            "title": "My Bonuses",
+            "content": {
+              "whatIsIt": "What is it? </br> A section for working with bonuses and promotions.",
+              "mainFunctions": "Key Features:",
+              "activatePromos": "Activating promo codes.",
+              "trackProgress": "Tracking progress on bonus programs (e.g., “Welcome Bonus”).",
+              "viewOffers": "Viewing available promotions and their conditions.",
+              "manageCashback": "Managing cashback and other rewards."
+            }
+          },
+          {
+            "title": "My Games",
+            "content": {
+              "whatIsIt": "What is it? </br> Your personal collection of favorite games.",
+              "mainFunctions": "Key Features:",
+              "storeGames": "Storing games you play most often.",
+              "quickLaunch": "Quick launch of your favorite slots, poker, or roulette.",
+              "addRemoveGames": "Adding/removing games via the “Favorites” menu in the game lobby."
+            }
+          },
+          {
+            "title": "Exchange",
+            "content": {
+              "whatIsIt": "What is it? </br> A section for exchanging real balance for in-game currency (IGC).",
+              "howItWorks": "How it works:",
+              "selectAmount": "Select the amount to convert.",
+              "specifyCurrency": "Choose the currency (e.g., 100 RUB → 500 IGC).",
+              "confirmOperation": "Confirm the transaction.",
+              "usingIgc": "IGC Usage:",
+              "purchaseItems": "Purchasing in-game items, participating in tournaments and promotions."
+            }
+          },
+          {
+            "title": "Achievements",
+            "content": {
+              "whatIsIt": "What is it? </br> A section for tracking your in-game accomplishments.",
+              "mainFunctions": "Key Features:",
+              "viewTasks": "Viewing completed and ongoing tasks (e.g., \"Play 10 rounds of poker\").",
+              "receiveRewards": "Earning rewards for achievements (bonuses, IGC, exclusive items).",
+              "trackProgress": "Tracking progress via an activity progress bar."
+            }
+          },
+          {
+            "title": "Our Shop",
+            "content": {
+              "whatIsIt": "What is it? </br> The in-game store.",
+              "assortment": "Available Items:",
+              "boxes": "Boxes: Random sets of items or bonuses.",
+              "gifts": "Gifts: Stickers, skins, character animations.",
+              "products": "Products: Boosters, temporary experience or IGC bonuses.",
+              "howToBuy": "How to buy?",
+              "selectItem": "Select item.",
+              "pay": "Pay with IGC or real currency.",
+              "receive": "Receive the item in your inventory."
+            }
+          }
+        ]
+      },
+      "newWallet": {
+        "selectNetwork": "Select Network",
+        "createWalletError": "Create wallet error"
+      },
+      "wallet": {
+        "value": "Wallet",
+        "content": [
+          {
+            "title": "How to Create a New Wallet?",
+            "content": {
+              "step1": "Go to the \"Create new wallet\" section",
+              "step2": "Select the wallet type: \"Currency Wallet.\"",
+              "step3": "Click \"Confirm\"."
+            }
+          },
+          {
+            "title": "How to Choose a Wallet Currency?",
+            "content": {
+              "step1": "Find your desired currency in the list (e.g., BYN — Belarusian ruble).",
+              "step2": "Click \"Confirm\"."
+            }
+          },
+          {
+            "title": "What to Do After Creating a Wallet?",
+            "content": {
+              "step1": "The system will request confirmation (\"Wallet create confirmation\")",
+              "step2": "If you want to set the new wallet as your primary, a warning will appear:",
+              "warningText": "“All your active bonuses can be canceled”",
+              "step3": "Click \"Confirm\" to complete the process."
+            }
+          },
+          {
+            "title": "Can I Have Multiple Fiat Wallets?",
+            "content": {
+              "answer": "Yes! You can create as many wallets as needed.",
+              "switchWallets": "To switch between them, use the \"Available Wallets\" section in the main interface."
+            }
+          },
+          {
+            "title": "What If I Selected the Wrong Currency?",
+            "content": {
+              "cancelAction": "Cancel the action at any stage by clicking \"Cancel.\"",
+              "contactSupport": "If the wallet is already created, contact support for deletion or adjustments. (<a href=\"/contact\" class=\"text-blue-500 underline\">Support Link</a>)"
+            }
+          }
+        ]
+      },
+      "deposit": {
+        "value": "How to Deposit?",
+        "content": [
+          {
+            "title": "Selecting a Wallet",
+            "content": {
+              "attention": "Important!",
+              "beforeDeposit": "Before depositing, ensure you've selected the correct wallet. This affects:",
+              "availableMethods": "Available deposit methods.",
+              "balanceCurrency": "Balance currency (e.g., selecting a EUR wallet displays balance in euros, not dollars)."
+            }
+          },
+          {
+            "title": "Depositing to RUB Wallet",
+            "content": {
+              "method1Title": "For RUB wallets, three methods are available: </br> </br>Method 1: Card Deposit",
+              "method1Steps": [
+                "Select \"Card Deposit\".",
+                "Choose a partner bank (e.g., Sberbank, Tinkoff).",
+                "Enter amount → Click “Next”.",
+                "Transfer money using the provided details.",
+                "Confirm payment by clicking \"Confirm\"."
+              ],
+              "method1Time": "⏳ Processing: 30–60 minutes. If payment hasn't arrived — contact support.",
+
+              "method2Title": "Method 2: Faster Payments System (FPS)",
+              "method2Steps": [
+                "Select \"FPS\" → Choose your bank (e.g., Alfa-Bank).",
+                "Enter amount → click “Next”.",
+                "Complete transfer via the fast payment system.",
+                "Confirm transaction."
+              ],
+              "method2Time": "⏳ Processing: 30–60 minutes. For delays, contact support.",
+
+              "method3Title": "Method 3: Cryptocurrency Deposit",
+              "method3Steps": [
+                "Select “Cryptocurrency” → Choose coin (e.g., Tether)",
+                "Select network (TRC20, ERC20, etc.)",
+                "Copy wallet address or scan QR code.",
+                "Send crypto to the provided address."
+              ],
+              "method4Title": "Method 4: YooMoney Deposit (Secondary traffic - available after certain actions)",
+              "important": "Critical Notes:",
+              "supportedCurrencies": "Only send supported currencies. Unsupported coins will be lost permanently!",
+              "networkMatch": "Always verify the network matches platform requirements."
+            }
+          },
+          {
+            "title": "After Deposit",
+            "content": {
+              "fiatProcessing": "Fiat (RUB/EUR): May take longer than crypto (up to 60 minutes). If not received, contact support.",
+              "cryptoProcessing": "Crypto: Depends on network congestion (10 minutes to several hours).",
+              "ifNotCredited": "If funds aren't credited:",
+              "checkHistory": "Check transaction receipts in \"Transaction History\"",
+              "contactSupport": "Contact support with payment details attached.",
+              "tips": "Helpful Tips:",
+              "saveReceipts": "✔ Always save payment receipts and transaction hashes.",
+              "doubleCheckCryptoAddress": "✔ Double-check crypto addresses before sending."
+            }
+          }
+        ]
+      },
+      "main": {
+        "value": "Main Sections",
+        "content": [
+          {
+            "title": "How to deposit funds?",
+            "content": "Click \"Deposit\" in the main menu. Select currency type and follow transfer instructions."
+          },
+          {
+            "title": "How to withdraw funds?",
+            "content": "Go to \"Withdraw\" section. Specify amount and currency type."
+          },
+          {
+            "title": "Where to find popular games?",
+            "content": "Available in the \"Popular Games\" block."
+          },
+          {
+            "title": "What are \"Providers\"?",
+            "content": "This section contains our partners and service providers."
+          }
+        ]
+      },
+      "navigation": {
+        "value": "Section Navigation",
+        "content": [
+          {
+            "title": "How to access profile?",
+            "content": {
+              "method1": "Method 1: Click \"Go to Profile\" on the homepage.",
+              "method2": "Method 2: Click the person icon in top-right corner."
+            }
+          },
+          {
+            "title": "How to manage wallets?",
+            "content": {
+              "step1": "Go to \"My Wallets\" section.",
+              "step2": "Click the arrow button → next to section name."
+            }
+          },
+          {
+            "title": "How to manage bonuses?",
+            "content": {
+              "step1": "Open \"My Bonuses\" section",
+              "step2": "Click the arrow button → to access settings."
+            }
+          },
+          {
+            "title": "Helpful Tips",
+            "content": {
+              "tip1": "Arrow buttons → typically lead to submenus or action panels.",
+              "tip2": "If section won't load: refresh page or check internet connection."
+            }
+          },
+          {
+            "content": "⚠ Important: All sections are only available after authorization. Make sure you are logged into your account."
+          },
+          {
+            "title": "This version",
+            "content": {
+              "tip1": "Uses clear, consistent terminology.",
+              "tip2": "Maintains your original structure.",
+              "tip3": "Includes all safety notes.",
+              "tip4": "Features concise, actionable instructions."
+            }
+          }
+        ]
+      },
+      "gameCategories": {
+        "value": "Game Categories",
+        "content": [
+          {
+            "title": "Poker",
+            "content": "Classic and modern poker variations: tournaments, Texas Hold'em, Omaha, and other popular formats."
+          },
+          {
+            "title": "Fishing Games",
+            "content": "Fishing adventures: catch fish, underwater exploration, and strategic gameplay with fishing gear."
+          },
+          {
+            "title": "Mines Games",
+            "content": "Minefield strategy games: treasure hunting, mine defusing, and logic-based puzzles."
+          },
+          {
+            "title": "New",
+            "content": "Latest platform additions - fresh launches and exclusive projects."
+          },
+          {
+            "title": "Slots",
+            "content": "Classic slot machines featuring jackpots, bonus rounds, and thematic storylines."
+          },
+          {
+            "title": "Game Shows",
+            "content": "Interactive show-style games: quizzes, \"Wheel of Fortune,\" and host-led prize draws."
+          },
+          {
+            "title": "Blackjack & Roulette",
+            "content": "Traditional blackjack and roulette tables with various betting limits."
+          },
+          {
+            "title": "Live Blackjack",
+            "content": "Real-time blackjack with live dealers."
+          },
+          {
+            "title": "Live Poker",
+            "content": "Poker tournaments featuring live players and dealers."
+          },
+          {
+            "title": "Lottery",
+            "content": "Ticket-based draws with instant prizes."
+          },
+          {
+            "title": "Roulette",
+            "content": {
+              "classic": "Classic roulette (in Crash Games section)",
+              "sports": "Sports roulette (event betting in Sport section)"
+            }
+          },
+          {
+            "title": "Craps",
+            "content": "Simplified dice games with intuitive rules."
+          },
+          {
+            "title": "Scratch Cards",
+            "content": "Virtual scratch-off tickets for instant wins."
+          }
+        ]
+      },
+      "withdraw": {
+        "value": "How to Withdraw Funds?",
+        "content": [
+          {
+            "title": "1. Bank Withdrawal",
+            "content": {
+              "important": "Important!",
+              "checkBankAccount": "Ensure your bank account is correctly linked",
+              "withdrawalLimits": "Withdrawal limits: $10 - $350,000 per transaction",
+              "steps": "Steps:",
+              "enterAmount": "Enter withdrawal amount (use “+” buttons or type manually)",
+              "specifyBankDetails": "Provide bank details:",
+              "fullAccountNumber": "Full bank account number (e.g., 0123 4567 8900 1123)",
+              "selectBank": "Select your bank from the dropdown",
+              "confirm": "Confirm → Wait for processing",
+              "processingTime": "⏳ Processing time: 1-3 business days."
+            }
+          },
+          {
+            "title": "2. Cryptocurrency Withdrawal",
+            "content": {
+              "supportedCoins": "Supported Coins:",
+              "bitcoinNetwork": "Bitcoin Network: Bitcoin (BTC), Tether (USDT), Binance Coin (BNB).",
+              "ethereumNetwork": "Ethereum Network: Toncoin (TON), USD Coin (USDC).",
+              "steps": "Steps:",
+              "selectCoinNetwork": "Select coin and network (e.g., USDT on TRC20).",
+              "pasteWalletAddress": "Paste your wallet address (e.g., UQBJ_647UnSxulxxE3wnXUlbbPeiyAsrU...).",
+              "enterAmountConfirm": "Enter amount → Confirm.",
+              "importantNotes": "Critical Notes:",
+              "doubleCheckAddresses": "Always double-check addresses! Wrong network = permanent loss.",
+              "minimumWithdrawal": "Minimum withdrawal: $10 equivalent."
+            }
+          }
+        ]
+      },
+      "troubleshooting": {
+        "value": "Troubleshooting",
+        "content": [
+          {
+            "title": "Money not received?",
+            "content": {
+              "checkTransactionHistory": "Check Transaction History",
+              "contactSupport": "Contact support with the payment receipt."
+            }
+          },
+          {
+            "title": "Tips",
+            "content": {
+              "saveReceipts": "Save payment receipts",
+              "cryptoCheckHash": "For crypto: check transaction hash"
+            }
+          }
+        ]
+      },
+      "myBonus": {
+        "value": "My Bonuses",
+        "content": [
+          {
+            "title": "1. Welcome Bonus ($1,500)",
+            "content": {
+              "howToGet": "How to get:",
+              "depositStep": "Make your first deposit (from $10)",
+              "bonusPercentage": "Get +100% to deposit (e.g., $50 → $50 bonus)",
+              "useBonus": "Use bonus in games",
+              "conditions": "Conditions:",
+              "maxBonus": "Maximum: $1,500",
+              "wager": "Wager: 30x (of bonus amount)",
+              "term": "Term: 7 days"
+            }
+          },
+          {
+            "title": "2. Promo Codes",
+            "content": {
+              "howToActivate": "How to activate:",
+              "step1": "In “My Bonuses” section → “Enter promo code”",
+              "step2": "Enter code (e.g., WELCOME2024)",
+              "step3": "Click “Apply”"
+            }
+          },
+          {
+            "title": "3. Other Promotions",
+            "content": {
+              "additionalBonuses": "Additional bonuses: Weekly/monthly offers (see “All Promotions”)",
+              "cashback": "Cashback: Up to 15% of losses (credited on Mondays)"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "wallet": {
+    "createWallet": {
+      "title": "Create Wallet"
+    },
+    "primaryChanged": "Primary wallet changed successfully.",
+    "createTitle": "Create Wallet",
+    "balancer": {
+      "primaryWallet": "Primary Wallet",
+      "createNew": "Create New"
+    },
+    "item": {
+      "primary": "Primary",
+      "makePrimary": "Make Primary"
+    },
+    "walletRequired": "{{cryptoCurrency}} Wallet Required",
+    "createDescription": "You don’t have a wallet in this currency. Create one to continue.",
+    "manageFunds": {
+      "title": "Manage Funds"
+    },
+    "transactionHistory": {
+      "title": "Transaction History",
+      "orderTypes": {
+        "deposit": "DEPOSIT",
+        "withdraw": "WITHDRAW",
+        "transfer": "TRANSFER",
+        "bonus": "BONUS",
+        "bet": "BET",
+        "win": "WIN"
+      }
+    }
+  },
+  "payment": {
+    "history": "History",
+    "depositMethodsInfo": "Deposit methods depend on your wallet currency.",
+    "withdrawMethodsInfo": "Withdraw methods depend on your wallet currency."
+  },
+  "history": {
+    "contactUs": "Contact us if you have any questions",
+    "messageUs": "Message us",
+    "loadingMore": "Loading more...",
+    "scrollToLoadMore": "Scroll to load more",
+    "noMoreItems": "No more items to load"
+  },
+  "depositPage": {
+    "wallet": "Wallet",
+    "bank": "Bank",
+    "crypto": "Crypto"
+  }
+}

@@ -1,0 +1,29 @@
+entryPoints:
+  web:
+    address: ":80"
+    # Упрощаем настройки таймаутов (корректные для Traefik 2.10)
+    transport:
+      respondingTimeouts:
+        readTimeout: "5s"
+        writeTimeout: "5s"
+        idleTimeout: "30s"
+
+providers:
+  file:
+    filename: "/etc/traefik/traefik.yml"
+    watch: false
+
+http:
+  routers:
+    static-router:
+      rule: "HostRegexp(`{host:.+}`)"
+      entryPoints: ["web"]
+      service: "static-files"
+      priority: 1000
+
+  services:
+    static-files:
+      loadBalancer:
+        passHostHeader: false
+        servers:
+          - url: "file:///var/www/html"

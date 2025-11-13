@@ -1,0 +1,37 @@
+.scroll-bar-yloot::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-bar-yloot {
+  scrollbar-width: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* Ngăn menu sao chép */
+  -webkit-user-select: none;   /* Ngăn chọn văn bản */
+  user-select: none;
+}
+
+/* carousel custom mobile */
+.carousel-custom-mobile {
+  .carousel.carousel-slider {
+    overflow: unset !important;
+  }
+  
+  .carousel .control-dots{
+    bottom: -34px !important;
+  }
+  
+  .carousel .control-dots .dot {
+    background: #605E68 !important;
+  }
+  
+  .carousel .control-dots .dot.selected{
+    background: #654EC8 !important; 
+  }
+}
+
+/* carousel custom desktop */
+
+
+

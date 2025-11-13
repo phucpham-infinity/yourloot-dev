@@ -1,0 +1,1527 @@
+{
+  "app": {
+    "name": "YourLoot"
+  },
+  "terms": {
+    "title": "Şərtlər və Qaydalar",
+    "content": "Şərtlər və Qaydalar"
+  },
+  "myItems": {
+    "title": "Mənim əşyalarım",
+    "search": "Axtar",
+    "shop": "Mağaza"
+  },
+  "depositWithdrawV2": {
+    "selectMethod": "Metodu seçin",
+    "selectCrypto": "Kriptovalyuta seçin",
+    "walletCurrencyWarning": "Əsas pul kisəsi valyutanız hansı depozit metodlarının göstərildiyini müəyyən edir.",
+    "cryptoBonusMessage": "Kripto depozitlər üzrə + 7% bonus əldə edin!",
+    "methods": {
+      "uzcard": "Uzcard",
+      "humo": "Humo",
+      "crypto": "Kripto",
+      "cryptoBonus": "+7% Bonus",
+      "bankCards": "Bank Kartları",
+      "fps": "SÖS",
+      "fpsQr": "FSÖS QR",
+      "fpsSber": "Sber SÖS",
+      "sberPay": "Sber Pay",
+      "tPay": "T-Pay",
+      "yukassa": "ЮKassa",
+      "alfa": "Alfa Bank",
+      "fpsAlfa": "FPS Alfa",
+      "fastPayments": "Sürətli Ödənişlər"
+    }
+  },
+  "noGame": {
+    "search": {
+      "title": "Nəticə tapılmadı",
+      "description": "Başqa açar sözlə axtarış etməyə çalışın."
+    },
+    "empty": {
+      "title": "Hələ heç nə yoxdur",
+      "description": "Bu kateqoriya yenilənir. Tezliklə yeni oyunlar görünəcək."
+    }
+  },
+  "withdraw": {
+    "title": "Çıxarış",
+    "description": "Aktivlərinizi çıxarın",
+    "instructions": "Təlimatlar",
+    "cryptoPayment": "Kripto ödəniş",
+    "bankPayment": "Bank ödənişi",
+    "amountTooLow": "Çox az. Minimum {{minAmount}} {{currency}}.",
+    "amountTooHigh": "Çox yüksək. Maksimum {{maxAmount}} {{currency}}.",
+    "insufficientFunds": "Kifayət qədər vəsaitiniz yoxdur.",
+    "requestedTitle": "Çıxarış Tələbi",
+    "unavailable": {
+      "title": "Çıxarma əlçatan deyil",
+      "cannotNow": "Hazırda çıxarış mümkün deyil",
+      "description": "Sizin aktiv depozit əməliyyatınız var. Çıxarış etmək üçün onun tamamlanmasını gözləyin.",
+      "wageringNotMet": "Mərc tələbi yerinə yetirilməyib",
+      "wageringDescription": "Çıxarış etmək üçün əvvəlcə tələb olunan məbləği mərc etməlisiniz. Ətraflı məlumat üçün bonus və ya balans şərtlərinizi yoxlayın."
+    },
+    "processAlert": {
+      "inProgress": "Çıxarış hələ də davam edir.",
+      "timeLeft": "Qalan vaxt:",
+      "continueWithdraw": "Çıxarışı davam etdir",
+      "continue": "Davam etdir",
+      "failedToast": "Çıxarış uğursuz oldu, yenidən cəhd edin və ya dəstək xidməti ilə əlaqə saxlayın.",
+      "successToast": "Çıxarış tamamlandı. Vəsait tezliklə görünəcək."
+    },
+    "cancelQuestion": "Çıxarışı ləğv edək?",
+    "cancelDescription": "Çıxarış tələbinizi ləğv etmək istədiyinizə əminsinizmi? Vəsait balansınıza qayıdacaq.",
+    "cancelAction": "Çıxarışı ləğv et",
+    "keepRequest": "Tələbi saxla",
+    "canceled": "Çıxarış tələbi ləğv edildi.",
+    "requested": {
+      "submitted": "Çıxarış tələbiniz göndərildi",
+      "processingInfo": "Emal müddəti metoda görə dəyişir. Tamamlandıqda sizi xəbərdar edəcəyik."
+    },
+    "failed": {
+      "title": "Çıxarış Uğursuz Alındı",
+      "somethingWrong": "Nəsə səhv oldu",
+      "description": "Zəhmət olmasa yenidən cəhd edin və ya dəstəyə yazın.",
+      "tryAgain": "Yenidən cəhd et",
+      "contactSupport": "Dəstək ilə əlaqə"
+    },
+    "emptyMethod": {
+      "title": "Bu pul kisəsində vəsait yoxdur",
+      "description": "Çıxarış etmək üçün balansı olan başqa pul kisəsinə keçin"
+    },
+    "bankCard": {
+      "makeTransfer": "Aşağıdakı məlumatlardan istifadə edərək köçürmə edin",
+      "chooseBank": "Bankınızı seçin",
+      "amount": "Məbləğ",
+      "amountPlaceholder": "Məbləği daxil edin {{currency}}",
+      "amountDescription": "Mövcud: {{amount}} {{currency}}",
+      "next": "Növbəti",
+      "bankNumber": "Bank nömrəsi",
+      "bankNumberPlaceholder": "Kart nömrəsini daxil edin",
+      "yourPhoneNumber": "Telefon nömrəniz",
+      "yourPhoneNumberPlaceholder": "+994 50 999 99 99",
+      "owner": "Owner",
+      "ownerPlaceholder": "John Doe",
+      "done": {
+        "title": "Çıxarış işlənilir",
+        "description": "Çıxarışınızın təfərrüatları \"Ətraflı\" panelində mövcud olacaq",
+        "details": "Təfərrüatlar",
+        "backHome": "Ana səhifəyə qayıt",
+        "bankCardAlt": "Bank Kartı"
+      },
+      "selectBankDescription": "Bankınızı seçin",
+      "enterInfo": "Məlumatlarınızı daxil edin",
+      "phoneNumber": "Telefon nömrəsi",
+      "yourBank": "Bankınız",
+      "phoneNumberPlaceholder": "Telefon nömrəsini daxil edin",
+      "withdraw": "Çıxar",
+      "processDescription": "Sistem ödənişinizlə işləyir, bu bir neçə dəqiqədən çox çəkməyəcək",
+      "pleaseWait": "Zəhmət olmasa gözləyin"
+    },
+    "cryptocurrency": {
+      "selectTitle": "Kriptovalyuta seçin",
+      "selectDescription": "Aşağıdakı məlumatlardan istifadə edərək köçürmə edin",
+      "title": "Məlumatlarınızı daxil edin",
+      "description": "Düzgün məlumatlar təmin etdiyinizə əmin olun",
+      "amount": "Məbləğ",
+      "amountPlaceholder": "$ 1,923,234,99",
+      "amountDescription": "Bir depozit məbləği $10 - $100000",
+      "plus10": "+$10",
+      "plus100": "+$100",
+      "plus1000": "+$1000",
+      "walletAddress": "Kriptovalyuta ünvanı",
+      "walletAddressPlaceholder": "Kriptovalyuta ünvanını daxil edin",
+      "withdraw": "Çıxar",
+      "doneTitle": "Çıxarış işlənilir",
+      "doneDescription": "Çıxarışınızın təfərrüatları \"Ətraflı\" panelində mövcud olacaq",
+      "doneDetails": "Statusu ətraflı paneldə izləyə bilərsiniz. Hər hansı sualınız varsa, dəstəklə əlaqə saxlayın.",
+      "backHome": "Ana səhifəyə qayıt",
+      "details": "Təfərrüatlar"
+    }
+  },
+  "support": {
+    "title": "Dəstəklə əlaqə",
+    "description": "Sizə kömək etməkdən məmnun olarıq.",
+    "button": "Dəstəklə əlaqə"
+  },
+  "promo": {
+    "title": "Promo adı",
+    "deposit": "Promo kodunuz var?",
+    "welcome": "YourLoot Qarşılama Bonusu",
+    "depositFree": "İndi depozit et və pulsuz 100FS əldə et!",
+    "code": {
+      "title": "Promokod daxil et",
+      "description": "Hesabınıza tətbiq etmək üçün promokodu daxil edin",
+      "placeholder": "Buraya daxil edin...",
+      "apply": "Tətbiq et",
+      "ok": "Tamam",
+      "cancel": "Ləğv",
+      "confirm": "Təsdiq et",
+      "warningMessage": "Bu promokodu tətbiq etsəniz, bütün aktiv bonuslar ləğv ediləcək.",
+      "applyingMessage": "Promokod tətbiq edilir. Zəhmət olmasa bir az gözləyin..."
+    },
+    "refer": {
+      "title": "Promokodlar",
+      "description": "Son təklifləri yoxlayın",
+      "button": "Promo kodları"
+    },
+    "active": {
+      "title": "Aktiv Promo Kod"
+    },
+    "available": {
+      "title": "Mövcud Promo Kodları"
+    }
+  },
+  "promotionV2": {
+    "title": "Promosyonlar",
+    "bonuses": "Bonuslar",
+    "subtitle": "Bütün hadisələr, bonuslar və təkliflər bir yerdə.",
+    "header": {
+      "description": "Təklifləri və eksklüziv mükafatları kəşf edin. Oyun təcrübənizi artırmaq üçün promosyonları aktivləşdirin."
+    },
+    "active": "Aktivləşdirmək",
+    "available": "Mövcud",
+    "loading": "Aktiv promosyonlar yüklənir...",
+    "loadingAvailablePromotions": "Mövcud promosyonlar yüklənir...",
+    "noAvailablePromotions": "Hələ mövcud promosyonunuz yoxdur.",
+    "noActivePromotion": "Hələ aktiv promosyonunuz yoxdur.",
+    "activeWarning": "Aktiv promosyonunuz var. Yeni promosyonu aktivləşdirmək cari promosyondakı irəliləyişinizi itirəcək.",
+    "promoCodes": "Promo Kodları",
+    "promoCodePlaceholder": "Promo kodunuz var? Buraya daxil edin...",
+    "applying": "Tətbiq edilir...",
+    "apply": "Tətbiq et",
+    "loadingPromoCodes": "Promo kodları yüklənir...",
+    "noActivePromoCodes": "Aktiv promo kodları mövcud deyil",
+    "loadingPromotionDetails": "Promosyon detalları yüklənir...",
+    "promotionNotFound": "Promosyon tapılmadı",
+    "expired": "Tamamlanmışlar",
+    "canceled": "Ləğv edilmişlər",
+    "deactivate": "Deaktivləşdirmək",
+    "activate": "Aktivləşdir",
+    "termsAndConditions1": "Qaydalar və şərtlər",
+    "areYouSure": "Əminsiniz?",
+    "activatePromotion": "Promosyonu aktivləşdirmək?",
+    "loseProgress": "Bu bonusla əldə etdiyiniz irəliləyişi itirəcəksiniz.",
+    "wantToActivate": "Bu promosyonu aktivləşdirmək istəyirsiniz?",
+    "cancel": "Ləğv",
+    "confirm": "Təsdiq et",
+    "warningMessage": "Bu promo kodu tətbiq etsəniz, bütün aktiv bonuslar ləğv ediləcək.",
+    "applyingMessage": "Promo kod tətbiq edilir. Zəhmət olmasa bir az gözləyin...",
+    "promotionDeactivated": "{{name}} deaktivləşdirildi.",
+    "failedToDeactivate": "{{name}} deaktivləşdirmək alınmadı.",
+    "promotionActivated": "{{name}} aktivləşdirildi.",
+    "failedToActivate": "{{name}} aktivləşdirmək alınmadı.",
+    "promoCodeApplied": "{{code}} kodu uğurla tətbiq edildi",
+    "promotions": {
+      "welcomeBonus": {
+        "name": "100% Welcome Bonus",
+        "description": "İlk depozitinizə $100-a qədər 100% bonus əldə edin"
+      },
+      "cryptoBonus": {
+        "name": "Crypto Bonus +7% to Deposit",
+        "short": "Crypto Bonus",
+        "description": "Kriptovalyuta ilə depozit etdikdə əlavə 7% bonus əldə edin"
+      },
+      "freeSpins": {
+        "name": "Depozit üçün Pulsuz Fırlanmalar",
+        "description": "Depozit etdikdə pulsuz fırlanmalar əldə edin"
+      }
+    },
+    "timer": {
+      "expires": "Bitir",
+      "expiresIn": "Bitməsinə",
+      "available": "Mövcuddur",
+      "canceledOn": "{{date}} tarixində ləğv edilib",
+      "expiredOn": "{{date}} tarixində müddəti bitib",
+      "canceledDescription": "Bu promosyon ləğv edilib və artıq mövcud deyil.",
+      "expiredDescription": "Bu promosyonun müddəti bitib və artıq mövcud deyil.",
+      "activeDescription": "Bu promosyon müddəti bitdikdə avtomatik olaraq deaktivləşdiriləcək",
+      "availableDescription": "Bu promosyon taymer bitənə qədər mövcuddur."
+    },
+    "details": {
+      "howToParticipate": "Necə iştirak etmək olar?",
+      "details": "Təfərrüatlar",
+      "cryptoInstructions": "Promo kodu daxil edin<br/>Ən azı 10 USDT (və ya ekvivalent) məbləğində ilk kripto depozitinizi edin<br/>Bonusunuzu avtomatik əldə edin",
+      "cryptoDetails": "1. The bonus is available daily on the first cryptocurrency deposit of the day.<br/>2. The bonus amount is 7%.<br/>3. The minimum deposit amount is 10 USDT (or equivalent).<br/>4. The maximum bonus amount is 50 USDT (or equivalent).<br/>5. Wager: x1.<br/>6. The bonus is available once within the period from 00:00 to 23:59 UTC.<br/>7. The wagering period is 24 hours from the moment of crediting.<br/>8. Withdrawals are unavailable while a bonus is active.",
+      "standardInstructions": "Register or log in<br/>Deposit at least $10<br/>Play with your boosted balance",
+      "bonusAmount": "Bonus məbləği: 100%",
+      "minDeposit": "Minimum depozit: 10 USD / 1,000 RUB-dan",
+      "maxBonus": "Maksimum bonus məbləği: 1500 USD / 130,000 RUB",
+      "wager": "Wager: 35"
+    },
+    "promoCodeSection": {
+      "enterPromoCode": "Zəhmət olmasa promo kodu daxil edin",
+      "title": "Promo Kodları",
+      "placeholder": "Promo kodunuz var? Buraya daxil edin...",
+      "applying": "Tətbiq edilir...",
+      "apply": "Tətbiq et",
+      "activatedPromoCode": "Əlavə promo kodu aktivləşdirdiniz.",
+      "loading": "Promo kodları yüklənir...",
+      "noActivePromoCodes": "Aktiv promo kodları mövcud deyil"
+    },
+    "bonusGames": {
+      "title": "Bonus oyunlar",
+      "seeAll": "Hamısına bax"
+    },
+    "halloweenGames": {
+      "title": "Halloween games",
+      "seeAll": "See All"
+    },
+    "termsAndConditions": {
+      "introduction": "Giriş",
+      "introText1": "Bu şərtlər və qaydalar və aşağıda qeyd olunan sənədlər (\" Şərtlər \") cari yourloot.io vebsaytının (\" Vebsayt \") və onun əlaqəli xidmətlərinin (birlikdə \" Xidmət \") istifadəsinə aiddir.",
+      "introText2": "Bu Şərtləri diqqətlə nəzərdən keçirməlisiniz, çünki onlar Vebsaytın istifadəsi ilə bağlı hüquq və öhdəlikləriniz haqqında vacib məlumatları ehtiva edir və sizinlə - müştərimiz (\" Müştəri \"), və bizim aramızda hüquqi müqavilə təşkil edir. Bu Vebsaytdan istifadə etməklə və/və ya Xidmətə daxil olmaqla, siz, istər qonaq, istərsə də hesabı olan qeydiyyatlı istifadəçi (\" Hesab \") olun, bu Şərtlər və vaxtaşırı dərc edilə bilən hər hansı düzəlişlərlə bağlı olmağa razılaşırsınız. Bu Şərtləri qəbul etmirsinizsə, Xidmətə daxil olmaqdan və Vebsaytdan istifadə etməkdən çəkinməlisiniz.",
+      "introText3": "Xidmət, Britaniya Virciniya adalarında 2151527 şirkət qeydiyyat nömrəsi ilə qeydiyyatdan keçmiş, qeydiyyat ünvanı 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\" Şirkət \") olan Cintra Soft Ltd. məhdud məsuliyyətli şirkətinə məxsusdur və Anjouan Dövlətində Kompüter Oyunları Lisenziyalaşdırma Aktı 007 of 2005 altında lisenziyalaşdırılmışdır.",
+      "generalTerms": "Ümumi Şərtlər",
+      "generalTermsText": "Biz istənilən vaxt Şərtləri (o cümlədən aşağıda istinad edilən və əlaqələndirilən hər hansı sənədləri) yenidən nəzərdən keçirmək və dəyişdirmək hüququnu özümüzdə saxlayırıq. Şərtlər və Qaydaları nəzərdən keçirmək üçün bu səhifəni vaxtaşırı ziyarət etməlisiniz. Düzəlişlər bu Vebsaytda dərc edildikdən dərhal sonra məcburi və qüvvəyə minəcəkdir. Hər hansı belə dəyişikliklərə etiraz edirsinizsə, Xidmətdən istifadəni dərhal dayandırmalısınız. Belə dərc olunduqdan sonra Vebsaytdan istifadəni davam etdirməyiniz dəyişdirilmiş Şərtlərlə bağlı olmağa razı olduğunuzu göstərəcəkdir. Dəyişdirilmiş Şərtlər qüvvəyə minməzdən əvvəl hesablanmamış hər hansı mərcləşmələr əvvəlki Şərtlərə tabe olacaqdır.",
+      "obligations": "Öhdəlikləriniz",
+      "obligationsIntro": "Vebsayta daxil olarkən və Xidmətdən istifadə edərkən hər zaman təsdiq edirsiniz ki:",
+      "obligation1": "Siz 18 yaşdan yuxarısınız və ya sizə tətbiq olunan qanun və ya yurisdiksiya altında qumar və ya oyun fəaliyyətlərinə icazə verilən qanuni yaşdasınız. Biz istənilən vaxt sizdən yaş sənədlərini tələb etmək hüququnu özümüzdə saxlayırıq.",
+      "obligation2": "Siz hüquqi səlahiyyətə maliksiniz və bizimlə hüquqi cəhətdən məcburi müqavilə bağlaya bilərsiniz. Hüquqi səlahiyyətə malik deyilsinizsə, Vebsayta daxil olmamalı və ya Xidmətdən istifadə etməməlisiniz.",
+      "obligation3": "Siz qumara icazə verən yurisdiksiyada yaşayırsınız. Siz sakinlərinə və ya belə ölkədəki hər hansı şəxsə onlayn qumara giriş qadağan edilmiş hər hansı ölkənin sakini deyilsiniz. Xidmətdən istifadənizin qanuni olmasını təmin etmək yalnız sizin məsuliyyətinizdir.",
+      "obligation4": "Siz real yerinizin müəyyənləşdirilməsini maskalayan və ya manipulyasiya edən VPN, proksi və ya oxşar xidmətlər və ya cihazlardan istifadə edə bilməzsiniz."
+    }
+  },
+  "header": {
+    "defaultWalletActive": "Əsas balans aktivləşdirildi.",
+    "bonusWalletActive": "Bonus balansı aktivləşdirildi",
+    "addedToFavorites": "Sevimli oyunlara əlavə edildi.",
+    "removedFromFavorites": "Sevimli oyunlardan çıxarıldı.",
+    "bonus": "Bonus",
+    "primary": "Əsas",
+    "balance": "Balans",
+    "telegram": "Telegram"
+  },
+  "title": {
+    "title": "Səhifə başlığı",
+    "lastUpdated": "Son yeniləmə:",
+    "introduction": "Giriş",
+    "introduction1": "Bu şərtlər və qaydalar və aşağıda qeyd olunan sənədlər (\"Şərtlər\") cari yourloot.io vebsaytının (\"Vebsayt\") və onun əlaqəli xidmətlərinin (birlikdə \"Xidmət\") istifadəsinə aiddir.",
+    "introduction2": "Bu Şərtləri diqqətlə nəzərdən keçirməlisiniz, çünki onlar Vebsaytın istifadəsi ilə bağlı hüquq və öhdəlikləriniz haqqında vacib məlumatları ehtiva edir və sizinlə - müştərimiz (\"Müştəri\") və bizim aramızda hüquqi müqavilə təşkil edir. Bu Vebsaytdan istifadə etməklə və/və ya Xidmətə daxil olmaqla, siz, istər qonaq, istərsə də hesabı olan qeydiyyatlı istifadəçi (\"Hesab\") olun, bu Şərtlər və vaxtaşırı dərc edilə bilən hər hansı düzəlişlərlə bağlı olmağa razılaşırsınız. Bu Şərtləri qəbul etmirsinizsə, Xidmətə daxil olmaqdan və Vebsaytdan istifadə etməkdən çəkinməlisiniz.",
+    "introduction3": "Xidmət, Britaniya Virciniya adalarında 2151527 şirkət qeydiyyat nömrəsi ilə qeydiyyatdan keçmiş, qeydiyyat ünvanı 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Şirkət\") olan Cintra Soft Ltd. məhdud məsuliyyətli şirkətinə məxsusdur və Anjouan Dövlətində Kompüter Oyunları Lisenziyalaşdırma Aktı 007 of 2005 altında lisenziyalaşdırılmışdır.",
+    "deposit": "İndi depozit et!"
+  },
+  "game": {
+    "new": "Yeniliklər",
+    "newsGames": "Yeni Oyunlar",
+    "card": {
+      "select": "Oyun Seç",
+      "piggyTap": "Piggy Tap",
+      "pragmaticPlay": "Pragmatic Play"
+    },
+    "launcher": {
+      "loading": "Oyun yüklənir..."
+    },
+    "popular": {
+      "title": "Populyar",
+      "titleMobile": "Oyunlar",
+      "seeAll": "Hamısına Bax"
+    }
+  },
+  "search": {
+    "placeholder": "3 simvoldan axtar",
+    "result": "Axtarış nəticəsi",
+    "bonusGames": "Bonus Oyunlar",
+    "noResults": "Oyun tapılmadı"
+  },
+  "profile": {
+    "title": "Profil",
+    "back": "Geri",
+    "store": "Mağaza",
+    "setting": "Profil Tənzimləmələri",
+    "logout": "Çıxış",
+    "myWallets": "Mənim Pul Kisələrim",
+    "walletsDescription": "Pul kisələrinizi idarə edin",
+    "myBonuses": "Mənim Bonuslarım",
+    "myFavorites": "Favoritlərim",
+    "bonusesDescription": "Təsvir",
+    "myGames": "Mənim Oyunlarım",
+    "gamesDescription": "Təsvir",
+    "exchange": "Mübadilə",
+    "exchangeDescription": "Təsvir",
+    "realBalance": "Real Balans",
+    "balance": "Balans",
+    "primary": "Əsas",
+    "bonus": "Bonus",
+    "yourLootCoin": "Your Loot sikkələri",
+    "manage": "İdarə et",
+    "achievements": "Nailiyyətlər",
+    "firstSteps": "İlk addımlar",
+    "exp": "EXP",
+    "inBonus": "Bonus balansı",
+    "tabGames": "Tab Oyunları",
+    "newGameButton": "Tab oyunlarına baxın",
+    "outShopTitle": "Xarici Mağaza",
+    "outShopDescription": "Mağazamıza baxın!",
+    "outShopButton": "Mağazaya get",
+    "casinoTitle": "Casino-Fate",
+    "casinoDescription": "Tinder oyunlarımıza baxın!",
+    "newGameDescription": "Tab oyunlarımıza baxın və mükafatlar qazanın!",
+    "casinoButton": "Tab oyunlarına baxın",
+    "lobby": "Lobbi",
+    "lobbyDescription": "Saysız-hesabsız oyunlardan seçin və zövq alın!",
+    "tapGames": "Tap Oyunları",
+    "tapGamesDescription": "Tap oyunlarımıza baxın və mükafatlar qazanın!",
+    "newForYou": "Sizin üçün yeni!",
+    "newForYouDescription": "Əvvəllər oynamadığınız təsadüfi bir oyun oynayın.",
+    "findNewGamesTitle": "Yeni oyunlar tapın",
+    "sectionHeaderTitle": "Digər faydalı şeylər",
+    "contactSupport": "Dəstəklə əlaqə",
+    "contactSupportDescription": "Sual verin və ya kömək alın",
+    "gotoProfile": "Profil'ə keçin",
+    "checkUpdateProfile": "Profilimi yoxlayın və yeniləyin",
+    "welcome": "Xoş gəlmisiniz,",
+    "exploreUpdate": "Profilimi araşdır və yenilə.",
+    "lookSettings": "Profil ayarlarıma bax.",
+    "cashback": "Keşbek",
+    "level": "Səviyyə",
+    "provideEmail": "E-poçtunuzu daxil edin!",
+    "updateEmailKyc": "KYC-ni tamamlamaq üçün e-poçtunuzu yeniləyin",
+    "providePhone": "Telefon nömrənizi daxil edin!",
+    "updatePhoneKyc": "KYC-ni tamamlamaq üçün telefonunuzu yeniləyin",
+    "yourEmail": "Sizin e-poçtunuz:",
+    "add": "Əlavə et",
+    "yourCountry": "Sizin ölkəniz:",
+    "birthDate": "Doğum tarixi",
+    "missingBirthDate": "Doğum tarixi yoxdur, əlavə edin.",
+    "emailApplied": "E-poçt ayarları tətbiq olundu",
+    "emailAdded": "E-poçt uğurla əlavə olundu!",
+    "great": "Əla",
+    "birthDateApplied": "Doğum tarixi ayarları tətbiq olundu",
+    "birthDateAdded": "Doğum tarixi uğurla əlavə olundu!",
+    "settings": "Ayarlar",
+    "changePassword": "Parolu dəyişdir",
+    "logOut": "Çıxış",
+    "signOut": "Çıxış",
+    "levelWithNumber": "Səviyyə {{number}}",
+    "loyaltyPoints": "Loyallıq Xalları: {{current}} / {{total}}",
+    "bets": "Mərclər: {{current}} / {{total}}",
+    "earnLoyaltyPoints": "{{level}} səviyyəsinə çatmaq üçün {{points}} Loyallıq Xalı (LP) {{percentage}} qazanın.",
+    "maxLevelReached": "Maksimum səviyyəyə çatıldı",
+    "email": "Poçt",
+    "emailPlaceholder": "misal@gmail.com",
+    "confirmationLinkSent": "Təsdiq linki göndərildi",
+    "confirmationLinkSentToEmail": "E-poçtunuza təsdiq linki göndərildi.",
+    "validForFiveMinutes": "5 dəqiqə müddətində etibarlıdır."
+  },
+  "categories": {
+    "halloween": {
+      "title": "Halloween",
+      "description": "Halloween games"
+    },
+    "gameShow": {
+      "title": "Game Shows",
+      "description": "Game Shows"
+    },
+    "liveGames": {
+      "title": "Live Games",
+      "description": "Live Games"
+    },
+    "bonus": {
+      "title": "Bonus oyunlar",
+      "description": "Yalnız təchizatçılar tərəfindən \"Slotlar\" kimi təsnif edilən, 96.1%-dən az RTP-yə malik və proqressiv Cekpotu olmayan oyunlar."
+    },
+    "new": {
+      "title": "Yeniliklər",
+      "description": "Bütün yeni buraxılmış oyun janrları görünməli və kateqoriyada müəyyən sayda oyuna çatdıqdan sonra bir ay ərzində yox olmalıdır (məsələn, 60)."
+    },
+    "slotGames": {
+      "title": "Slotlar",
+      "description": "Təchizatçılar tərəfindən \"Slotlar\" kimi təsnif edilmiş bütün oyunlar."
+    },
+    "crash": {
+      "title": "Kreqş oyunlar",
+      "description": "Təchizatçılar tərəfindən \"Krash Oyunları\" kimi təsnif edilmiş oyunlar.\nOyunçuların sürətlə artan əmsalın nəticəsinə mərc etdiyi bütün onlayn kazino oyunları.\nMəqsəd əmsal krash olmadan əvvəl pulu çıxarmaqdır, bu istənilən anda baş verə bilər.\nNümunələr: Aviator, JetX, Crash, Coin Flip, Rocket."
+    },
+    "shows": {
+      "title": "Oyun Şouları",
+      "description": "Təchizatçılar tərəfindən \"Oyun Şouları\" kimi təsnif edilmiş bütün oyunlar,\ncanlı aparıcıları, cəlbedici görüntüləri olan və oyunçulara mükafatlar qazanmaq imkanı verən oyunlar."
+    },
+    "blackjackAndRoulette": {
+      "title": "Blackjack və Rulet",
+      "description": "Bütün Blackjack və Rulet masaları"
+    },
+    "liveBlackjac": {
+      "title": "Canlı Blackjack",
+      "description": "Bütün Blackjack masaları"
+    },
+    "liveRoulette": {
+      "title": "Canlı ruletka",
+      "description": "Bütün Rulet masaları"
+    },
+    "livePoker": {
+      "title": "Canlı Poker",
+      "description": "Bütün Poker oyunları"
+    },
+    "sport": {
+      "title": "İdman",
+      "description": "Təchizatçılar tərəfindən \"İdman və ya Virtual idman\" kimi təsnif edilmiş idman oyunları, adətən həqiqi idman tədbirlərini təqlid edən virtual idman mərcləri və simulyasiya oyunlarını əhatə edir."
+    },
+    "lottery": {
+      "title": "Lotereya",
+      "description": "Təchizatçılar tərəfindən \"Loteriya\" kimi təsnif edilmiş oyunlar. Bunlar şans oyunlarıdır və oyunçular bilet alıb uduş qazanmaq şansı əldə edirlər."
+    },
+    "roulette": {
+      "title": "Rulet",
+      "description": "Təchizatçılar tərəfindən \"Rulet\" kimi təsnif edilmiş oyunlar. Rulet çarxında rəqəmlərə və ya rənglərə mərc edərək oynanan klassik kazino oyunudur."
+    },
+    "casual": {
+      "title": "Gündəlik",
+      "description": "Təchizatçılar tərəfindən \"Gündəlik\" kimi təsnif edilmiş oyunlar. Sadə və əyləncəli oyun mexanikası olan, asanlıqla öyrənilə bilən oyunlardır."
+    },
+    "craps": {
+      "title": "Zər",
+      "description": "Təchizatçılar tərəfindən \"Zər\" kimi təsnif edilmiş oyunlar. Zər ataraq müxtəlif kombinasiyalara mərc edilən klassik kazino oyunudur."
+    },
+    "scratch": {
+      "title": "Skretç oyunlar",
+      "description": "Təchizatçılar tərəfindən \"Qaşıma\" kimi təsnif edilmiş oyunlar. Biletlərin üzərindəki örtüyü qaşıyaraq uduş qazanma şansı olan ani loteriya oyunlarıdır."
+    },
+    "poker": {
+      "title": "Poker",
+      "description": "Təchizatçılar tərəfindən \"Poker\" kimi təsnif edilmiş oyunlar. Kart kombinasiyaları və strategiya ilə oynanan məşhur kart oyunudur."
+    },
+    "fishing": {
+      "title": "Balıqçılıq",
+      "description": "Təchizatçılar tərəfindən \"Balıq Ovu\" kimi təsnif edilmiş oyunlar. Oyunçular balıq tutaraq mükafatlar qazana bilərlər."
+    },
+    "mines": {
+      "title": "Mina Oyunları",
+      "description": "Təchizatçılar tərəfindən \"Mina\" kimi təsnif edilmiş oyunlar. Oyunçular təhlükəsiz xanaları seçərək mükafatlar qazanmağa çalışırlar."
+    },
+    "summerVibe": {
+      "title": "Harvest of Wins",
+      "description": "Yay əhvalı oyunları"
+    }
+  },
+  "achievements": {
+    "title": "Nailiyyətlər",
+    "seeAll": "Hamısına Bax",
+    "getPrize": "Mükafat Al",
+    "currentProgress": "Cari irəliləyiş:",
+    "status": {
+      "completed": "Tamamlanıb",
+      "uncompleted": "Tamamlanmayıb"
+    },
+    "claimPrize": "Mükafatı Tələb Et",
+    "congratulations": "Təbriklər!",
+    "receivedPrize": "Siz mükafat aldınız.",
+    "horray": "Yaşasın"
+  },
+  "deposit": {
+    "title": "Doldurmaq",
+    "betterInCrypto": "Kriptoda Daha Yaxşı",
+    "cryptoPayment": "Kripto ödəniş",
+    "bankPayment": "Bank ödənişi",
+    "recipient": "Alıcı",
+    "chooseAmount": "Məbləği seçin",
+    "makeTransfer": "Aşağıdakı məlumatlardan istifadə edərək köçürmə edin",
+    "transferInstruction": "Aşağıdakı dəqiq məbləği verilmiş bank detalları üzrə vaxt limiti daxilində göndərin.",
+    "timeIsUp": "Vaxt bitdi",
+    "timeoutDescription": "Tranzaksiyanız vaxtında daxil olmadı. Əgər vəsait göndərilibsə, dəstək ilə əlaqə saxlayın.",
+    "makeDeposit": "Depozit edin",
+    "amountDescription": "Yatırmaq istədiyiniz məbləği seçin",
+    "next": "Növbəti",
+    "paymentMade": "Ödəniş edildi",
+    "back": "Geri dön",
+    "amount": "Məbləğ",
+    "amountPlaceholder": "Məbləği daxil edin ({{currency}})",
+    "amountTooLow": "Çox az. Minimum {{minAmount}} {{currency}}.",
+    "amountTooHigh": "Çox çox. Maksimum {{maxAmount}} {{currency}}.",
+    "yourBank": "Bankınız",
+    "bankName": "Bank adı",
+    "cardNumber": "Kart Nömrəsi",
+    "phoneNumber": "Telefon nömrəsi",
+    "cardHolder": "Kart sahibi",
+    "information": "Məlumat",
+    "details": "Təfərrüatlar",
+    "addDetails": "Ətraflı əlavə et",
+    "chooseBank": "Məbləği və bankı seçin",
+    "enterInfo": "Məlumatlarınızı daxil edin",
+    "correctDetails": "Düzgün məlumatlar təqdim etdiyinizə əmin olun",
+    "personalAddress": "Şəxsi ünvanınız ",
+    "cryptoAddress": "Sizin {{name}} ({{network}}) depozit ünvanınız",
+    "memo": "Memo",
+    "memoNote": "Xahiş edirik Memo sahəsinə diqqət yetirin. Əgər doldurulubsa, depozit etmək üçün memo-dan istifadə edin.",
+    "network": "Şəbəkə",
+    "paymentMethods": {
+      "bankCard": "Bank kartı",
+      "cryptocurrency": "Kriptovalyuta",
+      "sbp": "SBP",
+      "sbpQr": "SBP QR"
+    },
+    "methods": {
+      "oneClickPay": "1 Click Pay",
+      "mobile": "Mobile"
+    },
+    "error": {
+      "attemptFailed": "Ups! Cəhd uğursuz oldu! Zəhmət olmasa yenidən cəhd edin 😊"
+    },
+    "description": "Bir depozit məbləği ₽500 - ₽350,000",
+    "from": "bir əməliyyat üçün",
+    "to": "-dən",
+    "inProgress": "Ödənişiniz davam edir",
+    "inProgressDescription": "Əgər əməliyyat düzgündürsə, tezliklə balansınızda əks olunduğunu görəcəksiniz. Ətraflı məlumat üçün Təfərrüatlara baxın.",
+    "paymentFail": "Ödəniş uğursuz oldu",
+    "timeLeft": "Qalan vaxt:",
+    "someMemo": "Bəzi vacib qeyd",
+    "selectNetwork": "Əməliyyat şəbəkəsini seçin",
+    "descriptionNetwork": "Siz yalnız seçdiyiniz şəbəkədə depozit edə bilərsiniz!",
+    "cancelled": "Depozit ləğv edildi.",
+    "cancelQuestion": "Depoziti ləğv edək?",
+    "cancelDescription": "Bu, cari əməliyyatı dayandıracaq. Ləğv etmək istədiyinizə əminsinizmi?",
+    "cancelAction": "Depoziti ləğv et",
+    "cancelPayment": "Ödənişi ləğv et",
+    "minDeposit": "Min. depozit",
+    "depositAboveMinimum": "Minimum məbləğdən yuxarı miqdar daxil edin.",
+    "scanQR": "QR skan edin və ya aşağıdakı ünvanı kopyalayın",
+    "redirectingOn": "Keçid edilir",
+    "completePayment": "Xahiş edirik ödənişi burada tamamlayın",
+    "andReturn": "və bura qayıdın.",
+    "processedAutomatically": "Depozitiniz avtomatik emal olunacaq",
+    "estimatedArrival": "Təxmini daxilolma ≈ 1 dəq",
+    "transferInstruction1": "Köçürmə zamanı \"Başqa ölkəyə\" və lazımi ölkəni seçin, telefon nömrəsini kopyalayın və göstərilən bankı seçin.",
+    "transferInstruction2": "Köçürmə kart/hesaba edilməlidir.",
+    "detailedInstruction": "Ətraflı təlimat",
+    "warningMessage": "Qeyd: əgər depozit məbləği minimum həddən aşağıdırsa, vəsaitlər geri qaytarılmadan itiriləcək.",
+    "inputInfo": {
+      "redirectInfo": "Əgər rekvizitlər mövcuddursa — birbaşa ödəniş üçün görünəcək. Əks halda, təhlükəsiz ödəniş səhifəsinə yönləndiriləcəksiniz."
+    },
+    "process": {
+      "waiting": "Transaksiya gözlənilir...",
+      "checking": "Tranzaksiyanız yoxlanılır...",
+      "youCanLeave": "Bu səhifədən çıxa bilərsiniz — aşkarladıqda balansınız avtomatik yenilənəcək."
+    },
+    "processAlert": {
+      "failedToast": "Ödəniş alınmadı, yenidən cəhd edin və ya dəstəyə yazın.",
+      "successToast": "Depozit tamamlandı. Vəsaitlər tezliklə görünəcək."
+    },
+    "continueDeposit": "Depoziti davam et",
+    "successful": {
+      "title": "Ödəniş uğurludur",
+      "description": "Vəsaitlər tezliklə balansınızda görünəcək.",
+      "paidButton": "Ödəndi",
+      "homeButton": "Əsas səhifə",
+      "currency": "Valyuta:",
+      "network": "Şəbəkə:"
+    },
+    "failed": {
+      "title": "Ödəniş alınmadı",
+      "cryptoNotDetected": "Kripto əməliyyatınızı aşkar edə bilmədik.",
+      "somethingWrong": "Nəsə səhv oldu.",
+      "contactSupport": "Əgər artıq göndərmisinizsə, dəstəklə əlaqə saxlayın.",
+      "tryAgain": "Yenidən cəhd et"
+    },
+    "v3": {
+      "cryptoPayment": "Kripto Ödəniş",
+      "bankPayment": "Bank Ödənişi",
+      "cryptocurrencyPayment": "Kriptovalyuta Ödənişi",
+      "depositSuccessful": "Depozit uğurlu. Balans yeniləndi.",
+      "networkWarning": "Siz {{crypto}} {{network}} şəbəkəsi vasitəsilə göndərirsiniz. Fərqli şəbəkə istifadə etmək vəsait itkisinə səbəb olacaq.",
+      "minimumAmountWarning": "Zəhmət olmasa depozitin minimum məbləğə uyğun olduğundan əmin olun. Minimumdan aşağı depozitlər hesablanmayacaq.",
+      "oneTransaction": "Ödənişi bir əməliyyatda edin",
+      "noComments": "Köçürmə üçün şərh yazmayın.",
+      "requisitesChange": "Rekvizitlər həmişə dəyişir.",
+      "copyAmount": "Məbləği kopyalayın",
+      "adjustedAmount": "Sizin ödənişinizi təsdiq etmək və avtomatik emal etmək üçün köçürmə məbləğinizi tənzimlədik.",
+      "understood": "Anladım",
+      "awaitingTransfer": "Köçürmənizi gözləyirik...",
+      "paymentDone": "Ödəniş Tamamlandı",
+      "chooseAnotherMethod": "Başqa Metod Seçin",
+      "unableToVerify": "Ödənişi təsdiq edə bilmədik. Zəhmət olmasa yenidən cəhd edin və ya başqa metod seçin.",
+      "checkingPayment": "Ödənişinizi yoxlayırıq...",
+      "processingTime": "Bu 25 dəqiqəyə qədər vaxt ala bilər. Ana səhifəyə qayıda bilərsiniz - vəsait gəldikdə sizi xəbərdar edəcəyik.",
+      "productInformation": "Məhsul Məlumatı",
+      "transactionTimeout": "Əməliyyatınızı vaxtında almadıq. Əgər vəsait göndərilibsə, dəstəklə əlaqə saxlayın.",
+      "contactSupport": "Dəstəklə Əlaqə",
+      "home": "Əsas səhifə",
+      "proceedToPayment": "Ödənişə davam et",
+      "bonusOnDeposit": "Depozit üzrə bonus",
+      "bonusDescription": "100% əlavə dərhal hesablanır",
+      "depositAmount": "Depozit məbləği",
+      "bonusBalance": "Bonus balansı"
+    },
+    "rateLimit": {
+      "title": "Depozit limitinə çatıldı",
+      "description": "Siz son 30 dəqiqə ərzində 3 dəfə depozit limitinə çatdınız.",
+      "tryAgain": "Siz {{time}} sonra yenidən cəhd edə bilərsiniz"
+    }
+  },
+  "contact": {
+    "title": "Bizimlə Əlaqə",
+    "back": "Geri",
+    "description": "Hər hansı hüquqi tələblər və ya digər suallar üçün bizimlə əlaqə saxlayın ",
+    "sendFeedback": "Rəy göndər",
+    "contactSupport": "Dəstəklə əlaqə",
+    "form": {
+      "name": "Ad",
+      "email": "Poçt",
+      "subject": "Mövzu",
+      "message": "Hər hansı digər suallarınız varsa, dəstək komandamıza müraciət edin və ya rəy formasından istifadə edin:",
+      "submit": "Mesaj Göndər",
+      "success": "Rəy göndərildi!",
+      "error": "Mesaj göndərilə bilmədi",
+      "great": "Əla!",
+      "thanks": "Rəyinizi göndərdiyiniz üçün təşəkkür edirik. Mümkün qədər tez sizinlə əlaqə saxlayacağıq.",
+      "feedback": {
+        "title": "Rəy forması",
+        "description": "Aşağıdakı rəy formasından istifadə edərək bizimlə birbaşa əlaqə saxlayın.",
+        "yourName": "Adınız",
+        "yourEmail": "E-poçtunuz",
+        "yourQuestion": "Sualınız",
+        "cancel": "Ləğv",
+        "sendMessage": "Mesaj göndər"
+      }
+    },
+    "info": {
+      "email": "Poçt",
+      "phone": "Telefon",
+      "address": "Ünvan",
+      "workingHours": "İş Saatları"
+    },
+    "socialMedia": {
+      "description": "Burada sosial media hesablarımızın bütün linklərini tapa bilərsiniz."
+    }
+  },
+  "pageInDev": {
+    "title": "Səhifə müvəqqəti olaraq əlçatan deyil",
+    "back": "Geri",
+    "message": "Zəhmət olmasa sonra yenidən cəhd edin"
+  },
+  "login": {
+    "title": "Giriş",
+    "email": "Poçt",
+    "emailPlaceholder": "example@example.com",
+    "password": "Şifrə",
+    "passwordPlaceholder": "********",
+    "loginButton": "Giriş",
+    "noAccount": "Hesabınız yoxdur?",
+    "registerHere": "Təsdiqetmə kodu",
+    "orLoginWith": "Və ya bu vasitələrlə daxil olun:",
+    "wrongEmail": "Yanlış e-poçt və ya istifadəçi adı.",
+    "wrongPassword": "Yanlış şifrə.",
+    "restorePassword": "Şifrəni bərpa et",
+    "restoreHere": "burada",
+    "emailRequired": "E-poçt və ya İstifadəçi adı tələb olunur",
+    "passwordRequired": "Şifrə tələb olunur",
+    "passwordMinLength": "Şifrə ən azı 8 simvoldan ibarət olmalıdır"
+  },
+  "register": {
+    "title": "Qeydiyyat",
+    "email": "Poçt",
+    "registerBonus": "Qeydiyyat bonusu promo sənəti",
+    "emailPlaceholder": "example@example.com",
+    "password": "Şifrə",
+    "passwordPlaceholder": "********",
+    "registerButton": "Təsdiqetmə kodu",
+    "haveAccount": "Artıq hesabınız var?",
+    "loginHere": "Burada daxil olun",
+    "orRegisterWith": "Və ya digər variantları seçin",
+    "passwordRequirements": "Minimum 8 simvol, rəqəmlər daxil olmalıdır.",
+    "emailRequired": "E-poçt tələb olunur",
+    "invalidEmail": "Xahiş edirik düzgün e-poçt ünvanı daxil edin",
+    "passwordRequired": "Şifrə tələb olunur",
+    "passwordMinLength": "Şifrə ən azı 8 simvoldan ibarət olmalıdır",
+    "passwordNumberRequired": "Şifrə ən azı bir rəqəm daxil etməlidir",
+    "welcomeBonus": "Welcome Bonus",
+    "depositBonus": "İlk depozitdə $1 500 qazanın!",
+    "promoCode": {
+      "title": "Promokod Daxil Et",
+      "placeholder": "Promokod Daxil Et",
+      "apply": "Tətbiq et",
+      "applied": "Promokod tətbiq edildi!",
+      "error": "Bu promokod üçün uyğun deyilsiniz.",
+      "appliedDescription": "Təbriklər! Promokod tətbiq edildi. Siz 100FS + 100% Qarşılama Bonusunu aktivləşdirdiniz!",
+      "appliedDescriptionNew": "Təbriklər! Promokod tətbiq olundu. Siz {{newCode}} aktivləşdirdiniz!",
+      "appliedDescriptionError": "Promo kod mövcud deyil!",
+      "great": "Əla!"
+    },
+    "oneLastStep": "Son addım !",
+    "completeSignUp": "Aşağıdakı məlumatları təsdiqləməklə qeydiyyatı tamamlayın.",
+    "selectCountry": "Zəhmət olmasa ölkənizi seçin",
+    "selectDateOfBirth": "Zəhmət olmasa doğum tarixinizi seçin",
+    "mustBe18": "Siz ən azı 18 yaşında olmalısınız",
+    "selectCurrency": "Zəhmət olmasa üstünlük verdiyiniz valyutanı seçin",
+    "termsAndConditions": "Şərtlər və Qaydalar",
+    "signUpConfirm18Agree": "Qeydiyyatdan keçməklə, 18+ olduğunuzu təsdiq edir və aşağıdakılarla razılaşırsınız",
+    "confirmAge": "Mən 18 yaşında və ya daha böyük olduğumu təsdiq edirəm",
+    "agree": "Mən razıyam ",
+    "continue": "Davam et",
+    "country": "Ölkə",
+    "dateOfBirth": "Doğum tarixi",
+    "birthday": "Doğum günü",
+    "day": "Gün",
+    "month": "Ay",
+    "year": "İl",
+    "preferredCurrency": "Üstünlük verilən valyuta",
+    "selectCur": "Valyuta seçin",
+    "language": "Dil",
+    "selectLanguage": "Zəhmət olmasa dilinizi seçin"
+  },
+  "auth": {
+    "terms": "Şərtlər və Qaydalar",
+    "privacyPolicy": "Məxfilik siyasəti",
+    "contactSupport": "Zəhmət olmasa dəstək xidməti ilə əlaqə saxlayın və ya e-poçtu yoxlayın.",
+    "confirmationLink": "Təsdiq linkini sizin e-poçt ünvanınıza göndəririk.",
+    "forgotPassword": "Şifrəni unutmuşam",
+    "specifyEmail": "E-poçt ünvanınızı daxil edin:",
+    "send": "Göndər",
+    "checkYourEmail": "E-poçtunuzu yoxlayın",
+    "support": "Dəstək",
+    "forgotPasswordQuestion": "Şifrəni unutmusunuz?",
+    "forgotPasswordQuestion2": "Sıfırla",
+    "passwordResetSuccessful": "Şifrə uğurla yeniləndi!",
+    "passwordResetCongratulations": "Təbrik edirik! Şifrəniz uğurla yeniləndi, zəhmət olmasa yeni şifrənizlə yenidən daxil olun.",
+    "contactSupportOrCheckEmail": "Zəhmət olmasa dəstək xidməti ilə əlaqə saxlayın və ya e-poçtu yoxlayın.",
+    "tryAgain": "Yenidən cəhd edin",
+    "passwordChangedSuccessfully": "Şifrəniz uğurla dəyişdirildi",
+    "pleaseChooseNewPassword": "Zəhmət olmasa yeni şifrə seçin",
+    "newPassword": "Yeni şifrə",
+    "confirmNewPassword": "Yeni şifrəni təsdiq edin",
+    "title": "Şifrə aşağıdakıları ehtiva etməlidir:",
+    "englishLettersOnly": "Yalnız ingilis hərfləri",
+    "minimumLength": "Minimum 8 simvol",
+    "upperLowerCase": "Böyük və kiçik hərf",
+    "number": "Rəqəm (0-9)",
+    "passwordRestore": "Şifrəni bərpa et",
+    "enterEmail": "E-poçt ünvanınızı daxil edin.",
+    "forgotEmail": "E-poçtu unutdunuz? Dəstəklə əlaqə saxlayın.",
+    "repeatPassword": "Yeni şifrəni təkrarlayın:",
+    "codeSentMessage": "E-poçtunuza kod göndərdik. 111 saniyə etibarlıdır",
+    "confirmationCode": "Təsdiq kodu:",
+    "codeRequired": "Kod tələb olunur",
+    "didntReceiveCode": "Kod almadınız?",
+    "resendInSeconds": "59 saniyə sonra yenidən göndər",
+    "continue": "Davam et",
+    "emailRequired": "E-poçt tələb olunur",
+    "emailMustContainAt": "E-poçt '@' işarəsini ehtiva etməlidir",
+    "emailMaxLength": "E-poçt 255 simvoldan çox olmamalıdır",
+    "confirmationCodePlaceholder": "YYYY",
+    "linkSent": "Link göndərildi.",
+    "changePassword": "Şifrəni dəyişmək",
+    "newPasswordSet": "Yeni şifrə təyin edildi",
+    "passwordUpdated": "Şifrə uğurla yeniləndi.",
+    "close": "Bağla",
+    "linkExpired": "Linkin müddəti bitib",
+    "linkExpiredMessage": "Bu linkin müddəti bitib. Zəhmət olmasa yeni link tələb edin.",
+    "sendNewLink": "Yeni link göndər",
+    "forgotEmailQuestion": "E-poçtu unutdunuz?",
+    "contactSupportLink": "Dəstəklə əlaqə saxlayın"
+  },
+  "balance": {
+    "setAsDefault": "Əsas kimi təyin et",
+    "setAsMain": "Əsas et",
+    "walletChanged": {
+      "title": "Pul kisəsi dəyişdirildi",
+      "description": "Təbriklər!\nİndi əsas pul kisəniz Kriptovalyuta USDT",
+      "great": "Əla!"
+    },
+    "walletChangedSuccessfully": "Pul kisəsi uğurla dəyişdirildi",
+    "primaryWalletChangedSuccessfully": "Əsas pul kisəsi uğurla dəyişdirildi",
+    "walletChangeError": "Əsas pul kisəsinin dəyişdirilməsində xəta",
+    "errorSwitchWallet": "Bonus balansı hələ mövcud deyil.",
+    "switchWallet": {
+      "title": "Əsas balansınızı dəyişdirmək istədiyinizə əminsiniz?",
+      "description": "Bütün aktiv bonuslarınız ləğv edilə bilər.",
+      "warningMessage": "Pul kisələrini dəyişdirmək aktiv bonusların ləğv olunmasına səbəb ola bilər. Dəyişməzdən əvvəl bütün bonuslardan istifadə edin.",
+      "switch": "Dəyişmək",
+      "cancel": "Ləğv",
+      "confirm": "Təsdiqlə"
+    },
+    "switchingWalletDialog": {
+      "title": "Əsas Pul Kisəsini Dəyişdir",
+      "warningTitle": "Əminsiniz?",
+      "warningMessage": "Pul kisələrini dəyişdirmək aktiv bonusların ləğv olunmasına səbəb ola bilər. Dəyişməzdən əvvəl bütün bonuslardan istifadə edin.",
+      "switch": "Dəyişmək",
+      "cancel": "Ləğv"
+    },
+    "myWallets": "Mənim Pul Kisələrim",
+    "back": "Geri",
+    "createNewWallet": "Yeni pul kisəsi yarat",
+    "mainBalance": "Əsas Balans",
+    "history": "Tarixçə",
+    "inCurrency": "{{currency}} ilə",
+    "otherBalances": "Digər Balanslar",
+    "bonus": "Bonus",
+    "activeBalance": "Aktivləşdirmək",
+    "yourLoot": "Your Loot sikkələri",
+    "deposits": "Depozitlər",
+    "withdrawals": "Çıxarışlar",
+    "accrual": "Hesablama",
+    "deduction": "Çıxarma",
+    "payments": "Ödənişlər",
+    "oldWallets": {
+      "title": "Mənim Pul Kisələrim",
+      "noWallets": "Pul kisəsi tapılmadı"
+    },
+    "manageFunds": "Pul kisələri",
+    "primaryWallet": "Əsas pul kisəsi",
+    "primary": "Əsas",
+    "additionalFunds": "Əlavə vəsaitlər",
+    "otherWallets": "Digər pul kisələri",
+    "makePrimary": "Əsas etmək"
+  },
+  "bonus": {
+    "title": {
+      "all": "Promosyonlar",
+      "available": "Mövcud",
+      "loyalty": "Sədaqət",
+      "tournament": "Turnurlər",
+      "promotion": "Promosyonlar",
+      "currentBonus": "Current bonus"
+    },
+    "promocodeApplied": "Promokod tətbiq edildi",
+    "promocodeAppliedSuccessfully": "Promokod uğurla tətbiq edildi",
+    "enterPromoCode": "Promo-kodu daxil edin",
+    "applyNewPromoCode": "Yeni promokod tətbiq edin",
+    "enterNewPromocode": "Enter new promocode",
+    "enterNewPromocodeToApply": "Enter new promocode to apply it to your account.",
+    "myPromoCode": "Mənim Promo Kodlarım",
+    "allPromotions": "Bütün promosiyalar",
+    "back": "Geri",
+    "close": "Bağla",
+    "seeAll": "Hamısına bax",
+    "otherPromotions": "Digər promosiyalar",
+    "enterPromocode": "Promokod daxil et",
+    "apply": "Tətbiq et",
+    "promoCodeDes": "Hesabınıza tətbiq etmək üçün yeni promokod daxil edin",
+    "chooseOne": "Özünüz üçün birini seçin!",
+    "lobby": {
+      "title": "Lobbi",
+      "description": "Saysız-hesabsız oyunlardan seçin və zövq alın!"
+    },
+    "promotion": {
+      "tabgame": "Tap oyunları",
+      "checkout": "Tap oyunlarımızı yoxlayın və mükafatlar qazanın!",
+      "checkoutBtn": "Tap oyunlarına baxın",
+      "casino": "Tap oyunları",
+      "checkoutCasino": "Tinder kimi oyunumuzu yoxlayın!",
+      "checkoutBtnCasino": "Tap oyunlarına baxın",
+      "enterPromocode": "Yeni promo kod daxil edin",
+      "enterPromocodeDes": "Hesabınıza tətbiq etmək üçün yeni promo kod daxil edin.",
+      "apply": "Tətbiq et",
+      "promoCodeDesInput": "Promo kodu daxil edin",
+      "availableGames": "Mövcud oyunlar",
+      "lobby": "Lobbi",
+      "lobbyDes": "Saysız-hesabsız oyunlardan seçin və həzz alın!",
+      "tabgameBox": "Tap oyunları",
+      "tabgameDes": "Tap oyunlarımızı yoxlayın və mükafatlar qazanın!",
+      "newForYou": "Sizin üçün yeni",
+      "newForYouDes": "Əvvəllər oynamadığınız təsadüfi oyunu oynayın.",
+      "otherGame": "Digər"
+    },
+    "banner": {
+      "title": "Xoş gəlmisiniz Bonusu",
+      "description": "İlk depozita +100%",
+      "readMore": "Daha ətraflı"
+    },
+    "detail": {
+      "hotOffer": "Hot offer for new players!",
+      "getBonus": "Get a 100% bonus on your first deposit up to",
+      "howDoesItWork": "How does it work?",
+      "work1": "1. Make your 1st deposit of $10 / 1 000 ₽ or more.",
+      "work2": "2. Get 100% on your bonus account.",
+      "work3": "3. Enjoy playing with the bonus!",
+      "additionalTerms": "Additional Terms",
+      "term1": "1. TThe bonus is credited only on the 1st deposit.",
+      "term2": "2. The wager for the bonus is X35 of the bonus amount and the deposit.",
+      "detailsAndConditions": "Detailed details and conditions for each bonus -",
+      "promotions": "Aksiyalar",
+      "get": "Get",
+      "getBonusAmount": "Get$1 500",
+      "firstDeposit": "On the 1st deposit",
+      "deactive": "Bonus is deactivated!",
+      "desDeactive": "Congratulations! Promo code is deactivated.",
+      "warning": "Warning!",
+      "activeBonus": "You have active bonus!",
+      "message": "Are you sure you want to deactive current promo code ",
+      "messagePrevious": "This will disbale your previous bonus.",
+      "btnDeactive": "Deaktivləşdirmək",
+      "btnActive": "Aktivlər",
+      "messageActive": "Are you sure you want to switch current promo code {{currentCode}} to {{newCode}}?",
+      "active": "Bonus is applied!",
+      "desActive": "Congratulations! Promo code is applied. You have activated the",
+      "desBonus": "Welcome Bonus of 100%!"
+    },
+    "term": {
+      "bonusTermsTitle": "Bonus terms & conditions",
+      "bonusIntro": "The bonus is available only on the first deposit",
+      "bonusTermsSection": "Bonus Terms",
+      "bonusAmount": "Bonus amount: 100%",
+      "minDeposit": "Minimum deposit: from 10 USD / 1 000 RUB",
+      "maxBonus": "Maximum bonus amount: 1500 USD / 130 000 RUB",
+      "wager": "Wager: 35",
+      "howToParticipate": "How to participate?",
+      "step1": "1. Log in or register an account.",
+      "step2": "2. Click the \"Activate\" button.",
+      "step3": "3. Make a deposit starting from 10 USD.",
+      "step4": "4. Enjoy playing with the bonus!",
+      "rulesTitle": "Rules:",
+      "rule1": "1. The 100% bonus offer is available from 30.05.2025 until 31.12.2025.",
+      "rule2": "2. Activation is only possible on the first deposit.",
+      "rule3": "3. The maximum bonus amount is 1500 USD / 130,000 RUB.",
+      "rule4": "4. To activate the bonus offer, a single deposit of at least 10 USD / 1,000 RUB is required.",
+      "rule5": "5. Bonus funds will be credited to the Bonus Balance.",
+      "rule6": "6. Only bets placed on slots from the <0>\"Games for bonus\"</0> section count towards the wagering requirement.",
+      "rule7": "7. The bonus is wagered using the real balance first — specifically, the portion on which the bonus was credited — and then from the bonus balance.",
+      "rule8": "8. The bonus balance becomes available to all players who have wagered the deposit amount from their main balance. To continue playing using bonus funds, go to the \"Balance Panel\" (located in the website header), select \"Bonus Balance\" or visit \"My wallets\" section and activate \"Bonus Balance\" with a single click. If the activation is successful, a green indicator will appear next to \"Bonus Balance.\" In case of an error, the system will automatically display a corresponding notification.",
+      "rule9": "9. The bonus amount must be wagered 35 times.",
+      "rule10": "10. Winnings from bets that do not count towards the wagering requirement will be credited to the real balance, but these funds cannot be used to wager the bonus.",
+      "rule11": "11. If a deposit is made while a bonus is active, the deposited amount can be used to meet the wagering requirement.",
+      "rule12": "12. The wagering period for the qualified deposit and the bonus percentage is 7 days from the moment of crediting.",
+      "rule13": "13. After completing the bonus wagering, a wagering requirement of X1 must be met for withdrawal according to the site rules.",
+      "rule14": "14. Withdrawal is not available during an active bonus.",
+      "rule15": "15. Only one bonus can be active in the casino at any given time.",
+      "rule16": "16. After fulfilling the wagering requirement, the winnings will be transferred to the real balance.",
+      "rule17": "17. If you cancel the bonus, the remaining funds in the real balance will be subject to a X1 wagering requirement, and the bonus funds will be canceled.",
+      "rule18": "18. The promotion is valid for only one phone number, account, address, IP address, bank card number, or crypto account. Repeated participation in the promotion is not allowed. Participating in the promotion under a different identity will result in the cancellation of results and account blocking without refunding any funds.",
+      "footerText": "© 2025 Casino. All rights reserved."
+    }
+  },
+  "claimedGifts": {
+    "title": "Tələb Edilmiş Hədiyyələr",
+    "back": "Geri",
+    "allAchievements": "Bütün Nailiyyətlər",
+    "claimed": "Tələb Edilib",
+    "rewardFor": "Tamamlama mükafatı"
+  },
+  "gameInside": {
+    "backToLobby": "Lobbiyə qayıt",
+    "toggleCurtains": "Dəyişdir",
+    "addToFavorites": "Favoritlərə əlavə et",
+    "removeFromFavorites": "Favoritlərdən sil",
+    "fullScreen": "Tam ekran",
+    "deposit": "Əmanət",
+    "otherGames": "Digər oyunlar",
+    "seeMore": "Daha çox gör...",
+    "warning": "Xəbərdarlıq",
+    "close": "Bağla",
+    "switch": "Dəyişdir",
+    "bonusGames": "Bonus oyunlar",
+    "bonusWalletError": "Bonus balansı ilə oynaya bilməzsiniz 😣\nZəhmət olmasa Bonus üçün Oyunları seçin və ya Əsas Balansa keçin",
+    "bonusBalanceAlert": "Bonus Balans Xəbərdarlığı",
+    "activeBonusBalance": "Aktiv bonus balansınız var",
+    "notBonusGame": "Bu oyun bonus oyunu deyil. Bonus oyunları oynayın və ya davam etmək üçün əsas balansa keçin.",
+    "playBonusGames": "Bonus Oyunları Oyna",
+    "switchBalance": "Balansı Dəyişdir",
+    "areYouSure": "Əminsiniz?",
+    "switchingWalletsWarning": "Pul kisələrini dəyişdirmək aktiv bonusları ləğv edə bilər. Dəyişdirməzdən əvvəl istənilən bonusları istifadə etdiyinizə əmin olun.",
+    "cancelSwitch": "Dəyişdirməni ləğv et"
+  },
+  "store": {
+    "title": "Mağaza",
+    "description": "Pulsuz fırlatmalar və daha çoxu kimi bonusları satın alın və aktivləşdirin.",
+    "empty": "Hələ mövcud bonus yoxdur.",
+    "buyWithCoins": "Sikkələrlə al",
+    "buyWithCash": "Pul ilə al",
+    "bonusPurchased": "Bonus alındı!",
+    "successfullyPurchased": "{{title}} uğurla aldınız.",
+    "activateInstructions": "Onu aktivləşdirmək üçün Bonuslar bölməsinə gedin, bonusu seçin və Aktivləşdir düyməsini basın.",
+    "goToPromotions": "Aksiyalara get",
+    "confirmPurchase": "Alışı təsdiqlə",
+    "aboutToBuy": "{{title}} almaq üzrəsiniz.",
+    "cancel": "Ləğv et",
+    "purchase": "Al",
+    "purchaseHistory": "Alış tarixçəsi",
+    "historyEmpty": "Hələ heç bir alış etməmisiniz.",
+    "bonus": "Bonus",
+    "date": "Tarix",
+    "price": "Qiymət",
+    "unlimited": "Limitsiz",
+    "unlocksAtLevel": "{{level}} səviyyəsində açılır",
+    "limitedTime": "Məhdud vaxt",
+    "premium": "Premium",
+    "megaDeal": "Mega əqdi",
+    "vipOnly": "Yalnız VIP üçün",
+    "availableForCertainGames": "Yalnız müəyyən oyunlar üçün mövcuddur"
+  },
+  "page404": {
+    "title": "404",
+    "message": "Üzr istəyirik, bir şey səhv getdi...",
+    "reload": "Əsas səhifə"
+  },
+  "about": {
+    "title": "Haqqımızda",
+    "back": "Geri",
+    "ourLinks": "Bizim linklər",
+    "socialMediaDescription": "Burada sosial media hesablarımızın bütün linklərini tapa bilərsiniz.",
+    "contactUs": "Bizimlə Əlaqə",
+    "paragraph1": "Your Loot has set out to change the perception of what an online gaming platform is all about. We gathered the best references from Game Dev, iGaming, Crypto - and developed the first and only project with a unique loyalty program and a large volume of gamification.",
+    "paragraph2": "Diving into the project, every user will find something for his own experience.",
+    "paragraph3": "We believe that you should play responsibly and with fun!",
+    "followUs": "Follow Us"
+  },
+  "bonusTerms": {
+    "title": "Bonus Şərtləri və Qaydaları",
+    "back": "Geri",
+    "lastUpdated": "Son yeniləmə:",
+    "introduction": "Giriş",
+    "introduction1": "Bu şərtlər və qaydalar və aşağıda qeyd olunan sənədlər (\"Şərtlər\") cari yourloot.io vebsaytının (\"Vebsayt\") və onun əlaqəli xidmətlərinin (birlikdə \"Xidmət\") istifadəsinə aiddir.",
+    "introduction2": "Bu Şərtləri diqqətlə nəzərdən keçirməlisiniz, çünki onlar Vebsaytın istifadəsi ilə bağlı hüquq və öhdəlikləriniz haqqında vacib məlumatları ehtiva edir və sizinlə - müştərimiz (\"Müştəri\") və bizim aramızda hüquqi müqavilə təşkil edir. Bu Vebsaytdan istifadə etməklə və/və ya Xidmətə daxil olmaqla, siz, istər qonaq, istərsə də hesabı olan qeydiyyatlı istifadəçi (\"Hesab\") olun, bu Şərtlər və vaxtaşırı dərc edilə bilən hər hansı düzəlişlərlə bağlı olmağa razılaşırsınız. Bu Şərtləri qəbul etmirsinizsə, Xidmətə daxil olmaqdan və Vebsaytdan istifadə etməkdən çəkinməlisiniz.",
+    "introduction3": "Xidmət, Britaniya Virciniya adalarında 2151527 şirkət qeydiyyat nömrəsi ilə qeydiyyatdan keçmiş, qeydiyyat ünvanı 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Şirkət\") olan Cintra Soft Ltd. məhdud məsuliyyətli şirkətinə məxsusdur və Anjouan Dövlətində Kompüter Oyunları Lisenziyalaşdırma Aktı 007 of 2005 altında lisenziyalaşdırılmışdır.",
+    "organizerReserves": "Yourloot.io (bundan sonra \"Təşkilatçı\" adlandırılacaq) yourloot.io-nun \"Bonus Şərtləri və Qaydaları\"nı istənilən vaxt yeniləmək, dəyişdirmək, redaktə etmək və tamamlamaq hüququnu özündə saxlayır. Təşkilatçı hesab sahibini (bundan sonra \"Oyunçu\" adlandırılacaq) bonus şərtləri və qaydalarında ediləcək hər hansı əhəmiyyətli dəyişikliklər barədə onlar qüvvəyə minməzdən əvvəl xəbərdar edəcəkdir. Əgər Oyunçu \"Bonus Şərtləri və Qaydaları\"na edilən dəyişikliklərlə razı deyilsə, o, rəsmi dəstək komandasına bildirməlidir. Belə bir bildiriş aldıqdan sonra, Təşkilatçı Oyunçunun platformaya girişini ləğv edəcəkdir.",
+    "discrepancies": "Təşkilatçının vebsaytındakı tərcümə edilmiş versiyalar arasında hər hansı uyğunsuzluq olduğu təqdirdə, İngilis versiyası üstünlük təşkil edəcəkdir.",
+    "generalRules": "1. Bonus və əsas balanslardan istifadə üçün ümumi qaydalar",
+    "typesOfBalances": "1.1 Balans növləri və onların təyinatı",
+    "bonusBalance": "Bonus balansı:",
+    "notEligible": "Çıxarış üçün uyğun deyil",
+    "canOnlyBeUsed": "Yalnız mərc qoymaq üçün istifadə edilə bilər",
+    "fundsAreCredited": "Bonus aktivləşdirildikdə vəsaitlər ona köçürülür",
+    "includes": "Daxildir:",
+    "bonusCredits": "Bonus kreditləri",
+    "winningsFromFS": "(Həmçinin daxil ola bilər) FS (pulsuz fırlanma) mərclərindən qazanclar",
+    "winningsFromWagered": "(Həmçinin daxil ola bilər) Mərc edilmiş bonuslardan qazanclar",
+    "mainBalance": "Əsas balans:",
+    "availableForWithdrawal": "Mərc tələblərini yerinə yetirdikdən sonra çıxarış üçün mövcuddur",
+    "depositedFunds": "Oyunçu tərəfindən qoyulmuş mərcləri və çıxarışları çıxmaqla depozit edilmiş vəsaitlər",
+    "bonusFundsTransferred": "(Həmçinin daxil ola bilər) Oyunçu bütün promosyon şərtlərini və qaydalarını yerinə yetirdikdən sonra Təşkilatçı tərəfindən əsas balansa köçürülən bonus vəsaitləri"
+  },
+  "policy": {
+    "title": "Məxfilik Siyasəti",
+    "back": "Geri",
+    "introduction": "1. Giriş",
+    "introText": "Yourloot.io-ya (\"biz,\" \"bizim,\" və ya \"bizi\") xoş gəlmisiniz, Cintra Soft Ltd tərəfindən idarə olunur, qeydiyyat nömrəsi: 2151527. Anjouan Muxtar Adasının Hökuməti, Komor İttifaqı tərəfindən lisenziyalaşdırılıb və tənzimlənir və ALSI-202410046-F12 nömrəli lisenziya altında fəaliyyət göstərir.",
+    "privacyImportance": "Məxfiliyiniz bizim üçün son dərəcə vacibdir. Bu Məxfilik Siyasəti veb saytımızdan, mobil tətbiqimizdən və onlayn oyun xidmətlərimizdən (birlikdə \"Xidmətlər\") istifadə etdiyiniz zaman şəxsi məlumatlarınızı necə topladığımızı, istifadə etdiyimizi, qoruduğumuzu və açıqladığımızı təsvir edir.",
+    "consentNotice": "Xidmətlərimizə daxil olmaqla və ya istifadə etməklə, siz bu Məxfilik Siyasətinin şərtlərinə razılıq verirsiniz. Bu Siyasətin hər hansı bir hissəsi ilə razı deyilsinizsə, zəhmət olmasa Xidmətlərimizdən istifadə etməkdən çəkinin.",
+    "complianceTitle": "2. Məlumatların Qorunması Qanunlarına Uyğunluq",
+    "complianceText": "Biz şəxsi məlumatlarınızı Məlumatların Qorunması Aktı və digər tətbiq olunan qanunlara uyğun olaraq qorumağa sadiqik. Məlumatlarınızı qorumaq üçün ən yaxşı biznes təcrübələrindən və sənaye standartı təhlükəsizlik tədbirlərindən istifadə edirik.",
+    "informationCollectTitle": "3. Topladığımız Məlumatlar",
+    "informationCollectIntro": "Biz müxtəlif növ məlumatlar toplayırıq, o cümlədən, lakin bunlarla məhdudlaşmayaraq:",
+    "personalInfo": "Şəxsi Məlumat: Ad, doğum tarixi, e-poçt ünvanı, telefon nömrəsi, yaşayış ünvanı, ödəniş məlumatları və şəxsiyyəti təsdiqləmə məqsədləri üçün şəxsiyyət sənədləri (məsələn, pasport, sürücülük vəsiqəsi).",
+    "accountInfo": "Hesab Məlumatı: İstifadəçi adı, şifrə və oyun tərcihləri.",
+    "transactionData": "Əməliyyat Məlumatları: Depozit və çıxarış təfərrüatları, mərc tarixçəsi və qazanclar.",
+    "deviceInfo": "Cihaz və İstifadə Məlumatları: IP ünvanı, brauzer növü, əməliyyat sistemi və oyun fəaliyyəti.",
+    "cookiesInfo": "Kukilər və İzləmə Texnologiyaları: İstifadəçi təcrübəsini və veb sayt funksionallığını yaxşılaşdırmaq üçün kukilər, veb mayaklar və oxşar texnologiyalar vasitəsilə toplanan məlumatlar.",
+    "platformInfo": "Veb və Telegram Platforması: Yourloot.io-ya daxil olmaqla və istifadə etməklə, istər veb saytımız, istərsə də Telegram botu (@yourloot) vasitəsilə, şəxsi məlumatlarınızı, o cümlədən, lakin bunlarla məhdudlaşmayaraq, Telegram ID-nizi, istifadəçi adınızı və adınızı, həmçinin əməliyyatlar üçün təqdim etdiyiniz hər hansı kriptovalyuta pul kisəsi ünvanlarını toplaya və istifadə edə biləcəyimizi qəbul edirsiniz.",
+    "dataUsage": "Biz bu məlumatları oyunlarımızda iştirakınızı asanlaşdırmaq, hesabınızı idarə etmək və hər iki platformada xidmətlərimizin səlis işləməsini təmin etmək üçün lazımi əməliyyatları həyata keçirmək üçün toplayırıq."
+  },
+  "cookiePolicy1": {
+    "title": "Kuki Siyasəti",
+    "back": "Geri",
+    "lastUpdated": "Son yeniləmə:",
+    "introduction": {
+      "title": "1. Giriş",
+      "content": "Bu şərtlər və qaydalar və aşağıda qeyd olunan sənədlər (\"Şərtlər\") cari yourloot.io vebsaytının (\"Vebsayt\") və onun əlaqəli xidmətlərinin (birlikdə \"Xidmət\") istifadəsinə aiddir."
+    },
+    "generalTerms": {
+      "title": "2. Ümumi Şərtlər",
+      "content": "Biz istənilən vaxt Şərtləri (aşağıda istinad edilən və bağlantı verilən hər hansı sənədlər daxil olmaqla) yenidən nəzərdən keçirmək və dəyişdirmək hüququnu özümüzdə saxlayırıq. Şərtlər və Qaydaları nəzərdən keçirmək üçün bu səhifəni vaxtaşırı ziyarət etməlisiniz. Dəyişikliklər bu Vebsaytda dərc olunduğu andan etibarən məcburi və qüvvəyə minəcəkdir. Əgər bu dəyişikliklərlə razı deyilsinizsə, dərhal Xidmətdən istifadəni dayandırmalısınız. Vebsaytdan davam edən istifadəniz dəyişdirilmiş Şərtlərlə bağlı olmağınızı göstərəcəkdir. Dəyişilmiş Şərtlər qüvvəyə minənədək həll olunmamış mərclərin əvvəlki Şərtlərə uyğun olacaqdır."
+    },
+    "obligations": {
+      "title": "3. Öhdəlikləriniz",
+      "content": "Veb-sayta daxil olarkən və Xidmətdən istifadə edərkən bütün vaxtlarda:",
+      "items": [
+        "18 yaşınız var və ya qanunla siz üçün tətbiq olunan yurisdiksiyada qumar və ya oyun fəaliyyətlərinə icazə verilən yaşdasınız. Biz istənilən vaxt sizdən yaş sənədlərinin sübutunu tələb etmək hüququnu özümüzdə saxlayırıq.",
+        "Siz hüquqi səlahiyyətə maliksiniz və bizimlə məcburi hüquqi müqavilə bağlaya bilərsiniz. Əgər hüquqi səlahiyyətə malik deyilsinizsə, Veb-sayta daxil olmamalı və ya Xidmətdən istifadə etməməlisiniz.",
+        "Siz qumara icazə verən yurisdiksiyada yaşayırsınız. Siz sakinlərinə və ya həmin ölkədəki hər hansı bir şəxsə onlayn qumara giriş qadağan edilmiş hər hansı bir ölkənin sakini deyilsiniz. Xidmətdən istifadənizin qanuni olmasını təmin etmək yalnız sizin məsuliyyətinizdir.",
+        "Siz real yerinizi maskalayan və ya manipulyasiya edən VPN, proksi və ya oxşar xidmətlərdən və ya cihazlardan istifadə edə bilməzsiniz.",
+        "Siz istifadə etdiyiniz ödəniş metodunun səlahiyyətli istifadəçisisiniz.",
+        "Siz bizə bütün ödənişləri vicdanla etməli və edilmiş ödənişi geri qaytarmağa cəhd etməməli və ya üçüncü tərəfin belə ödənişi geri qaytarmasına səbəb olacaq hər hansı bir hərəkət etməməlisiniz.",
+        "Mərc qoyarkən bu Şərtlərə uyğun olaraq Xidmətə yatırılmış pulunuzun bir hissəsini və ya hamısını itirə bilərsiniz və bu itkiyə görə tam məsuliyyət daşıyacaqsınız.",
+        "Mərc qoyarkən mərc qoyulduğu zaman olduğunuz ölkədə qüvvədə olan hər hansı bir qanunvericiliyin pozulması ilə əldə edilmiş hər hansı məlumatdan istifadə etməməlisiniz.",
+        "Siz başqa bir tərəfin adından və ya hər hansı kommersiya məqsədləri üçün deyil, yalnız şəxsi həyatda fərdi olaraq öz adınızdan çıxış edirsiniz.",
+        "Siz pis niyyətlə və ya Xidmətin və ya bizim bütövlüyünə mənfi təsir göstərən bir şəkildə Xidmət daxilində hər hansı bir bazarı və ya elementi manipulyasiya etməyə cəhd etməməlisiniz.",
+        "Siz Xidmətdən istifadə ilə əlaqədar və Xidmətdən istifadə edərək qoyulan bütün mərclər üçün hər zaman vicdanla hərəkət etməlisiniz.",
+        "Siz və ya müvafiq hallarda, işçiləriniz, işəgötürənləriniz, agentləriniz və ya ailə üzvləriniz Tərəfdaş proqramımızda Tərəfdaş kimi qeydiyyatdan keçməmisiniz."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Məhdud istifadə",
+      "content": "Xidmətdən istifadə etməməlisiniz:",
+      "items": [
+        "Əgər 18 yaşından aşağısınızsa (və ya sizə tətbiq olunan yurisdiksiya qanunlarında göstərilən yetkinlik yaşından aşağısınızsa) və ya bizimlə məcburi hüquqi müqavilə bağlamaq iqtidarında deyilsinizsə və ya 18 yaşından aşağı olan bir şəxsin (və ya sizə tətbiq olunan yurisdiksiya qanunlarında göstərilən yetkinlik yaşından aşağı olan) agent və ya başqa cür onun adından çıxış edirsinizsə;",
+        "Əgər sakinlərinə və ya həmin ölkədəki hər hansı bir şəxsə onlayn qumara giriş qadağan edilmiş bir ölkədə yaşayırsınızsa.",
+        "Əgər aşağıdakı ölkələrin birinin sakinisinzsə və ya Veb-sayta aşağıdakı ölkələrin birindən daxil olursunuzsa:"
+      ],
+      "restrictedCountries": [
+        "Avstriya",
+        "Fransa və əraziləri",
+        "Almaniya",
+        "Niderland və əraziləri",
+        "İspaniya",
+        "Komor İttifaqı"
+      ]
+    }
+  },
+
+  "faq": {
+    "title": "Tez-tez soruşulan suallar",
+    "back": "Geri",
+    "search": "Axtar",
+    "categories": {
+      "mainBalance": {
+        "title": "Əsas Balans",
+        "questions": [
+          {
+            "title": "Əsas Balans nədir?",
+            "content": "Əsas Balans platforma üzərində bütün oyun fəaliyyətləri üçün istifadə edə biləcəyiniz əsas hesab balansınızdır."
+          },
+          {
+            "title": "Əsas Balansıma necə vəsait əlavə edə bilərəm?",
+            "content": "Depozit bölməsində mövcud olan müxtəlif ödəniş metodları vasitəsilə Əsas Balansınıza vəsait əlavə edə bilərsiniz."
+          }
+        ]
+      },
+      "bonusBalance": {
+        "title": "Bonus Balansı",
+        "questions": [
+          {
+            "title": "Bonus Balansı nədir?",
+            "content": "Bonus Balansı, bonus şərtlərinə və qaydalarına uyğun olaraq istifadə edə biləcəyiniz promosyon vəsaitlərdən və bonuslardan ibarətdir."
+          }
+        ]
+      },
+      "experience": {
+        "title": "Təcrübə",
+        "questions": [
+          {
+            "title": "Təcrübəni necə qazanıram?",
+            "content": "Oyunlar oynamaqla və platformada müxtəlif fəaliyyətləri yerinə yetirməklə təcrübə qazanırsınız."
+          }
+        ]
+      },
+      "externalCasino": {
+        "title": "Xarici Kazino Pulu",
+        "questions": [
+          {
+            "title": "Xarici Kazino Pulu nədir?",
+            "content": "Xarici Kazino Pulu, xüsusi xarici kazino oyunlarında istifadə edilə bilən vəsaitlərə aiddir."
+          }
+        ]
+      },
+      "bonuses": {
+        "title": "Bonuslar",
+        "questions": [
+          {
+            "title": "Hansı növ bonuslar mövcuddur?",
+            "content": "Biz xoş gəlmiş bonusları, depozit bonusları və xüsusi promosyonlar daxil olmaqla müxtəlif növ bonuslar təklif edirik."
+          }
+        ]
+      },
+      "levels": {
+        "title": "Səviyyələr",
+        "questions": [
+          {
+            "title": "Səviyyələr necə işləyir?",
+            "content": "Səviyyələr təcrübə xallarınız ilə müəyyən edilir. Səviyyəniz artdıqca, yeni xüsusiyyətlər və mükafatlar açılır."
+          },
+          {
+            "title": "Daha yüksək səviyyələrin faydaları nələrdir?",
+            "content": "Daha yüksək səviyyələr eksklüziv oyunlara, daha yaxşı bonuslara və xüsusi imtiyazlara giriş təmin edir."
+          }
+        ]
+      },
+      "support": {
+        "title": "Dəstək",
+        "questions": [
+          {
+            "title": "Dəstək ilə necə əlaqə saxlaya bilərəm?",
+            "content": "Veb-saytda mövcud olan əlaqə forması və ya canlı söhbət vasitəsilə dəstək komandamızla əlaqə saxlaya bilərsiniz."
+          },
+          {
+            "title": "Dəstək saatları hansılardır?",
+            "content": "Dəstək komandamız sizə hər hansı sual və ya problemlə yardım etmək üçün 24/7 əlçatandır."
+          }
+        ]
+      },
+      "casinoGames": {
+        "title": "Kazino Oyunları",
+        "questions": [
+          {
+            "title": "Hansı növ oyunlar mövcuddur?",
+            "content": "Biz slot, masa oyunları və canlı diler oyunları daxil olmaqla geniş çeşiddə oyunlar təklif edirik."
+          },
+          {
+            "title": "Oyunlar ədalətlidir?",
+            "content": "Bəli, bütün oyunlarımız müstəqil auditorlar tərəfindən ədalətlilik üçün sınaqdan keçirilmiş və sertifikatlaşdırılmışdır."
+          }
+        ]
+      },
+      "settings": {
+        "title": "Parametrlər",
+        "questions": [
+          {
+            "title": "Hesab parametrlərimi necə dəyişə bilərəm?",
+            "content": "Hesabınızın profil bölməsində hesab parametrlərinizi dəyişdirə bilərsiniz."
+          },
+          {
+            "title": "Hansı parametrləri fərdiləşdirə bilərəm?",
+            "content": "Bildirişlər, dil və təhlükəsizlik tərcihləri daxil olmaqla müxtəlif parametrləri fərdiləşdirə bilərsiniz."
+          }
+        ]
+      },
+      "kycAml": {
+        "title": "KYC və AML",
+        "questions": [
+          {
+            "title": "KYC nədir?",
+            "content": "KYC (Müştərini Tanı) şəxsiyyətinizi təsdiqləmək və qanunvericiliyə uyğunluğu təmin etmək üçün bir prosesdir."
+          },
+          {
+            "title": "Yoxlama üçün hansı sənədlər tələb olunur?",
+            "content": "Dövlət tərəfindən verilmiş şəxsiyyət vəsiqəsi, ünvan sübutu və digər müvafiq sənədləri təqdim etməniz lazım ola bilər."
+          }
+        ]
+      },
+      "communications": {
+        "title": "Kommunikasiyalar",
+        "questions": [
+          {
+            "title": "Kommunikasiya tərcihlərimı necə idarə edə bilərəm?",
+            "content": "Hesabınızın parametrlər bölməsində kommunikasiya tərcihlərinizi idarə edə bilərsiniz."
+          },
+          {
+            "title": "Hansı növ kommunikasiyalar alacağam?",
+            "content": "Promosyonlar, hesab fəaliyyətləri və vacib elanlar haqqında yeniləmələr ala bilərsiniz."
+          }
+        ]
+      },
+      "bestPractices": {
+        "title": "Ən Yaxşı Təcrübələr",
+        "questions": [
+          {
+            "title": "Məsuliyyətli oyun üçün ən yaxşı təcrübələr hansılardır?",
+            "content": "Limitlər təyin edin, fasilələr verin və heç vaxt itkilərin ardınca getməyin. Həmişə imkanlarınız daxilində oynayın."
+          },
+          {
+            "title": "Hesab təhlükəsizliyini necə təmin edə bilərəm?",
+            "content": "Güclü parollardan istifadə edin, iki faktorlu autentifikasiyanı aktivləşdirin və heç vaxt hesab məlumatlarınızı paylaşmayın."
+          }
+        ]
+      }
+    }
+  },
+  "newWallet": {
+    "selectNetwork": "Şəbəkəni seçmək",
+    "createWalletError": "Pul kisəsi yaratma xətası"
+  },
+  "menu": {
+    "home": "Home",
+    "bonuses": "Promosyonlar",
+    "notifications": "Bildirişlər",
+    "wallet": "Pul kisəsi",
+    "games": "Oyunlar",
+    "liveCasino": "Canlı Casino",
+    "about_us": "About Us",
+    "affiliate_program": "Affiliate Program",
+    "contact_us": "Contact Us",
+    "faq": "FAQ",
+    "legal": "Legal",
+    "casino": "Casino",
+    "description": "The Service is owned by Cintra Soft Ltd. a limited liability company registered in British Virgin Islands with company registration number 2151527 with registered address at 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Company\"), licensed in the State of Anjouan under the Computer Gaming Licensing Act 007 of 2005."
+  },
+  "home": {
+    "poker": "Poker",
+    "blackjack": "Blackjack",
+    "roulette": "Ruletka",
+    "readMore": "Daha ətraflı",
+    "featuredProviders": "Seçilmiş təchizatçılar",
+    "welcomeBanner": "Xoş gəlmisiniz!",
+    "welcomeBannerDes": "Yeni sayt — yeni üfüqlər!",
+    "getBonusDeposit": "Əmanət",
+    "crypto": "Kriptoda daha yaxşı!",
+    "harvest": "Qələbələrin məhsulu",
+    "harvestDescription": "Payız oyunlarını kəşf edin",
+    "getBonus": "Bonus əldə et",
+    "ftdBonus": "$1 500",
+    "ftdBonusDes": "İlk depozitdə",
+    "other": "Di̇gər",
+    "choseCategory": "Kateqoriya seçin",
+    "liveGames": "Live Games",
+    "yourlootStore": "Sizin Loot Mağazanız",
+    "checkout": "Ən son təklifləri yoxlayın",
+    "store": "Mağaza",
+    "titleProviders": "Təchizatçılar",
+    "desProviders": "Ən son təchizatçıları yoxlayın",
+    "titleCategories": "Kateqoriyalar",
+    "desCategories": "Hamısını qazanın",
+    "titleSearch": "Axtarış",
+    "desSearch": "Sevdiyinizi axtarın",
+    "seeAll": "Hamısına baxın",
+    "seeAllGames": "Bütün oyunlara baxın",
+    "useLoop": "Oyuna görə axtarış",
+    "desUseLoop": "10 000-dən çox oyun",
+    "maybeYou": "Bəlkə də istərdiniz:",
+    "back": "Geri",
+    "categoryName": "Kateqoriya Adı",
+    "new": "Yeniliklər",
+    "slots": "Slotlar",
+    "crash": "Crash",
+    "fast": "Sürətli",
+    "recommendedGames": "Tövsiyə olunan",
+    "bonus": "Bonus",
+    "shows": "Game Shows",
+    "livePoker": "Canlı Poker",
+    "liveBlackjack": "Canlı Blackjack",
+    "liveRoulette": "Canlı ruletka",
+    "favorites": "Sevimlilər",
+    "quickLinks": "Tez keçidlər",
+    "manageFunds": "Pul kisələri",
+    "achievements": "Nailiyyətlər",
+    "popular": "Populyar",
+    "bannerV2": {
+      "title": "2X Xoş gəlmisiniz bonusu",
+      "description": "İlk depozitinizdə $1,500‑dək<br/> əldə edin",
+      "cryptoBonus": "Kripto Bonusu",
+      "cryptoBonusDescription": "Gündəlik +7%<br/> depozitinizə"
+    }
+  },
+  "footer": {
+    "privacy_policy": "Privacy Policy",
+    "terms_conditions": "Terms & Conditions",
+    "cookie_policy": "KYC Policy",
+    "responsible_gaming": "Responsible Gaming",
+    "loyalty_program": "Loyalty Program",
+    "bonus_tc": "Bonus T&C",
+    "company_info": "Xidmət Britaniya Virgin adalarında 2151527 şirkət qeydiyyat nömrəsi ilə qeydiyyatdan keçmiş, qeydiyyat ünvanı 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands (\"Şirkət\") olan Cintra Soft Ltd. məhdud məsuliyyətli şirkətinə məxsusdur və Anjouan Dövlətində Kompüter Oyunları Lisenziyalaşdırma Aktı 007 of 2005 altında lisenziyalaşdırılmışdır.",
+    "copyright": "© 2025 YourLoot",
+    "menu": {
+      "slots": "Slotlar",
+      "promotions": "Aksiyalar",
+      "deposit": "Əmanət",
+      "support": "Dəstək",
+      "profile": "Profil"
+    }
+  },
+  "loyaltyProgram": {
+    "title": "Loyallıq Proqramı",
+    "back": "Geri",
+    "lastUpdated": "Son yenilənmə:",
+    "introduction": {
+      "title": "1. Giriş",
+      "content": "Bu şərtlər və qaydalar və aşağıda istinad edilən sənədlər (\"Şərtlər\") mövcud veb-sayt yourloot.io (\"Veb-sayt\") və onun əlaqəli və ya bağlı xidmətlərinin (birlikdə, \"Xidmət\") istifadəsinə tətbiq olunur."
+    },
+    "generalTerms": {
+      "title": "2. Ümumi Şərtlər",
+      "content": "Biz Şərtləri (o cümlədən aşağıda istinad edilən və keçid verilən istənilən sənədləri) istənilən vaxt yoxlamaq və dəyişdirmək hüququnu özümüzdə saxlayırıq. Şərtlər və Qaydaları nəzərdən keçirmək üçün vaxtaşırı bu səhifəyə baş çəkməlisiniz. Dəyişikliklər bu Veb-saytda dərc edildikdən dərhal sonra məcburi və qüvvəyə minəcəkdir. Hər hansı belə dəyişikliklərə etiraz edirsinizsə, dərhal Xidmətdən istifadəni dayandırmalısınız. Dəyişikliklərdən sonra Veb-saytdan istifadəni davam etdirməyiniz, dəyişdirilmiş Şərtlərlə bağlı olmaq razılığınızı göstərəcəkdir. Dəyişdirilmiş Şərtlər qüvvəyə minməzdən əvvəl hesablanmamış hər hansı mərclər əvvəlki Şərtlərə tabe olacaqdır."
+    },
+    "obligations": {
+      "title": "3. Öhdəlikləriniz",
+      "content": "Veb-sayta daxil olarkən və Xidmətdən istifadə edərkən bütün vaxtlarda:",
+      "items": [
+        "18 yaşınız var və ya qanunla siz üçün tətbiq olunan yurisdiksiyada qumar və ya oyun fəaliyyətlərinə icazə verilən yaşdasınız. Biz istənilən vaxt sizdən yaş sənədlərinin sübutunu tələb etmək hüququnu özümüzdə saxlayırıq.",
+        "Siz hüquqi səlahiyyətə maliksiniz və bizimlə məcburi hüquqi müqavilə bağlaya bilərsiniz. Əgər hüquqi səlahiyyətə malik deyilsinizsə, Veb-sayta daxil olmamalı və ya Xidmətdən istifadə etməməlisiniz.",
+        "Siz qumara icazə verən yurisdiksiyada yaşayırsınız. Siz sakinlərinə və ya həmin ölkədəki hər hansı bir şəxsə onlayn qumara giriş qadağan edilmiş hər hansı bir ölkənin sakini deyilsiniz. Xidmətdən istifadənizin qanuni olmasını təmin etmək yalnız sizin məsuliyyətinizdir.",
+        "Siz real yerinizi maskalayan və ya manipulyasiya edən VPN, proksi və ya oxşar xidmətlərdən və ya cihazlardan istifadə edə bilməzsiniz.",
+        "Siz istifadə etdiyiniz ödəniş metodunun səlahiyyətli istifadəçisisiniz.",
+        "Siz bizə bütün ödənişləri vicdanla etməli və edilmiş ödənişi geri qaytarmağa cəhd etməməli və ya üçüncü tərəfin belə ödənişi geri qaytarmasına səbəb olacaq hər hansı bir hərəkət etməməlisiniz.",
+        "Mərc qoyarkən bu Şərtlərə uyğun olaraq Xidmətə yatırılmış pulunuzun bir hissəsini və ya hamısını itirə bilərsiniz və bu itkiyə görə tam məsuliyyət daşıyacaqsınız.",
+        "Mərc qoyarkən mərc qoyulduğu zaman olduğunuz ölkədə qüvvədə olan hər hansı bir qanunvericiliyin pozulması ilə əldə edilmiş hər hansı məlumatdan istifadə etməməlisiniz.",
+        "Siz başqa bir tərəfin adından və ya hər hansı kommersiya məqsədləri üçün deyil, yalnız şəxsi həyatda fərdi olaraq öz adınızdan çıxış edirsiniz.",
+        "Siz pis niyyətlə və ya Xidmətin və ya bizim bütövlüyünə mənfi təsir göstərən bir şəkildə Xidmət daxilində hər hansı bir bazarı və ya elementi manipulyasiya etməyə cəhd etməməlisiniz.",
+        "Siz Xidmətdən istifadə ilə əlaqədar və Xidmətdən istifadə edərək qoyulan bütün mərclər üçün hər zaman vicdanla hərəkət etməlisiniz.",
+        "Siz və ya müvafiq hallarda, işçiləriniz, işəgötürənləriniz, agentləriniz və ya ailə üzvləriniz Tərəfdaş proqramımızda Tərəfdaş kimi qeydiyyatdan keçməmisiniz."
+      ]
+    },
+    "restrictedUse": {
+      "title": "4. Məhdud istifadə",
+      "content": "Xidmətdən istifadə etməməlisiniz:",
+      "items": [
+        "Əgər 18 yaşından aşağısınızsa (və ya sizə tətbiq olunan yurisdiksiya qanunlarında göstərilən yetkinlik yaşından aşağısınızsa) və ya bizimlə məcburi hüquqi müqavilə bağlamaq iqtidarında deyilsinizsə və ya 18 yaşından aşağı olan bir şəxsin (və ya sizə tətbiq olunan yurisdiksiya qanunlarında göstərilən yetkinlik yaşından aşağı olan) agent və ya başqa cür onun adından çıxış edirsinizsə;",
+        "Əgər sakinlərinə və ya həmin ölkədəki hər hansı bir şəxsə onlayn qumara giriş qadağan edilmiş bir ölkədə yaşayırsınızsa.",
+        "Əgər aşağıdakı ölkələrin birinin sakinisinzsə və ya Veb-sayta aşağıdakı ölkələrin birindən daxil olursunuzsa:"
+      ],
+      "restrictedCountries": [
+        "Avstriya",
+        "Fransa və əraziləri",
+        "Almaniya",
+        "Niderland və əraziləri",
+        "İspaniya",
+        "Komor İttifaqı"
+      ]
+    }
+  },
+  "language": {
+    "title": "Dili dəyişdir",
+    "placeholder": "Dil",
+    "select": "Zəhmət olmasa dilinizi seçin"
+  },
+  "common": {
+    "english": "İngiliscə",
+    "azerbaijani": "Azərbaycanca",
+    "kazakh": "Qazaxca",
+    "uzbek": "Özbəkcə",
+    "russian": "Rusca",
+    "scrollToTop": "Yuxarıya sürüşdür",
+    "back": "Geri",
+    "required": "Vacibdir",
+    "login": "Daxil ol",
+    "close": "Bağla",
+    "topUp": "Yüklə",
+    "finish": "Bitir",
+    "create": "Yarat",
+    "goBack": "Geri qayıtmaq",
+    "cancel": "LLəğv"
+  },
+  "pagination": {
+    "showing": "Showing:",
+    "of": "of",
+    "showMore": "Show more"
+  },
+  "session": {
+    "endedTitle": "Sessiya başa çatdı",
+    "endedDesc": "Fəaliyyətsizlik səbəbindən sessiyanız başa çatdı. Davam etmək üçün daxil olun."
+  },
+  "bannerProfile": {
+    "header": "Banner Başlığı",
+    "description": "Banner təsviri",
+    "cta": "Tap oyunlarına baxın"
+  },
+  "promoDefault": {
+    "title": "Promo Səhifə Defolt",
+    "header": "Banner Başlığı",
+    "lastUpdated": "Son yenilənmə: 16.9.2024",
+    "description": "Promo təsviri",
+    "name": "Promo adı",
+    "play": "İndi oyna",
+    "content": "Bu şərtlər və qaydalar və aşağıda istinad edilən sənədlər (\"Şərtlər\") mövcud veb-sayt yourloot.io (\"Veb-sayt\") və onun əlaqəli və ya bağlı xidmətlərinin (birlikdə, \"Xidmət\") istifadəsinə tətbiq olunur. Siz bu Şərtləri diqqətlə nəzərdən keçirməlisiniz, çünki onlar Veb-saytın istifadəsinə dair hüquqlarınız və öhdəlikləriniz haqqında vacib məlumatları ehtiva edir və sizinlə - müştərimiz (\"Müştəri\") və bizim aramızda məcburi hüquqi müqavilə yaradır. Bu Veb-saytdan istifadə etməklə və/və ya Xidmətə daxil olmaqla, siz, istər qonaq, istərsə də hesabı (\"Hesab\") olan qeydiyyatlı istifadəçi olun, vaxtaşırı dərc oluna bilən dəyişikliklərlə birlikdə bu Şərtlərlə bağlı olmağı qəbul edirsiniz. Əgər bu Şərtləri qəbul etmirsinizsə, Xidmətə daxil olmaqdan və Veb-saytdan istifadə etməkdən çəkinməlisiniz. Xidmət, Britaniyanın Virgin adalarında 2151527 şirkət qeydiyyat nömrəsi ilə qeydiyyata alınmış və 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands ünvanında qeydiyyata alınmış, Anjouan Dövlətində Computer Gaming Licensing Act 007 of 2005 əsasında lisenziyalaşdırılmış Cintra Soft Ltd. məhdud məsuliyyətli şirkətinə məxsusdur (\"Şirkət\").",
+    "introduction": "Giriş",
+    "back": "Geri"
+  },
+  "responsibleGaming": {
+    "title": "Məsuliyyətli Oyun",
+    "introduction": "Bu şərtlər və qaydalar və aşağıda istinad edilən sənədlər (\"Şərtlər\") mövcud veb-sayt yourloot.io (\"Veb-sayt\") və onun əlaqəli və ya bağlı xidmətlərinin (birlikdə, \"Xidmət\") istifadəsinə tətbiq olunur. Siz bu Şərtləri diqqətlə nəzərdən keçirməlisiniz, çünki onlar Veb-saytın istifadəsinə dair hüquqlarınız və öhdəlikləriniz haqqında vacib məlumatları ehtiva edir və sizinlə - müştərimiz (\"Müştəri\") və bizim aramızda məcburi hüquqi müqavilə yaradır. Bu Veb-saytdan istifadə etməklə və/və ya Xidmətə daxil olmaqla, siz, istər qonaq, istərsə də hesabı (\"Hesab\") olan qeydiyyatlı istifadəçi olun, vaxtaşırı dərc oluna bilən dəyişikliklərlə birlikdə bu Şərtlərlə bağlı olmağı qəbul edirsiniz. Əgər bu Şərtləri qəbul etmirsinizsə, Xidmətə daxil olmaqdan və Veb-saytdan istifadə etməkdən çəkinməlisiniz. Xidmət, Britaniyanın Virgin adalarında 2151527 şirkət qeydiyyat nömrəsi ilə qeydiyyata alınmış və 1st Floor, Columbus Centre, PO Box 2283, Road Town Tortola VG 1110, British Virgin Islands ünvanında qeydiyyata alınmış, Anjouan Dövlətində Computer Gaming Licensing Act 007 of 2005 əsasında lisenziyalaşdırılmış Cintra Soft Ltd. məhdud məsuliyyətli şirkətinə məxsusdur (\"Şirkət\")."
+  },
+  "wallet": {
+    "createWallet": {
+      "title": "Pul kisəsi yarat"
+    },
+    "primaryChanged": "Əsas pul kisəsi dəyişdirildi.",
+    "createTitle": "Pul kisəsi yarat",
+    "balancer": {
+      "primaryWallet": "Əsas pul kisəsi",
+      "createNew": "Yeni yarat"
+    },
+    "item": {
+      "primary": "Əsas",
+      "makePrimary": "Əsas etmək"
+    },
+    "walletRequired": "{{cryptoCurrency}} Pul Kisəsi Tələb olunur",
+    "createDescription": "Sizdə bu valyutada pul kisəsi yoxdur. Davam etmək üçün yaradın.",
+    "manageFunds": {
+      "title": "Pul kisələri"
+    },
+    "transactionHistory": {
+      "title": "Əməliyyat Tarixçəsi",
+      "orderTypes": {
+        "deposit": "ƏMANƏT",
+        "withdraw": "ÇIXARIŞ",
+        "transfer": "KÖÇÜRMƏ",
+        "bonus": "BONUS",
+        "bet": "MƏRC",
+        "win": "QAZANC"
+      }
+    }
+  },
+  "payment": {
+    "history": "Tarix",
+    "depositMethodsInfo": "Depozit metodları əsas pul kisəsi valyutanızdan asılıdır.",
+    "withdrawMethodsInfo": "Çıxarış metodları əsas pul kisəsi valyutanızdan asılıdır."
+  },
+  "history": {
+    "contactUs": "Suallarınız varsa bizimlə əlaqə saxlayın",
+    "messageUs": "Bizə yazın",
+    "loadingMore": "Daha çox yüklənir...",
+    "scrollToLoadMore": "Daha çox yükləmək üçün sürüşdürün",
+    "noMoreItems": "Yüklənəcək başqa element yoxdur"
+  }
+}
